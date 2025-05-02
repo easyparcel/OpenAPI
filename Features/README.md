@@ -16,13 +16,13 @@ Below are all the Functions and Endpoints available for the API
 
 - Tracking Available
   
-[Get Shipment Quotation](Shipping/get_Shipment_Quotation.md)
+[Get Shipment Quotation](Shipping/1.get_shipment_quotation.md)
 
-[Get Insurance Quotation](Shipping/get_Insurance_Quotation.md)
+[Get Insurance Quotation](Shipping/2.get_insurance_quotation.md)
 
-[Get Courier Dropoff point](Shipping/get_Courier_Dropoff_point.md)
+[Get Courier Dropoff point](Shipping/3.get_courier_dropoff_point.md)
 
-[Submit Shipment Orders](Shipping/Submit_Shipment_Orders.md)
+[Submit Shipment Orders](Shipping/4.submit_shipment_orders.md)
 
 ### [OnDemand](OnDemand)
 
@@ -36,9 +36,9 @@ Below are all the Functions and Endpoints available for the API
 
 - Priority Handling: Parcels are prioritized, ensuring faster delivery compared to standard methods.
 
-[Get OnDemand Quotation](OnDemand/get_OnDemand_Quotation.md)
+[Get OnDemand Quotation](OnDemand/1.get_ondemand_quotation.md)
 
-[Submit OnDemand Order](OnDemand/Submit_OnDemand_Order.md)
+[Submit OnDemand Order](OnDemand/2.submit_ondemand_order.md)
 
 ### Wallet
 
