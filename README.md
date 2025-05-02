@@ -27,14 +27,6 @@ The EasyParcel API allows your application to access current data within EasyPar
 #### [Get Oauth Access token](Guides/3.get_Oauth_Access_token.md)
 
 ---
-### Oauth Authentication
-
-EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure and controlled access to its services.
-
-#### [More about Oauth Authentication](oauth_authentication.md)
-#### [Steps to get Oauth Access token](Guides/3.steps_to_get_oauth_access_token.md)
----
-
 ### API Functions Features
 
 #### [Functions/Features](Features/README.md)
@@ -61,10 +53,16 @@ EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure
 [Get Wallet](Features/get_wallet.md)
 
 ---
-
 ### Order function Flow
 <img src="Pictures/flow_chart.png" alt="Flow Chart" style="width:40%; margin:0; padding:0;">
 
+---
+### Oauth Authentication
+
+EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure and controlled access to its services.
+
+#### [More about Oauth Authentication](oauth_authentication.md)
+#### [Steps to get Oauth Access token](Guides/3.steps_to_get_oauth_access_token.md)
 ---
 
 ### References
