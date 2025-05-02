@@ -36,9 +36,9 @@ Below are all the Functions and Endpoints available for the API
 
 - Priority Handling: Parcels are prioritized, ensuring faster delivery compared to standard methods.
 
-[Get OnDemand Quotation](OnDemand/get_OnDemand_Quotation.md)
+[Get OnDemand Quotation](OnDemand/1.get_ondemand_quotation.md)
 
-[Submit OnDemand Order](OnDemand/Submit_OnDemand_Order.md)
+[Submit OnDemand Order](OnDemand/2.submit_ondemand_order.md)
 
 ### Wallet
 
