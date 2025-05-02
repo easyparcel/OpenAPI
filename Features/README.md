@@ -42,4 +42,4 @@ Below are all the Functions and Endpoints available for the API
 
 ### Wallet
 
-[Get Wallet](Features/get_wallet.md)
+[Get Wallet](get_wallet.md)
