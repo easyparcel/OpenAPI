@@ -1,3 +1,4 @@
+> **Note**: GitHub will automatically adjust the theme (light or dark) based on your system or browser preferences.
 <p align="center">
 <img src="Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;">
 </p>
