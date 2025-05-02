@@ -20,9 +20,9 @@ Below are all the Functions and Endpoints available for the API
 
 [Get Insurance Quotation](Shipping/2.get_insurance_quotation.md)
 
-[Get Courier Dropoff point](Shipping/get_Courier_Dropoff_point.md)
+[Get Courier Dropoff point](Shipping/3.get_courier_dropoff_point.md)
 
-[Submit Shipment Orders](Shipping/Submit_Shipment_Orders.md)
+[Submit Shipment Orders](Shipping/4.submit_shipment_orders.md)
 
 ### [OnDemand](OnDemand)
 
