@@ -16,7 +16,7 @@ Below are all the Functions and Endpoints available for the API
 
 - Tracking Available
   
-[Get Shipment Quotation](Shipping/get_Shipment_Quotation.md)
+[Get Shipment Quotation](Features/Shipping/1.get_shipment_quotation.md)
 
 [Get Insurance Quotation](Shipping/get_Insurance_Quotation.md)
 
