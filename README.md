@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/easyparcel/OpenAPI/main/Pictures/easyparcel-transparentsquare-md.png" alt="Logo" width="250">
+<img src="Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;"> 
 </p>
 
 
