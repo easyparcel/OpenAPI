@@ -128,8 +128,6 @@ If you need assistance with the EasyParcel API or have any issues, please don't 
 ## **Contact Us**
 
 If you have any questions or need further support with the EasyParcel API, our team is available for assistance. You can reach out to us via the following channels:
-
-- **Support Page**: Visit our [Support Page](https://support.easyparcel.com) for detailed troubleshooting steps and to submit your inquiries.
 - **WhatsApp Support**: For quick support, chat with our team directly on WhatsApp. Click [here](https://wa.me/6042023160) to start a conversation.
 
 We’re here to help you integrate and make the most out of EasyParcel’s services!
