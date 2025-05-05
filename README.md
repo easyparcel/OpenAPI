@@ -27,7 +27,7 @@ The **EasyParcel API** enables you to manage shipping, obtain quotations, track 
 - **Rate Calculation**: Get live rates from various couriers.
 - **Order Management**: Create, update, and manage shipments.
 - **Tracking**: Real-time tracking updates for shipments.
-- **Integration**: Easy integration with your online store or application.
+- **Effortless APP Integrate**: Easy integration with your online store or application.
 
 ---
 
