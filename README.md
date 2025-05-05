@@ -139,4 +139,3 @@ If you have any questions or need further support with the EasyParcel API, our t
 
 This design is structured to provide a user-friendly, well-organized view of the documentation while making it easy for developers to quickly find the information they need. The added visual guides (e.g., flow charts) and external links to detailed sections ensure users can easily navigate through the material.
 
-Feel free to adjust the images, links, and content according to your project’s specifications!
