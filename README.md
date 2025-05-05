@@ -13,7 +13,7 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 - [OAuth Authentication](#oauth-authentication)
-- [API Features & Functions](#api-functions-features)
+- [API Features & Functions](#api-functions--features)
 - [Order Function Flow](#order-function-flow)
 - [References](#references)
 
