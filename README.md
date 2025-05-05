@@ -1,75 +1,80 @@
 <p align="center">
-<img src="Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;">
+  <img src="../Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;">
 </p>
 
+# EasyParcel API Documentation
 
-# Easy Parcel API  
-
- 
-The EasyParcel API allows your application to access current data within EasyParcel. However, EasyParcel API is using RESTful to develop API for web based applications. Through the API, several common operations can be performed on EasyParcel objects.
+Welcome to the EasyParcel API. This guide will help you integrate with EasyParcel, providing access to shipping functionalities through a RESTful API interface.
 
 ---
 
-## Table of Contents 
-- [Guides](#Guides)
-- [Oauth](#Oauth-Authentication)
-- [Features](#API-Functions-Features)
-- [Order Flow](#Order-function-Flow)
-- [References](#References)
+## **Table of Contents**
+- [Overview](#overview)
+- [Guides](#guides)
+- [OAuth Authentication](#oauth-authentication)
+- [API Features](#api-functions-features)
+- [Order Flow](#order-function-flow)
+- [References](#references)
 
 ---
 
-### Guides
-#### Follow the guide below to integrate with easy parcel api.
+### **Overview**
 
-#### [Steps to get started with EASYPARCEL](Guides/1.get_started_with_easy_pracel_open_API.md)
-#### [Setup Demo Account](Guides/2.setup_demo_account.md)
-
----
-### Oauth Authentication
-
-EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure and controlled access to its services.
-
-#### [More about Oauth Authentication](oauth_authentication.md)
-#### [Steps to get Oauth Access token](Guides/3.get_oauth_access_token.md)
----
-
-### API Functions Features
-
-#### [Functions/Features](Features/README.md)
-
-
-#### Standard
-
-[Get Shipment Quotation](Features/Shipping/1.get_shipment_quotation.md)
-
-[Get Insurance Quotation](Features/Shipping/2.get_insurance_quotation.md)
-
-[Get Courier Dropoff point](Features/Shipping/3.get_courier_dropoff_point.md)
-
-[Submit Shipment Orders](Features/Shipping/4.submit_shipment_orders.md)
-
-#### OnDemand
-
-[Get OnDemand Quotation](Features/OnDemand/1.get_ondemand_quotation.md)
-
-[Submit OnDemand Order](Features/OnDemand/2.submit_ondemand_order.md)
-
-#### Wallet
-
-[Get Wallet](Features/get_wallet.md)
+The EasyParcel API provides access to a range of shipping operations. Through the API, you can manage shipments, quotations, tracking, and more. It follows the RESTful architecture and supports integration with multiple platforms.
 
 ---
 
-### Order function Flow
-<img src="Pictures/flow_chart.png" alt="Flow Chart" style="width:40%; margin:0; padding:0;">
+### **Guides**
+
+To get started with EasyParcel API, follow the guides below:
+
+- [Getting Started with EasyParcel API](Guides/1.get_started_with_easy_pracel_open_API.md)
+- [Setup Demo Account](Guides/2.setup_demo_account.md)
 
 ---
 
-### References
+### **OAuth Authentication**
 
-**[API Return Status](References/API_return_status.md)**
+EasyParcel uses OAuth 2.0 for secure authentication and to allow controlled access to its services.
 
-**[Conutry Code](References/country_code.md)**
+- [Learn more about OAuth Authentication](oauth_authentication.md)
+- [Steps to get OAuth Access Token](Guides/3.get_oauth_access_token.md)
 
-**[ISO 3166](References/ISO_3166.md)**
+---
+
+### **API Functions & Features**
+
+The EasyParcel API offers various functionalities grouped under different categories. Below is an overview of the key features:
+
+#### **Standard Features**:
+- [Get Shipment Quotation](Features/Shipping/1.get_shipment_quotation.md)
+- [Get Insurance Quotation](Features/Shipping/2.get_insurance_quotation.md)
+- [Get Courier Dropoff Point](Features/Shipping/3.get_courier_dropoff_point.md)
+- [Submit Shipment Orders](Features/Shipping/4.submit_shipment_orders.md)
+
+#### **OnDemand Features**:
+- [Get OnDemand Quotation](Features/OnDemand/1.get_ondemand_quotation.md)
+- [Submit OnDemand Order](Features/OnDemand/2.submit_ondemand_order.md)
+
+#### **Wallet Features**:
+- [Get Wallet Balance](Features/get_wallet.md)
+
+---
+
+### **Order Function Flow**
+
+Here’s a visual representation of the order function flow in the EasyParcel API:
+
+<p align="center">
+  <img src="../Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
+</p>
+
+---
+
+### **References**
+
+For further details, refer to the following documents:
+
+- [API Return Status](References/API_return_status.md)
+- [Country Codes](References/country_code.md)
+- [ISO 3166](References/ISO_3166.md)
