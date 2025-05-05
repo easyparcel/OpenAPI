@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;">
+  <img src="Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;">
 </p>
 
 # EasyParcel API Documentation
@@ -66,7 +66,7 @@ The EasyParcel API offers various functionalities grouped under different catego
 Here’s a visual representation of the order function flow in the EasyParcel API:
 
 <p align="center">
-  <img src="../Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
+  <img src="Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
 </p>
 
 ---
