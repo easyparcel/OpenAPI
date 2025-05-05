@@ -131,7 +131,6 @@ If you have any questions or need further support with the EasyParcel API, our t
 - **WhatsApp Support**: For quick support, chat with our team directly on WhatsApp. Click [here](https://wa.me/6042023160) to start a conversation.
 
 We’re here to help you integrate and make the most out of EasyParcel’s services!
-     https://wa.me/6042023160
 
 
 
