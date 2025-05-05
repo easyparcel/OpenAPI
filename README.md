@@ -1,75 +1,142 @@
 <p align="center">
-<img src="Pictures/easyparcel-transparentqquare-md.png" alt="Logo" style="width:250px;"> 
+  <img src="Pictures/easyparcel-transparentqquare-md.png" alt="EasyParcel Logo" style="width:250px;">
 </p>
 
+# EasyParcel API Documentation
 
-
-# Easy Parcel API  
-
- 
-The EasyParcel API allows your application to access current data within EasyParcel. However, EasyParcel API is using RESTful to develop API for web based applications. Through the API, several common operations can be performed on EasyParcel objects.
+Welcome to the **EasyParcel API Documentation**! This guide will help you integrate with EasyParcel and get access to shipping functionalities via a RESTful API interface. 
 
 ---
 
-## Table of Contents 
-- [Guides](#Guides)
-- [Oauth](#Oauth-Authentication)
-- [Features](#API-Functions-Features)
-- [Order Flow](#Order-function-Flow)
-- [References](#References)
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+- [OAuth Authentication](#oauth-authentication)
+- [API Features & Functions](#api-functions-features)
+- [Order Function Flow](#order-function-flow)
+- [References](#references)
 
 ---
 
-### Guides
-#### Follow the guide below to integrate with easy parcel api.
+## **Overview**
 
-#### [Steps to get started with EASYPARCEL](Guides/1.get_started_with_easy_pracel_open_API.md)
-#### [Setup Demo Account](Guides/2.setup_demo_account.md)
-#### [Get Oauth Access token](Guides/3.get_oauth_access_token.md)
+The **EasyParcel API** enables you to manage shipping, obtain quotations, track shipments, and much more. It's designed using a RESTful architecture, offering a seamless integration with various e-commerce platforms and third-party applications.
 
----
-### Oauth Authentication
-
-EasyParcel's API employs the OAuth 2.0 authorization framework to provide secure and controlled access to its services.
-
-#### [More about Oauth Authentication](oauth_authentication.md)
-#### [Steps to get Oauth Access token](Guides/3.steps_to_get_oauth_access_token.md)
----
-### API Functions Features
-
-#### [Functions/Features](Features/README.md)
-
-
-#### Standard
-
-[Get Shipment Quotation](Features/Shipping/1.get_shipment_quotation.md)
-
-[Get Insurance Quotation](Features/Shipping/2.get_insurance_quotation.md)
-
-[Get Courier Dropoff point](Features/Shipping/3.get_courier_dropoff_point.md)
-
-[Submit Shipment Orders](Features/Shipping/4.submit_shipment_orders.md)
-
-#### OnDemand
-
-[Get OnDemand Quotation](Features/OnDemand/1.get_ondemand_quotation.md)
-
-[Submit OnDemand Order](Features/OnDemand/2.submit_ondemand_order.md)
-
-#### Wallet
-
-[Get Wallet](Features/get_wallet.md)
-
----
-### Order function Flow
-<img src="Pictures/flow_chart.png" alt="Flow Chart" style="width:40%; margin:0; padding:0;">
+### **Key Benefits**:
+- **Rate Calculation**: Get live rates from various couriers.
+- **Order Management**: Create, update, and manage shipments.
+- **Tracking**: Real-time tracking updates for shipments.
+- **Integration**: Easy integration with your online store or application.
 
 ---
 
-### References
+## **Getting Started**
 
-**[API Return Status](References/API_return_status.md)**
+To begin using the EasyParcel API, follow the steps below to set up your environment:
 
-**[Conutry Code](References/country_code.md)**
+- [Getting Started with EasyParcel API](Guides/1.get_started_with_easy_pracel_open_API.md)
+- [Setting Up a Demo Account](Guides/2.setup_demo_account.md)
 
-**[ISO 3166](References/ISO_3166.md)**
+Once set up, you can use the provided **Sandbox** environment to test the API without impacting live data.
+
+---
+
+## **OAuth Authentication**
+
+EasyParcel uses **OAuth 2.0** for secure authentication, enabling controlled access to the system.
+
+1. **OAuth 2.0 Overview**:
+    - OAuth 2.0 is a standard authorization framework allowing third-party applications to access your EasyParcel resources without exposing sensitive credentials.
+  
+2. **Steps to Obtain OAuth Token**:
+    - [Learn about OAuth Authentication](oauth_authentication.md)
+    - [Getting OAuth Access Token](Guides/3.get_oauth_access_token.md)
+
+---
+
+## **API Functions & Features**
+
+The EasyParcel API offers a wide array of functionalities divided into categories. Below are the key features available:
+
+### **Standard Features**:
+- **Get Shipment Quotation**  
+  Get a detailed quote for your shipment, including rates, delivery times, and courier options.  
+  [Read more](Features/Shipping/1.get_shipment_quotation.md)
+
+- **Get Insurance Quotation**  
+  Obtain a quote for shipment insurance based on your shipment details.  
+  [Read more](Features/Shipping/2.get_insurance_quotation.md)
+
+- **Get Courier Dropoff Point**  
+  Fetch available dropoff points for various couriers.  
+  [Read more](Features/Shipping/3.get_courier_dropoff_point.md)
+
+- **Submit Shipment Orders**  
+  Create and submit shipment orders for processing.  
+  [Read more](Features/Shipping/4.submit_shipment_orders.md)
+
+### **OnDemand Features**:
+- **Get OnDemand Quotation**  
+  Get an on-demand quotation based on specific criteria.  
+  [Read more](Features/OnDemand/1.get_ondemand_quotation.md)
+
+- **Submit OnDemand Order**  
+  Create an on-demand shipment order.  
+  [Read more](Features/OnDemand/2.submit_ondemand_order.md)
+
+### **Wallet Features**:
+- **Get Wallet Balance**  
+  Check your current wallet balance for API transactions.  
+  [Read more](Features/get_wallet.md)
+
+---
+
+## **Order Function Flow**
+
+Below is a visual guide to the order processing flow in the EasyParcel API:
+
+<p align="center">
+  <img src="Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
+</p>
+
+---
+
+## **References**
+
+For additional details, please refer to the following resources:
+
+- [API Return Status](References/API_return_status.md)  
+  Learn about the different return statuses you may encounter while using the EasyParcel API.
+  
+- [Country Codes](References/country_code.md)  
+  Get the list of country codes supported by the EasyParcel API.
+
+- [ISO 3166 Country Codes](References/ISO_3166.md)  
+  A full list of country codes defined by the ISO 3166 standard.
+
+---
+
+### **Getting Help**
+
+If you need assistance with the EasyParcel API or have any issues, please don't hesitate to reach out to our support team.
+
+[Contact Support](https://support.easyparcel.com)
+
+---
+
+## **Contact Us**
+
+If you have any questions or need further support with the EasyParcel API, our team is available for assistance. You can reach out to us via our support page, or refer to the documentation for more detailed troubleshooting steps.
+
+---
+
+### **Important Notes**
+- **API Rate Charges**: EasyParcel wont charges credit when you test the quotation.
+- **Sandbox Environment**: Test it in the sandbox environment before going live to ensure everything works correctly.
+
+---
+
+This design is structured to provide a user-friendly, well-organized view of the documentation while making it easy for developers to quickly find the information they need. The added visual guides (e.g., flow charts) and external links to detailed sections ensure users can easily navigate through the material.
+
+Feel free to adjust the images, links, and content according to your project’s specifications!
