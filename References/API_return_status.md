@@ -22,7 +22,7 @@
 
 [Back to official documents](../README.md) ||
 <a href="https://github.com/easyparcel/OpenAPI/blob/2025-06/Pictures/flow_chart.png" style="display: block; width: 50%; margin: 20px auto;">
-→Next Section:Order Flow Image
+←Previous Section:Order Flow Image
 </a>||
 [Next Paragraph → ](/References/country_code.md)
 
