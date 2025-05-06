@@ -63,3 +63,10 @@ Return Sample Code:
     ]
 }
 ```
+<div align="center">
+
+[Back to official documents](../README.md) ||
+[← Previous Paragraph](/Features/Shipping/4.submit_shipment_orders.md)
+[← Previous Section Learn about OAuth Authentication](/oauth_authentication.md)||
+[![Order Flow Chart](Pictures/flow_chart.png)](https://example.com/order-flow-docs)
+</div>
