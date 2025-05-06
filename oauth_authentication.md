@@ -51,7 +51,7 @@ https://developer.easyparcel.com/ep_auth/token
 <div align="center">
 
 [Back to official documents](../README.md) ||
-[← Previous Section: Getting Started](Guides/2.setup_demo_account.md)||
+[← Previous Section:Set up demo account](Guides/2.setup_demo_account.md)||
 [Next Paragraph → ](Guides/3.get_oauth_access_token.md)||
 [Next Section →](Features/Shipping/1.get_shipment_quotation.md)
 
