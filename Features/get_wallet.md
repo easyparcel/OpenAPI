@@ -66,6 +66,6 @@ Return Sample Code:
 <div align="center">
 
 [Back to official documents](../README.md) ||
-[← Previous Paragraph](/Features/Shipping/4.submit_shipment_orders.md)
+[← Previous Paragraph](/Features/Shipping/4.submit_shipment_orders.md)||
 [← Previous Section Learn about OAuth Authentication](/oauth_authentication.md)||
 </div>
