@@ -69,7 +69,7 @@ Return Sample Code:
 [← Previous Paragraph](/Features/Shipping/4.submit_shipment_orders.md)||
 [← Previous Section Learn about OAuth Authentication](/oauth_authentication.md)||
 <a href="https://github.com/easyparcel/OpenAPI/blob/2025-06/Pictures/flow_chart.png" style="display: block; width: 50%; margin: 20px auto;">
-→Image
+→Order Flow Image
 </a>
 
 </div>
