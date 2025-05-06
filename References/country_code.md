@@ -197,3 +197,26 @@
 | BR                 | BRAZIL                                 |
 | TC                 | TURKS AND CAICOS ISLANDS               |
 </details>
+
+<div align="center">
+
+[Back to official documents](../README.md) ||
+[← Previous Paragraph](/Features/Shipping/1.get_shipment_quotation.md)||
+[Next Paragraph → ](/Features/Shipping/3.get_courier_dropoff_point.md)
+
+</div>
+<div align="center">
+
+[← Previous Section Learn about OAuth Authentication](/oauth_authentication.md)||
+
+<div align="center">
+
+[Back to official documents](../README.md) ||
+<a href="https://github.com/easyparcel/OpenAPI/blob/2025-06/Pictures/flow_chart.png" style="display: block; width: 50%; margin: 20px auto;">
+←Previous Section:Order Flow Image
+</a>||
+[← Previous Paragraph](/References/API_return_status.md)||
+[Next Paragraph → ](/References/country_code.md)
+
+</div>
+
