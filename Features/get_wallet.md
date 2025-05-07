@@ -63,14 +63,12 @@ Return Sample Code:
     ]
 }
 ```
-<div align="center">
+<div align="center" style="margin: 2rem 0;">
 
-[Back to document](../README.md) ||
-[← Previous Paragraph](/Features/Shipping/4.submit_shipment_orders.md)||
-[← Previous Section:Learn about OAuth Authentication](/oauth_authentication.md)||
-<a href="https://github.com/easyparcel/OpenAPI/blob/2025-06/Pictures/flow_chart.png" style="display: block; width: 50%; margin: 20px auto;">
-→Next Section:Order Flow Image
-</a>||
-[← Previous Section:References Country code](/References/API_return_status.md)
+[![Back to document](https://img.shields.io/badge/Back_to_document-007ACC?style=flat-square)](../README.md)
+[![← Previous Paragraph](https://img.shields.io/badge/←_Previous_Paragraph-FF7733?style=flat-square)](/Features/Shipping/4.submit_shipment_orders.md)
+[![← OAuth Guide](https://img.shields.io/badge/←_Learn_about_OAuth_Authentication-FF7733?style=flat-square)](/oauth_authentication.md)
+[![Order Flow Image →](https://img.shields.io/badge/Next_Section_Order_Flow_Image_→-00CC88?style=flat-square)](https://github.com/easyparcel/OpenAPI/blob/2025-06/Pictures/flow_chart.png)
+[![← Country Code Ref](https://img.shields.io/badge/←_References_Country_code-FF7733?style=flat-square)](/References/API_return_status.md)
 
 </div>
