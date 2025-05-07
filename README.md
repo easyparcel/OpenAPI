@@ -11,7 +11,7 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 ## **Table of Contents**
 
 - [Overview](#overview)
--[Setup Flow](#setup-flow)
+- [Setup Flow](#setup-flow)
 - [Order Function Flow](#order-function-flow)
 - [Getting Started](#getting-started)
 - [OAuth Authentication](#oauth-authentication)
