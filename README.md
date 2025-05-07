@@ -23,8 +23,13 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 
 The **EasyParcel API** enables you to manage shipping, obtain quotations, track shipments, and much more. It's designed using a RESTful architecture, offering a seamless integration with various e-commerce platforms and third-party applications.
 
----
+### **Key Benefits**:
+- **Rate Calculation**: Get live rates from various couriers.
+- **Order Management**: Create, update, and manage shipments.
+- **Tracking**: Real-time tracking updates for shipments.
+- **Effortless APP Integrate**: Easy integration with your online store or application.
 
+---
 ## **Order Function Flow**
 
 Below is a visual guide to the order processing flow in the EasyParcel API:
@@ -32,13 +37,6 @@ Below is a visual guide to the order processing flow in the EasyParcel API:
 <p align="center">
   <img src="Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
 </p>
-
----
-### **Key Benefits**:
-- **Rate Calculation**: Get live rates from various couriers.
-- **Order Management**: Create, update, and manage shipments.
-- **Tracking**: Real-time tracking updates for shipments.
-- **Effortless APP Integrate**: Easy integration with your online store or application.
 
 ---
 
