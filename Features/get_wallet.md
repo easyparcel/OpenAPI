@@ -65,10 +65,10 @@ Return Sample Code:
 ```
 <div align="center" style="margin: 2rem 0;">
 
-[![Back to document](https://img.shields.io/badge/Back_to_document-007ACC?style=flat-square)](../README.md)
-[![← Previous Paragraph](https://img.shields.io/badge/←_Previous_Paragraph-FF7733?style=flat-square)](/Features/Shipping/4.submit_shipment_orders.md)
-[![← OAuth Guide](https://img.shields.io/badge/←_Learn_about_OAuth_Authentication-FF7733?style=flat-square)](/oauth_authentication.md)
-[![Order Flow Image →](https://img.shields.io/badge/Next_Section_Order_Flow_Image_→-00CC88?style=flat-square)](https://github.com/easyparcel/OpenAPI/blob/2025-06/Pictures/flow_chart.png)
-[![← Country Code Ref](https://img.shields.io/badge/←_References_Country_code-FF7733?style=flat-square)](/References/API_return_status.md)
+[![Back to Doc](https://img.shields.io/badge/Back_to_Docs-007ACC?style=flat-square)](../README.md)
+[![← Previous](https://img.shields.io/badge/←_Previous_Section-FF7733?style=flat-square)](/Features/Shipping/4.submit_shipment_orders.md)
+[![← OAuth](https://img.shields.io/badge/←_OAuth_Guide-FF7733?style=flat-square)](/oauth_authentication.md)
+[![Order Flow →](https://img.shields.io/badge/Order_Flow_→-00CC88?style=flat-square)](https://github.com/easyparcel/OpenAPI/blob/2025-06/Pictures/flow_chart.png)
+[![← Country Codes](https://img.shields.io/badge/←_Country_Codes-FF7733?style=flat-square)](/References/country_code.md)
 
 </div>
