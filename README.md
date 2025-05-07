@@ -11,6 +11,7 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 ## **Table of Contents**
 
 - [Overview](#overview)
+-[Setup Flow](#setup-flow)
 - [Order Function Flow](#order-function-flow)
 - [Getting Started](#getting-started)
 - [OAuth Authentication](#oauth-authentication)
@@ -28,6 +29,15 @@ The **EasyParcel API** enables you to manage shipping, obtain quotations, track 
 - **Order Management**: Create, update, and manage shipments.
 - **Tracking**: Real-time tracking updates for shipments.
 - **Effortless APP Integrate**: Easy integration with your online store or application.
+
+---
+## **Setup Flow**
+
+Below is a visual guide to set up flow:
+
+<p align="center">
+  <img src="Pictures/setup_flow.png" alt="Setup flow" style="width:50%; margin:0; padding:0;">
+</p>
 
 ---
 ## **Order Function Flow**
