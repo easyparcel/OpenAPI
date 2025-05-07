@@ -52,7 +52,7 @@ https://developer.easyparcel.com/ep_auth/token
 <div align="center" style="margin: 2rem 0">
 
 [![Back to Docs](https://img.shields.io/badge/←_Back_to_Docs-007ACC?style=for-the-badge)](../README.md)
-[![Previous Section](https://img.shields.io/badge/←_OAuth_Setup-FF7733?style=for-the-badge)](../Guides/3.get_oauth_access_token.md) 
+[![Next Paragraph](https://img.shields.io/badge/←_OAuth_Setup-FF7733?style=for-the-badge)](../Guides/3.get_oauth_access_token.md) 
 [![Next Section](https://img.shields.io/badge/Tracking_API_→-00CC88?style=for-the-badge)](../Features/Tracking/1.tracking_api.md)
 
 </div>
