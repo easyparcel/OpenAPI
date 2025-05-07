@@ -55,6 +55,17 @@ EasyParcel uses **OAuth 2.0** for secure authentication, enabling controlled acc
 
 ---
 
+---
+
+## **Order Function Flow**
+
+Below is a visual guide to the order processing flow in the EasyParcel API:
+
+<p align="center">
+  <img src="Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
+</p>
+
+---
 ## **API Functions & Features**
 
 The EasyParcel API offers a wide array of functionalities divided into categories. Below are the key features available:
@@ -90,17 +101,6 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
   Check your current wallet balance for API transactions.  
   [Read more](Features/get_wallet.md)
 
----
-
-## **Order Function Flow**
-
-Below is a visual guide to the order processing flow in the EasyParcel API:
-
-<p align="center">
-  <img src="Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
-</p>
-
----
 
 ## **References**
 
@@ -114,16 +114,6 @@ For additional details, please refer to the following resources:
 
 - [ISO 3166 Country Codes](References/ISO_3166.md)  
   A full list of country codes defined by the ISO 3166 standard.
-
----
-
-### **Getting Help**
-
-If you need assistance with the EasyParcel API or have any issues, please don't hesitate to reach out to our support team.
-
-[Contact Support](https://support.easyparcel.com)
-
----
 
 ## **Contact Us**
 
