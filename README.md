@@ -101,7 +101,7 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
   Check your current wallet balance for API transactions.  
   [Read more](Features/get_wallet.md)
 
-
+---
 ## **References**
 
 For additional details, please refer to the following resources:
@@ -114,7 +114,7 @@ For additional details, please refer to the following resources:
 
 - [ISO 3166 Country Codes](References/ISO_3166.md)  
   A full list of country codes defined by the ISO 3166 standard.
-
+---
 ## **Contact Us**
 
 If you have any questions or need further support with the EasyParcel API, our team is available for assistance. You can reach out to us via the following channels:
