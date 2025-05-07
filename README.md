@@ -11,10 +11,10 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 ## **Table of Contents**
 
 - [Overview](#overview)
+- [Order Function Flow](#order-function-flow)
 - [Getting Started](#getting-started)
 - [OAuth Authentication](#oauth-authentication)
 - [API Features & Functions](#api-functions--features)
-- [Order Function Flow](#order-function-flow)
 - [References](#references)
 
 ---
