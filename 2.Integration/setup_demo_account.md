@@ -15,19 +15,19 @@
 
 #### 1. Access Developer Portal
 **URL:** [https://developer.easyparcel.com](https://developer.easyparcel.com)  
-![Developer Portal Login](../5.Pictures/login_page.png "EasyParcel Developer Portal Login Interface")
+![Developer Portal Login](../7.Pictures/login_page.png "EasyParcel Developer Portal Login Interface")
 
 ---
 
 #### 2. Select Application
 **Action:** Choose your registered application from the dashboard  
-![Application Selection](../5.Pictures/selectappsettings.png "Application Management Dashboard")
+![Application Selection](../7.Pictures/selectappsettings.png "Application Management Dashboard")
 
 ---
 
 #### 3. Navigate to Connections
 **Location:** Settings → Connection Management  
-![Connection List Interface](../5.Pictures/selectconnectionlist.png "Connection Configuration Section")
+![Connection List Interface](../7.Pictures/selectconnectionlist.png "Connection Configuration Section")
 
 ---
 
@@ -35,13 +35,13 @@
 **Required:**  
 ✅ Sandbox environment selection  
 ✅ Connection name  
-![Add Connection Form](../5.Pictures/addconnection.png "New Connection Configuration Panel")
+![Add Connection Form](../7.Pictures/addconnection.png "New Connection Configuration Panel")
 
 ---
 
 #### 5. Verify Successful Setup
 **Confirmation:** Look for active status indicator  
-![Demo Account Success](../5.Pictures/demo_acc_success.png "Successful Connection Creation Notification")
+![Demo Account Success](../7.Pictures/demo_acc_success.png "Successful Connection Creation Notification")
 
 ---
 
@@ -50,13 +50,13 @@
 
 #### 1. Access Connection List
 **Navigation:** Application Settings → Connection List  
-![Top Up Navigation](../5.Pictures/selectconnectionlisttopup.png "Credit Management Section")
+![Top Up Navigation](../7.Pictures/selectconnectionlisttopup.png "Credit Management Section")
 
 ---
 
 #### 2. Initiate Top Up
 **Note:** Use test credits (no real money required)  
-![Credit Top Up Interface](../5.Pictures/topup.png "Sandbox Credit Allocation Screen")
+![Credit Top Up Interface](../7.Pictures/topup.png "Sandbox Credit Allocation Screen")
 
 ---
 
@@ -64,7 +64,7 @@
 **Success Indicators:**  
 ✅ Balance update confirmation  
 ✅ Transaction ID generated  
-![Top Up Success](../5.Pictures/topupsuccess.png "Credit Allocation Confirmation")
+![Top Up Success](../7.Pictures/topupsuccess.png "Credit Allocation Confirmation")
 
 ---
 
