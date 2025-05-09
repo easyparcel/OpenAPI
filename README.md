@@ -36,7 +36,7 @@ The **EasyParcel API** enables you to manage shipping, obtain quotations, track 
 Below is a visual guide to set up flow:
 
 <p align="center">
-  <img src="6.Pictures/setup_flow.png" alt="Setup flow" style="width:30%; margin:0; padding:0;">
+  <img src="/6.Pictures/setup_flow.png" alt="Setup flow" style="width:30%; margin:0; padding:0;">
 </p>
 
 ---
@@ -45,7 +45,7 @@ Below is a visual guide to set up flow:
 Below is a visual guide to the order processing flow in the EasyParcel API:
 
 <p align="center">
-  <img src="6.Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
+  <img src="/6.Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
 </p>
 
 ---
