@@ -11,7 +11,7 @@
 **Purpose:** Create your developer account to access API features
 
 <p align="center">
-<img src="/5.Pictures/login_page.png" alt="EasyParcel Login Page" style="width:80%; border:1px solid #ddd; border-radius:8px">
+<img src="/7.Pictures/login_page.png" alt="EasyParcel Login Page" style="width:80%; border:1px solid #ddd; border-radius:8px">
 </p>
 
 ---
@@ -22,7 +22,7 @@
 - Application name  
 
 <p align="center">
-<img src="/5.Pictures/create_new_application.png" alt="New Application Form" style="width:80%; border:1px solid #ddd">
+<img src="/7.Pictures/create_new_application.png" alt="New Application Form" style="width:80%; border:1px solid #ddd">
 </p>
 
 ---
@@ -33,7 +33,7 @@
 ✅ Redirect URLs  
 
 <p align="center">
-<img src="../5.Pictures/key_in_app_name_and_redirect_url.png" alt="Application Configuration Screen" style="width:80%; border:1px solid #ddd">
+<img src="../7.Pictures/key_in_app_name_and_redirect_url.png" alt="Application Configuration Screen" style="width:80%; border:1px solid #ddd">
 </p>
 
 ---
@@ -42,7 +42,7 @@
 **Important:** Store this securely - you'll need it for OAuth authentication
 
 <p align="center">
-<img src="../5.Pictures/get_client_id.png" alt="Client ID Generation Interface" style="width:80%; border:1px solid #ddd">
+<img src="../7.Pictures/get_client_id.png" alt="Client ID Generation Interface" style="width:80%; border:1px solid #ddd">
 </p>
 
 ---
