@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="5.Pictures/easyparcel-transparentqquare-md.png" alt="EasyParcel Logo" style="width:250px;">
+  <img src="6.Pictures/easyparcel-transparentqquare-md.png" alt="EasyParcel Logo" style="width:250px;">
 </p>
 
 # EasyParcel API Documentation
