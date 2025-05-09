@@ -55,7 +55,7 @@ Below is a visual guide to the order processing flow in the EasyParcel API:
 To begin using the EasyParcel API, follow the steps below to set up your environment:
 
 - [Getting Started with EasyParcel API](2.Integration/get_started_with_easy_parcel_open_API.md)
-- [Setting Up a Demo Account](Guides/2.setup_demo_account.md)
+- [Setting Up a Demo Account](2.Integration/setup_demo_account.md)
 
 Once set up, you can use the provided **Sandbox** environment to test the API without impacting live data.
 
