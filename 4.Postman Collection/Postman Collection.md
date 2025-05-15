@@ -276,5 +276,10 @@ If you need assistance with the EasyParcel API or this Postman collection:
 We welcome feedback and suggestions to improve this collection. Please contact our developer support team with your ideas or issues.
 
 ---
+<div align="center" style="margin:2rem 0">
 
-*Last Updated: May 14, 2025*
+[![Back to Docs](https://img.shields.io/badge/Back_to_Docs-00AAEE?style=flat-square)](../README.md)
+[![Previous Section←](https://img.shields.io/badge/Previous_Section_%E2%86%90-FF7733?style=flat-square)](../3.OAuth%20Authentication/1.%20oauth%20authentication%20guide.md)
+[![Next Section →](https://img.shields.io/badge/Next_Section_%E2%86%92-00CC88?style=flat-square)](../5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
+
+</div>
