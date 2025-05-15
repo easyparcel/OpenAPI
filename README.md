@@ -21,8 +21,6 @@ flowchart TD
     F --> G[Start Integration]
     G --> H[Webhook Setup]
     H --> I((Integration Ready))
-
-    classDef default stroke:#fff,fill:#000,color:#fff,stroke-width:2px;
 ```
 ---
 
