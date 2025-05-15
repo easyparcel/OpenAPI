@@ -24,63 +24,83 @@ flowchart TD
 ```
 ---
 
-## Shipping Services
+## **Getting Started**
 
-### Order Flow
+To begin using the EasyParcel API, follow the steps below to set up your environment:
 
-The standard process for creating and managing shipping orders:
+- [Getting Started with EasyParcel API](Guides/1.get_started_with_easy_parcel_open_API.md)
+- [Setting Up a Demo Account](Guides/2.setup_demo_account.md)
 
-1. **Get Quotation** - Retrieve shipping rates for various couriers based on origin, destination, and parcel details
-2. **Get Insurance Quotation** - Optional step to get insurance rates for valuable shipments
-3. **Submit Order** - Create a shipment order with the selected courier service
+Once set up, you can use the provided **Sandbox** environment to test the API without impacting live data.
 
-### Listing Flow
+---
 
-Access and manage existing shipments:
+## **OAuth Authentication**
 
-1. **Get Shipment Listing** - Retrieve a list of shipments with optional filtering
-2. **Get Shipment Details** - Access comprehensive information about a specific shipment
+EasyParcel uses **OAuth 2.0** for secure authentication, enabling controlled access to the system.
 
-### Cancel Orders
+1. **OAuth 2.0 Overview**:
+    - OAuth 2.0 is a standard authorization framework allowing third-party applications to access your EasyParcel resources without exposing sensitive credentials.
+  
+2. **Steps to Obtain OAuth Token**:
+    - [Learn about OAuth Authentication](oauth_authentication.md)
+    - [Getting OAuth Access Token](Guides/3.get_oauth_access_token.md)
 
-Cancel one or more existing shipment orders when needed.
+---
+## **API Functions & Features**
 
-## Ondemand Services
+The EasyParcel API offers a wide array of functionalities divided into categories. Below are the key features available:
 
-### Ondemand Order Flow
+### **Standard Features**:
+- **Get Shipment Quotation**  
+  Get a detailed quote for your shipment, including rates, delivery times, and courier options.  
+  [Read more](Features/Shipping/1.get_shipment_quotation.md)
 
-For immediate pickup and delivery services:
+- **Get Insurance Quotation**  
+  Obtain a quote for shipment insurance based on your shipment details.  
+  [Read more](Features/Shipping/2.get_insurance_quotation.md)
 
-1. **Get Ondemand Quotation** - Retrieve pricing for immediate delivery services
-2. **Submit Ondemand Orders** - Create an on-demand delivery order
-3. **Cancel Order** - Cancel an on-demand delivery when needed
+- **Get Courier Dropoff Point**  
+  Fetch available dropoff points for various couriers.  
+  [Read more](Features/Shipping/3.get_courier_dropoff_point.md)
+
+- **Submit Shipment Orders**  
+  Create and submit shipment orders for processing.  
+  [Read more](Features/Shipping/4.submit_shipment_orders.md)
+
+### **OnDemand Features**:
+- **Get OnDemand Quotation**  
+  Get an on-demand quotation based on specific criteria.  
+  [Read more](Features/OnDemand/1.get_ondemand_quotation.md)
+
+- **Submit OnDemand Order**  
+  Create an on-demand shipment order.  
+  [Read more](Features/OnDemand/2.submit_ondemand_order.md)
+
+### **Wallet Features**:
+- **Get Wallet Balance**  
+  Check your current wallet balance for API transactions.  
+  [Read more](Features/get_wallet.md)
+
+---
+## **References**
+
+For additional details, please refer to the following resources:
+
+- [API Return Status](References/API_return_status.md)  
+  Learn about the different return statuses you may encounter while using the EasyParcel API.
+  
+- [Country Codes](References/country_code.md)  
+  Get the list of country codes supported by the EasyParcel API.
+
+- [ISO 3166 Country Codes](References/ISO_3166.md)  
+  A full list of country codes defined by the ISO 3166 standard.
+---
+## **Contact Us**
+
+If you have any questions or need further support with the EasyParcel API, our team is available for assistance. You can reach out to us via the following channels:
+- **WhatsApp Support**: For quick support, chat with our team directly on WhatsApp. Click [here](https://wa.me/6042023160) to start a conversation.
+
+We’re here to help you integrate and make the most out of EasyParcel’s services!
 
 
-## Common API Flow Patterns
-
-### Standard Shipping Flow
-
-1. Get shipping quotation for your parcel
-2. Optionally get insurance quotation for valuable items
-3. Submit shipping order with your selected service
-4. Check shipment status via Shipment Listing or Details endpoints
-5. Optionally cancel the shipment if needed
-
-### Ondemand Delivery Flow
-
-1. Get ondemand quotation for immediate delivery
-2. Submit ondemand order with your selected service
-3. Track the delivery status
-4. Optionally cancel if needed
-
-## Best Practices
-
-1. **Always check your wallet balance** before submitting orders to ensure sufficient funds
-2. Use the **Shipment Listing** endpoint with filters to efficiently manage large volumes of shipments
-3. Include **complete and accurate information** in all requests to avoid processing delays
-4. Implement proper **error handling** for all API responses
-5. Use the **Courier Listing** endpoint to get the most current list of available services
-
-## Implementation Guide
-
-For detailed information on implementing each endpoint, refer to the individual API documentation pages. Each endpoint has specific request and response formats that must be followed for successful integration.
