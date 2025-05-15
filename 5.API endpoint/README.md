@@ -2,18 +2,21 @@
 
 The EasyParcel API offers various functionalities grouped under different categories. Below is an overview of the key features:
 
-#### **Standard Features**:
+#### **Standard Shipping**:
 - [Get Shipment Quotation](Features/Shipping/1.get_shipment_quotation.md)
 - [Get Insurance Quotation](Features/Shipping/2.get_insurance_quotation.md)
 - [Get Courier Dropoff Point](Features/Shipping/3.get_courier_dropoff_point.md)
 - [Submit Shipment Orders](Features/Shipping/4.submit_shipment_orders.md)
 
-#### **OnDemand Features**:
+#### **OnDemand Shipping**:
 - [Get OnDemand Quotation](Features/OnDemand/1.get_ondemand_quotation.md)
 - [Submit OnDemand Order](Features/OnDemand/2.submit_ondemand_order.md)
 
-#### **Wallet Features**:
+#### **Get Wallet**:
 - [Get Wallet Balance](Features/get_wallet.md)
+
+#### **Get Courier List**:
+- [Get Wallet Balance](Features/get_courier_list.md)
 
 ---
 
