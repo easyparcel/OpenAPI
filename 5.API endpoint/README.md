@@ -1,12 +1,32 @@
-## Features / Endpoints
+### **API Functions & Features**
 
-#### [Back to official documents](../README.md)
+The EasyParcel API offers various functionalities grouped under different categories. Below is an overview of the key features:
 
-Below are all the Functions and Endpoints available for the API
+#### **Standard Features**:
+- [Get Shipment Quotation](Features/Shipping/1.get_shipment_quotation.md)
+- [Get Insurance Quotation](Features/Shipping/2.get_insurance_quotation.md)
+- [Get Courier Dropoff Point](Features/Shipping/3.get_courier_dropoff_point.md)
+- [Submit Shipment Orders](Features/Shipping/4.submit_shipment_orders.md)
+
+#### **OnDemand Features**:
+- [Get OnDemand Quotation](Features/OnDemand/1.get_ondemand_quotation.md)
+- [Submit OnDemand Order](Features/OnDemand/2.submit_ondemand_order.md)
+
+#### **Wallet Features**:
+- [Get Wallet Balance](Features/get_wallet.md)
+
+---
+
+### **Order Function Flow**
+
+Here’s a visual representation of the order function flow in the EasyParcel API:
 
 <p align="center">
-<img src="../Pictures/features_chart.png" alt="Features Chart" style="width:40%; margin:0; padding:0;">
+  <img src="Pictures/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
 </p>
+
+---
+
 
 ### [Shipping](Shipping)
 
