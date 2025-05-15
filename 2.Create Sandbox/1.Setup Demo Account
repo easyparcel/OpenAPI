@@ -1,0 +1,30 @@
+## Setup Demo Account | [Top up demo account](#top-up-demo-account)
+
+#### [Get started with API](1.get_started_with_easy_parcel_open_API.md) | [Back to official documentation](../README.md)
+
+#### Steps to setup demo account
+
+<p align="center">
+<img src="../7.Pictures/2.Create-Sandbox/login_page.png" style="width:80%; border-radius:50%">
+</p>
+
+2.) Select Application and select settings of the desired application
+
+<p align="center">
+<img src="../7.Pictures/2.Create-Sandbox/selectappsettings.png" style="width:80%; border-radius:50%">
+</p>
+
+3.) Select Connection list
+<p align="center">
+<img src="../7.Pictures/2.Create-Sandbox/selectconnectionlist.png" style="width:80%; border-radius:50%">
+</p>
+
+4.) Add connection list
+<p align="center">
+<img src="../7.Pictures/2.Create-Sandbox/addconnection.png" style="width:80%; border-radius:50%">
+</p>
+
+5.) Demo account created
+<p align="center">
+<img src="../7.Pictures/2.Create-Sandbox/demo_acc_success.png" style="width:80%; border-radius:50%">
+</p>
