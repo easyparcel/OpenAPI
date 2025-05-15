@@ -11,7 +11,7 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 ## **Setup Flow**
 
 Below is a visual guide to set up flow:
-flowchart TD
+```flowchart TD
     A[Sign up Developers Hub Account] --> B[Create App]
     B --> C[Create Sandbox Account]
     C --> D[Top Up Sandbox]
@@ -22,7 +22,7 @@ flowchart TD
     H --> I((Integration Ready))
 
     classDef default stroke:#fff,fill:#000,color:#fff,stroke-width:2px;
-
+```
 ---
 
 # EasyParcel API Flow Overview
