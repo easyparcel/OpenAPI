@@ -62,7 +62,7 @@ graph TD
 Here’s a visual representation of the order function flow in the EasyParcel API:
 
 <p align="center">
-  <img src="7.Pictures/5.API endpoint/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
+  <img src="7.Pictures/5.API%20endpoint/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
 </p>
 
 ---
