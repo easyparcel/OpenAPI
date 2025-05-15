@@ -11,10 +11,17 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 ## **Setup Flow**
 
 Below is a visual guide to set up flow:
+flowchart TD
+    A[Sign up Developers Hub Account] --> B[Create App]
+    B --> C[Create Sandbox Account]
+    C --> D[Top Up Sandbox]
+    D --> E[Get OAuth Credentials]
+    E --> F[Try Postman Collection]
+    F --> G[Start Integration]
+    G --> H[Webhook Setup]
+    H --> I((Integration Ready))
 
-<p align="center">
-  <img src="Pictures/setup_flow.png" alt="Setup flow" style="width:30%; margin:0; padding:0;">
-</p>
+    classDef default stroke:#fff,fill:#000,color:#fff,stroke-width:2px;
 
 ---
 
