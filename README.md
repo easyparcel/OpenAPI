@@ -1,139 +1,125 @@
-<p align="center">
-  <img src="7.Pictures/README/easyparcel-transparentqquare-md.png" alt="EasyParcel Logo" style="width:250px;">
-</p>
+# EasyParcel API Flow Overview
 
-# EasyParcel API Documentation
+This document provides a visual representation of the different flows and processes available through the EasyParcel API.
 
-Welcome to the **EasyParcel API Documentation**! This guide will help you integrate with EasyParcel and get access to shipping functionalities via a RESTful API interface. 
+## API Workflow Diagram
 
----
+```mermaid
+graph TD
+    A[EasyParcel API] --> B[Shipping]
+    A --> C[Ondemand]
+    A --> D[General Services]
+    
+    %% Shipping Flow
+    B --> B1[Order Flow]
+    B --> B2[Listing Flow]
+    B --> B3[Cancel Orders]
+    
+    %% Order Flow
+    B1 --> B11[1. Get Quotation]
+    B11 --> B12[2. Get Insurance Quotation]
+    B12 --> B13[3. Submit Order]
+    
+    %% Listing Flow
+    B2 --> B21[1. Get Shipment Listing]
+    B21 --> B22[2. Get Shipment Details]
+    
+    %% Ondemand Flow
+    C --> C1[Ondemand Order Flow]
+    C1 --> C11[1. Get Ondemand Quotation]
+    C11 --> C12[2. Submit Ondemand Orders]
+    C12 --> C13[3. Cancel Order]
+    
+    %% General Services
+    D --> D1[Courier Listing]
+    D --> D2[Credit Wallet Flow]
+    D2 --> D21[Get Credit Wallet]
+```
 
-## **Table of Contents**
+## Shipping Services
 
-- [Overview](#overview)
-- [Setup Flow](#setup-flow)
-- [Order Function Flow](#order-function-flow)
-- [Getting Started](#getting-started)
-- [OAuth Authentication](#oauth-authentication)
-- [API Features & Functions](#api-functions--features)
-- [References](#references)
+### Order Flow
 
----
+The standard process for creating and managing shipping orders:
 
-## **Overview**
+1. **Get Quotation** - Retrieve shipping rates for various couriers based on origin, destination, and parcel details
+2. **Get Insurance Quotation** - Optional step to get insurance rates for valuable shipments
+3. **Submit Order** - Create a shipment order with the selected courier service
 
-The **EasyParcel API** enables you to manage shipping, obtain quotations, track shipments, and much more. It's designed using a RESTful architecture, offering a seamless integration with various e-commerce platforms and third-party applications.
+### Listing Flow
 
-### **Key Benefits**:
-- **Rate Calculation**: Get live rates from various couriers.
-- **Order Management**: Create, update, and manage shipments.
-- **Tracking**: Real-time tracking updates for shipments.
-- **Effortless APP Integrate**: Easy integration with your online store or application.
+Access and manage existing shipments:
 
----
-## **Setup Flow**
+1. **Get Shipment Listing** - Retrieve a list of shipments with optional filtering
+2. **Get Shipment Details** - Access comprehensive information about a specific shipment
 
-Below is a visual guide to set up flow:
+### Cancel Orders
 
-<p align="center">
-  <img src="7.Pictures/README/setupflow.png" alt="Setup flow" style="width:30%; margin:0; padding:0;">
-</p>
+Cancel one or more existing shipment orders when needed.
 
----
-## **Order Function Flow**
+## Ondemand Services
 
-Below is a visual guide to the order processing flow in the EasyParcel API:
+### Ondemand Order Flow
 
-<p align="center">
-  <img src="7.Pictures/README/flow_chart.png" alt="Order Flow Chart" style="width:50%; margin:0; padding:0;">
-</p>
+For immediate pickup and delivery services:
 
----
+1. **Get Ondemand Quotation** - Retrieve pricing for immediate delivery services
+2. **Submit Ondemand Orders** - Create an on-demand delivery order
+3. **Cancel Order** - Cancel an on-demand delivery when needed
 
-## **Getting Started**
+## General Services
 
-To begin using the EasyParcel API, follow the steps below to set up your environment:
+### Courier Listing
 
-- [Getting Started with EasyParcel API](2.Integration/get_started_with_easy_parcel_open_API.md)
-- [Setting Up a Demo Account](2.Integration/setup_demo_account.md)
+Retrieve a list of available courier services for a specific country.
 
-Once set up, you can use the provided **Sandbox** environment to test the API without impacting live data.
+### Credit Wallet Flow
 
----
+Manage your EasyParcel account balance:
 
-## **OAuth Authentication**
+- **Get Credit Wallet** - Check your current wallet balance and free credits
 
-EasyParcel uses **OAuth 2.0** for secure authentication, enabling controlled access to the system.
+## API Endpoint Reference
 
-1. **OAuth 2.0 Overview**:
-    - OAuth 2.0 is a standard authorization framework allowing third-party applications to access your EasyParcel resources without exposing sensitive credentials.
-  
-2. **Steps to Obtain OAuth Token**:
-    - [Learn about OAuth Authentication](3.OAuth_Authentication/1.oauth_authentication.md)
-    - [Getting OAuth Access Token](Guides/3.get_oauth_access_token.md)
+| Flow                  | Endpoint                                         | Purpose                                        |
+|-----------------------|--------------------------------------------------|------------------------------------------------|
+| Get Quotation         | `/open_api/2025-06/quotation`                    | Get shipping rates                             |
+| Get Insurance         | `/open_api/2025-06/insurance/quote`              | Get insurance rates                            |
+| Submit Order          | `/open_api/2025-06/shipment/submit_orders`       | Create shipping orders                         |
+| Shipment Listing      | `/open_api/2025-06/shipment/list`                | List all shipments                             |
+| Shipment Details      | `/open_api/2025-06/shipment/details`             | Get detailed info for a shipment               |
+| Cancel Orders         | `/open_api/2025-06/shipment/cancel`              | Cancel shipment orders                         |
+| Ondemand Quotation    | `/open_api/2025-06/ondemand/quotation`           | Get ondemand delivery rates                    |
+| Submit Ondemand       | `/open_api/2025-06/ondemand/submit_orders`       | Create ondemand delivery orders                |
+| Cancel Ondemand       | `/open_api/2025-06/ondemand/cancel`              | Cancel ondemand delivery                       |
+| Courier Listing       | `/open_api/2025-06/courier/list`                 | List available couriers                        |
+| Get Wallet            | `/open_api/2025-06/wallet`                       | Get wallet balance information                 |
 
----
-## **API Functions & Features**
+## Common API Flow Patterns
 
-The EasyParcel API offers a wide array of functionalities divided into categories. Below are the key features available:
+### Standard Shipping Flow
 
-### **Standard Features**:
-- **Get Shipment Quotation**  
-  Get a detailed quote for your shipment, including rates, delivery times, and courier options.  
-  [Read more](Features/Shipping/1.get_shipment_quotation.md)
+1. Get shipping quotation for your parcel
+2. Optionally get insurance quotation for valuable items
+3. Submit shipping order with your selected service
+4. Check shipment status via Shipment Listing or Details endpoints
+5. Optionally cancel the shipment if needed
 
-- **Get Insurance Quotation**  
-  Obtain a quote for shipment insurance based on your shipment details.  
-  [Read more](Features/Shipping/2.get_insurance_quotation.md)
+### Ondemand Delivery Flow
 
-- **Get Courier Dropoff Point**  
-  Fetch available dropoff points for various couriers.  
-  [Read more](Features/Shipping/3.get_courier_dropoff_point.md)
+1. Get ondemand quotation for immediate delivery
+2. Submit ondemand order with your selected service
+3. Track the delivery status
+4. Optionally cancel if needed
 
-- **Submit Shipment Orders**  
-  Create and submit shipment orders for processing.  
-  [Read more](Features/Shipping/4.submit_shipment_orders.md)
+## Best Practices
 
-### **OnDemand Features**:
-- **Get OnDemand Quotation**  
-  Get an on-demand quotation based on specific criteria.  
-  [Read more](Features/OnDemand/1.get_ondemand_quotation.md)
+1. **Always check your wallet balance** before submitting orders to ensure sufficient funds
+2. Use the **Shipment Listing** endpoint with filters to efficiently manage large volumes of shipments
+3. Include **complete and accurate information** in all requests to avoid processing delays
+4. Implement proper **error handling** for all API responses
+5. Use the **Courier Listing** endpoint to get the most current list of available services
 
-- **Submit OnDemand Order**  
-  Create an on-demand shipment order.  
-  [Read more](Features/OnDemand/2.submit_ondemand_order.md)
+## Implementation Guide
 
-### **Wallet Features**:
-- **Get Wallet Balance**  
-  Check your current wallet balance for API transactions.  
-  [Read more](Features/get_wallet.md)
-
----
-## **References**
-
-For additional details, please refer to the following resources:
-
-- [API Return Status](References/API_return_status.md)  
-  Learn about the different return statuses you may encounter while using the EasyParcel API.
-  
-- [Country Codes](References/country_code.md)  
-  Get the list of country codes supported by the EasyParcel API.
-
-- [ISO 3166 Country Codes](References/ISO_3166.md)  
-  A full list of country codes defined by the ISO 3166 standard.
----
-## **Contact Us**
-
-If you have any questions or need further support with the EasyParcel API, our team is available for assistance. You can reach out to us via the following channels:
-- **WhatsApp Support**: For quick support, chat with our team directly on WhatsApp. Click [here](https://wa.me/6042023160) to start a conversation.
-
-We’re here to help you integrate and make the most out of EasyParcel’s services!
-
-
-
-### **Important Notes**
-- **API Rate Charges**: EasyParcel wont charges credit when you test the quotation.
-- **Sandbox Environment**: Test it in the sandbox environment before going live to ensure everything works correctly.
-
----
-
+For detailed information on implementing each endpoint, refer to the individual API documentation pages. Each endpoint has specific request and response formats that must be followed for successful integration.
