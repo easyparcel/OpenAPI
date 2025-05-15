@@ -1,3 +1,14 @@
+---
+## **Setup Flow**
+
+Below is a visual guide to set up flow:
+
+<p align="center">
+  <img src="Pictures/setup_flow.png" alt="Setup flow" style="width:30%; margin:0; padding:0;">
+</p>
+
+---
+
 # EasyParcel API Flow Overview
 
 This document provides a visual representation of the different flows and processes available through the EasyParcel API.
