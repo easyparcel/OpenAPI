@@ -37,8 +37,12 @@ flowchart TD
 
 To begin using the EasyParcel API, follow the steps below to set up your environment:
 
-- [Getting Started with EasyParcel API](Guides/1.get_started_with_easy_parcel_open_API.md)
-- [Setting Up a Demo Account](Guides/2.setup_demo_account.md)
+- [Register Developer account](1.Developer Hub)
+- [Create Sandbox account](2.Create Sandbox)
+- [Oauth](3.OAuth Authentication)
+- [Postman_collections](4.Postman Collection
+- [API Endpoint](5.API endpoint)
+- [Webhook](6.Webhook)
 
 Once set up, you can use the provided **Sandbox** environment to test the API without impacting live data.
 
