@@ -6,33 +6,33 @@ This document provides a visual representation of the different flows and proces
 
 ```mermaid
 graph TD
-    A[EasyParcel API] --> B[Shipping]
-    A --> C[Ondemand]
-    A --> D[General Services]
+    A[[EasyParcel API]] --> B[[Shipping]]
+    A --> C[[Ondemand]]
+    A --> D[[General Services]]
     
     %% Shipping Flow
-    B --> B1[Order Flow]
-    B --> B2[Listing Flow]
-    B --> B3[Cancel Orders]
+    B --> B1[[Order Flow]]
+    B --> B2[[Listing Flow]]
+    B --> B3[[Cancel Orders]]
     
     %% Order Flow
-    B1 --> B11[1. Get Quotation]
-    B11 --> B12[2. Get Insurance Quotation]
-    B12 --> B13[3. Submit Order]
+    B1 --> B11[Get Quotation]
+    B11 --> B12[Get Insurance Quotation]
+    B12 --> B13[Submit Order]
     
     %% Listing Flow
-    B2 --> B21[1. Get Shipment Listing]
-    B21 --> B22[2. Get Shipment Details]
+    B2 --> B21[Get Shipment Listing]
+    B21 --> B22[Get Shipment Details]
     
     %% Ondemand Flow
-    C --> C1[Ondemand Order Flow]
-    C1 --> C11[1. Get Ondemand Quotation]
-    C11 --> C12[2. Submit Ondemand Orders]
-    C12 --> C13[3. Cancel Order]
+    C --> C1[[Ondemand Order Flow]]
+    C1 --> C11[Get Ondemand Quotation]
+    C11 --> C12[Submit Ondemand Orders]
+    C12 --> C13[Cancel Order]
     
     %% General Services
     D --> D1[Courier Listing]
-    D --> D2[Credit Wallet Flow]
+    D --> D2[[Credit Wallet Flow]]
     D2 --> D21[Get Credit Wallet]
 ```
 
