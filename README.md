@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="Pictures/easyparcel-transparentqquare-md.png" alt="EasyParcel Logo" style="width:250px;">
+</p>
+
+# EasyParcel API Documentation
+
+Welcome to the **EasyParcel API Documentation**! This guide will help you integrate with EasyParcel and get access to shipping functionalities via a RESTful API interface. 
+
+---
 
 ## **Setup Flow**
 
