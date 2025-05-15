@@ -11,7 +11,8 @@ Welcome to the **EasyParcel API Documentation**! This guide will help you integr
 ## **Setup Flow**
 
 Below is a visual guide to set up flow:
-```flowchart TD
+```mermaid
+flowchart TD
     A[Sign up Developers Hub Account] --> B[Create App]
     B --> C[Create Sandbox Account]
     C --> D[Top Up Sandbox]
