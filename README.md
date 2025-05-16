@@ -69,13 +69,9 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
   Get a detailed quote for your shipment, including rates, delivery times, and courier options.  
   [Read more](5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 
-- **Get Insurance Quotation**  
-  Obtain a quote for shipment insurance based on your shipment details.  
-  [Read more](Features/Shipping/2.get_insurance_quotation.md)
-
-- **Get Courier Dropoff Point**  
-  Fetch available dropoff points for various couriers.  
-  [Read more](Features/Shipping/3.get_courier_dropoff_point.md)
+- **Get Courier List**  
+  Fetch all available courier according to the country.
+  [Read more](5.API%20endpoint/%201.Shipping/3.Get%20Shipment%20Listing.md)
 
 - **Submit Shipment Orders**  
   Create and submit shipment orders for processing.  
