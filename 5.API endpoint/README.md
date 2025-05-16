@@ -103,3 +103,4 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 ### Wallet
 
 [Get Wallet](get_Wallet.md)
+[![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=flat-square)](../README.md)
