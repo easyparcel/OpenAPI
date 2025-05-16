@@ -100,13 +100,13 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
 
 For additional details, please refer to the following resources:
 
-- [API Return Status](References/API_return_status.md)  
+- [API Return Status]()  
   Learn about the different return statuses you may encounter while using the EasyParcel API.
   
-- [Country Codes](References/country_code.md)  
+- [Country Codes](7.References/2.country_code.md)  
   Get the list of country codes supported by the EasyParcel API.
 
-- [ISO 3166 Country Codes](References/ISO_3166.md)  
+- [ISO 3166 Country Codes](7.References/1.ISO.md)  
   A full list of country codes defined by the ISO 3166 standard.
 ---
 ## **Contact Us**
