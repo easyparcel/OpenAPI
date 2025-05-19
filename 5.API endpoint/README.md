@@ -84,12 +84,6 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 
 
 ### [Shipping](Shipping)
-
-- Scheduled Delivery
-
-- Cost-effective
-
-- Tracking Available
   
 [Get Shipment Quotation](1.Shipping/1.get%20shipment%20quotation.md)
 
