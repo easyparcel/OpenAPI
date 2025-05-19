@@ -3,20 +3,34 @@
 The EasyParcel API offers various functionalities grouped under different categories. Below is an overview of the key features:
 
 #### **Standard Shipping**:
-- [Get Shipment Quotation](Features/Shipping/1.get_shipment_quotation.md)
-- [Get Insurance Quotation](Features/Shipping/2.get_insurance_quotation.md)
-- [Get Courier Dropoff Point](Features/Shipping/3.get_courier_dropoff_point.md)
-- [Submit Shipment Orders](Features/Shipping/4.submit_shipment_orders.md)
+- Scheduled Delivery
+
+- Cost-effective
+
+- Tracking Available
+
+- Suitable for high volume shipment
 
 #### **OnDemand Shipping**:
-- [Get OnDemand Quotation](Features/OnDemand/1.get_ondemand_quotation.md)
-- [Submit OnDemand Order](Features/OnDemand/2.submit_ondemand_order.md)
 
-#### **Get Wallet**:
-- [Get Wallet Balance](Features/get_wallet.md)
+- Speed: providing same-day delivery.
+
+- Real-Time Tracking: You can track your parcel in real-time once the booking is made.
+
+- Flexibility: You can choose your preferred vehicle and schedule the pick-up time.
+
+- Cost-Efficiency: You only pay for the services you need.
+
+- Priority Handling: Parcels are prioritized, ensuring faster delivery compared to standard methods.
+
+#### **Wallet**:
+- All submission will be deducting from credit waller
 
 #### **Get Courier List**:
-- [Get Wallet Balance](Features/get_courier_list.md)
+- Getting all the courier listing available for a country
+
+#### **Get Coupon List**:
+- Getting coupon available for the order for both standard shipping and ondemand
 
 ---
 
@@ -38,9 +52,9 @@ graph TD
     B --> B3[[Cancel Orders]]
     
     %% Order Flow
-    B1 --> B11[Get Quotation]
-    B11 --> B12[Get Insurance Quotation]
-    B12 --> B13[Submit Order]
+    B1 --> B2[Get Quotation]
+    B2 --> B3[Get Cuopon Listing]
+    B3 --> B4[Submit Order]
     
     %% Listing Flow
     B2 --> B21[Get Shipment Listing]
@@ -48,9 +62,10 @@ graph TD
     
     %% Ondemand Flow
     C --> C1[[Ondemand Order Flow]]
-    C1 --> C11[Get Ondemand Quotation]
-    C11 --> C12[Submit Ondemand Orders]
-    C12 --> C13[Cancel Order]
+    C1 --> C2[Get Ondemand Quotation]
+    C2 --> C3[Get Ondemand Coupon Listing]
+    C3 --> C4[Submit Ondemand Orders]
+    C5 --> C6[Cancel Order]
     
     %% General Services
     D --> D1[Courier Listing]
@@ -76,33 +91,42 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 
 - Tracking Available
   
-[Get Shipment Quotation](Shipping/1.get_shipment_quotation.md)
+[Get Shipment Quotation](1.Shipping/1.get%20shipment%20quotation.md)
 
-[Get Insurance Quotation](Shipping/2.get_insurance_quotation.md)
+[Coupon Listing](1.Shipping/3.Coupon.md)
 
-[Get Courier Dropoff point](Shipping/3.get_courier_dropoff_point.md)
+[Submit Shipment Order](1.Shipping/2.Submit%20Orders.md)
 
-[Submit Shipment Orders](Shipping/4.submit_shipment_orders.md)
+[Get Shipment Listing](1.Shipping/3.Get%20Shipment%20Listing.md)
+
+[Get Shipment Details](1.Shipping/4.Get%20Shipment%20details.md)
+
+[Cancel Order](1.Shipping/5.Cancel$20Shipment.md)
+
+
 
 ### [OnDemand](OnDemand)
 
-- Speed: providing same-day delivery.
-
-- Real-Time Tracking: You can track your parcel in real-time once the booking is made.
-
-- Flexibility: You can choose your preferred vehicle and schedule the pick-up time.
-
-- Cost-Efficiency: You only pay for the services you need.
-
-- Priority Handling: Parcels are prioritized, ensuring faster delivery compared to standard methods.
-
 [Get OnDemand Quotation](%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
 
+[Coupon Listing](%202.Ondemand/2.Coupon.md)
+
 [Submit OnDemand Order](%202.Ondemand/2.Submit%20Ondemand%20Order.md)
+
+[Cancel OnDemand Order](%202.Ondemand/3.Cancel%20Ondemand.md)
+
 
 ### Wallet
 
 [Get Wallet](3.Get%20Credit%20Wallet.md)
+
+
+### Courier List
+[Courier Listing](4.Courier%20listing.md)
+
+
+
+
 <div align="center" style="margin: 1.5rem 0;">
 
 [![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=flat-square)](../README.md)
