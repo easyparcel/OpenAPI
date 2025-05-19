@@ -96,13 +96,13 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 
 - Priority Handling: Parcels are prioritized, ensuring faster delivery compared to standard methods.
 
-[Get OnDemand Quotation](5.API%20endpoint/%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
+[Get OnDemand Quotation](%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
 
-[Submit OnDemand Order](5.API%20endpoint/%202.Ondemand/2.Submit%20Ondemand%20Order.md)
+[Submit OnDemand Order](%202.Ondemand/2.Submit%20Ondemand%20Order.md)
 
 ### Wallet
 
-[Get Wallet](5.API%20endpoint/3.Get%20Credit%20Wallet.md)
+[Get Wallet](3.Get%20Credit%20Wallet.md)
 <div align="center" style="margin: 1.5rem 0;">
 
 [![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=flat-square)](../README.md)
