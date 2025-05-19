@@ -49,23 +49,23 @@ graph TD
     %% Shipping Flow
     B --> B1[[Order Flow]]
     B --> B2[[Listing Flow]]
-    B --> B3[[Cancel Orders]]
     
     %% Order Flow
-    B1 --> B2[Get Quotation]
-    B2 --> B3[Get Cuopon Listing]
-    B3 --> B4[Submit Order]
+    B1 --> B11[Get Quotation]
+    B11 --> B12[Get Cuopon Listing]
+    B12 --> B13[Submit Order]
     
     %% Listing Flow
     B2 --> B21[Get Shipment Listing]
     B21 --> B22[Get Shipment Details]
+    B22 --> B23[Cancel Orders]
     
     %% Ondemand Flow
     C --> C1[[Ondemand Order Flow]]
     C1 --> C2[Get Ondemand Quotation]
     C2 --> C3[Get Ondemand Coupon Listing]
     C3 --> C4[Submit Ondemand Orders]
-    C5 --> C6[Cancel Order]
+    C4 --> C5[Cancel Order]
     
     %% General Services
     D --> D1[Courier Listing]
