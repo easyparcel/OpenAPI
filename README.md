@@ -89,7 +89,7 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
 ### **Wallet Features**:
 - **Get Wallet Balance**  
   Check your current wallet balance for API transactions.  
-  [Read more](../5.API%20endpoint/3.Get%20Credit%20Wallet.md)
+  [Read more](/5.API%20endpoint/3.Get%20Credit%20Wallet.md)
 
 ---
 ## **References**
