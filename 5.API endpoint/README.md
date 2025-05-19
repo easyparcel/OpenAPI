@@ -85,7 +85,7 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 
 ### [Standard](Shipping)
   
-[Get Shipment Quotation](../%201.Shipping/1.Get%20Shipment%20Quotation.md)
+[Get Shipment Quotation](../5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 
 [Coupon Listing](1.Shipping/3.Coupon.md)
 
