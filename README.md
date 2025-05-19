@@ -67,29 +67,29 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
 ### **Standard Features**:
 - **Get Shipment Quotation**  
   Get a detailed quote for your shipment, including rates, delivery times, and courier options.  
-  [Read more](5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
+  [Read more](/5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 
 - **Get Courier List**  
   Fetch all available courier according to the country.
-  [Read more](5.API%20endpoint/%201.Shipping/3.Get%20Shipment%20Listing.md)
+  [Read more](/5.API%20endpoint/%201.Shipping/3.Get%20Shipment%20Listing.md)
 
 - **Submit Shipment Orders**  
   Create and submit shipment orders for processing.  
-  [Read more](5.API%20endpoint/%201.Shipping/2.Submit%20Orders.md)
+  [Read more](/5.API%20endpoint/%201.Shipping/2.Submit%20Orders.md)
 
 ### **OnDemand Features**:
 - **Get OnDemand Quotation**  
   Get an on-demand quotation based on specific criteria.  
-  [Read more](5.API%20endpoint/%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
+  [Read more](/5.API%20endpoint/%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
 
 - **Submit OnDemand Order**  
   Create an on-demand shipment order.  
-  [Read more](5.API%20endpoint/%202.Ondemand/2.Submit%20Ondemand%20Order.md)
+  [Read more](/5.API%20endpoint/%202.Ondemand/2.Submit%20Ondemand%20Order.md)
 
 ### **Wallet Features**:
 - **Get Wallet Balance**  
   Check your current wallet balance for API transactions.  
-  [Read more](5.API%20endpoint/3.Get$20Credit%20Wallet.md)
+  [Read more](/5.API%20endpoint/3.Get$20Credit%20Wallet.md)
 
 ---
 ## **References**
