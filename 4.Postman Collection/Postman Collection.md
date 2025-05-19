@@ -269,7 +269,7 @@ If you need assistance with the EasyParcel API or this Postman collection:
 
 - Visit our [API Documentation](https://developer.easyparcel.com)
 - Email our developer support at api@easyparcel.com
-- Check the [Error Handling Guide](7.References/7.error%20handling.md) for common issues
+- Check the [Error Handling Guide](../7.References/7.error%20handling.md) for common issues
 
 ## Contributing
 
