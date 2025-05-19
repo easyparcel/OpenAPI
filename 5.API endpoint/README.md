@@ -101,7 +101,7 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 
 [Get Shipment Details](1.Shipping/4.Get%20Shipment%20details.md)
 
-[Cancel Order](1.Shipping/5.Cancel$20Shipment.md)
+[Cancel Order](1.Shipping/5.Cancel%20Shipment.md)
 
 
 
