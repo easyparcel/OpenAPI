@@ -103,11 +103,11 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 
 [Get OnDemand Quotation](../5.API%20endpoint/%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
 
-[Coupon Listing](../5.API%20endpoint/%202.Ondemand/%202.Ondemand/2.Coupon.md)
+[Coupon Listing](../5.API%20endpoint/%202.Ondemand/2.Coupon.md)
 
-[Submit OnDemand Order](../5.API%20endpoint/%202.Ondemand/%202.Ondemand/2.Submit%20Ondemand%20Order.md)
+[Submit OnDemand Order](../5.API%20endpoint/%202.Ondemand/2.Submit%20Ondemand%20Order.md)
 
-[Cancel OnDemand Order](../5.API%20endpoint/%202.Ondemand/%202.Ondemand/3.Cancel%20Ondemand.md)
+[Cancel OnDemand Order](../5.API%20endpoint/%202.Ondemand/3.Cancel%20Ondemand.md)
 
 
 ### Wallet
