@@ -56,7 +56,7 @@ EasyParcel uses **OAuth 2.0** for secure authentication, enabling controlled acc
     - OAuth 2.0 is a standard authorization framework allowing third-party applications to access your EasyParcel resources without exposing sensitive credentials.
   
 2. **Steps to Obtain OAuth Token**:
-    - [Learn about OAuth Authentication](oauth_authentication.md)
+    - [Learn about OAuth Authentication](3.OAuth%20Authentication)
     - [Getting OAuth Access Token](Guides/3.get_oauth_access_token.md)
 
 ---
