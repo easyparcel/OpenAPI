@@ -83,31 +83,31 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
 ---
 
 
-### [Shipping](Shipping)
+### [Standard](Shipping)
   
-[Get Shipment Quotation](1.Shipping/1.get%20shipment%20quotation.md)
+[Get Shipment Quotation](5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 
 [Coupon Listing](1.Shipping/3.Coupon.md)
 
-[Submit Shipment Order](1.Shipping/2.Submit%20Orders.md)
+[Submit Shipment Order](5.API%20endpoint/%201.Shipping/2.Submit%20Orders.mdd)
 
-[Get Shipment Listing](1.Shipping/3.Get%20Shipment%20Listing.md)
+[Get Shipment Listing](5.API%20endpoint/%201.Shipping/3.Get%20Shipment%20Listing.md)
 
-[Get Shipment Details](1.Shipping/4.Get%20Shipment%20details.md)
+[Get Shipment Details](5.API%20endpoint/%201.Shipping/4.Get%20Shipment%20details.md)
 
-[Cancel Order](/1.Shipping/5.Cancel%20Shipment.md)
+[Cancel Order](5.API%20endpoint/%201.Shipping/5.Cancel%20Shipment.md)
 
 
 
 ### [OnDemand](OnDemand)
 
-[Get OnDemand Quotation](%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
+[Get OnDemand Quotation](5.API%20endpoint/%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
 
-[Coupon Listing](%202.Ondemand/2.Coupon.md)
+[Coupon Listing](5.API%20endpoint/%202.Ondemand/%202.Ondemand/2.Coupon.md)
 
-[Submit OnDemand Order](%202.Ondemand/2.Submit%20Ondemand%20Order.md)
+[Submit OnDemand Order](5.API%20endpoint/%202.Ondemand/%202.Ondemand/2.Submit%20Ondemand%20Order.md)
 
-[Cancel OnDemand Order](%202.Ondemand/3.Cancel%20Ondemand.md)
+[Cancel OnDemand Order](5.API%20endpoint/%202.Ondemand/%202.Ondemand/3.Cancel%20Ondemand.md)
 
 
 ### Wallet
