@@ -96,8 +96,8 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
 
 For additional details, please refer to the following resources:
 
-- [API Return Status](7.References/7.status%20code.md)
-  Learn about the different return statuses you may encounter while using the EasyParcel API.
+- [Add On Feature](7.References/3.add%20on%20feature.md)
+  Learn about the add on feature available alongside easyparcel shipping services.
   
 - [Country Codes](7.References/2.country_code.md)  
   Get the list of country codes supported by the EasyParcel API.
