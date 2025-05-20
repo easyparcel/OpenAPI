@@ -19,7 +19,7 @@ The EasyParcel **sandbox account** is a test environment designed for developers
 * QA and staging environments
 * Training or demonstrations
 
-For setup instructions, please refer to the [Setup Sandbox Environment](./setup%20sandbox%20environment.md) guide.
+For setup instructions, please refer to the [Setup Sandbox Environment](1.setup%20sandbox%20environment.md) guide.
 
 Sandbox Limitation:
-refer here for [Sandbox Limit](./sandbox%20limitations.md) 
+refer here for [Sandbox Limit](3.sandbox%20limitations.md) 
