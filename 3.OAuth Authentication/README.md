@@ -49,5 +49,7 @@ https://developer.easyparcel.com/ep_auth/token
 <div align="center" style="margin: 1.5rem 0;">
 
 [![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=flat-square)](../README.md)
+[![1.oauth authentication guide →](https://img.shields.io/badge/1.oauth_authentication_guide_→-00CC88?style=flat-square)](../3.OAuth%20Authentication/1.%20oauth%20authentication%20guide.md)
+[![2.OAuth→](https://img.shields.io/badge/2.OAuth_%E2%86%92-00CC88?style=flat-square)](../3.OAuth%20Authentication/2.OAuth.md)
 
 </div>
