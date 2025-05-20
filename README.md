@@ -71,11 +71,11 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
 
 - **Get Courier List**  
   Fetch all available courier according to the country.
-  [Read more](/5.API%20endpoint/%201.Shipping/3.Get%20Shipment%20Listing.md)
+  [Read more](/5.API%20endpoint/%201.Shipping/2.Get%20Coupon%20List.md)
 
 - **Submit Shipment Orders**  
   Create and submit shipment orders for processing.  
-  [Read more](/5.API%20endpoint/%201.Shipping/2.Submit%20Orders.md)
+  [Read more](/5.API%20endpoint/%201.Shipping/3.Submit%20Orders.md)
 
 ### **OnDemand Features**:
 - **Get OnDemand Quotation**  
