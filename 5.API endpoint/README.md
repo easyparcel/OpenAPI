@@ -87,13 +87,13 @@ Here’s a visual representation of the order function flow in the EasyParcel AP
   
 [Get Shipment Quotation](../5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 
-[Coupon Listing](../5.API%20endpoint/1.Shipping/3.Coupon.md)
+[Coupon Listing](../5.API%20endpoint/%201.Shipping/2.Get%20Coupon%20List.md)
 
-[Submit Shipment Order](../5.API%20endpoint/%201.Shipping/2.Submit%20Orders.mdd)
+[Submit Shipment Order](../5.API%20endpoint/%201.Shipping/3.Submit%20Orders.md)
 
-[Get Shipment Listing](../5.API%20endpoint/%201.Shipping/3.Get%20Shipment%20Listing.md)
+[Get Shipment Listing](../5.API%20endpoint/%201.Shipping/4.Get%20Shipment%20Listing.md)
 
-[Get Shipment Details](../5.API%20endpoint/%201.Shipping/4.Get%20Shipment%20details.md)
+[Get Shipment Details](../5.API%20endpoint/%201.Shipping/6.Get%20Shipment%20details.md)
 
 [Cancel Order](../5.API%20endpoint/%201.Shipping/5.Cancel%20Shipment.md)
 
