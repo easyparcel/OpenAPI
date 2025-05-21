@@ -75,7 +75,7 @@ graph TD
 ---
 
 
-### [Standard](Shipping)
+### Standard
   
 [Get Shipment Quotation](../5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 
@@ -91,7 +91,7 @@ graph TD
 
 
 
-### [OnDemand](OnDemand)
+### OnDemand
 
 [Get OnDemand Quotation](../5.API%20endpoint/%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
 
