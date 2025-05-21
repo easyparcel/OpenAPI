@@ -69,7 +69,7 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
   Get a detailed quote for your shipment, including rates, delivery times, and courier options.  
   [Read more](/5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 
-- **Get Courier List**  
+- **Get Coupon List**  
   Fetch all available courier according to the country.
   [Read more](/5.API%20endpoint/%201.Shipping/2.Get%20Coupon%20List.md)
 
