@@ -4,6 +4,21 @@ The **EasyParcel Developer Hub** is your one-stop destination for building and i
 
 ---
 
+# Registering on the EasyParcel Developer Hub
+
+This section provides step-by-step instructions for registering on the EasyParcel Developer Hub and setting up your application to access the EasyParcel API.
+
+## Why Register on the Developer Hub?
+
+The EasyParcel Developer Hub is the central portal for developers who want to integrate with our API. Registration is required to:
+
+- Create and manage OAuth applications
+- Generate authentication credentials (client ID and client secret)
+- Access API documentation and resources
+- Test API endpoints in a sandbox environment
+- Monitor API usage and performance
+
+
 ## 🚀 What You Can Do Here
 
 * **Create and manage your apps** to access EasyParcel's APIs securely.
@@ -12,6 +27,12 @@ The **EasyParcel Developer Hub** is your one-stop destination for building and i
 * **Test with a Sandbox Account** that includes free test credit and no impact on your live data.
 
 Whether you're developing a plugin, connecting your e-commerce store, or building a custom logistics tool — the Developer Hub has everything you need to get started.
+
+## Registration Process
+
+#### Step 1: Create a Developer Account
+#### Step 2: Complete Your Developer Profile
+#### Step 3: Create an Application
 
 To register and setup the developer hub you may refer to our setup guide [Setup Developer Hub](1.register%20developer%20account.md)
 <div align="center" style="margin: 1.5rem 0;">
