@@ -278,8 +278,8 @@ We welcome feedback and suggestions to improve this collection. Please contact o
 ---
 <div align="center" style="margin:2rem 0">
 
-[![Back to Docs](https://img.shields.io/badge/Back_to_Docs-00AAEE?style=flat-square)](../README.md)
-[![Previous Section←](https://img.shields.io/badge/Previous_Section_%E2%86%90-FF7733?style=flat-square)](../3.OAuth%20Authentication/1.%20oauth%20authentication%20guide.md)
-[![Next Section →](https://img.shields.io/badge/Next_Section_%E2%86%92-00CC88?style=flat-square)](../5.API%20endpoint/README.md)
+[![Back to Docs](https://img.shields.io/badge/Back_to_Docs-00AAEE?style=for-the-badge&scale=1.3)](../README.md)
+[![Previous Section←](https://img.shields.io/badge/Previous_Section_%E2%86%90-FF7733?style=for-the-badge&scale=1.3)](../3.OAuth%20Authentication/1.%20oauth%20authentication%20guide.md)
+[![Next Section →](https://img.shields.io/badge/Next_Section_%E2%86%92-00CC88?style=for-the-badge&scale=1.3)](../5.API%20endpoint/README.md)
 
 </div>
