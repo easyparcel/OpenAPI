@@ -118,7 +118,7 @@ graph TD
 
 [![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=flat-square)](../README.md)
 [![←Previous Section](https://img.shields.io/badge/Previous_Section_%E2%86%90-FF7733?style=flat-square)](../4.Postman%20Collection/README.md)
-[![Next Paragraph →](https://img.shields.io/badge/Next_Paragraph_%E2%86%92-00CC88?style=flat-square)](/%201.Shipping/1.Get%20Shipment%20Quotation.md)
+[![Next Paragraph →](https://img.shields.io/badge/Next_Paragraph_%E2%86%92-00CC88?style=flat-square)](/5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
 [![Next Topic:Ondemand →](https://img.shields.io/badge/Next_Topic:Ondemand_%E2%86%92-00CC88?style=flat-square)](/5.API%20endpoint/%202.Ondemand/1.Get%20Ondemand%20Quotation.md)
 [![Next Section →](https://img.shields.io/badge/Next_Section_%E2%86%92-00CC88?style=flat-square)](../../6.Webhook/1.Guide%20to%20subscribe%20webhook.md)
 
