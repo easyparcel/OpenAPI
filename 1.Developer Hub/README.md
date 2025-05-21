@@ -17,7 +17,7 @@ To register and setup the developer hub you may refer to our setup guide [Setup 
 <div align="center" style="margin: 1.5rem 0;">
 
 [![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=for-the-badge&scale=1.3)](../README.md)
-[![1. Register Developer Account →](https://img.shields.io/badge/1._Register_Developer_Account_→-00CC88?style=for-the-badge&scale=1.3)](../1.Developer-Hub/1-register-developer-account.md)
+[![1. Register Developer Account →](https://img.shields.io/badge/1._Register_Developer_Account_→-00CC88?style=for-the-badge&scale=1.3)](../1.Developer%20Hub/1.register%20developer%20account.md)
 [![2.Set up app →](https://img.shields.io/badge/2.set_up_app_%E2%86%92-00CC88?style=for-the-badge&scale=1.3)](/2.Create%20Sandbox/1.Developer%20Hub/2.set%20up%20app.md)
 [![3.Get credentials →](https://img.shields.io/badge/3.get_credentials_%E2%86%92-00CC88?style=for-the-badge&scale=1.3)](/2.Create%20Sandbox/1.Developer%20Hub/3.get%20credentials.md)
 
