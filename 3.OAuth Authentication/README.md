@@ -1,10 +1,10 @@
 ## Oauth Authentication
 
+
 EasyParcel's API uses the OAuth 2.0 authorization framework to ensure secure access to its services. OAuth 2.0 allows applications to authenticate and access the API on behalf of a user without directly exposing user credentials. 
 
 - **OAuth Version**: OAuth 2.0
 - **Grant Types Supported**: Authorization Code, Client Credentials
-
 
 OAuth (Open Authorization) is an open standard protocol that allows secure authorization in a simple and standardized way from web, mobile, and desktop applications. EasyParcel uses OAuth to enable applications to securely access resources on behalf of the user without exposing the user's credentials.
 
@@ -26,8 +26,19 @@ The OAuth 2.0 authorization flow consists of the following steps:
 ## Security Considerations
 Ensure to use HTTPS to protect communication between clients and servers to prevent eavesdropping and man-in-the-middle attacks.
 
-### Oauth Authentication Flow
-<img src="../8.Picture/%203.OAuth%20Authentication/flow_chart.png" alt="Flow Chart" style="height: 450px;">
+### 🔐 OAuth 2.0 Authorization Flow
+
+```mermaid
+flowchart TD
+    A[User Accesses Client App] --> B[Redirect to Authorization Server]
+    B --> C[User Logs In and Grants Permission]
+    C --> D[Authorization Server Sends Authorization Code]
+    D --> E[Client App Exchanges Code for Token]
+    E --> F[Authorization Server Returns Access Token]
+    F --> G[Client Uses Token to Access Resource]
+    G --> H((Resource Accessed Successfully))
+```
+
 
 
 ### Authorization Endpoint
@@ -45,6 +56,8 @@ The Token Endpoint is used by the client to obtain an access token by presenting
 ```
 https://developer.easyparcel.com/ep_auth/token
 ```
+
+
 <div align="center" style="margin: 1.5rem 0;">
 
 [![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=for-the-badge&scale=1.3)](../README.md)
