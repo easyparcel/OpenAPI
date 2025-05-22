@@ -23,18 +23,7 @@ The EasyParcel API Postman collection is organized into the following main folde
    - **Credit Wallet** - Check your account balance
 
 ## Importing the Collection
-
-### Option 1: Import via URL
-
-1. Open Postman
-2. Click **Import** in the top-left corner
-3. Choose the **Link** tab
-4. Enter the collection URL: `https://planetary-resonance-571252.postman.co/workspace/My-Workspace~cd21b7fe-2e31-49a6-8f44-71a2ce36c72c/collection/40226622-aed30dc0-ace2-4531-ad4c-7a050d1fd13e?action=share&creator=40226622`
-5. Click **Import**
-
-### Option 2: Import from File
-
-1. Download the collection JSON file from our developer portal
+1. Download the collection JSON file from over here : 
 2. Open Postman
 3. Click **Import** in the top-left corner
 4. Choose the **File** tab and select the downloaded JSON file
@@ -50,6 +39,7 @@ Before using the collection, you need to set up your environment variables:
    - `apiVersion` - Set to `open_api/2025-06`
    - `clientId` - Your EasyParcel OAuth client ID
    - `clientSecret` - Your EasyParcel OAuth client secret
+
 
 ## Authentication
 
@@ -79,159 +69,7 @@ To verify your setup is working correctly:
 
 ## Using the Collection
 
-### Shipping Flow Example
 
-A typical shipping workflow using this collection:
-
-1. **Get Quotation**
-   - Use the "Get Quotation" request in the Order Flow folder
-   - Fill in the required parameters for your shipment
-   - Send the request to get available shipping options
-
-2. **Submit Order**
-   - Use the "Submit Order" request
-   - Update the request body with your shipment details
-   - Include the `service_id` from the quotation response
-   - Send the request to create the shipment
-
-3. **View Shipment Details**
-   - Use the "Get Shipment Details" request
-   - Enter the `shipment_number` from the submit order response
-   - Send the request to view the shipment status
-
-### Ondemand Delivery Example
-
-1. **Get Ondemand Quotation**
-   - Use the "Get Ondemand Quotation" request
-   - Provide pickup and delivery details
-   - Send the request to get available options
-
-2. **Submit Ondemand Order**
-   - Use the "Submit Ondemand Order" request
-   - Include the details and pricing from the quotation
-   - Send the request to create the booking
-
-## Request and Response Examples
-
-### Example: Get Quotation
-
-Request:
-```json
-{
-  "shipment": [
-    {
-      "sender": {
-        "postcode": "10150",
-        "subdivison_code": "MY-02",
-        "country": "MY"
-      },
-      "receiver": {
-        "postcode": "018916",
-        "subdivison_code": "SG-04",
-        "country": "SG"
-      },
-      "parcel_value": 50,
-      "weight": 0.5,
-      "width": 5,
-      "length": 5,
-      "height": 5
-    }
-  ]
-}
-```
-
-### Example: Submit Order
-
-Request:
-```json
-{
-  "shipment": [
-    {
-      "service_id": "EP-CS09Q",
-      "collection_date": "2025-05-02",
-      "weight": 2.5,
-      "height": 30,
-      "length": 40,
-      "width": 20,
-      "item": [
-        {
-          "content": "Electronics",
-          "weight": 0.5,
-          "height": 30,
-          "length": 40,
-          "width": 20,
-          "currency_code": "MYR",
-          "value": 500,
-          "quantity": 1
-        }
-      ],
-      "sender": {
-        "name": "John Doe",
-        "company": "ABC Corp",
-        "phone_number_country_code": "+60",
-        "phone_number": "1163642281",
-        "email": "test@easyparcel.com",
-        "address_1": "123 Main St",
-        "address_2": "Apt 4B",
-        "postcode": "10150",
-        "city": "Lunas",
-        "subdivison_code": "MY-07",
-        "country_code": "MY"
-      },
-      "receiver": {
-        "name": "Jane Smith",
-        "company": "XYZ Inc",
-        "phone_number_country_code": "+60",
-        "phone_number": "1163642281",
-        "email": "test@easyparcel.com",
-        "address_1": "456 High St",
-        "address_2": "Floor 2",
-        "postcode": "11950",
-        "city": "Bayan Lepas",
-        "subdivison_code": "MY-07",
-        "country_code": "MY"
-      },
-      "feature": {
-        "sms_tracking": true,
-        "email_tracking": true,
-        "whatsapp_tracking": false,
-        "awb_branding": false
-      }
-    }
-  ]
-}
-```
-
-## Pre-request Scripts
-
-Some requests in the collection use pre-request scripts to:
-
-1. Generate timestamps and dates
-2. Format request data
-3. Set dynamic variables
-
-You can view and modify these scripts by selecting a request and clicking on the "Pre-request Script" tab.
-
-## Working with Environments
-
-The collection supports multiple environments to easily switch between:
-
-1. **Development** - For testing during implementation
-2. **Production** - For live API interactions
-
-To switch environments:
-1. Select the environment dropdown in the top-right corner of Postman
-2. Choose the desired environment
-
-## Collection Variables
-
-The collection includes the following built-in variables:
-
-| Variable Name | Description |
-|---------------|-------------|
-| `currentDate` | Automatically set to today's date |
-| `lastShipmentNumber` | Stores the most recent shipment number |
-| `lastResponseBody` | Stores the last API response for reference |
 
 ## Pagination
 
