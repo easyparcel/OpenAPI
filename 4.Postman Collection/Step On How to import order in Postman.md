@@ -11,7 +11,7 @@
    - **File**: If your API definition is in a local file (e.g., JSON, YAML, WSDL, etc.).
    - **Link**: If the API definition is hosted online (URL).
    - **GitHub**: If the API definition is hosted on a GitHub repository.
-   ![Import API into Postman](URL_OF_THE_IMAGE)
+   ![Import API into Postman](/8.Picture/4.Postman%20Collection/files.png)
 4. **Select the API Definition Format**  
    Choose the appropriate format (e.g., OpenAPI, Swagger, RAML, etc.).
    
