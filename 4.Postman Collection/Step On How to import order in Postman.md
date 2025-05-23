@@ -5,7 +5,7 @@
 
 2. **Go to the "Import" Button**  
    In the top left corner, click the **Import** button.
-   ![Import API into Postman](8.Picture/4.Postman%20Collection/importbutton.png)
+   ![Import API into Postman](/8.Picture/4.Postman%20Collection/importbutton.png)
 3. **Choose Import Source**  
    You can import your API from:
    - **File**: If your API definition is in a local file (e.g., JSON, YAML, WSDL, etc.).
