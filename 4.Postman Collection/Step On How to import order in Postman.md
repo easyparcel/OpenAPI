@@ -13,9 +13,10 @@
    - **GitHub**: If the API definition is hosted on a GitHub repository.
 3. **Import the API Definition**  
    After selecting the file or providing the URL, click the **Import** button to load the API into Postman and it will appear message saying is import            completed.
+   Example Photo:
    ![Import API into Postman](/8.Picture/4.Postman%20Collection/files.png)
    ![Import API into Postman](/8.Picture/4.Postman%20Collection/ImportComplete.png)
-4. **View Imported API**  
+5. **View Imported API**  
    Once imported completed, your API will appear as a collection in Postman. You can start interacting with the API, adding test cases, and exploring its endpoints.
    
 ### For more you may refer to this article:
