@@ -18,7 +18,8 @@
    ![Import API into Postman](/8.Picture/4.Postman%20Collection/Import%20Complete.png)
 5. **View Imported API**  
    Once imported completed, your API will appear as a collection in Postman. You can start interacting with the API, adding test cases, and exploring its endpoints.
-![Import API into Postman](/8.Picture/4.Postman%20Collection/Import%20Complete.png)
+Example photo
+![Import API into Postman](/8.Picture/4.Postman%20Collection/examplecollection.png)
    
 ### For more you may refer to this article:
 [Importing an API in Postman Guide](http://learning.postman.com/docs/design-apis/api-builder/importing-an-api/)
