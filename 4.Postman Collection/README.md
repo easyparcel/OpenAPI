@@ -118,7 +118,7 @@ We welcome feedback and suggestions to improve this collection. Please contact o
 
 [![Back to Docs](https://img.shields.io/badge/Back_to_Docs-00AAEE?style=for-the-badge&scale=1.3)](../README.md)
 [![Previous Section←](https://img.shields.io/badge/Previous_Section_%E2%86%90-FF7733?style=for-the-badge&scale=1.3)](../3.OAuth%20Authentication)
-[![1.How_to_import_json_file_to_Postman →](https://img.shields.io/badge/1.How_to_import_json_file_to_Postman_%E2%86%92-00CC88?style=for-the-badge&scale=1.3)](../4.Postman%20Collection/1.Step%20On%20How%20to$20import%20collection%20in%20Postman.md)
+[![1.How_to_import_json_file_to_Postman →](https://img.shields.io/badge/1.How_to_import_json_file_to_Postman_%E2%86%92-00CC88?style=for-the-badge&scale=1.3)](../4.Postman%20Collection/1.Step%20On%20How%20to%20import%20json%20file%20in%20Postman.md)
 [![Next Section →](https://img.shields.io/badge/Next_Section_%E2%86%92-00CC88?style=for-the-badge&scale=1.3)](../5.API%20endpoint/README.md)
 
 </div>
