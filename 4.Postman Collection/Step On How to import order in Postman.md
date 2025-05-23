@@ -26,3 +26,10 @@ Example photo:
 ### For more you may refer to this article:
 [Importing an API in Postman Guide](http://learning.postman.com/docs/design-apis/api-builder/importing-an-api/)
 
+<div align="center" style="margin: 1.5rem 0;">
+
+[![Back to official documents](https://img.shields.io/badge/Back_to_official_documents-007ACC?style=for-the-badge&scale=1.3)](../README.md)
+[![←Previous Section](https://img.shields.io/badge/Previous_Section_%E2%86%90-FF7733?style=for-the-badge&scale=1.3)](../3.OAuth%20Authentication/1.$20oauth%20authentication%20guide.md)
+[![Next Section →](https://img.shields.io/badge/Next_Section_%E2%86%92-00CC88?style=for-the-badge&scale=1.3)](/5.API%20endpoint/%201.Shipping/1.Get%20Shipment%20Quotation.md)
+
+</div>
