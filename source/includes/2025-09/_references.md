@@ -540,7 +540,7 @@ Simple parameter format for filtering and pagination:
 
 ## Notes on API Versioning
 
-The API version is included in the URL path: `/open_api/2025-06/`
+The API version is included in the URL path: `/open_api/2025-09/`
 
 Always use the appropriate version for your implementation to ensure compatibility.
 
@@ -980,7 +980,7 @@ async function loadMoreShipments() {
 
 ## Pagination for On-demand Listings
 
-The on-demand listing endpoint (`/open_api/2025-06/ondemand/list`) follows the same pagination pattern as shipment listings, but uses `before_booking_number` instead of `before_shipment_number`:
+The on-demand listing endpoint (`/open_api/2025-09/ondemand/list`) follows the same pagination pattern as shipment listings, but uses `before_booking_number` instead of `before_shipment_number`:
 
 ```json
 {
@@ -1022,5 +1022,5 @@ If you've completed testing in the DEMO/Sandbox environment and would like to sw
 
 1. Run the "Get New Access Token" flow.
 2. Once you reach the "Select Account" section, choose and switch to your live account.
-3. ![image](https://github.com/user-attachments/assets/06ece658-cf2b-4b5d-beab-6b4204b97136)
+3. ![image](https://github.com/user-attachments/assets/09ece658-cf2b-4b5d-beab-6b4204b97136)
 4. That's it! You have successfully switched to the live environment.
