@@ -1,4 +1,4 @@
-<img width="1438" height="886" alt="image" src="https://github.com/user-attachments/assets/4b39f8c7-6af8-4d21-8cf2-ad310a6d8196" /># <span style="color: black;"> Developer Hub </span>
+# <span style="color: black;"> Developer Hub </span>
 ## 👨‍💻 Welcome to the EasyParcel Developer Hub
 
 The **EasyParcel Developer Hub** is your one-stop destination for building and integrating custom shipping solutions using our API.
