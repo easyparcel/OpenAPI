@@ -1,4 +1,4 @@
-# <span style="color: black;"> Developer Hub </span>
+<img width="1438" height="886" alt="image" src="https://github.com/user-attachments/assets/4b39f8c7-6af8-4d21-8cf2-ad310a6d8196" /># <span style="color: black;"> Developer Hub </span>
 ## 👨‍💻 Welcome to the EasyParcel Developer Hub
 
 The **EasyParcel Developer Hub** is your one-stop destination for building and integrating custom shipping solutions using our API.
@@ -125,7 +125,7 @@ To access the API, you need to create an application:
    - Redirect URI (for OAuth flows)
 
 <p align="center">
-<img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/df84109c-b2ea-44b4-a22c-64169ec5e26b" />
+   <img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/2eb51ddd-1a5c-4166-9add-5a470d13816c" />
 </p>
 
 ## Understanding Redirect URI
