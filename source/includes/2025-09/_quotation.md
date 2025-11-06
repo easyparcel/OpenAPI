@@ -7,7 +7,7 @@ Get shipment quotations from all available courier companies on the EasyParcel p
 > To authorize, use this code:
 
 ```shell
-curl "https://api.easyparcel.com/open_api/2025-06/shipment/quotations" \
+curl "https://api.easyparcel.com/open_api/2025-09/shipment/quotations" \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
@@ -41,7 +41,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 
 ## HTTP Request (Quotation)
 
-`POST https://api.easyparcel.com/open_api/2025-06/shipment/quotations`
+`POST https://api.easyparcel.com/open_api/2025-09/shipment/quotations`
 
 ## Quotation Request
 
@@ -302,7 +302,7 @@ async function getShippingQuotes(senderPostcode, receiverPostcode) {
 
   try {
     const response = await fetch(
-      'https://api.easyparcel.com/open_api/2025-06/shipment/quotations',
+      'https://api.easyparcel.com/open_api/2025-09/shipment/quotations',
       {
         method: 'POST',
         headers: {
@@ -355,7 +355,7 @@ function getShippingQuotes($senderPostcode, $receiverPostcode) {
         ]]
     ];
 
-    $ch = curl_init('https://api.easyparcel.com/open_api/2025-06/shipment/quotations');
+    $ch = curl_init('https://api.easyparcel.com/open_api/2025-09/shipment/quotations');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($requestData));
@@ -425,7 +425,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
     
     try:
         response = requests.post(
-            'https://api.easyparcel.com/open_api/2025-06/shipment/quotations',
+            'https://api.easyparcel.com/open_api/2025-09/shipment/quotations',
             headers=headers,
             data=json.dumps(request_data)
         )
