@@ -35,7 +35,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 1. Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
    <p align="center">
-   <img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/2a71540d-6e31-47ba-9f93-d7160482430f" />
+   <img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/34badecf-a12c-40ba-8792-4f562706e9c3" />
    </p>
 
 3. Login or sign up easyparcel developer account.
