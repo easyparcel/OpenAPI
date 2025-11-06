@@ -4,7 +4,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 ## Endpoint URL
 
-`POST https://api.easyparcel.com/2025-06/ondemand/cancel`
+`POST https://api.easyparcel.com/2025-09/ondemand/cancel`
 
 ---
 
