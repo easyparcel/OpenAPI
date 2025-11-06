@@ -7,7 +7,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 
 ## HTTP Request (Ondemand Quotation)
 
-`POST https://api.easyparcel.com/open_api/2025-06/ondemand/quotations`
+`POST https://api.easyparcel.com/open_api/2025-09/ondemand/quotations`
 
 ## Ondemand Quotation Request Parameters 
 
@@ -312,7 +312,7 @@ const requestData = {
   ]
 };
 
-fetch('https://api.easyparcel.com/open_api/2025-06/ondemand/quotations', {
+fetch('https://api.easyparcel.com/open_api/2025-09/ondemand/quotations', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -338,7 +338,7 @@ $data = [
     ]
 ];
 
-$ch = curl_init('https://api.easyparcel.com/open_api/2025-06/ondemand/quotations');
+$ch = curl_init('https://api.easyparcel.com/open_api/2025-09/ondemand/quotations');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
@@ -356,7 +356,7 @@ echo $response;
 ```python
 import requests
 
-url = 'https://api.easyparcel.com/open_api/2025-06/ondemand/quotations'
+url = 'https://api.easyparcel.com/open_api/2025-09/ondemand/quotations'
 headers = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
