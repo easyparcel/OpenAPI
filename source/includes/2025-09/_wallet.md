@@ -4,7 +4,7 @@ This endpoint allows users to retrieve their current wallet balance and free cre
 
 ## HTTP Request (Wallet)
 
-`GET https://api.easyparcel.com/open_api/2025-06/wallet`
+`GET https://api.easyparcel.com/open_api/2025-09/wallet`
 
 
 ## Request Wallet Parameters
