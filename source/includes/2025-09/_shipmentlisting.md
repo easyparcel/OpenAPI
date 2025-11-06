@@ -4,7 +4,7 @@ This endpoint allows users to retrieve a list of shipments with optional filteri
 
 ## HTTP Request (listing)
 
-`POST https://api.easyparcel.com/open_api/2025-06/shipment/list`
+`POST https://api.easyparcel.com/open_api/2025-09/shipment/list`
 
 
 ## Listing Request
