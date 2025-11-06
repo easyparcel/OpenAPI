@@ -53,7 +53,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
    - Contact number
    <p align="center">
    <img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/67910aac-2017-449e-9163-ffae6e3614c3" />
-    </p>
+   </p>
 
 7. Accept the Terms of Service and Privacy Policy
 8. Click **Create Account**
