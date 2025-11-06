@@ -88,7 +88,8 @@ EasyParcel will use this information to contact you about your account.
  **Country*** - Your country
   
 <p align="center">  
-<img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/ac2be59f-0f9e-4190-99c2-8438d80718a4" />
+<img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/cdc7d873-a54d-4617-8ca9-5d6cc0cd9627" />
+
 </p>
 
 
