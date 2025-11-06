@@ -7,7 +7,7 @@ The coupon feature allows customers to search for available promo codes and appl
 
 Customers can retrieve a list of available coupon codes using the following endpoint:
 
-`GET https://api.easyparcel.com/open_api/2025-06/ondemand/get_coupon_list`
+`GET https://api.easyparcel.com/open_api/2025-09/ondemand/get_coupon_list`
 
 This will return a list of valid promo codes available to use for the shipment from the user’s account, based on factors such as delivery type, courier, or region.
 
