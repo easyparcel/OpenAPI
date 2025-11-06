@@ -52,7 +52,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
    - Company name
    - Contact number
    <p align="center">
-   <img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/67910aac-2017-449e-9163-ffae6e3614c3" />
+   <img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa" />
    </p>
 
 7. Accept the Terms of Service and Privacy Policy
