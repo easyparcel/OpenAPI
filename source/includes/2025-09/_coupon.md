@@ -9,7 +9,7 @@ Customers can retrieve a list of available coupon codes using the following endp
 
 ### HTTP Request (coupon)
 
-`GET https://api.easyparcel.com/open_api/2025-06/shipment/get_coupon_list`
+`GET https://api.easyparcel.com/open_api/2025-09/shipment/get_coupon_list`
 
 This will return a list of valid promo codes available to use for the shipment from the user’s account, based on factors such as delivery type, courier, or region.
 
