@@ -7,7 +7,7 @@ Our Postman collection provides a convenient way to explore and test the EasyPar
 This guide helps you get started with the EasyParcel API using Postman, providing instructions for importing, configuring, and using our Postman collection.
 
 ## Importing the Collection
-1. Download the collection JSON file from over [**Here**](https://github.com/easyparcel/OpenAPI/blob/2025-06/4.Postman%20Collection/Open%20API%202025-06.postman_collection.json)
+1. Download the collection JSON file from over [**Here**](https://github.com/easyparcel/OpenAPI/blob/2025-09/4.Postman%20Collection/Open%20API%202025-09.postman_collection.json)
 2. Open Postman
 3. Click **Import** in the top-left corner
 4. Choose the **File** tab and select the downloaded JSON file
@@ -26,7 +26,7 @@ Before using the collection, you need to set up your environment variables:
 1. Create a new environment in Postman
 2. Add the following variables:
    - `baseUrl` - Set to `https://api.easyparcel.com`
-   - `apiVersion` - Set to `open_api/2025-06`
+   - `apiVersion` - Set to `open_api/2025-09`
    - `clientId` - Your EasyParcel OAuth client ID
    - `clientSecret` - Your EasyParcel OAuth client secret
 
