@@ -172,7 +172,7 @@ yourapp://oauth/callback.com.yourcompany.yourapp://auth
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
 
 <p align="center">
-<img  alt="image" style="max-width: 105%; height: auto;"  src="https://github.com/user-attachments/assets/342f75f4-db5e-4dae-aedd-fda5db2f561e" />
+<img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/f37a89ea-1edc-41b2-ab29-a44b27625ff5" />
 </p>
 
 
