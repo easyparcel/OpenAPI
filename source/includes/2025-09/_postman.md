@@ -18,8 +18,9 @@ Enter this redirect/call URL to your app, if you intent to use for postman
 ```
 https://oauth.pstmn.io/v1/callback
 ```
-
-<img width="553" alt="image" src="https://github.com/user-attachments/assets/5df94f95-341f-4291-91ea-fcd1dff64691" />
+<p align="center">
+<img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/b99fcb36-7ed4-4b62-b876-2239c8fc9c98" />
+</p>
 
 Before using the collection, you need to set up your environment variables:
 
