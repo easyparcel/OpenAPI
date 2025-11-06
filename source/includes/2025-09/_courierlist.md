@@ -4,7 +4,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 ## HTTP Request (Courier list)
 
-`GET https://api.easyparcel.com/open_api/2025-06/courier/list`
+`GET https://api.easyparcel.com/open_api/2025-09/courier/list`
 
 ## Courier List Requested Parameters
 
