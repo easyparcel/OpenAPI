@@ -51,8 +51,9 @@ The EasyParcel API uses OAuth 2.0 for authentication. The collection is pre-conf
 
 The collection will automatically include the token in all requests.
 
-
-<img width="799" alt="Screenshot 2025-05-26 at 9 27 41 AM" src="https://github.com/user-attachments/assets/d37cd541-639c-40c1-be48-cbe02ca98a3a" />
+<p align="center">
+<img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/81162d54-06fd-4760-bcf1-0cf873660202" />
+</p>
 
 
 ## Testing Your First Request
