@@ -231,7 +231,7 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 - Application logo (optional)
 
 <p align="center">
-<img  alt="image" style="max-width: 105%; height: auto;"  src="https://github.com/user-attachments/assets/7d47790d-64a5-4b11-acd0-f9bc3e6d1350" />
+<img width="2028" height="1260" alt="image" src="https://github.com/user-attachments/assets/6eef490b-c08e-4291-8085-232c361da4d0" />
 </p>
 
 ### Once completed, congradulations! You have create your first app in easyparcel account!
