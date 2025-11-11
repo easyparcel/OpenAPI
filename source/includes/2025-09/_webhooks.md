@@ -17,18 +17,21 @@ Follow these steps to subscribe to webhooks:
 - Go to **Developer Hub Dashboard**
 - Click on **Apps**
 - Select **Settings** on the app you wish to configure webhooks for
-<img width="1145" height="401" alt="image" src="https://github.com/user-attachments/assets/a9559156-b73e-4e1a-88c9-dd4da2438600" />
+<img width="2290" height="802" alt="512587701-b4caf45c-90af-4531-863b-856f9d5dfecb" src="https://github.com/user-attachments/assets/922ca5f6-4589-4d0f-88ac-c5da550a132e" />
+
 
 ### 2. 📡 Access Webhook Configuration
 - In the left sidebar, click **Webhook**
 - Click the **Add Endpoint** button
-<img width="1026" height="231" alt="image" src="https://github.com/user-attachments/assets/37f9c760-009a-414b-b2da-a2f218861dab" />
+<img width="2052" height="462" alt="512587804-a33c0956-3722-480c-8fef-331435c90731" src="https://github.com/user-attachments/assets/94f52fd7-fa1f-403f-8c25-22d4cca5b274" />
+
 
 ### 3. ⚙️ Configure Webhook Details
 - **Enter Endpoint URL**: Input the URL that will receive the webhook payload
 - **Select Webhook Topic**: Choose the event(s) you want to subscribe to from the available options
 - **Verify Configuration**: Double-check your URL and selected topics
-<img width="285" height="186" alt="image" src="https://github.com/user-attachments/assets/22b0dbc1-9c1a-4e46-8827-1cb350eb2e57" />
+<img width="570" height="372" alt="512588012-1a3373a2-6535-417a-a41b-5fb8855a869d" src="https://github.com/user-attachments/assets/187fe30b-e939-4265-b69f-b8f16d336d06" />
+
 
 ### 4. 💾 Save Configuration
 - Press **Save** to confirm your webhook settings
