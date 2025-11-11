@@ -42,9 +42,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 2. Login or sign up easyparcel developer account.
    *You already singed up, you may proceed to login (skipped to step 2)
-   
    Click on the **Sign Up**
-
 
 
    <p align="center">
@@ -69,7 +67,6 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 
    
-
 7. Accept the Terms of Service and Privacy Policy
 8. Click **Create Account**
 9. Verify your email address by clicking the link sent to your email
