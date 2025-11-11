@@ -84,7 +84,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -312,7 +312,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -526,7 +526,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -1071,7 +1071,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -1294,7 +1294,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -1482,7 +1482,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -1670,7 +1670,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -2006,7 +2006,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -2162,12 +2162,12 @@
 						},
 						{
 							"key": "authUrl",
-							"value": "http://localhost:8023/ep_auth/login",
+							"value": "https://api.easyparcel.com/oauth/login",
 							"type": "string"
 						},
 						{
 							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/ep_auth/token",
+							"value": "https://api.easyparcel.com/oauth/token",
 							"type": "string"
 						},
 						{
@@ -2222,7 +2222,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -2436,7 +2436,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -2656,7 +2656,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -2876,7 +2876,7 @@
 						},
 						{
 							"key": "redirect_uri",
-							"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+							"value": "",
 							"type": "string"
 						},
 						{
@@ -3027,7 +3027,7 @@
 			},
 			{
 				"key": "refreshTokenUrl",
-				"value": "http://localhost:8023/ep_auth/token",
+				"value": "https://api.easyparcel.com/oauth/token",
 				"type": "string"
 			},
 			{
@@ -3082,7 +3082,7 @@
 			},
 			{
 				"key": "redirect_uri",
-				"value": "http://localhost:8023/apps/b05e6da7-3f93-4799-a83c-81a16a35e607/edit",
+				"value": "",
 				"type": "string"
 			},
 			{
@@ -3092,7 +3092,7 @@
 			},
 			{
 				"key": "authUrl",
-				"value": "http://localhost:8023/ep_auth/login",
+				"value": "https://api.easyparcel.com/oauth/login",
 				"type": "string"
 			},
 			{
@@ -3102,7 +3102,7 @@
 			},
 			{
 				"key": "accessTokenUrl",
-				"value": "http://localhost:8023/ep_auth/token",
+				"value": "https://api.easyparcel.com/oauth/token",
 				"type": "string"
 			}
 		]
