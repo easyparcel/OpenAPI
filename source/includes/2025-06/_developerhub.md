@@ -173,9 +173,8 @@ yourapp://oauth/callback.com.yourcompany.yourapp://auth
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
 
 <p align="center">
-<img  alt="image" style="max-width: 105%; height: auto;"  src="https://github.com/user-attachments/assets/342f75f4-db5e-4dae-aedd-fda5db2f561e" />
+<img style="max-width: 105%; height: auto;" alt="pek" src="https://github.com/user-attachments/assets/63ec36b3-69bc-41ed-af07-048450d44a9d" />
 </p>
-
 
 **What are Access Tokens?**
 Access tokens are credentials that allow your application to access Easy Parcel's API on behalf of authenticated users. They have a limited lifespan for security purposes.
