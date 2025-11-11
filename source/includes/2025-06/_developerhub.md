@@ -44,9 +44,13 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
    *You already singed up, you may proceed to login (skipped to step 2)
    
    Click on the **Sign Up**
+
+
+
    <p align="center">
    <img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/f5d9b21a-c283-4701-aba3-ffbb0cda8ded" />
    </p>
+
    
   complete the registration form:
    - Full name
@@ -54,9 +58,17 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
    - Password (must be at least 8 characters with numbers and special characters)
    - Company name
    - Contact number
+
+
+
+
    <p align="center">
    <img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa" />
    </p>
+
+
+
+   
 
 7. Accept the Terms of Service and Privacy Policy
 8. Click **Create Account**
@@ -89,9 +101,14 @@ EasyParcel will use this information to contact you about your account.
  
  **Country*** - Your country
 
+
+
 <p align="center">  
 <img style="max-width: 105%; height: auto;" alt="toott" src="https://github.com/user-attachments/assets/bf510e5a-0714-4888-8c61-10407bc8dd15" />
 </p>
+
+
+
 
 
 ### Emergency Developer Contact Information
@@ -172,9 +189,11 @@ yourapp://oauth/callback.com.yourcompany.yourapp://auth
 ### Access Token Expiry Configuration
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
 
+
 <p align="center">
 <img style="max-width: 105%; height: auto;" alt="pek" src="https://github.com/user-attachments/assets/63ec36b3-69bc-41ed-af07-048450d44a9d" />
 </p>
+
 
 **What are Access Tokens?**
 Access tokens are credentials that allow your application to access Easy Parcel's API on behalf of authenticated users. They have a limited lifespan for security purposes.
