@@ -1022,5 +1022,10 @@ If you've completed testing in the DEMO/Sandbox environment and would like to sw
 
 1. Run the "Get New Access Token" flow.
 2. Once you reach the "Select Account" section, choose and switch to your live account.
-3. ![image](https://github.com/user-attachments/assets/09ece658-cf2b-4b5d-beab-6b4204b97136)
+3. <p align="center">
+  <img src="https://github.com/user-attachments/assets/06ae0af2-9e28-4347-95e0-cb31c90bbef1"
+       width="70%"
+       style="border: 1px solid #ccc; border-radius: 8px;">
+</p>
+
 4. That's it! You have successfully switched to the live environment.
