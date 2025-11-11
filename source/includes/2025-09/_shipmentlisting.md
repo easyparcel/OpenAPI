@@ -82,8 +82,8 @@ Since results are sorted newest first, each subsequent request returns the next 
             },
             "sender_details": {
                 "name": "John Doe",
-                "email": "weikeong.liew@easyparcel.com",
-                "contact": "+601163642281",
+                "email": "john@easyparcel.com",
+                "contact": "+601162641181",
                 "alternative_contact": 0,
                 "address1": "123 Main St",
                 "subdivision_code": "MY-07",
@@ -92,8 +92,8 @@ Since results are sorted newest first, each subsequent request returns the next 
             },
             "receiver_details": {
                 "name": "Jane Smith",
-                "email": "weikeong.liew@easyparcel.com",
-                "contact": "+601163642281",
+                "email": "smith@easyparcel.com",
+                "contact": "+601173641201",
                 "alternative_contact": 0,
                 "subdivision_code": null,
                 "postal_code": "11950",
@@ -120,7 +120,7 @@ Since results are sorted newest first, each subsequent request returns the next 
             },
             "sender_details": {
                 "name": "John Doe",
-                "email": "weikeong.liew@easyparcel.com",
+                "email": "john@easyparcel.com",
                 "contact": "+601163642281",
                 "alternative_contact": 0,
                 "address1": "123 Main St",
@@ -130,7 +130,7 @@ Since results are sorted newest first, each subsequent request returns the next 
             },
             "receiver_details": {
                 "name": "Jane Smith",
-                "email": "weikeong.liew@easyparcel.com",
+                "email": "smith@easyparcel.com",
                 "contact": "+601163642281",
                 "alternative_contact": 0,
                 "subdivision_code": null,
@@ -158,7 +158,7 @@ Since results are sorted newest first, each subsequent request returns the next 
             },
             "sender_details": {
                 "name": "John Doe",
-                "email": "weikeong.liew@easyparcel.com",
+                "email": "john@easyparcel.com",
                 "contact": "+601163642281",
                 "alternative_contact": 0,
                 "address1": "123 Main St",
@@ -168,7 +168,7 @@ Since results are sorted newest first, each subsequent request returns the next 
             },
             "receiver_details": {
                 "name": "Jane Smith",
-                "email": "weikeong.liew@easyparcel.com",
+                "email": "smith@easyparcel.com",
                 "contact": "+601163642281",
                 "alternative_contact": 0,
                 "subdivision_code": null,
