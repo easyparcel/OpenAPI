@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "1cd609c5-b083-4e5f-8c0a-2790c7a3d984",
-		"name": "Open API Live",
+		"_postman_id": "65323ee4-3793-4510-ba2e-ac5c6fecfbc8",
+		"name": "Open API Live Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "41838037"
 	},
@@ -1935,6 +1935,16 @@
 					"type": "oauth2",
 					"oauth2": [
 						{
+							"key": "accessTokenUrl",
+							"value": "https://api.easyparcel.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://api.easyparcel.com/oauth/login",
+							"type": "string"
+						},
+						{
 							"key": "clientSecret",
 							"value": "34daf909-ed81-45ed-b340-77b771484a6c",
 							"type": "string"
@@ -1942,16 +1952,6 @@
 						{
 							"key": "clientId",
 							"value": "d56e07f0-830b-4f83-a5ac-89b0dc357441",
-							"type": "string"
-						},
-						{
-							"key": "authUrl",
-							"value": "http://localhost:8023/ep_auth/login",
-							"type": "string"
-						},
-						{
-							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/ep_auth/token",
 							"type": "string"
 						},
 						{
