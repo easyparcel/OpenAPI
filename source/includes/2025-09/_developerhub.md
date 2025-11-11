@@ -34,9 +34,11 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 ### Step 1: Create a Developer Account
 
 1. Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
-    <p align="center">
-   <img alt="image" style="max-width: 105%; height: auto;"  alt="image" src="https://github.com/user-attachments/assets/e9060795-8770-4224-bea8-2dec133765d5" />
-   </p>
+
+
+<p align="center">
+   <img style="max-width: 105%; height: auto;"  alt="Screenshot 2025-11-11 at 5 27 38 PM" src="https://github.com/user-attachments/assets/b44f03b0-4925-4273-86cd-1b125645ebde" />
+ </p>
 
 2. Login or sign up easyparcel developer account.
    *You already singed up, you may proceed to login (skipped to step 2)
