@@ -17,7 +17,10 @@ Follow these steps to subscribe to webhooks:
 - Go to **Developer Hub Dashboard**
 - Click on **Apps**
 - Select **Settings** on the app you wish to configure webhooks for
-<img width="2290" height="802" alt="512587701-b4caf45c-90af-4531-863b-856f9d5dfecb" src="https://github.com/user-attachments/assets/e51be5d2-8e37-4d94-ad59-877083586e57" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/922ca5f6-4589-4d0f-88ac-c5da550a132e" width="80%">
+</p>
+
 
 ### 2. 📡 Access Webhook Configuration
 - In the left sidebar, click **Webhook**
