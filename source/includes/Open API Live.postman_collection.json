@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "0d693866-0634-418b-9746-cee1d58f1f7c",
+		"_postman_id": "1cd609c5-b083-4e5f-8c0a-2790c7a3d984",
 		"name": "Open API Live",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "49848845",
-		"_collection_link": "https://bold-eclipse-21099.postman.co/workspace/Team-Workspace~b5548d5f-a244-4e27-8f32-750c56ce06d1/collection/49848845-0d693866-0634-418b-9746-cee1d58f1f7c?action=share&source=collection_link&creator=49848845"
+		"_exporter_id": "41838037"
 	},
 	"item": [
 		{
@@ -167,7 +166,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Date",
@@ -242,6 +241,16 @@
 					"type": "oauth2",
 					"oauth2": [
 						{
+							"key": "accessTokenUrl",
+							"value": "https://api.easyparcel.com/oauth/token ",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://api.easyparcel.com/oauth/login",
+							"type": "string"
+						},
+						{
 							"key": "clientId",
 							"value": "f7dda724-d73a-4cd4-8a81-d6cce10163b7",
 							"type": "string"
@@ -249,16 +258,6 @@
 						{
 							"key": "clientSecret",
 							"value": "0f940b8d-524c-4e03-b9a9-0d4678e05b08",
-							"type": "string"
-						},
-						{
-							"key": "accessTokenUrl",
-							"value": "https://developer.easyparcel.com/ep_auth/login",
-							"type": "string"
-						},
-						{
-							"key": "authUrl",
-							"value": "https://developer.easyparcel.com/ep_auth/login",
 							"type": "string"
 						},
 						{
@@ -381,7 +380,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Date",
@@ -457,12 +456,12 @@
 					"oauth2": [
 						{
 							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/oauth/token",
+							"value": "https://api.easyparcel.com/oauth/token",
 							"type": "string"
 						},
 						{
 							"key": "authUrl",
-							"value": "http://localhost:8023/oauth/login",
+							"value": "https://api.easyparcel.com/oauth/login",
 							"type": "string"
 						},
 						{
@@ -997,12 +996,12 @@
 					"oauth2": [
 						{
 							"key": "accessTokenUrl",
-							"value": "https://developer.easyparcel.com/oauth/token",
+							"value": "https://api.easyparcel.com/oauth/token",
 							"type": "string"
 						},
 						{
 							"key": "authUrl",
-							"value": "https://developer.easyparcel.com/oauth/login",
+							"value": "https://api.easyparcel.com/oauth/login",
 							"type": "string"
 						},
 						{
@@ -1149,7 +1148,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Date",
@@ -1224,18 +1223,18 @@
 					"type": "oauth2",
 					"oauth2": [
 						{
-							"key": "scope",
-							"value": "profile:read,account:read,profile:write,account:write",
-							"type": "string"
-						},
-						{
 							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/ep_auth/token",
+							"value": "https://api.easyparcel.com/oauth/token",
 							"type": "string"
 						},
 						{
 							"key": "authUrl",
-							"value": "http://localhost:8023/ep_auth/login",
+							"value": "https://api.easyparcel.com/oauth/login",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "profile:read,account:read,profile:write,account:write",
 							"type": "string"
 						},
 						{
@@ -1317,14 +1316,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8023/open_api/ondemand/quotation",
-					"protocol": "http",
+					"raw": "https://api.easyparcel.com/open_api/2025-09/ondemand/quotation",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"api",
+						"easyparcel",
+						"com"
 					],
-					"port": "8023",
 					"path": [
 						"open_api",
+						"2025-09",
 						"ondemand",
 						"quotation"
 					]
@@ -1410,18 +1411,18 @@
 					"type": "oauth2",
 					"oauth2": [
 						{
-							"key": "scope",
-							"value": "profile:read,account:read,profile:write,account:write",
-							"type": "string"
-						},
-						{
 							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/ep_auth/token",
+							"value": "https://api.easyparcel.com/oauth/token",
 							"type": "string"
 						},
 						{
 							"key": "authUrl",
-							"value": "http://localhost:8023/ep_auth/login",
+							"value": "https://api.easyparcel.com/oauth/login",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "profile:read,account:read,profile:write,account:write",
 							"type": "string"
 						},
 						{
@@ -1503,14 +1504,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8023/open_api/ondemand/order",
-					"protocol": "http",
+					"raw": "https://api.easyparcel.com/open_api/2025-09/ondemand/order",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"api",
+						"easyparcel",
+						"com"
 					],
-					"port": "8023",
 					"path": [
 						"open_api",
+						"2025-09",
 						"ondemand",
 						"order"
 					]
@@ -2363,12 +2366,12 @@
 					"oauth2": [
 						{
 							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/ep_auth/token",
+							"value": "https://api.easyparcel.com/oauth/token",
 							"type": "string"
 						},
 						{
 							"key": "authUrl",
-							"value": "http://localhost:8023/ep_auth/login",
+							"value": "https://api.easyparcel.com/oauth/login",
 							"type": "string"
 						},
 						{
@@ -2582,13 +2585,13 @@
 					"type": "oauth2",
 					"oauth2": [
 						{
-							"key": "authUrl",
-							"value": "http://localhost:8023/ep_auth/login",
+							"key": "accessTokenUrl",
+							"value": "https://api.easyparcel.com/oauth/token",
 							"type": "string"
 						},
 						{
-							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/ep_auth/token",
+							"key": "authUrl",
+							"value": "https://api.easyparcel.com/oauth/login",
 							"type": "string"
 						},
 						{
@@ -2802,6 +2805,16 @@
 					"type": "oauth2",
 					"oauth2": [
 						{
+							"key": "accessTokenUrl",
+							"value": "https://api.easyparcel.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://api.easyparcel.com/oauth/login",
+							"type": "string"
+						},
+						{
 							"key": "clientSecret",
 							"value": "34daf909-ed81-45ed-b340-77b771484a6c",
 							"type": "string"
@@ -2809,16 +2822,6 @@
 						{
 							"key": "clientId",
 							"value": "d56e07f0-830b-4f83-a5ac-89b0dc357441",
-							"type": "string"
-						},
-						{
-							"key": "authUrl",
-							"value": "http://localhost:8023/ep_auth/login",
-							"type": "string"
-						},
-						{
-							"key": "accessTokenUrl",
-							"value": "http://localhost:8023/ep_auth/token",
 							"type": "string"
 						},
 						{
@@ -2945,7 +2948,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Date",
