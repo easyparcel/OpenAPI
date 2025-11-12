@@ -65,9 +65,9 @@ complete the registration form:
        style="max-width: 105%; height: auto;">
 </p>
 
-7. Accept the Terms of Service and Privacy Policy
-8. Click **Create Account**
-9. Verify your email address by clicking the link sent to your email
+7. Accept the Terms of Service and Privacy Policy  
+8. Click **Create Account**  
+9. Verify your email address by clicking the link sent to your email  
 
 ### Step 2: Complete Your Developer Profile
 
@@ -78,23 +78,17 @@ After verifying your email and logging in, you'll need to complete your develope
 - **Website** - Your company or personal website URL
 
 #### Contact Information
+
 EasyParcel will use this information to contact you about your account.
 
- **Contact Email*** - Primary email for account communications
- 
- **Phone Number*** - Contact phone with country code
- 
- **Address 1*** - Primary address
- 
- **Address 2** - Additional address information (optional)
- 
- **City*** - Your city
- 
- **ZIP / Postal Code*** - Your postal code
- 
- **State / Territory*** - Your state or territory
- 
- **Country*** - Your country
+- **Contact Email*** - Primary email for account communications  
+- **Phone Number*** - Contact phone with country code  
+- **Address 1*** - Primary address  
+- **Address 2** - Additional address information (optional)  
+- **City*** - Your city  
+- **ZIP / Postal Code*** - Your postal code  
+- **State / Territory*** - Your state or territory  
+- **Country*** - Your country
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9219aab6-9308-4a12-86df-4fac5011726c"
