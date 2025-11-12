@@ -261,7 +261,7 @@ Access tokens are credentials that allow your application to access Easy Parcel'
   - client id
   - client secret
   
-<img width="567" height="503" alt="513032968-f66c7ebc-9dff-4be1-9223-ddb8985f722c" src="https://github.com/user-attachments/assets/00a731fa-031c-486a-bd78-752be227912a" />
+<img width="567" height="380" alt="513032968-f66c7ebc-9dff-4be1-9223-ddb8985f722c" src="https://github.com/user-attachments/assets/00a731fa-031c-486a-bd78-752be227912a" />
 
 
 
