@@ -181,11 +181,12 @@ yourapp://oauth/callback.com.yourcompany.yourapp://auth
 ### Access Token Expiry Configuration
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
 
+
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/342f75f4-db5e-4dae-aedd-fda5db2f561e"
-       alt="image"
-       style="max-width: 105%; height: auto;">
+<img style="max-width: 105%; height: auto;" alt="piakpiak" src="https://github.com/user-attachments/assets/e0c23941-62c2-4fa8-95ce-3de49b7bb391" />
 </p>
+
 
 
 **What are Access Tokens?**
