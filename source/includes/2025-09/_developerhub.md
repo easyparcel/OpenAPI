@@ -54,9 +54,10 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
    - Password (must be at least 8 characters with numbers and special characters)
    - Company name
    - Contact number
-   <p align="center">
-   <img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa" />
-   </p>
+  <img src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa"
+     alt="image"
+     style="max-width: 105%; height: auto; display:block; margin:auto;">
+
 
 7. Accept the Terms of Service and Privacy Policy
 8. Click **Create Account**
