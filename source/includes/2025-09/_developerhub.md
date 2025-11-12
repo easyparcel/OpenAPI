@@ -74,21 +74,21 @@ Complete the registration form:
 After verifying your email and logging in, you'll need to complete your developer profile with the following information:
 
 #### Basic Information
-- **Account Name*** - Your developer account name (usually your company name)
+- **Account Name** - Your developer account name (usually your company name)
 - **Website** - Your company or personal website URL
 
 #### Contact Information
 
 EasyParcel will use this information to contact you about your account.
 
-- **Contact Email*** - Primary email for account communications  
-- **Phone Number*** - Contact phone with country code  
-- **Address 1*** - Primary address  
+- **Contact Email** - Primary email for account communications  
+- **Phone Number** - Contact phone with country code  
+- **Address 1** - Primary address  
 - **Address 2** - Additional address information (optional)  
 - **City*** - Your city  
-- **ZIP / Postal Code*** - Your postal code  
-- **State / Territory*** - Your state or territory  
-- **Country*** - Your country
+- **ZIP / Postal Code** - Your postal code  
+- **State / Territory** - Your state or territory  
+- **Country** - Your country
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9219aab6-9308-4a12-86df-4fac5011726c"
