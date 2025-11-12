@@ -139,9 +139,12 @@ To access the API, you need to create an application:
    - Application name
    - Redirect URI (for OAuth flows)
 
+
 <p align="center">
-   <img style="max-width: 105%; height: auto;" alt="pok" src="https://github.com/user-attachments/assets/d3170711-edb0-4b31-a314-4029981c3b2a" />
+<img style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/d3509357-67c1-4309-b369-f46221cc7b31" />
 </p>
+
+
 
 ## Understanding Redirect URI
 
