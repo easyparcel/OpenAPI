@@ -21,7 +21,7 @@ https://oauth.pstmn.io/v1/callback
 <p align="center">
   <img 
     src="https://github.com/user-attachments/assets/4805d31c-78de-4f40-a767-53f4f49873cb"
-    alt="510674981-b99fcb36-7ed4-4b62-b876-2239c8fc9c98"
+    alt="Configuration Example"
     style="max-width: 100%; height: auto;"
   >
 </p>
