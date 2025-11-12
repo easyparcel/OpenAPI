@@ -35,29 +35,35 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 1. Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
 
-
 <p align="center">
-   <img style="max-width: 105%; height: auto;"  alt="Screenshot 2025-11-11 at 5 27 38 PM" src="https://github.com/user-attachments/assets/b44f03b0-4925-4273-86cd-1b125645ebde" />
- </p>
+  <img src="https://github.com/user-attachments/assets/b44f03b0-4925-4273-86cd-1b125645ebde"
+       alt="Screenshot 2025-11-11 at 5 27 38 PM"
+       style="max-width: 105%; height: auto;">
+</p>
 
 2. Login or sign up easyparcel developer account.
    *You already singed up, you may proceed to login (skipped to step 2)
    
    Click on the **Sign Up**
-   <p align="center">
-   <img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/f5d9b21a-c283-4701-aba3-ffbb0cda8ded" />
-   </p>
-   
-  complete the registration form:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f5d9b21a-c283-4701-aba3-ffbb0cda8ded"
+       alt="image"
+       style="max-width: 105%; height: auto;">
+</p>
+
+complete the registration form:
    - Full name
    - Email address
    - Password (must be at least 8 characters with numbers and special characters)
    - Company name
    - Contact number
-  <img src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa"
-     alt="image"
-     style="max-width: 105%; height: auto; display:block; margin:auto;">
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa"
+       alt="image"
+       style="max-width: 105%; height: auto;">
+</p>
 
 7. Accept the Terms of Service and Privacy Policy
 8. Click **Create Account**
@@ -89,8 +95,12 @@ EasyParcel will use this information to contact you about your account.
  **State / Territory*** - Your state or territory
  
  **Country*** - Your country
-  
-<img width="1073" height="637" alt="445981046-ac2be59f-0f9e-4190-99c2-8438d80718a4" src="https://github.com/user-attachments/assets/9219aab6-9308-4a12-86df-4fac5011726c" />
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9219aab6-9308-4a12-86df-4fac5011726c"
+       alt="445981046-ac2be59f-0f9e-4190-99c2-8438d80718a4"
+       style="max-width: 105%; height: auto;">
+</p>
 
 
 
@@ -117,7 +127,9 @@ To access the API, you need to create an application:
 2. Click **Create New Application**
 
 <p align="center">
-<img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/ddb518b3-e6c5-4e46-82fb-34acc2d8a756" />
+  <img src="https://github.com/user-attachments/assets/ddb518b3-e6c5-4e46-82fb-34acc2d8a756"
+       alt="image"
+       style="max-width: 105%; height: auto;">
 </p>
 
 4. Fill in the application details:
@@ -126,7 +138,9 @@ To access the API, you need to create an application:
    - Redirect URI (for OAuth flows)
 
 <p align="center">
-<img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/df84109c-b2ea-44b4-a22c-64169ec5e26b" />
+  <img src="https://github.com/user-attachments/assets/df84109c-b2ea-44b4-a22c-64169ec5e26b"
+       alt="image"
+       style="max-width: 105%; height: auto;">
 </p>
 
 ## Understanding Redirect URI
@@ -173,7 +187,9 @@ yourapp://oauth/callback.com.yourcompany.yourapp://auth
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
 
 <p align="center">
-<img  alt="image" style="max-width: 105%; height: auto;"  src="https://github.com/user-attachments/assets/342f75f4-db5e-4dae-aedd-fda5db2f561e" />
+  <img src="https://github.com/user-attachments/assets/342f75f4-db5e-4dae-aedd-fda5db2f561e"
+       alt="image"
+       style="max-width: 105%; height: auto;">
 </p>
 
 
@@ -234,7 +250,9 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 - Application logo (optional)
 
 <p align="center">
-<img width="1014" height="630" alt="445985136-7d47790d-64a5-4b11-acd0-f9bc3e6d1350" src="https://github.com/user-attachments/assets/272ded5c-92b5-469f-82d8-8bafe02ee052" />
+  <img src="https://github.com/user-attachments/assets/272ded5c-92b5-469f-82d8-8bafe02ee052"
+       alt="445985136-7d47790d-64a5-4b11-acd0-f9bc3e6d1350"
+       style="max-width: 105%; height: auto;">
 </p>
 
 ### Once completed, congradulations! You have create your first app in easyparcel account!
@@ -248,7 +266,9 @@ Access tokens are credentials that allow your application to access Easy Parcel'
   - client secret
 
 <p align="center">
-<img  alt="image" style="max-width: 105%; height: auto;"  src="https://github.com/user-attachments/assets/1ca43169-d484-4704-bb40-deceb552e53b" />
+  <img src="https://github.com/user-attachments/assets/1ca43169-d484-4704-bb40-deceb552e53b"
+       alt="image"
+       style="max-width: 105%; height: auto;">
 </p>
 
 2.)Follow [the Steps to get Oauth access token](#get-oauth-access-token)
