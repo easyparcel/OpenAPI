@@ -49,8 +49,6 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 
 ```json
 {
-  "list": [
-    {
   "shipment": [
     {
       "sender": {
