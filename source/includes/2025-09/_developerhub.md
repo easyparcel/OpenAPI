@@ -132,11 +132,11 @@ To access the API, you need to create an application:
    - Application name
    - Redirect URI (for OAuth flows)
 
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/df84109c-b2ea-44b4-a22c-64169ec5e26b"
-       alt="image"
-       style="max-width: 105%; height: auto;">
+<img style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/d3509357-67c1-4309-b369-f46221cc7b31" />
 </p>
+
 
 ## Understanding Redirect URI
 
