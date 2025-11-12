@@ -261,15 +261,8 @@ Access tokens are credentials that allow your application to access Easy Parcel'
   - client id
   - client secret
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/1ca43169-d484-4704-bb40-deceb552e53b" target="_blank">
-    <img 
-      src="https://github.com/user-attachments/assets/1ca43169-d484-4704-bb40-deceb552e53b"
-      alt="image"
-      style="max-width: 100%; height: auto;"
-    >
-  </a>
-</p>
+<img width="567" height="503" alt="445987118-1ca43169-d484-4704-bb40-deceb552e53b" src="https://github.com/user-attachments/assets/f66c7ebc-9dff-4be1-9223-ddb8985f722c" />
+
 
 
 2.)Follow [the Steps to get Oauth access token](#get-oauth-access-token)
