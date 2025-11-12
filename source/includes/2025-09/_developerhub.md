@@ -41,9 +41,9 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-2. Login or sign up easyparcel developer account.
-   *You already singed up, you may proceed to login (skipped to step 2)
-   
+2. Login or sign up easyparcel developer account.  
+   *You already singed up, you may proceed to login (skipped to step 2)*
+
    Click on the **Sign Up**
 
 <p align="center">
@@ -52,12 +52,12 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-complete the registration form:
-   - Full name
-   - Email address
-   - Password (must be at least 8 characters with numbers and special characters)
-   - Company name
-   - Contact number
+Complete the registration form:
+- Full name  
+- Email address  
+- Password (must be at least 8 characters with numbers and special characters)  
+- Company name  
+- Contact number
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa"
@@ -65,9 +65,9 @@ complete the registration form:
        style="max-width: 105%; height: auto;">
 </p>
 
-7. Accept the Terms of Service and Privacy Policy  
-8. Click **Create Account**  
-9. Verify your email address by clicking the link sent to your email  
+3. Accept the Terms of Service and Privacy Policy  
+4. Click **Create Account**  
+5. Verify your email address by clicking the link sent to your email  
 
 ### Step 2: Complete Your Developer Profile
 
@@ -95,6 +95,7 @@ EasyParcel will use this information to contact you about your account.
        alt="445981046-ac2be59f-0f9e-4190-99c2-8438d80718a4"
        style="max-width: 105%; height: auto;">
 </p>
+
 
 
 
