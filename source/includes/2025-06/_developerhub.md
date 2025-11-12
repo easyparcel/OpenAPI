@@ -33,77 +33,68 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 ### Step 1: Create a Developer Account
 
-1. Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
-   <p align="center">
-   <img style="max-width: 105%; height: auto;"  alt="Screenshot 2025-11-11 at 5 27 38 PM" src="https://github.com/user-attachments/assets/b44f03b0-4925-4273-86cd-1b125645ebde" />
- </p>
+1.Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b44f03b0-4925-4273-86cd-1b125645ebde"
+       alt="Screenshot 2025-11-11 at 5 27 38 PM"
+       style="max-width: 105%; height: auto;">
+</p>
 
+2.Login or sign up easyparcel developer account.  
+   *You already singed up, you may proceed to login (skipped to step 2)*
 
-2. Login or sign up easyparcel developer account.
-   *You already singed up, you may proceed to login (skipped to step 2)
    Click on the **Sign Up**
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f5d9b21a-c283-4701-aba3-ffbb0cda8ded"
+       alt="image"
+       style="max-width: 105%; height: auto;">
+</p>
 
-   <p align="center">
-   <img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/f5d9b21a-c283-4701-aba3-ffbb0cda8ded" />
-   </p>
+3.Complete the registration form:
+- Full name  
+- Email address  
+- Password (must be at least 8 characters with numbers and special characters)  
+- Company name  
+- Contact number
 
-   
-  complete the registration form:
-   - Full name
-   - Email address
-   - Password (must be at least 8 characters with numbers and special characters)
-   - Company name
-   - Contact number
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa"
+       alt="image"
+       style="max-width: 105%; height: auto;">
+</p>
 
-
-
-
-   <p align="center">
-   <img style="max-width: 105%; height: auto;" alt="image" src="https://github.com/user-attachments/assets/baac6130-8ebb-436c-987f-cec9501656fa" />
-   </p>
-
-
-
-   
-7. Accept the Terms of Service and Privacy Policy
-8. Click **Create Account**
-9. Verify your email address by clicking the link sent to your email
+4.Accept the Terms of Service and Privacy Policy  
+5.Click **Create Account**  
+6.Verify your email address by clicking the link sent to your email  
 
 ### Step 2: Complete Your Developer Profile
 
 After verifying your email and logging in, you'll need to complete your developer profile with the following information:
 
 #### Basic Information
-- **Account Name*** - Your developer account name (usually your company name)
+- **Account Name** - Your developer account name (usually your company name)
 - **Website** - Your company or personal website URL
 
 #### Contact Information
+
 EasyParcel will use this information to contact you about your account.
 
- **Contact Email*** - Primary email for account communications
- 
- **Phone Number*** - Contact phone with country code
- 
- **Address 1*** - Primary address
- 
- **Address 2** - Additional address information (optional)
- 
- **City*** - Your city
- 
- **ZIP / Postal Code*** - Your postal code
- 
- **State / Territory*** - Your state or territory
- 
- **Country*** - Your country
+- **Contact Email** - Primary email for account communications  
+- **Phone Number** - Contact phone with country code  
+- **Address 1** - Primary address  
+- **Address 2** - Additional address information (optional)  
+- **City*** - Your city  
+- **ZIP / Postal Code** - Your postal code  
+- **State / Territory** - Your state or territory  
+- **Country** - Your country
 
-
-
-<p align="center">  
-<img style="max-width: 105%; height: auto;" alt="toott" src="https://github.com/user-attachments/assets/bf510e5a-0714-4888-8c61-10407bc8dd15" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9219aab6-9308-4a12-86df-4fac5011726c"
+       alt="445981046-ac2be59f-0f9e-4190-99c2-8438d80718a4"
+       style="max-width: 105%; height: auto;">
 </p>
-
 
 
 
@@ -131,7 +122,9 @@ To access the API, you need to create an application:
 2. Click **Create New Application**
 
 <p align="center">
-<img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/ddb518b3-e6c5-4e46-82fb-34acc2d8a756" />
+  <img src="https://github.com/user-attachments/assets/ddb518b3-e6c5-4e46-82fb-34acc2d8a756"
+       alt="image"
+       style="max-width: 105%; height: auto;">
 </p>
 
 4. Fill in the application details:
@@ -143,7 +136,6 @@ To access the API, you need to create an application:
 <p align="center">
 <img style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/d3509357-67c1-4309-b369-f46221cc7b31" />
 </p>
-
 
 
 ## Understanding Redirect URI
@@ -188,7 +180,6 @@ yourapp://oauth/callback.com.yourcompany.yourapp://auth
 
 ### Access Token Expiry Configuration
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
-
 
 
 
@@ -255,7 +246,9 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 - Application logo (optional)
 
 <p align="center">
-<img style="max-width: 105%; height: auto;" alt="445985136-7d47790d-64a5-4b11-acd0-f9bc3e6d1350" src="https://github.com/user-attachments/assets/272ded5c-92b5-469f-82d8-8bafe02ee052" />
+  <img src="https://github.com/user-attachments/assets/272ded5c-92b5-469f-82d8-8bafe02ee052"
+       alt="445985136-7d47790d-64a5-4b11-acd0-f9bc3e6d1350"
+       style="max-width: 105%; height: auto;">
 </p>
 
 ### Once completed, congradulations! You have create your first app in easyparcel account!
@@ -267,15 +260,10 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 1.)Get the client creditials for oauth authentication
   - client id
   - client secret
+  
+<img width="567" height="503" alt="513032968-f66c7ebc-9dff-4be1-9223-ddb8985f722c" src="https://github.com/user-attachments/assets/00a731fa-031c-486a-bd78-752be227912a" />
 
-<p align="center">
-<img  alt="image" style="max-width: 105%; height: auto;"  src="https://github.com/user-attachments/assets/1ca43169-d484-4704-bb40-deceb552e53b" />
-</p>
+
+
 
 2.)Follow [the Steps to get Oauth access token](#get-oauth-access-token)
-
-
-
----
-
-
