@@ -18,7 +18,7 @@ Enter this redirect/call URL to your app, if you intent to use for postman
 ```
 https://oauth.pstmn.io/v1/callback
 ```
-<img width="1106" height="200" alt="510674981-b99fcb36-7ed4-4b62-b876-2239c8fc9c98" src="https://github.com/user-attachments/assets/cc5cd5a9-a50c-4568-9fa2-18e237b90c6b" />
+<img width="1106" height="180" alt="510674981-b99fcb36-7ed4-4b62-b876-2239c8fc9c98" src="https://github.com/user-attachments/assets/cc5cd5a9-a50c-4568-9fa2-18e237b90c6b" />
 
 
 
