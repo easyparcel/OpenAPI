@@ -18,13 +18,7 @@ Enter this redirect/call URL to your app, if you intent to use for postman
 ```
 https://oauth.pstmn.io/v1/callback
 ```
-<p align="center">
-  <img 
-    src="https://github.com/user-attachments/assets/4805d31c-78de-4f40-a767-53f4f49873cb"
-    alt="Configuration Example"
-    style="max-width: 100%; height: auto;"
-  >
-</p>
+<img width="1106" height="288" alt="510674981-b99fcb36-7ed4-4b62-b876-2239c8fc9c98" src="https://github.com/user-attachments/assets/2b62ae35-150f-438f-9885-c9000cecddf8" />
 
 
 
@@ -57,13 +51,7 @@ The EasyParcel API uses OAuth 2.0 for authentication. The collection is pre-conf
 
 The collection will automatically include the token in all requests.
 
-<p align="center">
-  <img 
-    src="https://github.com/user-attachments/assets/f8d3ad64-3b62-4bbd-b6c4-b2b72b07edbf"
-    alt="510676812-81162d54-06fd-4760-bcf1-0cf873660202"
-    style="max-width: 100%; height: auto;"
-  >
-</p>
+<img width="475" height="403" alt="Screenshot 2025-11-12 at 12 02 59 PM" src="https://github.com/user-attachments/assets/00e86ccc-794e-4ce4-9990-c0829f3b66cf" />
 
 
 
