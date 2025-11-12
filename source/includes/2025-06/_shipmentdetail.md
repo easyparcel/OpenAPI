@@ -77,8 +77,8 @@ This endpoint allows users to retrieve detailed information about a specific shi
             "sender": {
                 "name": "John Doe",
                 "company_name": "ABC Corp",
-                "email": "weikeong.liew@easyparcel.com",
-                "contact": "+601163642281",
+                "email": "test@easyparcel.com",
+                "contact": "+601163242283",
                 "alternative_contact": null,
                 "subdivision_code": null,
                 "postal_code": "10150",
@@ -90,8 +90,8 @@ This endpoint allows users to retrieve detailed information about a specific shi
             "receiver": {
                 "name": "Jane Smith",
                 "company_name": "XYZ Inc",
-                "email": "weikeong.liew@easyparcel.com",
-                "contact": "+601163642281",
+                "email": "smith@easyparcel.com",
+                "contact": "+601163743291",
                 "alternative_contact": null,
                 "subdivision_code": null,
                 "postal_code": "11950",
