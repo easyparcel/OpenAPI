@@ -294,7 +294,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "phone_number": "1163642281",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
-                        "email": "weikeong.liew@easyparcel.com",
+                        "email": "test@easyparcel.com",
                         "company_name": "ABC Corp",
                         "address1": "123 Main St",
                         "address2": "Apt 4B",
@@ -310,7 +310,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "phone_number_country_code": "+60",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
-                        "email": "weikeong.liew@easyparcel.com",
+                        "email": "smith@easyparcel.com",
                         "company_name": "XYZ Inc",
                         "address1": "456 High St",
                         "address2": "Apt 4B",
@@ -364,7 +364,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "tax_amount": "0.00"
                         },
                         "shipment_tracking_email": {
-                            "email": "weikeong.liew@easyparcel.com",
+                            "email": "test@easyparcel.com",
                             "currency_code": "MYR",
                             "total_amount": "0.06",
                             "price": "0.05",
