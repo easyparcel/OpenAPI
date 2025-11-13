@@ -83,10 +83,10 @@ EasyParcel will use this information to contact you about your account.
 
 - **Contact Email** - Primary email for account communications  
 - **Phone Number** - Contact phone with country code  
-- **Address 1** - Primary address  
+- **Address 1*** - Primary address  
 - **Address 2** - Additional address information (optional)  
 - **City*** - Your city  
-- **ZIP / Postal Code** - Your postal code  
+- **ZIP / Postal Code*** - Your postal code  
 - **State / Territory** - Your state or territory  
 - **Country** - Your country
 
