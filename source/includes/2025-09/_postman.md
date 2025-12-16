@@ -65,10 +65,9 @@ The collection will automatically include the token in all requests.
 
 To verify your setup is working correctly:
 
-1. Open the **General Services** folder
-2. Select the **Get Wallet Balance** request
-3. Click **Send**
-4. You should receive a successful response with your wallet balance
+1. Select the **Get Wallet Balance** request
+2. Click **Send**
+3. You should receive a successful response with your wallet balance
 
 
 ## Troubleshooting
