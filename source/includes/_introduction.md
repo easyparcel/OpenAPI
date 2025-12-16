@@ -83,7 +83,7 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
   [Read more](#wallet-balance)
 
 
-#### **Contact Us**
+### **Contact Us**
 
 If you have any questions or need further support with the EasyParcel API, our team is available for assistance. You can reach out to us via the following channels:
 - **WhatsApp Support**: For quick support, chat with our team directly on WhatsApp. Click [here](https://wa.me/6042023160) to start a conversation.
