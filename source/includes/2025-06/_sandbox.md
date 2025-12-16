@@ -130,5 +130,3 @@ While the EasyParcel **sandbox environment** allows full API integration testing
 
 Use the sandbox for development and testing purposes. For real transactions and shipment tracking, switch to the production environment.
 
-## Switching to live
-You wish to perform live order [live account](#switching-to-live)
