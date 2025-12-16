@@ -35,7 +35,7 @@ refer here for [Sandbox Limitations](#sandbox-limitations)
 
 ### Step-by-Step Demo Account Setup
 
-#### 1. Access Developer Portal
+### 1. Access Developer Portal
 **URL:** [https://api.easyparcel.com](https://api.easyparcel.com)  
 <p align="center">
   <img src="https://github.com/user-attachments/assets/287ae19b-3d27-4751-b2fb-96f58f9c89ae"
@@ -47,21 +47,21 @@ refer here for [Sandbox Limitations](#sandbox-limitations)
 
 
 
-#### 2. Select Application
+### 2. Select Application
 **Action:** Choose your registered application from the dashboard  
 <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/b30ce194-3b8d-4d90-9c2f-eb885bccb5ab" alt="image" style="max-width: 105%; height: auto;" />
 </p>
 
 
-#### 3. Navigate to Connections
+### 3. Navigate to Connections
 **Location:** Settings → Connection Management  
 <p align="center">
 <img width="1192" height="592" alt="image" src="https://github.com/user-attachments/assets/2a72d5f9-a706-423f-845c-4a5e6719898e" alt="image" style="max-width: 105%; height: auto;" />
 </p>
 
 
-#### 4. Add New Connection
+### 4. Add New Connection
 **Required:**  
 ✅ Sandbox environment selection  
 ✅ Connection name  
@@ -70,7 +70,7 @@ refer here for [Sandbox Limitations](#sandbox-limitations)
 </p>
 
 
-#### 5. Prompt to login
+### 5. Prompt to login
 **Required:**  
 Login using developers account credentials
 <p align="center">
@@ -78,7 +78,7 @@ Login using developers account credentials
 </p>
 
 
-#### 6. Allow access request
+### 6. Allow access request
 **Required:**  
 Allow the application request to access account credentials and permisions
 <p align="center">
@@ -86,7 +86,7 @@ Allow the application request to access account credentials and permisions
 </p>
 
 
-#### 7. Verify Successful Setup
+### 7. Verify Successful Setup
 **Confirmation:** Look for active status indicator  
 <p align="center">
 <img width="2556" height="706" alt="image" src="https://github.com/user-attachments/assets/a128d3be-45f8-4827-a054-7e8f151dfdcc" alt="image" style="max-width: 105%; height: auto;"/>
