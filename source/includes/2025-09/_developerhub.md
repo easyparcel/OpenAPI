@@ -33,7 +33,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 ### Step 1: Create a Developer Account
 
-1.Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
+1. Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b44f03b0-4925-4273-86cd-1b125645ebde"
@@ -41,7 +41,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-2.Login or sign up easyparcel developer account.  
+2. Login or sign up easyparcel developer account.  
    *You already singed up, you may proceed to login (skipped to step 2)*
 
    Click on the **Sign Up**
@@ -52,7 +52,8 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-3.Complete the registration form:
+3. Complete the registration form:
+
 - Full name  
 - Email address  
 - Password (must be at least 8 characters with numbers and special characters)  
@@ -65,9 +66,9 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-4.Accept the Terms of Service and Privacy Policy  
-5.Click **Create Account**  
-6.Verify your email address by clicking the link sent to your email  
+4. Accept the Terms of Service and Privacy Policy  
+5. Click **Create Account**  
+6. Verify your email address by clicking the link sent to your email  
 
 ### Step 2: Complete Your Developer Profile
 
@@ -102,16 +103,15 @@ EasyParcel will use this information to contact you about your account.
 ### Emergency Developer Contact Information
 These details are used to communicate critical technical information to developers who maintain apps.
 
- **Emergency Developer Email*** - Email for urgent technical communications
-  
- **Emergency Developer Phone Number*** - Phone for urgent technical communications
+- **Emergency Developer Email*** - Email for urgent technical communications
+- **Emergency Developer Phone Number*** - Phone for urgent technical communications
 
 Fields marked with an asterisk (*) are required.
 
 Once you've filled out all required fields, click **Save Profile** to continue.
 
 
-If you encounter any issues during registration or application setup, contact our developer support team at api@easyparcel.com.
+If you encounter any issues during registration or application setup, contact our developer support team at **api@easyparcel.com**.
 
 ## Creating Easyparcel Application
 ### Create an Application
@@ -127,7 +127,7 @@ To access the API, you need to create an application:
        style="max-width: 105%; height: auto;">
 </p>
 
-4. Fill in the application details:
+3. Fill in the application details:
 
    - Application name
    - Redirect URI (for OAuth flows)
@@ -201,6 +201,7 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 - **Compliance**: Meet your organization's security policies and regulations
 
 **How to Set Token Expiry:**
+
 1. In your application settings, look for Access Token expiration
 2. Select your preferred expiry duration from the dropdown
 3. Consider your application type and security requirements
@@ -251,13 +252,13 @@ Access tokens are credentials that allow your application to access Easy Parcel'
        style="max-width: 105%; height: auto;">
 </p>
 
-### Once completed, congradulations! You have create your first app in easyparcel account!
+### Once completed, congratulations! You have create your first app in easyparcel account!
 
 
 ## Get App Client credentials
 
 ### Step 3: Get Client credentials
-1.)Get the client creditials for oauth authentication
+1.) Get the client creditials for oauth authentication
   - client id
   - client secret
   
@@ -266,4 +267,4 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 
 
 
-2.)Follow [the Steps to get Oauth access token](#get-oauth-access-token)
+2.) Follow [the Steps to get Oauth access token](#get-oauth-access-token)
