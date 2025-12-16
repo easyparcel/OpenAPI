@@ -81,7 +81,7 @@ Request:
 	</p>
 
 
-4.  Allow access to Authorize link the account to with the application
+3.  Allow access to Authorize link the account to with the application
    
 	<p align="center">
 	<img width="2560" height="1238" alt="image" src="https://github.com/user-attachments/assets/49c5f98a-da94-474b-b48f-b8926bda5b9f" alt="image" style="max-width: 105%; height: auto;"/>
