@@ -33,7 +33,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 ### Step 1: Create a Developer Account
 
-1. Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
+1.) Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b44f03b0-4925-4273-86cd-1b125645ebde"
@@ -41,7 +41,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-2. Login or sign up easyparcel developer account.  
+2.) Login or sign up easyparcel developer account.  
    *You already singed up, you may proceed to login (skipped to step 2)*
 
    Click on the **Sign Up**
@@ -52,7 +52,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-3. Complete the registration form:
+3.) Complete the registration form:
 
 - Full name  
 - Email address  
@@ -66,9 +66,9 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
        style="max-width: 105%; height: auto;">
 </p>
 
-4. Accept the Terms of Service and Privacy Policy  
-5. Click **Create Account**  
-6. Verify your email address by clicking the link sent to your email  
+4.) Accept the Terms of Service and Privacy Policy  
+5.) Click **Create Account**  
+6.) Verify your email address by clicking the link sent to your email  
 
 ### Step 2: Complete Your Developer Profile
 
@@ -118,8 +118,8 @@ If you encounter any issues during registration or application setup, contact ou
 
 To access the API, you need to create an application:
 
-1. In the Developer Hub dashboard, click on **Applications**
-2. Click **Create New Application**
+1.) In the Developer Hub dashboard, click on **Applications**
+2.) Click **Create New Application**
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ddb518b3-e6c5-4e46-82fb-34acc2d8a756"
@@ -127,7 +127,7 @@ To access the API, you need to create an application:
        style="max-width: 105%; height: auto;">
 </p>
 
-3. Fill in the application details:
+3.) Fill in the application details:
 
    - Application name
    - Redirect URI (for OAuth flows)
