@@ -159,11 +159,11 @@ Use encoded value and pass back into Basic<br>
 | token_type               | string    | Token type                                                                         | -                    |
 | expires_in               | int       | The token life span in seconds                                                     | -                    |
 | expires_at               | date time | The Access token expiry date                                                       | -                    |
-| access Token             | string    | The access token, required to access the API                                       | -                    |
+| access_token             | string    | The access token, required to access the API                                       | -                    |
 | refresh_token            | string    | The new Refresh token for the next refresh (Depends if requested on Oauth/token) | -                    |
 | refresh_token_expires_in | int       | The refresh token life span in seconds                                             | -                    |
 | refresh_token_expires_at | date time | The refresh token expiry date                                                      | -                    |
-| App                      | array     | informations regarding your applications                                           | Refer to [App](#App) |
+| app                      | array     | informations regarding your applications                                           | Refer to [App](#App) |
 
 
 ### App
@@ -171,7 +171,7 @@ Use encoded value and pass back into Basic<br>
 | Responded Parameters | Type   | Details                                                                               | Remarks |
 | -------------------- | ------ | ------------------------------------------------------------------------------------- | ------- |
 | client_id            | string | Client ID of the application                                                          | -       |
-| callbackUris         | string | Destination that sends the user back after they have authenticated and granted access | -       |
+| callbackUrls         | string | Destination that sends the user back after they have authenticated and granted access | -       |
 | redirectUris         | string | Redirect destination for the user after the authorization process                     | -       |
 
 5.) Use the access token to call the [API Endppoints](#version-2025-06)
