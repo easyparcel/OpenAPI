@@ -206,7 +206,7 @@ ISO 3166 is a standard published by the International Organization for Standardi
 
 ## Add-On Feature: EasyParcel Tracking Notification
 
-Real-time parcel tracking has become essential in today’s fast-paced logistics environment. To improve user experience and enhance transparency, EasyParcel offers multiple tracking notification methods as add-on features for on-demand and standard delivery services.
+Real-time parcel tracking has become essential in today’s fast-paced logistics environment. To improve user experience and enhance transparency, EasyParcel offers multiple tracking notification methods as add-on features for standard delivery services.
 
 
 ### 📲 Tracking SMS
@@ -386,7 +386,12 @@ Simple parameter format for filtering and pagination:
 
 ### Common Response Structure
 
+
+
+### Success Response Patterns
+
 ```json
+ /* Single Resource Response */
 {
   "status_code": 200,
   "message": "success",
@@ -396,24 +401,9 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-### Success Response Patterns
-
-#### Single Resource Response
 
 ```json
-{
-  "status_code": 200,
-  "message": "success",
-  "data": {
-    "resource_property1": "value1",
-    "resource_property2": "value2"
-  }
-}
-```
-
-#### Batch Operation Response
-
-```json
+/* Batch Operation Response */
 {
   "status_code": 200,
   "message": "2 requests success, 1 request error.",
@@ -437,25 +427,11 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-#### Collection Response
-
-```json
-{
-  "status_code": 200,
-  "message": "success",
-  "data": [
-    { /* Item 1 */ },
-    { /* Item 2 */ },
-    { /* Item 3 */ }
-  ]
-}
-```
-
 ### Error Response Patterns
 
-#### Request Validation Error
 
 ```json
+/* Request Validation Error */
 {
   "status_code": 400,
   "message": "Validation failed",
@@ -468,9 +444,8 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-#### Resource Not Found
-
 ```json
+/* Resource Not Found */
 {
   "status_code": 404,
   "message": "No Order with shipment_number ES-2504-3WYYP found from this account",
@@ -478,9 +453,8 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-#### Authentication Error
-
 ```json
+/* Authentication Error */
 {
   "status_code": 401,
   "message": "Invalid Oauth 2.0 access token",
@@ -488,9 +462,8 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-#### Partial Success in Batch Operations
-
 ```json
+/* Partial Success in Batch Operations */
 {
   "status_code": 200,
   "message": "1 requests success, 2 request error.",
@@ -540,7 +513,7 @@ Simple parameter format for filtering and pagination:
 
 ## Notes on API Versioning
 
-The API version is included in the URL path: `/open_api/2025-09/`
+The API version is included in the URL path: `/2025-09/`
 
 Always use the appropriate version for your implementation to ensure compatibility.
 
