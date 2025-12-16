@@ -72,14 +72,15 @@ Request:
 	</p>
 
 2. Select an account desire to link (You can select either Demo or live account)
-		If you have not yet setup demo account, you follow : [To setup demo account](#sandbox-account)
+	
+	If you have not yet setup demo account, you follow : [To setup demo account](#sandbox-account)
    
 	<p align="center">
    	<img width="2556" height="916" alt="image" src="https://github.com/user-attachments/assets/1c6e96d7-a716-4eb6-a33b-322d6759b40d" alt="image" style="max-width: 105%; height: auto;"/>
 	</p>
 
 
-4.  Allow access to Authorize link the account to with the application
+3.  Allow access to Authorize link the account to with the application
    
 	<p align="center">
 	<img width="2560" height="1238" alt="image" src="https://github.com/user-attachments/assets/49c5f98a-da94-474b-b48f-b8926bda5b9f" alt="image" style="max-width: 105%; height: auto;"/>
