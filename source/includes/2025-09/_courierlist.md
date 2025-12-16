@@ -98,15 +98,6 @@ If an invalid country code is provided, the API will return an error response:
 |--------------|----------------|
 | MY           | Malaysia       |
 | SG           | Singapore      |
-| TH           | Thailand       |
-| ID           | Indonesia      |
-| CN           | China          |
-| PH           | Philippines    |
-| VN           | Vietnam        |
-| AU           | Australia      |
-| US           | United States  |
-| CA           | Canada         |
-| GB           | United Kingdom |
 
 ## Common Status Codes
 
