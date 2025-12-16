@@ -37,7 +37,7 @@ flowchart TD
 
 ### Authorization Endpoint
 The Authorization Endpoint is used by the client to obtain authorization from the resource owner via user-agent redirection.
-### Endpoint URL: 
+### Authorization Endpoint URL: 
 https://api.easyparcel.com/oauth/login
 
 
@@ -45,7 +45,7 @@ https://api.easyparcel.com/oauth/login
 
 ### Token Endpoint
 The Token Endpoint is used by the client to obtain an access token by presenting its authorization grant.
-### Endpoint URL: 
+### Token Endpoint URL: 
 https://api.easyparcel.com/oauth/token
 
 
@@ -61,10 +61,11 @@ Request:
 | **Requested Parameters** | **Type** | **Required** | **Details**                                                                                                                   | Remarks |
 | ------------------------ | -------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------- | ------- |
 | client_id                | string   | Yes          | client_id of your application                                                                                                 | -       |
-| redirect_uri             | string   | Yes          | The URI to which the client was redirected from the authorization server. The url of your app to redirect to                  | -       |
+| redirect_uri             | string   | Yes          | The URL to which the client was redirected from the authorization server. The url of your app to redirect to                  | -       |
 | state                    | string   | Optional     | Generate and pass a unique string that helps ensure the response comes from the same client request, preventing CSRF attacks. | -       |
 
 2.) Will be prompt to login (these below steps are to authorize linking the application to your easyparcel account)
+
 1. Login to your easyparcel account
 	<p align="center">
 	<img width="2560" height="1246" alt="image" src="https://github.com/user-attachments/assets/89a970a8-754f-4250-a1c4-a3e0c8617479" alt="image" style="max-width: 105%; height: auto;"/>
@@ -92,6 +93,7 @@ Sample redirect url respond:
 ```
 https://your-callback-url/callback?code=(code that requires to regenerate access token)
 ```
+
 - code(pass in get access token url)
 - state (if got pass in auth url request)
 
