@@ -27,8 +27,7 @@ Before using the collection, you need to set up your environment variables:
 
 1. Create a new environment in Postman
 2. Add the following variables:
-   - `baseUrl` - Set to `https://api.easyparcel.com`
-   - `apiVersion` - Set to `open_api/2025-09`
+   - `apiVersion` - Set to `2025-09`
    - `clientId` - Your EasyParcel OAuth client ID
    - `clientSecret` - Your EasyParcel OAuth client secret
 
