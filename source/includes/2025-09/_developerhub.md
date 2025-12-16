@@ -73,11 +73,11 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 
 After verifying your email and logging in, you'll need to complete your developer profile with the following information:
 
-#### Basic Information
+### Basic Information
 - **Account Name** - Your developer account name (usually your company name)
 - **Website** - Your company or personal website URL
 
-#### Contact Information
+### Contact Information
 
 EasyParcel will use this information to contact you about your account.
 
