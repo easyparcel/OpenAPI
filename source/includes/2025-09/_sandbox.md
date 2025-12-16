@@ -100,12 +100,12 @@ Allow the application request to access account credentials and permisions
 <img width="2538" height="746" alt="image" src="https://github.com/user-attachments/assets/9d5e7d15-67f0-41fc-a165-fc92bd99c947" alt="image" style="max-width: 105%; height: auto;"/>
 </p>
 
-3. Top up the desired amount
+2. Top up the desired amount
 <p align="center">
 <img width="2560" height="900" alt="image" src="https://github.com/user-attachments/assets/ab458b36-6b43-4b87-9f06-d13a6367ae69" alt="image" style="max-width: 105%; height: auto;"/>
 </p>
 
-5. Top up successful
+3. Top up successful
 <p align="center">
 <img width="2560" height="744" alt="image" src="https://github.com/user-attachments/assets/5212a32d-903a-486a-a766-fc562a701e6c" alt="image" style="max-width: 105%; height: auto;"/>
 </p>
