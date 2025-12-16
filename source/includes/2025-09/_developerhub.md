@@ -119,6 +119,7 @@ If you encounter any issues during registration or application setup, contact ou
 To access the API, you need to create an application:
 
 1.) In the Developer Hub dashboard, click on **Applications**
+
 2.) Click **Create New Application**
 
 <p align="center">
@@ -259,6 +260,7 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 
 ### Step 3: Get Client credentials
 1.) Get the client creditials for oauth authentication
+
   - client id
   - client secret
   
