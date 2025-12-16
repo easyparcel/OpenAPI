@@ -88,8 +88,6 @@ If there's an authentication issue or server error, the API will return an error
 
 1. This endpoint provides the current balance in your EasyParcel wallet, which can be used for shipping services.
 2. The response includes both regular wallet balance and free credit balance.
-3. Free credits may have expiration dates and usage restrictions that are not included in this response.
-4. Multiple currency wallets are supported, though most accounts will only have one currency.
-5. The balance is updated in real-time and reflects the current available amount for shipping services.
-6. Wallet balances can be topped up through the EasyParcel dashboard or using the top-up API endpoints (if available).
-7. Always ensure your account has sufficient balance before submitting shipment orders to avoid processing delays.
+3. The balance is updated in real-time and reflects the current available amount for shipping services.
+4. Wallet balances can be topped up through the EasyParcel dashboard.
+5. Always ensure your account has sufficient balance before submitting shipment orders to avoid processing delays.
