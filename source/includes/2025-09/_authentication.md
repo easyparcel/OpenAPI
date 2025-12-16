@@ -87,7 +87,7 @@ Request:
 	</p>
 
 
-2.) Respond param in redirect url
+3.) Respond param in redirect url
 Sample redirect url respond: 
 ```
 https://your-callback-url/callback?code=(code that requires to regenerate access token)
@@ -102,7 +102,7 @@ https://your-callback-url/callback?code=(code that requires to regenerate access
 
 
 
-3.) Pass the below params to get access token url or refresh access token url
+4.) Pass the below params to get access token url or refresh access token url
 ```
 https://api.easyparcel.com/oauth/token
 ```
@@ -132,7 +132,7 @@ Use encoded value and pass back into Basic<br>
 
 
 
-4.) then will respond back with the access_token
+5.) then will respond back with the access_token
 
 ```json
 {
@@ -174,5 +174,5 @@ Use encoded value and pass back into Basic<br>
 | callbackUrls         | string | Destination that sends the user back after they have authenticated and granted access | -       |
 | redirectUris         | string | Redirect destination for the user after the authorization process                     | -       |
 
-5.) Use the access token to call the [API Endppoints](#version-2025-06)
+6.) Use the access token to call the [API Endppoints](#version-2025-06)
 
