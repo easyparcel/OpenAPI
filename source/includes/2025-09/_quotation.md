@@ -290,26 +290,30 @@ Use service tags to filter and categorize options in your user interface for bet
 The API returns various optional features that can be added to shipments:
 
 **Cash on Delivery (COD)**
+
 - `available`: Whether COD is supported
 - `min_cod_amount`/`max_cod_amount`: COD limits
 - `charges_description`: Additional fee information
 
 **Tracking Services**
+
 - `sms_tracking`: SMS notification pricing
 - `email_tracking`: Email notification pricing  
 - `whatsapp_tracking`: WhatsApp notification pricing
 
 **Branding Options**
+
 - `awb_branding`: Custom branding on shipping labels
 - Includes banner and text customization pricing
 
 **International Shipping**
+
 - `ddp_charges`: Delivered Duty Paid charges
 - Includes import taxes, duties, and handling fees
 
 ## Code Examples
 
-### PHP | Javascripts | Python 
+**Select a language from the options on the right to switch between PHP, JavaScript, and Python examples.**
 
 ```javascript
 async function getShippingQuotes(senderPostcode, receiverPostcode) {
