@@ -313,7 +313,7 @@ The API returns various optional features that can be added to shipments:
 
 ## Code Examples
 
-**Select a language from the options on the right to switch between PHP, JavaScript, and Python examples.**
+Select a language from the options on the right to switch between PHP, JavaScript, and Python examples.
 
 ```javascript
 async function getShippingQuotes(senderPostcode, receiverPostcode) {
