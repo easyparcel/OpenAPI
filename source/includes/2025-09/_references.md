@@ -331,7 +331,7 @@ Batch format with `shipment` array containing multiple shipment objects:
 }
 ```
 
-#### Quotation Request
+### Quotation Request
 
 Similar batch format with `shipment` array containing multiple quote requests:
 
@@ -360,7 +360,7 @@ Similar batch format with `shipment` array containing multiple quote requests:
 }
 ```
 
-#### Shipment Listing Request
+### Shipment Listing Request
 
 Simple parameter format for filtering and pagination:
 
@@ -573,7 +573,7 @@ For single resource operations with validation errors:
 
 For batch operations, the API may return a mix of successful and failed operations:
 
-#### Complete Batch Failure
+### Complete Batch Failure
 
 ```json
 {
@@ -608,7 +608,7 @@ For batch operations, the API may return a mix of successful and failed operatio
 }
 ```
 
-#### Partial Success in Batch Operations
+### Partial Success in Batch Operations
 
 ```json
 {
