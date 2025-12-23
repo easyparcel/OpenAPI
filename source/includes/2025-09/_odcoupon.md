@@ -14,7 +14,7 @@ This will return a list of valid promo codes available to use for the shipment f
 
 ## Ondemand coupon Request
 
-### Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
+Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
 
 ### Sample Coupon Listing Request:
 ```json
