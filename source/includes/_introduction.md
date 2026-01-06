@@ -1,4 +1,3 @@
-# <span style="color: black;"> Introduction </span>
 # <span style="color: black;"> EasyParcel API Documentation </span>
 
 Welcome to the **EasyParcel API Documentation**! This guide will help you integrate with EasyParcel and get access to shipping functionalities via a RESTful API interface. 
