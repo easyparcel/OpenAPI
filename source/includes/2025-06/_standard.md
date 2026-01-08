@@ -2,7 +2,7 @@
 
 Standard shipping provides scheduled delivery with cost-effective solutions for businesses with regular shipping needs. This service offers comprehensive tracking, multiple courier options, and flexible additional features.
 
-## Shipping Workflow
+## Shipping Workflow (2025-06)
 
 ```
 Standard Shipping Flow
