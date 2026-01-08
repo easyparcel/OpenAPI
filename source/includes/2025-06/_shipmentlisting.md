@@ -1,4 +1,4 @@
-# Shipment Listing
+# Shipment Listing (2025-06)
 
 This endpoint allows users to retrieve a list of shipments with optional filtering parameters. Results are sorted by the latest shipments first.
 
