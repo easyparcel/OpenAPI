@@ -2,7 +2,7 @@
 
 Get shipment quotations from all available courier companies on the EasyParcel platform. Provide sender and receiver addresses to receive pricing details, available services, and additional features.
 
-## Authentication (Standard Quotation)
+## Authentication (Standard Quotation) (2025-06)
 
 > To authorize, use this code:
 
@@ -39,11 +39,11 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 `Authorization: Bearer YOUR_ACCESS_TOKEN`
 
 
-## HTTP Request (Quotation)
+## HTTP Request (Quotation) (2025-06)
 
 `POST https://api.easyparcel.com/open_api/2025-06/shipment/quotations`
 
-## Quotation Request
+## Quotation Request (2025-06)
 
 > Example Request:
 
@@ -104,7 +104,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 }
 ```
 
-### Sender Parameters
+### Sender Parameters (2025-06)
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
@@ -112,7 +112,7 @@ postcode | string(10) | true | Sender's postcode
 subdivison_code | string(35) | true | Sender's subdivision code (ISO 3166)
 country | string(2) | true | Sender's country code
 
-### Receiver Parameters
+### Receiver Parameters (2025-06)
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
@@ -120,7 +120,7 @@ postcode | string(10) | true | Receiver's postcode
 subdivison_code | string(35) | true | Receiver's subdivision code (ISO 3166)
 country | string(2) | true | Receiver's country code
 
-### Parcel Parameters
+### Parcel Parameters (2025-06)
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
@@ -134,7 +134,7 @@ parcel_value | double(8,2) | false | Parcel value in account currency
 The request uses nested objects for sender and receiver information.
 </aside>
 
-## Quotation Response 
+## Quotation Response (2025-06)
 
 > Example Response:
 
@@ -228,7 +228,7 @@ The request uses nested objects for sender and receiver information.
 }
 ```
 
-### Quotation Response
+### Quotation Response 
 
 Parameter | Type | Description
 --------- | ---- | -----------
@@ -307,7 +307,7 @@ The API returns various optional features that can be added to shipments:
 - `ddp_charges`: Delivered Duty Paid charges
 - Includes import taxes, duties, and handling fees
 
-## Code Examples
+## Code Examples (2025-06)
 
 ### PHP | Javascripts | Python 
 
@@ -479,7 +479,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
         raise Exception(f"API request failed: {str(e)}")
 ```
 
-## Error Handling
+## Error Handling (2025-06)
 
 > Error Response Example:
 
@@ -535,7 +535,7 @@ Even with HTTP 200 status, individual requests in the batch may fail. Always che
 </aside>
 
 
-## Best Practices For Shipping Quotation
+## Best Practices For Shipping Quotation (2025-06)
 
 ### Input Validation
 
