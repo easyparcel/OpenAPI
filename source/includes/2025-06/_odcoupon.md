@@ -141,7 +141,7 @@ This will return a list of valid promo codes available to use for the shipment f
 }
 ```
 
-### 🧾 Coupon Listing API - Response Parameters
+### 🧾 Coupon Listing API - Response Parameters (2025-06)
 
 #### Main Response
 
@@ -178,7 +178,7 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
 
 ### To apply coupon just adding the coupon_codes parameters to the request
 
-## Sample Field in submit orders:
+## Sample Field in submit orders (2025-06):
 
 ```json
 { 
