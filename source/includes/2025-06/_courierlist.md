@@ -80,7 +80,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 
 
-## Error Response
+## Error Response (2025-06)
 
 If an invalid country code is provided, the API will return an error response:
 
@@ -92,7 +92,7 @@ If an invalid country code is provided, the API will return an error response:
 }
 ```
 
-## Supported Country Codes
+## Supported Country Codes (2025-06)
 
 | Country Code | Country Name   |
 |--------------|----------------|
@@ -108,7 +108,7 @@ If an invalid country code is provided, the API will return an error response:
 | CA           | Canada         |
 | GB           | United Kingdom |
 
-## Common Status Codes
+## Common Status Codes (2025-06)
 
 | Status Code | Description                                     |
 |-------------|-------------------------------------------------|
@@ -117,7 +117,7 @@ If an invalid country code is provided, the API will return an error response:
 | 401         | Unauthorized (invalid authentication)|
 | 500         | Server error                                    |
 
-## Usage Notes
+## Usage Notes (2025-06)
 
 1. The `courier_id` value returned by this endpoint is used in other API calls, such as when submitting a shipment order.
 2. Courier availability may vary by country. Use the appropriate country code to get relevant results.
