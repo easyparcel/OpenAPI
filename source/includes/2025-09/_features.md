@@ -2,8 +2,7 @@
 
 The EasyParcel API offers various functionalities grouped under different categories. Below is an overview of the key features:
 
-### **Standard Shipping**:
-<a id="shipping-header-1"></a>
+### <a id="standard-shipping-1"></a> **Standard Shipping**:
 - Scheduled Delivery
 
 - Cost-effective
