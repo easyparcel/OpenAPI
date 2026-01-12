@@ -2,14 +2,14 @@
 
 This endpoint allows users to retrieve a list of shipments with optional filtering parameters. Results are sorted by the latest shipments first.
 
-## HTTP Request (listing)
+## HTTP Request (listing) (2025-06)
 
 `POST https://api.easyparcel.com/open_api/2025-06/shipment/list`
 
 
-## Listing Request
+## Listing Request (2025-06)
 
-## Pagination
+## Pagination (2025-06)
 
 This API uses cursor-based pagination with the `before_shipment_number` parameter. To retrieve the next page of results:
 
@@ -57,7 +57,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 
 
 
-## Returned Parameters
+## Returned Parameters (2025-06)
 
 ### Response Sample
 
@@ -251,7 +251,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 
 
 
-## Common Status Codes
+## Common Status Codes (2025-06)
 
 | Status Code | Description                                          |
 |-------------|------------------------------------------------------|
@@ -261,7 +261,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 | 404         | Not found (no shipments matching the criteria)       |
 | 500         | Server error                                         |
 
-## Usage Notes (listing)
+## Usage Notes (listing) (2025-06)
 
 1. For pagination, use the `before_shipment_number` parameter with the last shipment number from the previous request.
 2. Date filters (`date_from` and `date_to`) filter by shipment collection date.
