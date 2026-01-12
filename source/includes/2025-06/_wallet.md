@@ -1,13 +1,13 @@
-# Wallet Balance
+# Wallet Balance (2025-06)
 
 This endpoint allows users to retrieve their current wallet balance and free credit information.
 
-## HTTP Request (Wallet)
+## HTTP Request (Wallet) (2025-06)
 
 `GET https://api.easyparcel.com/open_api/2025-06/wallet`
 
 
-## Request Wallet Parameters
+## Request Wallet Parameters (2025-06)
 
 This endpoint does not require any request parameters. Authentication is handled through Oauth 2.0 access token.
 
@@ -16,7 +16,7 @@ This endpoint does not require any request parameters. Authentication is handled
 `No request body required`
 
 
-## Response Wallet Parameters
+## Response Wallet Parameters (2025-06)
 
 ### Response Sample for Wallet
 
@@ -72,7 +72,7 @@ This endpoint does not require any request parameters. Authentication is handled
 
 
 
-## Error Response for wallet
+## Error Response for wallet (2025-06)
 
 If there's an authentication issue or server error, the API will return an error response:
 
@@ -84,7 +84,7 @@ If there's an authentication issue or server error, the API will return an error
 }
 ```
 
-## Usage Notes for wallet
+## Usage Notes for wallet (2025-06)
 
 1. This endpoint provides the current balance in your EasyParcel wallet, which can be used for shipping services.
 2. The response includes both regular wallet balance and free credit balance.
