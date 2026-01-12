@@ -1,12 +1,12 @@
-# Shipment Details (2025-05)
+# Shipment Details (2025-06)
 
 This endpoint allows users to retrieve detailed information about a specific shipment using its shipment number.
 
-## HTTP Request (detail) (2025-05)
+## HTTP Request (detail) (2025-06)
 
 `POST https://api.easyparcel.com/open_api/2025-06/shipment/details`
 
-## Shipment Details Request Parameters (2025-05)
+## Shipment Details Request Parameters (2025-06)
 
 | Parameter       | Type    | Required | Description                | Remarks                |
 |-----------------|---------|----------|----------------------------|------------------------|
@@ -21,7 +21,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 ```
 
 
-## Shipment Details Return Parameters (2025-05)
+## Shipment Details Return Parameters (2025-06)
 
 ### Response Sample
 
