@@ -141,7 +141,7 @@ This will return a list of valid promo codes available to use for the shipment f
 }
 ```
 
-### 🧾 Coupon Listing API - Response Parameters (2025-06)
+### 🧾 Coupon Listing API - Response Parameters
 
 #### Main Response
 
