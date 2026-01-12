@@ -2,7 +2,7 @@
 
 This feature enables users to submit shipment orders. Users are required to fill in the necessary fields to access the shipping service.
 
-### HTTP Request (submit) (2025-06)
+## HTTP Request (submit) (2025-06)
 
 `POST https://api.easyparcel.com/shipment/submit_orders`
 
