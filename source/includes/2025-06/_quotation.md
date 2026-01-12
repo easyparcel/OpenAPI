@@ -104,7 +104,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 }
 ```
 
-### Sender Parameters (2025-06)
+### Sender Parameters 
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
@@ -112,7 +112,7 @@ postcode | string(10) | true | Sender's postcode
 subdivison_code | string(35) | true | Sender's subdivision code (ISO 3166)
 country | string(2) | true | Sender's country code
 
-### Receiver Parameters (2025-06)
+### Receiver Parameters
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
@@ -120,7 +120,7 @@ postcode | string(10) | true | Receiver's postcode
 subdivison_code | string(35) | true | Receiver's subdivision code (ISO 3166)
 country | string(2) | true | Receiver's country code
 
-### Parcel Parameters (2025-06)
+### Parcel Parameters
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
