@@ -1,15 +1,15 @@
-# Ondmeand Quotation
+# Ondmeand Quotation (2025-06)
 
-## Ondemand Quotation Overview
+## Ondemand Quotation Overview (2025-06)
 
 This feature enables users to obtain on-demand shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses and waypoint information to retrieve shipment quotations. The response includes available courier services, transportation type, pricing details, and optional add-on features.
 
 
-## HTTP Request (Ondemand Quotation)
+## HTTP Request (Ondemand Quotation) (2025-06)
 
 `POST https://api.easyparcel.com/open_api/2025-06/ondemand/quotations`
 
-## Ondemand Quotation Request Parameters 
+## Ondemand Quotation Request Parameters (2025-06)
 
 ### Request Sample
 
@@ -53,7 +53,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 | waypoint\[\*].type                  | string  | Yes      | Either `pickup` or `dropoff`       | -                  |
 
 
-## Ondemand Quotation Response Parameters
+## Ondemand Quotation Response Parameters (2025-06)
 
 
 ### Sample Response
@@ -297,7 +297,7 @@ Refer to the full JSON response you provided in your message for all details on 
 ```
 
 
-## Code Implementation Examples
+## Code Implementation Examples (2025-06)
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (requests)
 
@@ -376,7 +376,7 @@ print(response.json())
 ```
 
 
-## Best Practices For Ondemand Quotation
+## Best Practices For Ondemand Quotation (2025-06)
 
 1. **Input Validation** – Validate all fields before API call.
 2. **Sorting Quotations** – Sort by total amount for better user experience.
