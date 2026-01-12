@@ -3,11 +3,11 @@
 The coupon feature allows customers to search for available promo codes and apply them during the shipment order submission. This helps users enjoy discounted rates or special benefits based on current promotional campaigns.
 
 
-### 🔍 Searching for Coupons (2025-06)
+## 🔍 Searching for Coupons (2025-06)
 
 Customers can retrieve a list of available coupon codes using the following endpoint:
 
-### HTTP Request (coupon) (2025-06)
+## HTTP Request (coupon) (2025-06)
 
 `GET https://api.easyparcel.com/open_api/2025-06/shipment/get_coupon_list`
 
