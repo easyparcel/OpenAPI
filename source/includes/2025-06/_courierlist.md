@@ -2,7 +2,7 @@
 
 This endpoint allows users to retrieve a list of available courier services for a specific country.
 
-<h2 id="http-request-courier-list-2025-06">HTTP Request (Courier list)</h2>
+<h2 id="http-request-courier-list-2025-06">HTTP Request (Courier List)</h2>
 
 `GET https://api.easyparcel.com/open_api/2025-06/courier/list`
 
@@ -24,7 +24,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 
 
-<h2 id="returned-courier-liest-parameters-2025-06">Returned Courier list Parameters</h2>
+<h2 id="returned-courier-liest-parameters-2025-06">Returned Courier List Parameters</h2>
 ### Response Sample
 
 ```json
