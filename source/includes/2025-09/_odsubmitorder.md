@@ -279,7 +279,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 
 
-<h2 id="odsubmit-code-implementation-examples> 📂 Code Implementation Examples </h2>
+## 📂 Code Implementation Examples
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (Requests)
 
