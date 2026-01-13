@@ -61,7 +61,7 @@ This guide explains how to cancel an on-demand shipment order.
 ---
 
 
-## 📂 Code Implementation Examples
+<h2 id="odcancel-code-implementation-examples">Code Implementation Examples</h2>
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (Requests)
 
