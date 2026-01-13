@@ -169,6 +169,7 @@ end_time: "13:00:00" → Closes at 1:00 PM
 **Important**: Ensure customers arrive before the closing time to successfully drop off their parcels. Some locations may have limited operating hours (e.g., morning only).
 
 ## Usage Notes
+<h2 id="dropoffpoint-usage-notes">Usage Notes</h2>
 
 - **Location-based Search**: Results are typically sorted by proximity to the specified postcode and city.
 - **Courier-specific**: Each courier may have different drop-off locations. Always query with the specific courier ID you're using.
@@ -177,7 +178,7 @@ end_time: "13:00:00" → Closes at 1:00 PM
 - **Phone Contact**: The `phone_number` can be used to verify operating hours or get additional information about the location.
 
 
-## Example Use Cases
+<h2 id="dropoffpoint-example-use-case">Example Use Cases</h2>
 
 ### Finding Drop-off Points in Kuala Lumpur
 
@@ -261,7 +262,7 @@ Once a customer selects a drop-off point, you can include the `point_id` in your
 *Note: Specific implementation may vary based on the shipment submission endpoint requirements.*
 
 
-## Error Handling
+<h2 id="dropoffpoint-error-handling">Error Handling</h2>
 
 ### No Drop-off Points Available
 
