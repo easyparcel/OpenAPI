@@ -108,7 +108,7 @@ If an invalid country code is provided, the API will return an error response:
 | 401         | Unauthorized (invalid authentication)|
 | 500         | Server error                                    |
 
-## Usage Notes
+<h2 id="courierlist-usage-notes">Usage Notes</h2>
 
 1. The `courier_id` value returned by this endpoint is used in other API calls, such as when submitting a shipment order.
 2. Courier availability may vary by country. Use the appropriate country code to get relevant results.
