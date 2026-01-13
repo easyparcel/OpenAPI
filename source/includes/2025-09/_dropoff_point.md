@@ -168,7 +168,6 @@ end_time: "13:00:00" → Closes at 1:00 PM
 
 **Important**: Ensure customers arrive before the closing time to successfully drop off their parcels. Some locations may have limited operating hours (e.g., morning only).
 
-## Usage Notes
 <h2 id="dropoffpoint-usage-notes">Usage Notes</h2>
 
 - **Location-based Search**: Results are typically sorted by proximity to the specified postcode and city.
