@@ -479,7 +479,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
         raise Exception(f"API request failed: {str(e)}")
 ```
 
-<h2 id="quotation-error-handling-2025-06">Error Handling</h2>
+## Error Handling {#quotation-error-handling-2025-06}
 
 > Error Response Example:
 
