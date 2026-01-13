@@ -1,6 +1,6 @@
-# <span style="color: blue;"> On-demand Shipping (2025-06)</span> 
+# <a id=od-shipping-2025-06"><span style="color: blue;"> On-demand Shipping </span></a>
 
-## Ondemand API Flow Overview (2025-06)
+<h2 id="od-API-flow-2025-06"> Ondemand API Flow Overview</h2>
 
 This document provides a visual representation of the different flows and processes available through the EasyParcel API.
 
