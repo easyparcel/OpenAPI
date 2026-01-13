@@ -240,7 +240,7 @@ For an item valued at MYR 3,000:
 
 
 
-## Usage Notes
+<h2 id="insurance-usage-note">Usage Notes</h2>
 
 - **Batch Quotations**: You can request insurance quotes for multiple shipments in a single API call for efficiency.
 - **Currency Consistency**: Ensure the currency codes match across shipment items and quotation requests.
