@@ -1,7 +1,7 @@
 <h1 id="cancel-shipments-2025-06)">Cancel Shipments</h1>
 This endpoint allows users to cancel one or more shipments. Users can provide a list of shipment numbers along with cancellation remarks.
 
-<h2 id='http-request-cancel-2025-06)>HTTP Request (cancel)</h1>
+<h2 id='http-request-cancel-2025-06)>HTTP Request (cancel)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-06/shipment/cancel`
 
