@@ -102,7 +102,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 }
 ```
 
-<h2 id="usage-notes-cancellation-2025-06> Usage Notes (Cancellation)</h1>
+<h2 id="usage-notes-cancellation-2025-06"> Usage Notes (Cancellation)</h2>
 
 1. You can cancel multiple shipments in a single request by including them in the `cancel_list` array.
 2. Only shipments that have not yet been processed by the courier can be cancelled.
