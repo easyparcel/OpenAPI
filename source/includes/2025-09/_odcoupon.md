@@ -178,7 +178,7 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
 
 ### To apply coupon just adding the coupon_codes parameters to the request
 
-## Sample Field in submit orders:
+<h2 id="odcoupon-sample-field-in-submit-orders"> Sample Field in submit orders: </h2>
 
 ```json
 { 
