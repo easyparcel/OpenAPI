@@ -1,8 +1,8 @@
-# Shipment Quotations (2025-06)
+<h1 id="shipment-quotations-2025-06">Shipment Quotations</h1>
 
 Get shipment quotations from all available courier companies on the EasyParcel platform. Provide sender and receiver addresses to receive pricing details, available services, and additional features.
 
-## Authentication (Standard Quotation) (2025-06)
+<h2 id="authentication-standard-quotation-2025-06">Authentication (Standard Quotation)</h2>
 
 > To authorize, use this code:
 
@@ -39,11 +39,11 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 `Authorization: Bearer YOUR_ACCESS_TOKEN`
 
 
-## HTTP Request (Quotation) (2025-06)
+<h2 id="http-request-quotation-2025-06">HTTP Request (Quotation)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-06/shipment/quotations`
 
-## Quotation Request (2025-06)
+<h2 id="quotation-request-2025-06">Quotation Request</h2>
 
 > Example Request:
 
@@ -134,7 +134,7 @@ parcel_value | double(8,2) | false | Parcel value in account currency
 The request uses nested objects for sender and receiver information.
 </aside>
 
-## Quotation Response (2025-06)
+<h2 id="quotation-response-2025-06">Quotation Response</h2>
 
 > Example Response:
 
@@ -307,7 +307,7 @@ The API returns various optional features that can be added to shipments:
 - `ddp_charges`: Delivered Duty Paid charges
 - Includes import taxes, duties, and handling fees
 
-## Code Examples (2025-06)
+<h2 id="quotation-code-examples-2025-06">Code Examples</h2>
 
 ### PHP | Javascripts | Python 
 
@@ -479,7 +479,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
         raise Exception(f"API request failed: {str(e)}")
 ```
 
-## Error Handling (2025-06)
+<h2 id="quotation-error-handling-2025-06">Error Handling</h2>
 
 > Error Response Example:
 
@@ -535,7 +535,7 @@ Even with HTTP 200 status, individual requests in the batch may fail. Always che
 </aside>
 
 
-## Best Practices For Shipping Quotation (2025-06)
+<h2 id="shipping-quotation-best-practices-2025-06">Best Practices For Shipping Quotation</h2>
 
 ### Input Validation
 
