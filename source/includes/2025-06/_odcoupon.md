@@ -3,7 +3,7 @@
 The coupon feature allows customers to search for available promo codes and apply them during the shipment order submission. This helps users enjoy discounted rates or special benefits based on current promotional campaigns.
 
 
-<h2 id="http-request-od-coupon-list-2025-06">HTTP Request (Ondemand coupon list)</h2>
+<h2 id="http-request-od-coupon-list-2025-06">HTTP Request (Ondemand Coupon List)</h2>
 
 Customers can retrieve a list of available coupon codes using the following endpoint:
 
