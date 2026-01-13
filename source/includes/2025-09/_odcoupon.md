@@ -1,4 +1,4 @@
-# Ondemand Coupon
+# OnDemand Coupon
 
 The coupon feature allows customers to search for available promo codes and apply them during the shipment order submission. This helps users enjoy discounted rates or special benefits based on current promotional campaigns.
 
@@ -12,7 +12,7 @@ Customers can retrieve a list of available coupon codes using the following endp
 This will return a list of valid promo codes available to use for the shipment from the user’s account, based on factors such as delivery type, courier, or region.
 
 
-## Ondemand coupon Request
+## Ondemand Coupon Request
 
 Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
 
