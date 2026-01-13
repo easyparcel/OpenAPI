@@ -99,7 +99,6 @@ If an invalid country code is provided, the API will return an error response:
 | MY           | Malaysia       |
 | SG           | Singapore      |
 
-## Common Status Codes
 <h2 id="courierlist-common-status-code">Common Status Code</h2>
 
 | Status Code | Description                                     |
