@@ -80,7 +80,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 
 
-## Error Response
+<h2 id="courierlist-error-response">Error Response</h2>
 
 If an invalid country code is provided, the API will return an error response:
 
