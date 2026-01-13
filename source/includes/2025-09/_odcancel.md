@@ -1,4 +1,4 @@
-### 🚚 EasyParcel On-Demand Order Cancellation
+# OnDemand Order Cancellation
 
 This guide explains how to cancel an on-demand shipment order.
 
