@@ -1,15 +1,15 @@
-<h1 id="od-quotation-2025-06"> Ondmeand Quotation</h1>
+# Ondmeand Quotation (2025-06)
 
-<h2 id="od-quotation-overview-2025-06">Ondemand Quotation Overview</h2>
+## Ondemand Quotation Overview (2025-06)
 
 This feature enables users to obtain on-demand shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses and waypoint information to retrieve shipment quotations. The response includes available courier services, transportation type, pricing details, and optional add-on features.
 
 
-<h2 id="http-request-od-quotation-2025-06">HTTP Request (Ondemand Quotation)</h2>
+## HTTP Request (Ondemand Quotation) (2025-06)
 
 `POST https://api.easyparcel.com/open_api/2025-06/ondemand/quotations`
 
-<h2 id="od-quotation-request-parameters-2025-06">Ondemand Quotation Request Parameters</h2>
+## Ondemand Quotation Request Parameters (2025-06)
 
 ### Request Sample
 
@@ -53,7 +53,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 | waypoint\[\*].type                  | string  | Yes      | Either `pickup` or `dropoff`       | -                  |
 
 
-<h2 id="od-quotation-response-parameters-2025-06">Ondemand Quotation Response Parameters</h2>
+## Ondemand Quotation Response Parameters (2025-06)
 
 
 ### Sample Response
@@ -297,7 +297,7 @@ Refer to the full JSON response you provided in your message for all details on 
 ```
 
 
-<h2 id="od-quotation-code-implementation-example-2025-06">Code Implementation Examples</h2>
+## Ondemand Quotation Code Implementation Examples (2025-06)
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (requests)
 
@@ -376,7 +376,7 @@ print(response.json())
 ```
 
 
-<h2 id="od-quotation-best practices-2025-06">Best Practices For Ondemand Quotation</h2>
+## Best Practices For Ondemand Quotation (2025-06)
 
 1. **Input Validation** – Validate all fields before API call.
 2. **Sorting Quotations** – Sort by total amount for better user experience.
