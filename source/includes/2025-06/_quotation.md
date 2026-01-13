@@ -3,7 +3,7 @@
 
 Get shipment quotations from all available courier companies on the EasyParcel platform. Provide sender and receiver addresses to receive pricing details, available services, and additional features.
 
-<h2 id="authentication-standard-quotation-2025-06">Authentication (Standard Quotation)</h2>
+## Authentication (Standard Quotation) (2026-06)
 
 > To authorize, use this code:
 
@@ -40,11 +40,11 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 `Authorization: Bearer YOUR_ACCESS_TOKEN`
 
 
-<h2 id="http-request-quotation-2025-06">HTTP Request (Quotation)</h2>
+## HTTP Request (Quotation) (2025-06)
 
 `POST https://api.easyparcel.com/open_api/2025-06/shipment/quotations`
 
-<h2 id="quotation-request-2025-06">Quotation Request</h2>
+## Quotation Request (2025-06)
 
 > Example Request:
 
@@ -135,7 +135,7 @@ parcel_value | double(8,2) | false | Parcel value in account currency
 The request uses nested objects for sender and receiver information.
 </aside>
 
-<h2 id="quotation-response-2025-06">Quotation Response</h2>
+## Quotation Response (2025-06)
 
 > Example Response:
 
@@ -308,7 +308,8 @@ The API returns various optional features that can be added to shipments:
 - `ddp_charges`: Delivered Duty Paid charges
 - Includes import taxes, duties, and handling fees
 
-<h2 id="quotation-code-examples-2025-06">Code Examples</h2>
+
+## Code Examples (2025-06)
 
 ### PHP | Javascripts | Python 
 
@@ -480,7 +481,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
         raise Exception(f"API request failed: {str(e)}")
 ```
 
-## Error Handling {#quotation-error-handling-2025-06}
+## Error Handling (2025-06)
 
 > Error Response Example:
 
