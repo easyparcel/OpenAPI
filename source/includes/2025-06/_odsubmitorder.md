@@ -1,4 +1,4 @@
-<h1 id="od-order-submission-2025-06">OnDemand Order Submission</h1>
+# OnDemand Order Submission (2025-06)
 
 This guide explains how to submit an on-demand shipment order with and without applying a coupon, and the structure of the response received.
 
@@ -6,7 +6,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 `POST https://api.easyparcel.com/ondemand/order`
 
-<h2 id="od-submit-order-request-parameters-2025-06">📥 Request Parameters</h2>
+## 📥 Request Parameters (2025-06)
 
 ### 📦 Request Sample
 
@@ -113,7 +113,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 
 
-<h2 id="od-submit-order-response-parameters-2025-06">🧾 Ondemand Submit Order Response Parameters</h2>
+## 🧾 Ondemand Submit Order Response Parameters (2025-06)
 
 ### Sample Response
 
@@ -279,7 +279,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 
 
-<h2 id="code-implementation-examples-1">Code Implementation Examples</h2>
+## Code Implementation Examples (2025-06)
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (Requests)
 
@@ -328,7 +328,7 @@ response = requests.post(url, json=data, headers=headers)
 print(response.json())
 ```
 
-<h2 id="od-submit-order-best-practice-2025-06">📄 Best Practices for Ondemand Submit Order</h2>
+## 📄 Best Practices for Ondemand Submit Order (2025-06)
 
 * **Validate your data** before sending the request, especially coordinates and item dimensions.
 * **Use quotationId** from the Get Quotation API in `metadata` to ensure pricing consistency.
