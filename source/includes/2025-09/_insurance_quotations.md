@@ -250,7 +250,7 @@ For an item valued at MYR 3,000:
 
 
 
-## Example Use Cases
+<h2 id="insurance-example-use-cases">Example Use Cases</h2>
 
 ### Single Shipment Quotation
 
