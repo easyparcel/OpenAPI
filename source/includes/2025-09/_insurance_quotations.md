@@ -352,7 +352,7 @@ Once you receive an insurance quotation, you can apply the insurance to your shi
 ```
 
 
-## Error Handling
+<h2 id="insurance-error-handling">Error Handling</h2>
 
 If a quotation request fails, the response will include an error status:
 
