@@ -555,7 +555,7 @@ This document outlines the common error patterns and recommended handling strate
 
 The EasyParcel API returns specific error formats depending on the type of error encountered. Understanding these patterns will help you implement proper error handling in your integration.
 
-## Authentication Errors (2025-06)
+<h2 id="reference-authentication-errors-2025-06">Authentication Errors</h2>
 
 When authentication fails, you'll receive a response in this format:
 
@@ -579,7 +579,7 @@ When authentication fails, you'll receive a response in this format:
 | missing_token    | No Oauth 2.0 access token was provided in the request              | Ensure Oauth 2.0 access token is included in the request header    |
 | insufficient_scope| The Oauth 2.0 access token doesn't have permission for this action | Request appropriate permissions for your Oauth 2.0 access token    |
 
-## Validation Errors (2025-06)
+<h2 id="reference-validation-errors-2025-06">Validation Errors</h2>
 
 ### Single Resource Validation
 
@@ -673,7 +673,7 @@ For batch operations, the API may return a mix of successful and failed operatio
 }
 ```
 
-## Quotation Errors (2025-06)
+<h2 id="reference-quotation-errors-2025-06">Quotation Errors</h2>
 
 Quotation endpoints also follow the batch processing pattern, where some items may succeed while others fail:
 
