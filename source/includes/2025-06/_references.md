@@ -839,7 +839,7 @@ If you encounter authentication errors:
 - Check if the shipment number exists and belongs to your account
 - Ensure operations are performed within allowed timeframes (e.g., cancellation window)
 
-## Contact Support (2025-06)
+<h2 id="reference-contact-support-2025-06">Contact Support</h2>
 
 If you encounter persistent errors that cannot be resolved through this guide, contact EasyParcel support with the following information:
 
@@ -850,7 +850,7 @@ If you encounter persistent errors that cannot be resolved through this guide, c
 5. Steps taken to troubleshoot the issue
 
 
-## Pagination Guide for EasyParcel API (2025-06)
+<h2 id="reference-pagination-guide-easypatcel-api-2025-06">Pagination Guide for EasyParcel API</h2>
 
 This document outlines the pagination mechanism used in the EasyParcel API for endpoints that return multiple records, such as shipment listings and on-demand service listings.
 
@@ -908,7 +908,7 @@ For the next batch of records, include the `before_shipment_number` from the las
 }
 ```
 
-## Implementation Guide (2025-06)
+<h2 id="reference-implementation-guide-2025-06">Implementation Guide</h2>
 
 ### Client-Side Pagination Logic
 
