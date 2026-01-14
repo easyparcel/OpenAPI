@@ -9,7 +9,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 
 `POST https://api.easyparcel.com/open_api/2025-06/ondemand/quotations`
 
-## Ondemand Quotation Request Parameters (2025-06)
+<h2 id="od-quotation-request-parameters-2025-06">Ondemand Quotation Request Parameters</h2>
 
 ### Request Sample
 
@@ -53,7 +53,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 | waypoint\[\*].type                  | string  | Yes      | Either `pickup` or `dropoff`       | -                  |
 
 
-<h2 id="od-quotation-response-parameters-2025-06">Ondemand Quotation Response Parameters</h2>
+## Ondemand Quotation Response Parameters (2025-06)
 
 
 ### Sample Response
