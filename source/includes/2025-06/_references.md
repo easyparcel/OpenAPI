@@ -228,7 +228,7 @@ WhatsApp Tracking is a modern, interactive way to stay informed about parcel mov
 
 These tracking features are available for EasyParcel users across various supported countries. Please refer to your local EasyParcel platform for feature availability and pricing. You may also run the **Get Shipment Quotation** endpoint to retrieve pricing details for available tracking features. These tracking features can be activated through the **Submit Order** endpoint during order creation.
 
-## EasyParcel Coupon Feature (2025-06)
+<h2 id="easyparcel-coupon-feature-2025-06">EasyParcel Coupon Feature</h2>
 
 EasyParcel’s coupon feature offers customers a convenient way to enjoy special discounts, seasonal promotions, and loyalty rewards. These promo codes help users save on shipping costs and encourage engagement through exclusive campaign offers.
 
