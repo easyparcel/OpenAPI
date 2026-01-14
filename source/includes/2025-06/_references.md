@@ -980,7 +980,7 @@ async function loadMoreShipments() {
 }
 ```
 
-## Pagination for On-demand Listings (2025-06)
+<h2 id="reference-pagination-od-listing-2025-06">Pagination for On-demand Listings</h2>
 
 The on-demand listing endpoint (`/open_api/2025-06/ondemand/list`) follows the same pagination pattern as shipment listings, but uses `before_booking_number` instead of `before_shipment_number`:
 
@@ -994,7 +994,7 @@ The on-demand listing endpoint (`/open_api/2025-06/ondemand/list`) follows the s
 }
 ```
 
-## Best Practices (2025-06)
+<h2 id="reference-best-practices-2025-06">Best Practices</h2>
 
 1. **Default Limit**: If not specified, the API uses a default limit of 10 records per request
 2. **Maximum Limit**: The maximum limit is 250 records per request
@@ -1003,7 +1003,7 @@ The on-demand listing endpoint (`/open_api/2025-06/ondemand/list`) follows the s
 5. **Cursor Storage**: Always store the last cursor for error recovery
 6. **Empty Results**: If a request returns empty results, you've reached the end of the dataset
 
-## Common Issues and Solutions (2025-06)
+<h2 id="reference-common-issues-solutions-2025-06">Common Issues and Solutions</h2>
 
 | Issue                                   | Solution                                            |
 |-----------------------------------------|-----------------------------------------------------|
@@ -1012,14 +1012,14 @@ The on-demand listing endpoint (`/open_api/2025-06/ondemand/list`) follows the s
 | Need to restart pagination from beginning | Remove the before_shipment_number parameter       |
 | Results not matching expected criteria  | Review filter parameters for correct formatting     |
 
-## Notes on Resource Usage (2025-06)
+<h2 id="notes-resource-usage-2025-06">Notes on Resource Usage</h2>
 
 - Using appropriate limit values and filters helps reduce API calls
 - Retrieving all records in smaller batches is more reliable than requesting large batches
 - Consider implementing caching for frequently accessed records
 
 
-## Switching to Live (2025-06)
+<h2 id="reference-switching-live-2025-06">Switching to Live</h2>
 If you've completed testing in the DEMO/Sandbox environment and would like to switch to the live environment, please follow the steps below:
 
 1. Run the "Get New Access Token" flow.
