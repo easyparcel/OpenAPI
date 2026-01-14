@@ -516,7 +516,7 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-## Common Field Types (2025-06)
+<h2 id="common-field-types-2025-06">Common Field Types</h2>
 
 | Field Type | Format | Example |
 |------------|--------|---------|
@@ -530,7 +530,7 @@ Simple parameter format for filtering and pagination:
 | Phone Code | With "+" prefix | +60 |
 | Boolean | true/false | true |
 
-## Best Practices (2025-06)
+<h2 id="reference-best-practice-2025-06">Best Practices</h2>
 
 1. **Validate Input**: Always validate request parameters against the API documentation before submission
 2. **Check Status Codes**: Always check the status_code in the response
@@ -540,18 +540,18 @@ Simple parameter format for filtering and pagination:
 6. **Date Ranges**: When using date ranges, ensure `date_from` is earlier than `date_to`
 7. **Field Lengths**: Respect the maximum field lengths specified in the API documentation
 
-## Notes on API Versioning (2025-06)
+<h2 id="reference-notes-api-versioning-2025-06">Notes on API Versioning</h2>
 
 The API version is included in the URL path: `/open_api/2025-06/`
 
 Always use the appropriate version for your implementation to ensure compatibility.
 
 
-## EasyParcel API Error Handling Guide (2025-06)
+<h2 id="reference-easyparcel-api-error-handling-guide-2025-06">EasyParcel API Error Handling Guide</h2>
 
 This document outlines the common error patterns and recommended handling strategies when working with the EasyParcel API.
 
-## Error Response Patterns (2025-06)
+<h2 id="reference-error-response-patterns-2025-06">Error Response Patterns</h2>
 
 The EasyParcel API returns specific error formats depending on the type of error encountered. Understanding these patterns will help you implement proper error handling in your integration.
 
