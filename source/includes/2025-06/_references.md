@@ -1,6 +1,6 @@
-# <span style="color: black;"> References (2025-06) </span>
+<h1 id="reference-2025-06"><span style="color: black;"> References</span></h1>
 
-## ISO 3166 (2025-06)
+<h2 id="iso-3166-2025-06">ISO 3166</h2>
 <img width="234" height="215" alt="image" src="https://github.com/user-attachments/assets/d4f6f393-8fbe-4dcb-8fc7-03392a0a7120" />
 
 
@@ -10,7 +10,7 @@ At EasyParcel, we adhere to the ISO 3166 standard for the identification of stat
 ISO 3166 is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The official name of the standard is Codes for the representation of names of countries and their subdivisions. make this sentences better
 </details>
 
-## Conutry Code (2025-06)
+<h2 id=country-code-2025-06">Country Code</h2>
 
 | Short Country Name | Full Country Name                     |
 |--------------------|----------------------------------------|
@@ -206,7 +206,7 @@ ISO 3166 is a standard published by the International Organization for Standardi
 | TC                 | TURKS AND CAICOS ISLANDS               |
 </details>
 
-## Add-On Feature: EasyParcel Tracking Notification (2025-06)
+<h2 id="add-on-features-2025-06">Add-On Feature: EasyParcel Tracking Notification</h2>
 
 Real-time parcel tracking has become essential in today’s fast-paced logistics environment. To improve user experience and enhance transparency, EasyParcel offers multiple tracking notification methods as add-on features for on-demand and standard delivery services.
 
