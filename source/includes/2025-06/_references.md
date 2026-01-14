@@ -249,7 +249,7 @@ To enjoy a discount, users simply need to enter the valid coupon code during ord
 
 Please note that coupon availability and eligibility may vary by country, courier, and shipping method. Always check the terms associated with each coupon before use.
 
-## Cancel Order (2025-06)
+<h2 id="reference-calcel-order-2025-06">Cancel Order</h2>
 
 This section introduces the cancellation features available for both standard and ondemand shipments on the EasyParcel platform.
 
@@ -271,7 +271,7 @@ This section introduces the cancellation features available for both standard an
 * **`/ondemand/shipment/cancel`** – for ondemand shipment cancellations.
 
 
-## EasyParcel API Standards (2025-06)
+<h2 id="easyparcel-api-standards-2025-06">EasyParcel API Standards</h2>
 
 This document outlines the standard formats for requests and responses when working with the EasyParcel API.
 
@@ -376,7 +376,7 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-## Response Format Standards (2025-06)
+<h2 id="reference-response-format-standards-202506">Response Format Standards</h2>
 
 ### General Guidelines
 
