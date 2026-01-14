@@ -1,6 +1,6 @@
 <h1 id=od-quotation-2025-06">Ondmeand Quotation</h1>
 
-<h2 id="od-quotation-overview-2025-06">Ondemand Quotation Overview</h2>
+## Ondemand Quotation Overview (2025-06)
 
 This feature enables users to obtain on-demand shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses and waypoint information to retrieve shipment quotations. The response includes available courier services, transportation type, pricing details, and optional add-on features.
 
