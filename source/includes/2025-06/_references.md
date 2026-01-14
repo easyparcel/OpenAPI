@@ -206,7 +206,7 @@ ISO 3166 is a standard published by the International Organization for Standardi
 | TC                 | TURKS AND CAICOS ISLANDS               |
 </details>
 
-<h2 id="add-on-features-2025-06">Add-On Feature: EasyParcel Tracking Notification</h2>
+<h2 id="2025-06-add-on-features">Add-On Feature: EasyParcel Tracking Notification</h2>
 
 Real-time parcel tracking has become essential in today’s fast-paced logistics environment. To improve user experience and enhance transparency, EasyParcel offers multiple tracking notification methods as add-on features for on-demand and standard delivery services.
 
