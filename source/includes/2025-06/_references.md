@@ -705,7 +705,7 @@ Quotation endpoints also follow the batch processing pattern, where some items m
 }
 ```
 
-## Common Error Messages (2025-06)
+<h2 id="reference-error-messages-2025-06">Common Error Messages</h2>
 
 Here are some common error messages you may encounter and how to resolve them:
 
@@ -730,7 +730,7 @@ Here are some common error messages you may encounter and how to resolve them:
 | "Weight exceeds service limits"                | Parcel exceeds courier weight restrictions  | Choose a different service or reduce parcel weight    |
 | "Service not available for origin/destination" | Route not serviced by selected courier      | Choose a different courier service                    |
 
-## Error Handling Best Practices (2025-06)
+<h2 id="reference-error-handling-best-practice-2025-06">Error Handling Best Practices</h2>
 
 ### 1. Check Status Code and Message
 
@@ -795,7 +795,7 @@ function handleBatchResponse(response) {
 }
 ```
 
-## Authentication Error Recovery (2025-06)
+<h2 id="reference-authentication-error-recovery-2025-06">Authentication Error Recovery</h2>
 
 If you encounter authentication errors:
 
@@ -805,7 +805,7 @@ If you encounter authentication errors:
 4. Ensure your system securely stores the Oauth 2.0 access token
 5. Implement automatic token refresh if supported
 
-## Common HTTP Status Codes (2025-06)
+<h2 id="reference-common-http-status-codes-2025-06">Common HTTP Status Codes</h2>
 
 | Status Code | Description                 | Handling Strategy                                    |
 |-------------|-----------------------------|------------------------------------------------------|
@@ -817,7 +817,7 @@ If you encounter authentication errors:
 | 429         | Too Many Requests           | Implement rate limiting and backoff strategy         |
 | 500         | Server Error                | Retry with exponential backoff                       |
 
-## Troubleshooting Guide (2025-06)
+<h2 id="reference-troubleshooting-guide-2025-06">Troubleshooting Guide</h2>
 
 ### Oauth 2.0 access token Issues
 - Ensure Oauth 2.0 access token is not expired
