@@ -1,4 +1,4 @@
-<h1 id="standard-shipping-2025-06"><span style="color: blue;"> Standard Shipping (2025-06)</span></h1>
+<h1 id="standard-shipping-2025-06"><span style="color: blue;"> Standard Shipping</span></h1>
 
 Standard shipping provides scheduled delivery with cost-effective solutions for businesses with regular shipping needs. This service offers comprehensive tracking, multiple courier options, and flexible additional features.
 
