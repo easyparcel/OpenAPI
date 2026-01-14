@@ -10,7 +10,7 @@ At EasyParcel, we adhere to the ISO 3166 standard for the identification of stat
 ISO 3166 is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The official name of the standard is Codes for the representation of names of countries and their subdivisions. make this sentences better
 </details>
 
-<h2 id=country-code-2025-06">Country Code</h2>
+<h2 id=2025-06-country-code">Country Code</h2>
 
 | Short Country Name | Full Country Name                     |
 |--------------------|----------------------------------------|
