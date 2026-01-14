@@ -1,6 +1,6 @@
 <h1 id="reference-2025-06"><span style="color: black;"> References</span></h1>
 
-<h2 id="iso-3166-2025-06">ISO 3166</h2>
+<h2 id="2025-06-iso-3166">ISO 3166</h2>
 <img width="234" height="215" alt="image" src="https://github.com/user-attachments/assets/d4f6f393-8fbe-4dcb-8fc7-03392a0a7120" />
 
 
