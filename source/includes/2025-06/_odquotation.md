@@ -297,7 +297,7 @@ Refer to the full JSON response you provided in your message for all details on 
 ```
 
 
-<h2 id="od-quotation-code-implementation-examples-2025-06">Ondemand Quotation Code Implementation Examples</h2>
+## Ondemand Quotation Code Implementation Examples (2025-06)
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (requests)
 
