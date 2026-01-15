@@ -1,5 +1,5 @@
 # <span style="color: black;"> Developer Hub </span>
-## 👨‍💻 Welcome to the EasyParcel Developer Hub
+## Welcome to the EasyParcel Developer Hub
 
 The **EasyParcel Developer Hub** is your one-stop destination for building and integrating custom shipping solutions using our API.
 
@@ -13,7 +13,7 @@ The EasyParcel Developer Hub is the central portal for developers who want to in
 - Test API endpoints in a sandbox environment
 - Monitor API usage and performance
 
-## 🚀 What You Can Do Here
+## What You Can Do Here
 
 * **Create and manage your apps** to access EasyParcel's APIs securely.
 * **Integrate with our Open API** for features like quotations, order submissions, and tracking.
