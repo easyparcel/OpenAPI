@@ -6,19 +6,6 @@ This document provides a visual representation of the different flows and proces
 
 ### OnDemand Workflow Diagram
 
-```mermaid
-graph TD
-B[[Shipping]]
-    %% Shipping Flow
-    B --> B1[[Order Flow]]
-    B --> B2[[Cancel Flow]]
-
-    %% Order Flow
-    B1 --> B11[Get Ondemand Quotation]
-    B11 --> B12[Get Cuopon Listing]
-    B12 --> B13[Submit Order]
-
-    %% Cancel Flow
-    B2 --> B23[Cancel Orders]
-    
-```
+<p align="center">
+<img width="619" height="491" alt="Screenshot 2026-01-15 at 4 11 33 PM" src="https://github.com/user-attachments/assets/51c4bb80-a8bb-4be8-b158-ef274a7ab2b7" />
+</p>
