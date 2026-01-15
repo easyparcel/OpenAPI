@@ -22,6 +22,10 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 
 ## OAuth 2.0 Authorization Flow
 
+<p align="center">
+<img width="435" height="587" alt="Screenshot 2026-01-15 at 11 25 12 AM" src="https://github.com/user-attachments/assets/96610ca2-031c-452b-a537-b671d8ba2a49" />
+</p>
+
 ```mermaid
 flowchart TD
     A[User Accesses Client App] --> B[Redirect to Authorization Server]
