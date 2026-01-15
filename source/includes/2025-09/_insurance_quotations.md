@@ -8,7 +8,7 @@ The insurance quotation feature allows customers to retrieve pricing information
 
 Customers can retrieve insurance pricing for one or multiple shipments using the following endpoint:
 
-## HTTP Request (insurance quotation)
+## HTTP Request (Insurance Quotation)
 
 `POST https://api.easyparcel.com/open_api/2025-09/insurance_quotations`
 
