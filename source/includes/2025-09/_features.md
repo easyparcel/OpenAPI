@@ -2,7 +2,7 @@
 
 The EasyParcel API offers various functionalities grouped under different categories. Below is an overview of the key features:
 
-<h3 id="standard-shipping-1">Standard Shipping: </h3>
+**Standard Shipping:**
 - Scheduled Delivery
 
 - Cost-effective
@@ -11,7 +11,7 @@ The EasyParcel API offers various functionalities grouped under different catego
 
 - Suitable for high volume shipment
 
-### **OnDemand Shipping**:
+**OnDemand Shipping:**
 
 - Speed: providing same-day delivery.
 
@@ -23,13 +23,13 @@ The EasyParcel API offers various functionalities grouped under different catego
 
 - Priority Handling: Parcels are prioritized, ensuring faster delivery compared to standard methods.
 
-### **Wallet**:
+**Wallet:**
 - All submission will be deducting from credit waller
 
-### **Get Courier List**:
+**Get Courier List:**
 - Getting all the courier listing available for a country
 
-### **Get Coupon List**:
+**Get Coupon List:**
 - Getting coupon available for the order for both standard shipping and ondemand
 
 ---
@@ -50,7 +50,6 @@ graph TD
 ```
 ---
 
-
 ### Standard
   
 [Get Shipment Quotation](#shipment-quotations)
@@ -65,8 +64,6 @@ graph TD
 
 [Cancel Order](#cancel-shipments)
 
-
-
 ### OnDemand
 
 [Get OnDemand Quotation](#ondmeand-quotation)
@@ -75,13 +72,9 @@ graph TD
 
 [Coupon Listing](#ondemand-coupon)
 
-
-
-
 ### Wallet
 
 [Get Wallet](#wallet-balance)
-
 
 ### Courier List
 [Courier Listing](#couriers-list)
