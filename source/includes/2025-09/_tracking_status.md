@@ -2,7 +2,7 @@
 
 The tracking status feature allows customers to retrieve real-time tracking information for their shipments using AWB (Air Waybill) numbers. This helps users monitor the delivery progress and current status of their parcels.
 
-## 🔍 Retrieving Tracking Status
+## Retrieving Tracking Status
 
 Customers can retrieve tracking information for one or multiple shipments using the following endpoint:
 
