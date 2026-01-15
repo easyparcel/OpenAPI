@@ -261,7 +261,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 | 404         | Not found (no shipments matching the criteria)       |
 | 500         | Server error                                         |
 
-<h2 id="shipment-listing-usage-notes-2025-06">Usage Notes (listing)</h2>
+<h2 id="shipment-listing-usage-notes-2025-06">Usage Notes (Listing)</h2>
 
 1. For pagination, use the `before_shipment_number` parameter with the last shipment number from the previous request.
 2. Date filters (`date_from` and `date_to`) filter by shipment collection date.
