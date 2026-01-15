@@ -1,10 +1,10 @@
-# <span style="color: blue;"> On-demand Shipping</span> 
+# <span style="color: blue;"> OnDemand Shipping</span> 
 
-## Ondemand API Flow Overview
+## OnDemand API Flow Overview
 
 This document provides a visual representation of the different flows and processes available through the EasyParcel API.
 
-### Ondemand Workflow Diagram
+### OnDemand Workflow Diagram
 
 ```mermaid
 graph TD
