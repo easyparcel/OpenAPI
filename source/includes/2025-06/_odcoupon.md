@@ -3,7 +3,7 @@
 The coupon feature allows customers to search for available promo codes and apply them during the shipment order submission. This helps users enjoy discounted rates or special benefits based on current promotional campaigns.
 
 
-<h2 id="http-request-od-coupon-list-2025-06">HTTP Request (Ondemand Coupon List)</h2>
+<h2 id="http-request-od-coupon-list-2025-06">HTTP Request (OnDemand Coupon List)</h2>
 
 Customers can retrieve a list of available coupon codes using the following endpoint:
 
@@ -88,7 +88,7 @@ This will return a list of valid promo codes available to use for the shipment f
 }
 ```
 
-<h2 id="od-coupon-list-response-2025-06">Ondemand Coupon List Response</h2>
+<h2 id="od-coupon-list-response-2025-06">OnDemand Coupon List Response</h2>
 
 ### Sample Respone for the coupon listing
 
@@ -141,7 +141,7 @@ This will return a list of valid promo codes available to use for the shipment f
 }
 ```
 
-### 🧾 Coupon Listing API - Response Parameters
+### Coupon Listing API - Response Parameters
 
 #### Main Response
 
@@ -172,13 +172,13 @@ This will return a list of valid promo codes available to use for the shipment f
 | valid_to_date      | string  | End datetime of coupon validity (UTC format)        |
 
 
-### 🧾 Applying Coupons
+### Applying Coupons
 
 During the order submission process (e.g., `/shipment/submit` or `/ondemand/shipment/submit`), customers can apply a valid coupon code by including it in the request body.
 
 ### To apply coupon just adding the coupon_codes parameters to the request
 
-<h2 id="sample-field-submit-orders-2025-06">Sample Field in submit orders</h2>
+<h2 id="sample-field-submit-orders-2025-06">Sample Field in Submit Orders</h2>
 
 ```json
 { 
