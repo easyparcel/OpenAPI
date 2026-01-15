@@ -8,7 +8,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 ---
 
-<h2 id="od-cancel-request-parameters-2025-06">Ondemand Cancel Request Parameters</h2>
+<h2 id="od-cancel-request-parameters-2025-06">OnDemand Cancel Request Parameters</h2>
 
 | Parameter                                                 | Type    | Required | Description                                    |
 | --------------------------------------------------------- | ------- | -------- | ---------------------------------------------- |
