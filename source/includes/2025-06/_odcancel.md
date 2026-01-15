@@ -16,7 +16,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 
 -
-### 📦 Request Example
+### Request Example
 
 ```json
 {
@@ -114,7 +114,7 @@ response = requests.post(url, json=data, headers=headers)
 print(response.json())
 ```
 
-<h2 id="od-cancel-order-best-practices">📄 Best Practices For Ondemand Cancel Order</h2>
+<h2 id="od-cancel-order-best-practices">Best Practices for OnDemand Cancel Order</h2>
 
 * **Always include a valid `booking_id`** when attempting to cancel an order.
 * **Ensure the order is eligible for cancellation** (i.e., not already picked up or completed).
