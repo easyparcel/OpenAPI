@@ -26,16 +26,6 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 <img width="435" height="587" alt="Screenshot 2026-01-15 at 11 25 12 AM" src="https://github.com/user-attachments/assets/96610ca2-031c-452b-a537-b671d8ba2a49" />
 </p>
 
-```mermaid
-flowchart TD
-    A[User Accesses Client App] --> B[Redirect to Authorization Server]
-    B --> C[User Logs In and Grants Permission]
-    C --> D[Authorization Server Sends Authorization Code]
-    D --> E[Client App Exchanges Code for Token]
-    E --> F[Authorization Server Returns Access Token]
-    F --> G[Client Uses Token to Access Resource]
-    G --> H((Resource Accessed Successfully))
-```
 
 
 
