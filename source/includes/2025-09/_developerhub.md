@@ -177,7 +177,7 @@ yourapp://oauth/callback.com.yourcompany.yourapp://auth
 
 
 
-## Once create the app
+## Once Create the App
 
 ### Access Token Expiry Configuration
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
@@ -256,7 +256,7 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 ### Once completed, congratulations! You have create your first app in easyparcel account!
 
 
-## Get App Client credentials
+## Get App Client Credentials
 
 ### Step 3: Get Client credentials
 1.) Get the client creditials for oauth authentication
