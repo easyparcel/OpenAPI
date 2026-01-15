@@ -539,7 +539,7 @@ Even with HTTP 200 status, individual requests in the batch may fail. Always che
 </aside>
 
 
-## Best Practices For Shipping Quotation
+## Best Practices for Shipping Quotation
 
 ### Input Validation
 
