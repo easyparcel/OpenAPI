@@ -2,7 +2,7 @@
 
 This endpoint allows users to retrieve detailed information about a specific shipment using its shipment number.
 
-## HTTP Request (detail)
+## HTTP Request (Detail)
 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/details`
 
@@ -237,7 +237,7 @@ If the shipment is not found or the request is invalid, the API will return an e
 }
 ```
 
-## Usage Notes (detail)
+## Usage Notes (Detail)
 
 1. This endpoint retrieves comprehensive information about a single shipment.
 2. The shipment number must be in the format ES-YYMM-XXXXX (e.g., ES-2504-3WYYP).
