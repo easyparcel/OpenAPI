@@ -42,16 +42,9 @@ The EasyParcel API offers various functionalities grouped under different catego
 This document provides a visual representation of the different flows and processes available through the EasyParcel API.
 
 ## API Structure Diagram
-
-```mermaid
-graph TD
-    A[[EasyParcel API]] --> B[[Shipping]]
-    A --> C[[Ondemand]]
-    A --> D[[Account Related Services]]
-   
-    
-```
----
+<p align="center">
+<img width="574" height="210" alt="Screenshot 2026-01-15 at 3 48 06 PM" src="https://github.com/user-attachments/assets/da8ed3eb-288d-41e2-b3f2-933f5567bc98" />
+</p>
 
 ### Standard
   
