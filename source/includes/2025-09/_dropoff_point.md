@@ -3,11 +3,11 @@
 The courier drop-off points feature allows customers to retrieve a list of available drop-off locations where they can physically bring their parcels for shipment. This helps users find convenient locations near them to drop off their packages instead of scheduling a pickup.
 
 
-## 📍 Retrieving Drop-off Points
+## Retrieving Drop-off Points
 
 Customers can retrieve a list of available drop-off locations for a specific courier using the following endpoint:
 
-### HTTP Request (drop-off points)
+### HTTP Request (Drop-off Points)
 
 `POST https://api.easyparcel.com/open_api/2025-09/courier/get_courier_dropoff_points`
 
