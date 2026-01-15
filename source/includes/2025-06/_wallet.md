@@ -72,7 +72,7 @@ This endpoint does not require any request parameters. Authentication is handled
 
 
 
-<h2 id="wallet-error-response-2025-06">Error Response for wallet</h2>
+<h2 id="wallet-error-response-2025-06">Error Response for Wallet</h2>
 
 If there's an authentication issue or server error, the API will return an error response:
 
@@ -84,7 +84,7 @@ If there's an authentication issue or server error, the API will return an error
 }
 ```
 
-<h2 id="usage-notes-wallet-2025-06">Usage Notes for wallet </h2>
+<h2 id="usage-notes-wallet-2025-06">Usage Notes for Wallet </h2>
 
 1. This endpoint provides the current balance in your EasyParcel wallet, which can be used for shipping services.
 2. The response includes both regular wallet balance and free credit balance.
