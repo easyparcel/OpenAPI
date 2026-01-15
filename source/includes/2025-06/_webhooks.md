@@ -1,7 +1,7 @@
 <h1 id="webhook-2025-06"><span style="color: black;"> Webhooks</span></h1>
 <h2 id="how-to-subscribe-webhook-2025-06">🔗 How to Subscribe to Webhooks</h2>
 
-### 📋 Prerequisites
+### Prerequisites
 
 Before setting up webhooks, ensure you have:
 - An active EasyParcel developer account
@@ -9,7 +9,7 @@ Before setting up webhooks, ensure you have:
 - A valid endpoint URL that can receive POST requests
 - Your endpoint configured to handle webhook payloads
 
-<h2 id="subscription-steps-2025-06">🛠️ Subscription Steps</h2>
+<h2 id="subscription-steps-2025-06">Subscription Steps</h2>
 
 Follow these steps to subscribe to webhooks:
 
@@ -56,7 +56,7 @@ Follow these steps to subscribe to webhooks:
 - Test your endpoint to ensure it's receiving webhook data correctly
 
 
-<h2 id="webhook-topics-2025-06">📋 Webhook Topics</h2>
+<h2 id="webhook-topics-2025-06">Webhook Topics</h2>
 
 | Topic ID | Webhook Topic Name | Description |
 |----------|-------------------|-------------|
@@ -176,7 +176,7 @@ Follow these steps to subscribe to webhooks:
 - **Event Filtering**: Choose only the topics relevant to your application to reduce unnecessary webhook calls
 
 
-<h2 id="important-notes-webhook-2025-06">📝 Important Notes for webhooks</h2>
+<h2 id="important-notes-webhook-2025-06">Important Notes for Webhooks</h2>
 
 - **Endpoint Requirements**: Your URL must be publicly accessible and able to handle POST requests
 - **Multiple Topics**: You can subscribe to multiple webhook topics for the same endpoint
@@ -192,7 +192,7 @@ After setup, verify your webhook is working:
 3. Verify the payload structure matches your expectations
 4. Ensure your endpoint responds with HTTP 200
 
-### 🛠️ Troubleshooting for webhooks
+### 🛠️ Troubleshooting for Webhooks
 
 **Common Issues:**
 - **Endpoint not receiving data**: Verify URL is publicly accessible
