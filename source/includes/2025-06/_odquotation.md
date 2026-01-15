@@ -376,7 +376,7 @@ print(response.json())
 ```
 
 
-<h2 id="best-practices-od-quotation-2025-06">Best Practices For Ondemand Quotation</h2>
+<h2 id="best-practices-od-quotation-2025-06">Best Practices for OnDemand Quotation</h2>
 
 1. **Input Validation** – Validate all fields before API call.
 2. **Sorting Quotations** – Sort by total amount for better user experience.
