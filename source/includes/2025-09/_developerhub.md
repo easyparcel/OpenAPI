@@ -22,15 +22,11 @@ The EasyParcel Developer Hub is the central portal for developers who want to in
 
 Whether you're developing a plugin, connecting your e-commerce store, or building a custom logistics tool — the Developer Hub has everything you need to get started.
 
-
-
 ## Registering on the EasyParcel Developer Hub
 
 This guide provides step-by-step instructions for registering on the EasyParcel Developer Hub and setting up your application to access the EasyParcel API.
 
-
 ## Registration Process
-
 ### Step 1: Create a Developer Account
 
 1.) Visit the [EasyParcel Developer Hub](https://api.easyparcel.com) and login
@@ -75,6 +71,7 @@ This guide provides step-by-step instructions for registering on the EasyParcel 
 After verifying your email and logging in, you'll need to complete your developer profile with the following information:
 
 ### Basic Information
+
 - **Account Name** - Your developer account name (usually your company name)
 - **Website** - Your company or personal website URL
 
@@ -97,9 +94,6 @@ EasyParcel will use this information to contact you about your account.
        style="max-width: 105%; height: auto;">
 </p>
 
-
-
-
 ### Emergency Developer Contact Information
 These details are used to communicate critical technical information to developers who maintain apps.
 
@@ -109,7 +103,6 @@ These details are used to communicate critical technical information to develope
 Fields marked with an asterisk (*) are required.
 
 Once you've filled out all required fields, click **Save Profile** to continue.
-
 
 If you encounter any issues during registration or application setup, contact our developer support team at **api@easyparcel.com**.
 
@@ -138,7 +131,6 @@ To access the API, you need to create an application:
 <img style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/d3509357-67c1-4309-b369-f46221cc7b31" />
 </p>
 
-
 ## Understanding Redirect URI
 
 The **Redirect URI** (also known as callback URL) is a crucial component of the OAuth 2.0 authentication flow. Here's what you need to know:
@@ -154,7 +146,6 @@ A redirect URI is the URL in your application where Easy Parcel will send users 
   
 - **User Experience**: Provides a seamless flow back to your application after authentication
   
-
 **How to configure your Redirect URI:**
 
 **For Web Applications:**
@@ -163,32 +154,23 @@ https://yourdomain.com/auth/callback
 
 https://yourapp.com/oauth/easyparcel/callback
 
-
 **For Local Development:**
 
 http://localhost:3000/auth/callback
 
 http://127.0.0.1:8080/callback
 
-
 **For Mobile Applications:**
 
 yourapp://oauth/callback.com.yourcompany.yourapp://auth
 
-
-
 ## Once Create the App
-
 ### Access Token Expiry Configuration
 Easy Parcel allows you to configure the expiry time for access tokens based on your application's security requirements and user experience needs.
-
-
 
 <p align="center">
 <img style="max-width: 105%; height: auto;" alt="piakpiak" src="https://github.com/user-attachments/assets/e0c23941-62c2-4fa8-95ce-3de49b7bb391" />
 </p>
-
-
 
 **What are Access Tokens?**
 Access tokens are credentials that allow your application to access Easy Parcel's API on behalf of authenticated users. They have a limited lifespan for security purposes.
@@ -255,9 +237,7 @@ Access tokens are credentials that allow your application to access Easy Parcel'
 
 ### Once completed, congratulations! You have create your first app in easyparcel account!
 
-
 ## Get App Client Credentials
-
 ### Step 3: Get Client credentials
 1.) Get the client creditials for oauth authentication
 
@@ -265,8 +245,5 @@ Access tokens are credentials that allow your application to access Easy Parcel'
   - client secret
   
 <img width="567" height="503" alt="513032968-f66c7ebc-9dff-4be1-9223-ddb8985f722c" src="https://github.com/user-attachments/assets/00a731fa-031c-486a-bd78-752be227912a" />
-
-
-
 
 2.) Follow [the Steps to get Oauth access token](#get-oauth-access-token)
