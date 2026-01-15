@@ -1,4 +1,4 @@
-<h1 id="od-coupon-2025-06">Ondemand Coupon</h1>
+<h1 id="od-coupon-2025-06">OnDemand Coupon</h1>
 
 The coupon feature allows customers to search for available promo codes and apply them during the shipment order submission. This helps users enjoy discounted rates or special benefits based on current promotional campaigns.
 
