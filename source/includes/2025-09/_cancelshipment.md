@@ -2,7 +2,7 @@
 
 This endpoint allows users to cancel one or more shipments. Users can provide a list of shipment numbers along with cancellation remarks.
 
-## HTTP Request (cancel)
+## HTTP Request (Cancel)
 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/cancel`
 
