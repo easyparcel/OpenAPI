@@ -1,6 +1,6 @@
 # <span style="color: black;"> Postman Collection </span>
 
-## Getting Started
+<h2 id="postman-getting-started-2025-06">Getting Started</h2>
 
 Our Postman collection provides a convenient way to explore and test the EasyParcel API endpoints. Follow these steps to get up and running quickly.
 
