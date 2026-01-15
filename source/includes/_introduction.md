@@ -2,7 +2,6 @@
 
 Welcome to the **EasyParcel API Documentation**! This guide will help you integrate with EasyParcel and get access to shipping functionalities via a RESTful API interface. 
 
-
 ## **Overview**
 
 The **EasyParcel API** enables you to manage shipping, obtain quotations, track shipments, and much more. It's designed using a RESTful architecture, offering a seamless integration with various e-commerce platforms and third-party applications.
@@ -20,11 +19,9 @@ Below is a visual guide to set up flow:
 <img alt="image" style="max-width: 105%; height: auto;" src="https://github.com/user-attachments/assets/89d588d1-1d17-4b17-baed-f418789ad916" />
 </p>
 
-
 ## **Getting Started**
 
 To begin using the EasyParcel API, follow the steps below to set up your environment:
-
 
 - [Register Developer account](#developer-hub)
 - [Create Sandbox account](#sandbox-account)
@@ -33,10 +30,7 @@ To begin using the EasyParcel API, follow the steps below to set up your environ
 - [API Endpoint](#api-functions-amp-features)
 - [Webhook](#webhooks)
 
-
 Once set up, you can use the provided **Sandbox** environment to test the API without impacting live data.
-
-
 
 ## **OAuth Authentication**
 
@@ -48,7 +42,6 @@ EasyParcel uses **OAuth 2.0** for secure authentication, enabling controlled acc
 2. **Steps to Obtain OAuth Token**:
     - [Learn about OAuth Authentication](#oauth-authentications)
     - [Getting OAuth Access Token](#get-oauth-access-token)
-
 
 ## **API Functions & Feature**
 
@@ -80,7 +73,6 @@ The EasyParcel API offers a wide array of functionalities divided into categorie
 - **Get Wallet Balance**  
   Check your current wallet balance for API transactions.  
   [Read more](#wallet-balance)
-
 
 ### **Contact Us**
 
