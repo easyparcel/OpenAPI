@@ -3,7 +3,7 @@
 The EasyParcel **sandbox account** is a test environment designed for developers and integrators to simulate real-world usage of EasyParcel's API features without affecting live production data.
 
 
-## 🔍 Key Highlights
+## Key Highlights
 
 * **Free to use**: The sandbox environment and test credits are completely free.
 * **Safe testing**: You can freely test all API operations (like quotations, order submission, cancellation, etc.) without risk to your live account.
@@ -11,7 +11,7 @@ The EasyParcel **sandbox account** is a test environment designed for developers
 * **Live account unaffected**: No changes or charges are applied to your actual EasyParcel account.
 
 
-## Use cases
+## Use Cases
 ### Ideal For
 
 * Testing API integrations before go-live
@@ -93,7 +93,7 @@ Allow the application request to access account credentials and permisions
 </p>
 
 
-## Top up demo account
+## Top Up Demo Account
 
 1. In the Application settings, connection list, select **Top Up**
 <p align="center">
