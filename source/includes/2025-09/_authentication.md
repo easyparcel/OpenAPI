@@ -1,9 +1,9 @@
 # <span style="color: black;"> Oauth Authentications </span>
 
-
 EasyParcel's API uses the OAuth 2.0 authorization framework to ensure secure access to its services. OAuth 2.0 allows applications to authenticate and access the API on behalf of a user without directly exposing user credentials. 
 
 ## OAuth 2.0
+
 - **Grant Types Supported**: Authorization Code, Client Credentials
 
 OAuth (Open Authorization) is an open standard protocol that allows secure authorization in a simple and standardized way from web, mobile, and desktop applications. EasyParcel uses OAuth to enable applications to securely access resources on behalf of the user without exposing the user's credentials.
@@ -16,7 +16,6 @@ OAuth (Open Authorization) is an open standard protocol that allows secure autho
 
 3. **Authorization Server**: The server responsible for authenticating the user and issuing access tokens.
 
-
 ### Security Considerations
 Ensure to use HTTPS to protect communication between clients and servers to prevent eavesdropping and man-in-the-middle attacks.
 
@@ -26,22 +25,15 @@ Ensure to use HTTPS to protect communication between clients and servers to prev
 <img width="435" height="587" alt="Screenshot 2026-01-15 at 11 25 12 AM" src="https://github.com/user-attachments/assets/96610ca2-031c-452b-a537-b671d8ba2a49" />
 </p>
 
-
-
-
 ### Authorization Endpoint
 The Authorization Endpoint is used by the client to obtain authorization from the resource owner via user-agent redirection.
 ### Authorization Endpoint URL: 
 https://api.easyparcel.com/oauth/login
 
-
-
-
 ### Token Endpoint
 The Token Endpoint is used by the client to obtain an access token by presenting its authorization grant.
 ### Token Endpoint URL: 
 https://api.easyparcel.com/oauth/token
-
 
 ## Get OAuth Access token
 
@@ -73,13 +65,11 @@ Request:
    	<img width="2556" height="916" alt="image" src="https://github.com/user-attachments/assets/1c6e96d7-a716-4eb6-a33b-322d6759b40d" alt="image" style="max-width: 105%; height: auto;"/>
 	</p>
 
-
 3.  Allow access to Authorize link the account to with the application
    
 	<p align="center">
 	<img width="2560" height="1238" alt="image" src="https://github.com/user-attachments/assets/49c5f98a-da94-474b-b48f-b8926bda5b9f" alt="image" style="max-width: 105%; height: auto;"/>
 	</p>
-
 
 3.) Respond param in redirect url
 Sample redirect url respond: 
@@ -94,8 +84,6 @@ https://your-callback-url/callback?code=(code that requires to regenerate access
 | -------------------- | ------ | ----------------------------------------------------------------------------------------------------------- | ------- |
 | code                 | string | The authorization code to pass to Oauth to get the access token.                                          | -       |
 | state                | string | A unique string that helps ensure the response comes from the same client request, preventing CSRF attacks. | -       |
-
-
 
 4.) Pass the below params to get access token url or refresh access token url
 ```
@@ -125,8 +113,6 @@ Use encoded value and pass back into Basic<br>
 | refresh_token        | string | Optional (Required for refresh)            | The token that requests to generate a new access token once the current token expires.                                                  | -                            |
 | state                | string | Optional                                   | Request to check the state. A unique string that helps ensure the response comes from the same client request, preventing CSRF attacks. | -                            |
 
-
-
 5.) then will respond back with the access_token
 
 ```json
@@ -147,8 +133,6 @@ Use encoded value and pass back into Basic<br>
 }
 ```
 
-
-
 | Responded Parameters     | Type      | Details                                                                            | Remarks              |
 | ------------------------ | --------- | ---------------------------------------------------------------------------------- | -------------------- |
 | token_type               | string    | Token type                                                                         | -                    |
@@ -159,7 +143,6 @@ Use encoded value and pass back into Basic<br>
 | refresh_token_expires_in | int       | The refresh token life span in seconds                                             | -                    |
 | refresh_token_expires_at | date time | The refresh token expiry date                                                      | -                    |
 | app                      | array     | informations regarding your applications                                           | Refer to [App](#App) |
-
 
 ### App
 
