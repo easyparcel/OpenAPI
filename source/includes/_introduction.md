@@ -28,7 +28,7 @@ To begin using the EasyParcel API, follow the steps below to set up your environ
 
 - [Register Developer account](#developer-hub)
 - [Create Sandbox account](#sandbox-account)
-- [Oauth](#oauth-2-0)
+- [Oauth](#oauth-authentications)
 - [Postman_collections](#postman-collection)
 - [API Endpoint](#api-functions-amp-features)
 - [Webhook](#webhooks)
