@@ -2,7 +2,7 @@
 
 This endpoint allows users to retrieve a list of shipments with optional filtering parameters. Results are sorted by the latest shipments first.
 
-<h2 id="http-request-listing-2025-06">HTTP Request (listing)</h2>
+<h2 id="http-request-listing-2025-06">HTTP Request (Listing)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-06/shipment/list`
 
