@@ -951,7 +951,7 @@ async function loadMoreShipments() {
 }
 ```
 
-## Pagination for On-demand Listings
+## Pagination for On-Demand Listings
 
 The on-demand listing endpoint (`/open_api/2025-09/ondemand/list`) follows the same pagination pattern as shipment listings, but uses `before_booking_number` instead of `before_shipment_number`:
 
