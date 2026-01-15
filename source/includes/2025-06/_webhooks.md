@@ -1,5 +1,5 @@
 <h1 id="webhook-2025-06"><span style="color: black;"> Webhooks</span></h1>
-<h2 id="how-to-subscribe-webhook-2025-06">🔗 How to Subscribe to Webhooks</h2>
+<h2 id="how-to-subscribe-webhook-2025-06">How to Subscribe to Webhooks</h2>
 
 ### Prerequisites
 
