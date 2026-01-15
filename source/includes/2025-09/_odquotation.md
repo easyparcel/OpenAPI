@@ -376,7 +376,7 @@ print(response.json())
 ```
 
 
-## Best Practices for Ondemand Quotation
+## Best Practices for OnDemand Quotation
 
 1. **Input Validation** – Validate all fields before API call.
 2. **Sorting Quotations** – Sort by total amount for better user experience.
