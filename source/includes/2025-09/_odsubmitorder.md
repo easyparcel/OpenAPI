@@ -113,7 +113,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 
 
-## Ondemand Submit Order Response
+## OnDemand Submit Order Response
 
 ### Sample Response
 
