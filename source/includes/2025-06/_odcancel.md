@@ -26,7 +26,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 ---
 
-<h2 id="od-cancel-response-parameters"> Ondemand Cancel Response</h2>
+<h2 id="od-cancel-response-parameters"> OnDemand Cancel Response</h2>
 
 ### Sample Response
 
