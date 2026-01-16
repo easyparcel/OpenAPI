@@ -12,7 +12,7 @@ Customers can retrieve a list of available coupon codes using the following endp
 This will return a list of valid promo codes available to use for the shipment from the user’s account, based on factors such as delivery type, courier, or region.
 
 
-## Ondemand Coupon Request
+## OnDemand Coupon Request
 
 Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
 
@@ -88,7 +88,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
 }
 ```
 
-## Ondemand Coupon Response
+## OnDemand Coupon Response
 
 ### Sample Respone for the coupon listing
 
