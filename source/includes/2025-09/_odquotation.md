@@ -53,7 +53,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 | waypoint\[\*].type                  | string  | Yes      | Either `pickup` or `dropoff`       | -                  |
 
 
-## Ondemand Quotation Response Parameters
+## OnDemand Quotation Response Parameters
 
 
 ### Sample Response
