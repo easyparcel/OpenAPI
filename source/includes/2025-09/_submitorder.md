@@ -6,9 +6,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 
 `POST https://api.easyparcel.com/shipment/submit_orders`
 
-
 ## Submit Order Request
-
 ### Request Sample
 
 ```json
@@ -242,10 +240,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | value           | double(8,2) | Yes      | Value of the item                        | -                             |
 | quantity        | int         | Yes      | The item quantity                        | -                             |
 
-
-
 ## Sumbit Order Response
-
 ### Successful Response Example
 ```json
 {
@@ -484,7 +479,6 @@ This feature enables users to submit shipment orders. Users are required to fill
     ]
 }
 ```
-
 
 ### Successful Response
 
