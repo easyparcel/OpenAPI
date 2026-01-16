@@ -168,7 +168,7 @@ end_time: "13:00:00" → Closes at 1:00 PM
 
 **Important**: Ensure customers arrive before the closing time to successfully drop off their parcels. Some locations may have limited operating hours (e.g., morning only).
 
-<h2 id="dropoffpoint-usage-notes">Usage Notes</h2>
+<h2 id="dropoffpoint-usage-notes">Usage Notes (Courier List)</h2>
 
 - **Location-based Search**: Results are typically sorted by proximity to the specified postcode and city.
 - **Courier-specific**: Each courier may have different drop-off locations. Always query with the specific courier ID you're using.
@@ -314,7 +314,7 @@ Common Malaysian state codes (ISO 3166-2):
 | MY-16      | Putrajaya               |
 
 
-## Best Practices
+## Best Practices for Courier List
 
 1. **Cache Results**: Consider caching drop-off point data for a reasonable period (e.g., 24 hours) as locations rarely change frequently.
 2. **Sort by Distance**: If possible, calculate distance from user's location and sort results accordingly for better UX.
