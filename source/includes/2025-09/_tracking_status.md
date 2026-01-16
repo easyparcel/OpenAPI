@@ -6,7 +6,7 @@ The tracking status feature allows customers to retrieve real-time tracking info
 
 Customers can retrieve tracking information for one or multiple shipments using the following endpoint:
 
-### HTTP Request (tracking status)
+### HTTP Request (Tracking Status)
 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/tracking_status`
 
@@ -34,7 +34,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 
 ## Tracking Status Response
 
-### 📦 Tracking Status API - Response Parameters
+### Tracking Status API - Response Parameters
 
 ### Sample Response for Tracking Status
 
@@ -162,7 +162,7 @@ Below are common shipment status codes you may encounter:
 *Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
 
 
-## Usage Notes
+## Usage Notes (Tracking)
 
 - **Batch Tracking**: You can track up to 100 AWB numbers in a single API request for efficiency.
 - **Real-time Updates**: Tracking information is updated in near real-time as events are recorded by the courier.
