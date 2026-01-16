@@ -113,7 +113,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 
 
-<h2 id="od-submit-order-response-parameters-2025-06">Ondemand Submit Order Response</h2>
+<h2 id="od-submit-order-response-parameters-2025-06">OnDemand Submit Order Response</h2>
 
 ### Sample Response
 
