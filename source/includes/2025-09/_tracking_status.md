@@ -13,7 +13,6 @@ Customers can retrieve tracking information for one or multiple shipments using 
 This endpoint returns detailed tracking information including the current status, historical events, and location data for each requested shipment.
 
 ## Tracking Status Request
-
 ### Submitting AWB Numbers to Get Tracking Information
 
 You can submit multiple AWB numbers in a single request to retrieve tracking status for multiple shipments simultaneously.
@@ -33,9 +32,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 | awb_numbers  | array | Yes      | List of AWB numbers to track (max 100 per request) |
 
 ## Tracking Status Response
-
 ### Tracking Status API - Response Parameters
-
 ### Sample Response for Tracking Status
 
 ```json
@@ -169,7 +166,6 @@ Below are common shipment status codes you may encounter:
 - **Status Log**: The `status_log` array provides a complete history of all tracking events in chronological order.
 - **Error Handling**: If an AWB number is invalid or not found, the corresponding result object will have `status: "not_found"` with a descriptive message field.
 - **Date Format**: All dates and times are returned in `YYYY-MM-DD HH:MM:SS` format in UTC timezone.
-
 
 ## Example Use Cases
 
