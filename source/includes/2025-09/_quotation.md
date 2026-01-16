@@ -38,7 +38,6 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 
 `Authorization: Bearer YOUR_ACCESS_TOKEN`
 
-
 ## HTTP Request (Quotation)
 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/quotations`
@@ -269,7 +268,6 @@ total_amount | string | Final total including all fees
 shipment_price | string | Base shipping price
 total_features_price | string | Additional features cost
 
-
 ### Service Tags
 
 Service tags provide categorization for different shipping services:
@@ -283,7 +281,6 @@ Service Methods | Pick Up, Drop-Off | Collection method
 <aside class="success">
 Use service tags to filter and categorize options in your user interface for better user experience.
 </aside>
-
 
 ### Available Features
 
@@ -538,9 +535,7 @@ errors | array | List of specific error messages
 Even with HTTP 200 status, individual requests in the batch may fail. Always check the <code>status</code> field in each data object.
 </aside>
 
-
 ## Best Practices for Shipping Quotation
-
 ### Input Validation
 
 Always validate input parameters before making API requests:
