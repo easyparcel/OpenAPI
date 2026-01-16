@@ -6,7 +6,6 @@ This endpoint allows users to retrieve a list of shipments with optional filteri
 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/list`
 
-
 ## Pagination
 
 This API uses cursor-based pagination with the `before_shipment_number` parameter. To retrieve the next page of results:
@@ -26,7 +25,6 @@ This API uses cursor-based pagination with the `before_shipment_number` paramete
 
 Since results are sorted newest first, each subsequent request returns the next set of older shipments.
 
-
 ### Request Sample
 
 ```json
@@ -41,9 +39,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 
 > Note: You can submit a request without any filters, but the maximum limit is 250 shipments per API call. Results are sorted with the latest shipments first.
 
-
 ### Main Structure
-
 
 | Parameter               | Type        | Required | Description                                | Remarks                                     |
 |-------------------------|-------------|----------|--------------------------------------------|---------------------------------------------|
@@ -53,10 +49,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 | date_from               | date        | No       | Start date for filtering shipments         | Format: YYYY-MM-DD                          |
 | date_to                 | date        | No       | End date for filtering shipments           | Format: YYYY-MM-DD                          |
 
-
-
 ## Returned Parameters
-
 ### Response Sample
 
 ```json
@@ -246,8 +239,6 @@ Since results are sorted newest first, each subsequent request returns the next 
 |---------------------|-----------|--------------------------------------------|
 | currency_code       | string    | Currency code for the price                |
 | price               | double    | Price of the shipment                      |
-
-
 
 ## Common Status Codes
 
