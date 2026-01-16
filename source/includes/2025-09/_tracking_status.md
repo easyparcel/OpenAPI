@@ -6,7 +6,7 @@ The tracking status feature allows customers to retrieve real-time tracking info
 
 Customers can retrieve tracking information for one or multiple shipments using the following endpoint:
 
-### HTTP Request (Tracking Status)
+## HTTP Request (Tracking Status)
 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/tracking_status`
 
