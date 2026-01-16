@@ -6,7 +6,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 `GET https://api.easyparcel.com/open_api/2025-09/courier/list`
 
-## Courier List Requested Parameters
+## Courier List Request
 
 ### Request Sample
 
@@ -24,7 +24,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 
 
-## Returned Courier List Parameters
+## Courier List Response
 ### Response Sample
 
 ```json
@@ -108,7 +108,7 @@ If an invalid country code is provided, the API will return an error response:
 | 401         | Unauthorized (invalid authentication)|
 | 500         | Server error                                    |
 
-<h2 id="courierlist-usage-notes">Usage Notes</h2>
+<h2 id="courierlist-usage-notes">Usage Notes (Courier List)</h2>
 
 1. The `courier_id` value returned by this endpoint is used in other API calls, such as when submitting a shipment order.
 2. Courier availability may vary by country. Use the appropriate country code to get relevant results.
