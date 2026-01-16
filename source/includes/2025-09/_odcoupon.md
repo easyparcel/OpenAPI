@@ -88,7 +88,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
 }
 ```
 
-## Ondemand Coupon List Response
+## Ondemand Coupon Response
 
 ### Sample Respone for the coupon listing
 
