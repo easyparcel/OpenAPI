@@ -170,7 +170,7 @@ Follow these steps to subscribe to webhooks:
     }
 ```
 
-<h2 id="usage-notes-webhook-2025-06">Usage Notes for webhooks </h2>
+<h2 id="usage-notes-webhook-2025-06">Usage Notes for Webhooks </h2>
 
 - **Multiple Subscriptions**: You can subscribe to multiple topics for the same endpoint
 - **Event Filtering**: Choose only the topics relevant to your application to reduce unnecessary webhook calls
