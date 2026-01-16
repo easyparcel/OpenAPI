@@ -6,7 +6,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 `POST https://api.easyparcel.com/ondemand/order`
 
-## Request Parameters
+## OnDemand Submit Order Request
 
 ### Request Sample
 
@@ -113,7 +113,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 
 
-## Ondemand Submit Order Response Parameters
+## Ondemand Submit Order Response
 
 ### Sample Response
 
