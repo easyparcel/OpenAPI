@@ -6,7 +6,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/details`
 
-## Shipment Details Request Parameters
+## Shipment Details Request
 
 | Parameter       | Type    | Required | Description                | Remarks                |
 |-----------------|---------|----------|----------------------------|------------------------|
@@ -21,7 +21,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 ```
 
 
-## Shipment Details Return Parameters
+## Shipment Details Return
 
 ### Response Sample
 
