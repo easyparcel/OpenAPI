@@ -7,7 +7,6 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 `POST https://api.easyparcel.com/open_api/2025-09/shipment/cancel`
 
 ## Cancel Request Parameters
-
 ### Request Sample
 
 ```json
@@ -38,10 +37,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 | shipment_number | string  | Yes      | Shipment number to cancel     | Format: ES-YYMM-XXXXX       |
 | remark          | string  | Yes      | Reason for cancellation       | -                           |
 
-
-
 ## Cancel Return Parameters
-
 ### Successful Response Example
 
 ```json
@@ -78,8 +74,6 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 | status          | string  | Status of the cancellation request ("success" or "error") |
 | message         | string  | Detailed message about the cancellation result |
 | shipment_number | string  | The shipment number that was processed   |
-
-
 
 ### Error Response Example
 
