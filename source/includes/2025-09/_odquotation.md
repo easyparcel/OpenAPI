@@ -5,11 +5,11 @@
 This feature enables users to obtain on-demand shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses and waypoint information to retrieve shipment quotations. The response includes available courier services, transportation type, pricing details, and optional add-on features.
 
 
-## HTTP Request (Ondemand Quotation)
+## HTTP Request (OnDemand Quotation)
 
 `POST https://api.easyparcel.com/open_api/2025-09/ondemand/quotations`
 
-## Ondemand Quotation Request Parameters 
+## OnDemand Quotation Request Parameters 
 
 ### Request Sample
 
