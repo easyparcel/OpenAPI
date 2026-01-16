@@ -1,6 +1,6 @@
 <h1 id="od-quotation-2025-06">OnDemand Quotation</h1>
 
-<h2 id="od-quotation-overview-2025-06">Ondemand Quotation Overview</h2>
+<h2 id="od-quotation-overview-2025-06">OnDemand Quotation Overview</h2>
 
 This feature enables users to obtain on-demand shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses and waypoint information to retrieve shipment quotations. The response includes available courier services, transportation type, pricing details, and optional add-on features.
 
@@ -9,7 +9,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 
 `POST https://api.easyparcel.com/open_api/2025-06/ondemand/quotations`
 
-<h2 id="od-quotation-request-parameters-2025-06">Ondemand Quotation Request Parameters</h2>
+<h2 id="od-quotation-request-parameters-2025-06">OnDemand Quotation Request Parameters</h2>
 
 ### Request Sample
 
@@ -53,7 +53,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 | waypoint\[\*].type                  | string  | Yes      | Either `pickup` or `dropoff`       | -                  |
 
 
-<h2 id="response-parameters-od-quotation-2025-06">Ondemand Quotation Response Parameters</h2>
+<h2 id="response-parameters-od-quotation-2025-06">OnDemand Quotation Response Parameters</h2>
 
 
 ### Sample Response
