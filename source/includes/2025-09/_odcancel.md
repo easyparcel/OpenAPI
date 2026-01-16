@@ -8,7 +8,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 ---
 
-## Ondemand Cancel Request
+## OnDemand Cancel Request
 
 | Parameter                                                 | Type    | Required | Description                                    |
 | --------------------------------------------------------- | ------- | -------- | ---------------------------------------------- |
@@ -26,7 +26,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 ---
 
-## Ondemand Cancel Response
+## OnDemand Cancel Response
 
 ### Sample Response
 
