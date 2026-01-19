@@ -30,7 +30,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 ```json
 {
   "limit": 3,
-  "before_shipment_number": "ES-2504-B944M",
+  "before_shipment_number": "ES-2505-8WZ3Z",
   "shipment_status_code": "7",
   "date_from": "2025-04-01",
   "date_to": "2025-04-23"
@@ -55,123 +55,142 @@ Since results are sorted newest first, each subsequent request returns the next 
 ```json
 {
     "status_code": 200,
+    "request_id": "1768812992614.b1b57f32-6b67-4a6b-bc78-d9e89277f45d",
     "message": "success",
     "data": [
         {
-            "shipment_number": "ES-2504-XZ325",
-            "awb": null,
+            "shipment_number": "ES-2504-X2KV5",
+            "awb_number": "960301021838937",
+            "awb_url": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/courier/consignment_note/49854776-1dda-4c4b-9bad-f66157e8f6b4.pdf",
+            "tracking_url": "https://app.easyparcel.com/tools/easytrack/details?courier=City-Link Express&awb=960301021838937",
             "shipment_status_code": 7,
             "shipment_status": "Schedule In Arrangement",
-            "coll_date": "2025-05-02 00:00:00",
+            "coll_date": "2025-04-30 00:00:00",
             "courier": {
-                "service_type": "Celcius Express",
-                "courier_id": "EP-CR0DP",
-                "service_id": "EP-CS0DP",
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "courier_short_name": "Celcius Express",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/"
+                "service_type": "City-Link Express (Drop-Off)",
+                "courier_id": "EP-CR0D9",
+                "service_id": "EP-CS0D9",
+                "courier_name": "City-Link Express (M) Sdn. Bhd.",
+                "courier_short_name": "City-Link Express",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/"
             },
             "sender_details": {
-                "name": "John Doe",
-                "email": "john@easyparcel.com",
-                "contact": "+601162641181",
+                "name": "Afiq",
+                "email": "afiq@easyparcel.com",
+                "contact": "MY124651303",
                 "alternative_contact": 0,
-                "address1": "123 Main St",
+                "address1": "No 4",
+                "subdivision_code": "MY-02",
+                "postal_code": "06000",
+                "country": "MY"
+            },
+            "receiver_details": {
+                "name": "Afiq Receiver",
+                "email": "afiq@easyparcel.com",
+                "contact": "MY124651303",
+                "alternative_contact": 0,
                 "subdivision_code": "MY-07",
-                "postal_code": "10150",
-                "country": "MY"
-            },
-            "receiver_details": {
-                "name": "Jane Smith",
-                "email": "smith@easyparcel.com",
-                "contact": "+601173641201",
-                "alternative_contact": 0,
-                "subdivision_code": null,
-                "postal_code": "11950",
+                "postal_code": "11900",
                 "country": "MY"
             },
             "pricing": {
                 "currency_code": "MYR",
-                "price": 25.7
+                "price": 5.65
             }
         },
         {
-            "shipment_number": "ES-2504-MFTV2",
-            "awb": null,
+            "shipment_number": "ES-2504-2AE3R",
+            "awb_number": "960301021837659",
+            "awb_url": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/courier/consignment_note/17306a0f-f6e9-40ea-9957-c1d1e53d7692.pdf",
+            "tracking_url": "https://app.easyparcel.com/tools/easytrack/details?courier=City-Link Express&awb=960301021837659",
             "shipment_status_code": 7,
             "shipment_status": "Schedule In Arrangement",
-            "coll_date": "2025-05-02 00:00:00",
+            "coll_date": "2025-04-28 00:00:00",
             "courier": {
-                "service_type": "Celcius Express",
-                "courier_id": "EP-CR0DP",
-                "service_id": "EP-CS0DP",
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "courier_short_name": "Celcius Express",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/"
+                "service_type": "City-Link Express (Drop-Off)",
+                "courier_id": "EP-CR0D9",
+                "service_id": "EP-CS0D9",
+                "courier_name": "City-Link Express (M) Sdn. Bhd.",
+                "courier_short_name": "City-Link Express",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/"
             },
             "sender_details": {
-                "name": "John Doe",
-                "email": "john@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "test afiq kedah",
+                "email": "afiq@easyparcel.com",
+                "contact": "MY124651303",
                 "alternative_contact": 0,
-                "address1": "123 Main St",
-                "subdivision_code": null,
-                "postal_code": "10150",
+                "address1": "taman suria 5",
+                "subdivision_code": "MY-02",
+                "postal_code": "06000",
                 "country": "MY"
             },
             "receiver_details": {
-                "name": "Jane Smith",
-                "email": "smith@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "Test afiq penang",
+                "email": "afiq@easyparcel.com",
+                "contact": "MY124651303",
                 "alternative_contact": 0,
-                "subdivision_code": null,
-                "postal_code": "11950",
+                "subdivision_code": "MY-07",
+                "postal_code": "11900",
                 "country": "MY"
             },
             "pricing": {
                 "currency_code": "MYR",
-                "price": 25.7
+                "price": 5.65
             }
         },
         {
-            "shipment_number": "ES-2504-3WYYP",
-            "awb": null,
+            "shipment_number": "ES-2504-QBURU",
+            "awb_number": "960301021837651",
+            "awb_url": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/courier/consignment_note/ca605e9f-5a24-47cb-a6cb-f1e9590de3d5.pdf",
+            "tracking_url": "https://app.easyparcel.com/tools/easytrack/details?courier=City-Link Express&awb=960301021837651",
             "shipment_status_code": 7,
             "shipment_status": "Schedule In Arrangement",
-            "coll_date": "2025-05-02 00:00:00",
+            "coll_date": "2025-04-29 00:00:00",
             "courier": {
-                "service_type": "Celcius Express",
-                "courier_id": "EP-CR0DP",
-                "service_id": "EP-CS0DP",
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "courier_short_name": "Celcius Express",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/"
+                "service_type": "City-Link Express (Drop-Off)",
+                "courier_id": "EP-CR0D9",
+                "service_id": "EP-CS0D9",
+                "courier_name": "City-Link Express (M) Sdn. Bhd.",
+                "courier_short_name": "City-Link Express",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/"
             },
             "sender_details": {
-                "name": "John Doe",
-                "email": "john@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "test afiq kedah",
+                "email": "afiq@easyparcel.com",
+                "contact": "MY124651303",
                 "alternative_contact": 0,
-                "address1": "123 Main St",
-                "subdivision_code": null,
-                "postal_code": "10150",
+                "address1": "taman suria 5",
+                "subdivision_code": "MY-02",
+                "postal_code": "06000",
                 "country": "MY"
             },
             "receiver_details": {
-                "name": "Jane Smith",
-                "email": "smith@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "Test afiq penang",
+                "email": "afiq@easyparcel.com",
+                "contact": "MY124651303",
                 "alternative_contact": 0,
-                "subdivision_code": null,
-                "postal_code": "11950",
+                "subdivision_code": "MY-07",
+                "postal_code": "11900",
                 "country": "MY"
             },
             "pricing": {
                 "currency_code": "MYR",
-                "price": 25.7
+                "price": 5.65
             }
         }
-    ]
+    ],
+    "pagination": {
+        "next_page_token": "eyJsYXN0X2lkIjoyNzE0MywiZmlsdGVycyI6eyJ0cmFja2luZ19zdGF0dXMiOiI3IiwiZGF0ZV9mcm9tIjoiMjAyNS0wNC0wMSAwMDowMDowMCIsImRhdGVfdG8iOiIyMDI1LTA0LTIzIDIzOjU5OjU5In19",
+        "next_shipment_number": "ES-2504-QBURU",
+        "has_more": true,
+        "limit": 3,
+        "filter_applied": {
+            "tracking_status": "7",
+            "date_from": "2025-04-01 00:00:00",
+            "date_to": "2025-04-23 23:59:59",
+            "tracking_status_code": "7"
+        }
+    }
 }
 ```
 
