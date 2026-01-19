@@ -142,6 +142,7 @@ The request uses nested objects for sender and receiver information.
 ```json
 {
     "status_code": 200,
+    "request_id": "1768796060316.afd5d9bb-ef1c-414c-a9f3-086b83fb69f3",
     "message": "1 requests success, 0 request error.",
     "data": [
         {
@@ -149,12 +150,12 @@ The request uses nested objects for sender and receiver information.
             "input": {
                 "sender": {
                     "postcode": "10150",
-                    "subdivison_code": "MY-02",
+                    "subdivision_code": "MY-02",
                     "country": "MY"
                 },
                 "receiver": {
                     "postcode": "018916",
-                    "subdivison_code": "SG-04",
+                    "subdivision_code": "SG-04",
                     "country": "SG"
                 },
                 "parcel_value": 50,
@@ -166,59 +167,78 @@ The request uses nested objects for sender and receiver information.
             "quotations": [
                 {
                     "courier": {
-                        "service_id": "EP-CS09O",
-                        "service_name": "Aramex International- Economy (Pick Up)",
-                        "courier_id": "EP-CR0AE",
-                        "courier_name": "Aramex International",
-                        "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/Aramex_International.jpg",
+                        "service_id": "EP-CS096",
+                        "service_name": "Aramex (Pick Up)",
+                        "courier_id": "EP-CR0AP",
+                        "courier_name": "Aramex",
+                        "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
                         "delivery_duration": null,
                         "service_tag": [
                             {
-                                "name": "Service Label",
-                                "value": "Economy"
-                            },
-                            {
                                 "name": "Service Destinations",
-                                "value": "International"
+                                "value": "Domestic"
                             },
                             {
                                 "name": "Service Methods",
-                                "value": "Pick Up"
+                                "value": "Pick Up from Door"
+                            },
+                            {
+                                "name": "Service Methods",
+                                "value": "Deliver to Door"
+                            },
+                            {
+                                "name": "Tracking Quality",
+                                "value": "Regular"
+                            },
+                            {
+                                "name": "Supported AWB",
+                                "value": "Supported AWB size: A6"
                             }
                         ]
                     },
                     "pricing": {
                         "currency": "MYR",
-                        "total_amount": "21.50",
-                        "shipment_price": "21.00",
-                        "total_features_price": "0.50"
+                        "total_amount": "10.84",
+                        "shipment_price": "9.80",
+                        "shipment_tax": "0.59",
+                        "total_features_price": "0.45",
+                        "total_features_tax": "0.00"
                     },
                     "features": [
                         {
                             "cod": {
-                                "available": false,
-                                "min_cod_amount": "",
-                                "max_cod_amount": "",
-                                "charges_description": ""
+                                "available": true,
+                                "min_cod_amount": "MYR10.00",
+                                "max_cod_amount": "MYR1000.00",
+                                "min_cod_charges": "MYR10.00",
+                                "cod_charging_rate": "4.00%",
+                                "charges_description": "4.00% of the parcel value or MYR10.00, whichever is higher"
                             }
                         },
                         {
                             "sms_tracking": {
                                 "sms_price": "0.20",
                                 "custom_sms_price": "0.05",
-                                "remove_ep_branding_price": "0.05"
+                                "remove_ep_branding_price": "0.05",
+                                "sms_tax": "0.00",
+                                "custom_sms_tax": "0.00",
+                                "remove_ep_branding_tax": "0.00"
                             }
                         },
                         {
                             "email_tracking": {
                                 "email_price": "0.05",
                                 "custom_email_price": "0.05",
-                                "remove_ep_branding_price": "0.05"
+                                "remove_ep_branding_price": "0.05",
+                                "email_tax": "0.00",
+                                "custom_email_tax": "0.00",
+                                "remove_ep_branding_tax": "0.00"
                             }
                         },
                         {
                             "whatsapp_tracking": {
-                                "whatsapp_price": "0.25"
+                                "whatsapp_price": "0.20",
+                                "whatsapp_tax": "0.00"
                             }
                         }
                     ]
