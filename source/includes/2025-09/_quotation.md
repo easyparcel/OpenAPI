@@ -52,12 +52,12 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
     {
       "sender": {
         "postcode": "10150",
-        "subdivision_code": "MY-02",
+        "subdivison_code": "MY-07",
         "country": "MY"
       },
       "receiver": {
         "postcode": "11950",
-        "subdivision_code": "MY-02",
+        "subdivison_code": "MY-07",
         "country": "MY"
       },
       "parcel_value":50,
@@ -116,12 +116,12 @@ The request uses nested objects for sender and receiver information.
             "input": {
                 "sender": {
                     "postcode": "10150",
-                    "subdivision_code": "MY-02",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "receiver": {
                     "postcode": "018916",
-                    "subdivision_code": "SG-04",
+                    "subdivison_code": "SG-04",
                     "country": "SG"
                 },
                 "parcel_value": 50,
@@ -306,7 +306,7 @@ async function getShippingQuotes(senderPostcode, receiverPostcode) {
     list: [{
       sender: {
         postcode: senderPostcode,
-        subdivison_code: "MY-02",
+        subdivison_code: "MY-07",
         country: "MY"
       },
       receiver: {
@@ -361,7 +361,7 @@ function getShippingQuotes($senderPostcode, $receiverPostcode) {
         'list' => [[
             'sender' => [
                 'postcode' => $senderPostcode,
-                'subdivison_code' => 'MY-02',
+                'subdivison_code' => 'MY-07',
                 'country' => 'MY'
             ],
             'receiver' => [
@@ -424,7 +424,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
         "list": [{
             "sender": {
                 "postcode": sender_postcode,
-                "subdivison_code": "MY-02",
+                "subdivison_code": "MY-07",
                 "country": "MY"
             },
             "receiver": {
@@ -483,12 +483,12 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
             "input": {
                 "sender": {
                     "postcode": "10150",
-                    "subdivision_code": "MY-02",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "receiver": {
                     "postcode": "",
-                    "subdivision_code": "MY-02",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "parcel_value": 50,
