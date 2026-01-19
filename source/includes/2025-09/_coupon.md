@@ -59,7 +59,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                 "address_2": "Apt 4B",
                 "postcode": "10150",
                 "city": "Lunas",
-                "subdivison_code": "MY-07",
+                "subdivison_code": "MY-02",
                 "country_code": "MY"
             },
             "receiver": {
@@ -72,7 +72,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                 "address_2": "Floor 2",
                 "postcode": "11950",
                 "city": "Bayan Lepas",
-                "subdivison_code": "MY-07",
+                "subdivison_code": "MY-02",
                 "country_code": "MY"
             },
             "feature": {
