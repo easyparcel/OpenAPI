@@ -474,7 +474,6 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
 ```json
 {
     "status_code": 200,
-    "request_id": "1768796716571.c0475234-2e47-4421-bd52-ed2f0b609c04",
     "message": "0 requests success, 1 request error.",
     "data": [
         {
