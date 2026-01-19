@@ -65,40 +65,6 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
       "width": 5,
       "length": 5,
       "height": 5
-    },
-     {
-      "sender": {
-        "postcode": "10150",
-        "subdivision_code": "MY-02",
-        "country": "MY"
-      },
-      "receiver": {
-        "postcode": "14000",
-        "subdivision_code": "MY-02",
-        "country": "MY"
-      },
-      "parcel_value":50,
-      "weight": 0.5,
-      "width": 5,
-      "length": 5,
-      "height": 5
-    },
-    {
-      "sender": {
-        "postcode": "10150",
-        "subdivision_code": "MY-02",
-        "country": "MY"
-      },
-      "receiver": {
-        "postcode": "09000",
-        "subdivision_code": "MY-07",
-        "country": "MY"
-      },
-      "parcel_value":50,
-      "weight": 0.5,
-      "width": 5,
-      "length": 5,
-      "height": 5
     }
     
   ]
