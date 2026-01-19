@@ -16,29 +16,29 @@ This feature enables users to submit shipment orders. Users are required to fill
     ],
     "shipment": [
         {
-            "service_id": "EP-CS09C",
+            "service_id": "EP-CS096",
             "collection_date": "2025-05-19",
             "weight": 2.5,
-            "height": 30,
-            "length": 40,
-            "width": 20,
+            "height": 5,
+            "length": 5,
+            "width": 5,
             "item": [
                 {
                     "content": "Electronics",
                     "weight": 0.5,
-                    "height": 30,
-                    "length": 40,
-                    "width": 20,
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
                     "currency_code": "MYR",
-                    "value": 500,
+                    "value": 50,
                     "quantity": 1
                 },
                 {
                     "content": "Electronics 2",
                     "weight": 0.5,
-                    "height": 10,
-                    "length": 20,
-                    "width": 20,
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
                     "currency_code": "MYR",
                     "value": 50,
                     "quantity": 2
@@ -48,7 +48,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "name": "John Doe",
                 "company": "ABC Corp",
                 "phone_number_country_code": "+60",
-                "phone_number": "1163642281",
+                "phone_number": "1126760658",
                 "email": "test@easyparcel.com",
                 "address_1": "123 Main St",
                 "address_2": "Apt 4B",
@@ -61,7 +61,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "name": "Jane Smith",
                 "company": "XYZ Inc",
                 "phone_number_country_code": "+60",
-                "phone_number": "1163642281",
+                "phone_number": "1163042981",
                 "email": "test@easyparcel.com",
                 "address_1": "456 High St",
                 "address_2": "Floor 2",
@@ -92,7 +92,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "length": 40,
                     "width": 20,
                     "currency_code": "MYR",
-                    "value": 500,
+                    "value": 50,
                     "quantity": 1
                 },
                 {
