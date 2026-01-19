@@ -571,18 +571,128 @@ For failed requests, the response includes error details:
 ```json
 {
     "status_code": 200,
-    "message": "0 requests success, 1 request error.",
+    "message": "1 request success, 1 request error.",
     "data": [
         {
             "order_details": {
-                "account_id": "438671"
+                "order_number": "EI-2505-5YU6Z",
+                "account_id": 438368
             },
-            "pricing": {
+            "pricing_breakdown": {
                 "currency_code": "MYR",
-                "total_amount": "0.00",
-                "total_tax_amount": "0.00"
+                "total_order_amount": "28.40",
+                "total_paid_amount": "23.40",
+                "total_tax_amount": "1.36",
+                "coupon_redeemed": "5.00"
             },
             "shipments": [
+                {
+                    "status": "success",
+                    "shipment_number": "ES-2505-8WZ3Z",
+                    "courier_service": null,
+                    "courier": "Aramex",
+                    "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
+                    "awb_number": null,
+                    "awb_url": null,
+                    "tracking_url": null,
+                    "weight": 2.5,
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
+                    "pricing_breakdown": {
+                        "currency_code": "MYR",
+                        "total_paid_amount": "11.70",
+                        "shipment_price": "13.02",
+                        "shipment_tax_amount": "0.63",
+                        "total_features_price": "0.50",
+                        "total_features_tax_amount": "0.05",
+                        "coupon_redeemed": "2.50"
+                    },
+                    "sender": {
+                        "point_code": null,
+                        "name": "John Doe",
+                        "phone_number_country_code": "+60",
+                        "phone_number": "1126760658",
+                        "alternate_phone_number": null,
+                        "alternate_phone_number_country_code": null,
+                        "email": "test@easyparcel.com",
+                        "company_name": "ABC Corp",
+                        "address1": "123 Main St",
+                        "address2": "Apt 4B",
+                        "city": "Lunas",
+                        "subdivision_code": "MY-07",
+                        "postcode": "10150",
+                        "country_code": "MY"
+                    },
+                    "receiver": {
+                        "point_code": null,
+                        "name": "Jane Smith",
+                        "phone_number": "1163042981",
+                        "phone_number_country_code": "+60",
+                        "alternate_phone_number": null,
+                        "alternate_phone_number_country_code": null,
+                        "email": "test@easyparcel.com",
+                        "company_name": "XYZ Inc",
+                        "address1": "456 High St",
+                        "address2": "Floor 2",
+                        "city": "Bayan Lepas",
+                        "subdivision_code": "MY-07",
+                        "postcode": "11950",
+                        "country_code": "MY"
+                    },
+                    "shipment_items": [
+                        {
+                            "content": "Electronics",
+                            "weight": 0.5,
+                            "height": 5,
+                            "length": 5,
+                            "width": 5,
+                            "currency_code": "MYR",
+                            "value": 50,
+                            "quantity": 1,
+                            "insurance_purchase": null
+                        },
+                        {
+                            "content": "Electronics 2",
+                            "weight": 0.5,
+                            "height": 5,
+                            "length": 5,
+                            "width": 5,
+                            "currency_code": "MYR",
+                            "value": 50,
+                            "quantity": 2
+                            "insurance_purchase": null
+                        }
+                    ],
+                    "features": {
+                        "cod": null,
+                        "shipment_tracking_whatsapp": {
+                            "message": "Hey there! Your order from John Doe is ready to be collected for delivery soon!\n\nTracking no: 7127058313446465",
+                            "phone_country_code": "+60",
+                            "phone_number": "1163642281",
+                            "currency_code": "MYR",
+                            "total_amount": "0.29",
+                            "price": "0.25",
+                            "tax_amount": "0.04"
+                        },
+                        "shipment_tracking_sms": {
+                            "message": "Your order from John Doe is ready & trackable once courier scans in. Track at EasyParcel with [Placeholder Trackin..] -Powered by EasyParcel",
+                            "phone_country_code": "+60",
+                            "phone_number": "1163642281",
+                            "currency_code": "MYR",
+                            "total_amount": "0.20",
+                            "price": "0.20",
+                            "tax_amount": "0.00"
+                        },
+                        "shipment_tracking_email": {
+                            "email": "test@easyparcel.com",
+                            "currency_code": "MYR",
+                            "total_amount": "0.06",
+                            "price": "0.05",
+                            "tax_amount": "0.01"
+                        }
+                    }
+                },
                 {
                     "status": "error",
                     "collection_date": "",
@@ -602,24 +712,24 @@ For failed requests, the response includes error details:
                         "address1": "123 Main St",
                         "address2": "Apt 4B",
                         "city": "",
-                        "subdivison_code": "",
+                        "subdivision_code": "",
                         "postcode": "10150",
                         "country_code": "MY"
                     },
                     "receiver": {
                         "point_code": null,
                         "name": "Jane Smith",
-                        "phone_number": "",
-                        "phone_number_country_code": "",
+                        "phone_number": "1163642281",
+                        "phone_number_country_code": "+60",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
-                        "email": null,
+                        "email": "test@easyparcel.com",
                         "company_name": "XYZ Inc",
-                        "address1": "",
+                        "address1": "456 High St",
                         "address2": "Floor 2",
                         "city": "",
-                        "subdivison_code": "",
-                        "postcode": "11950",
+                        "subdivision_code": "",
+                        "postcode": "",
                         "country_code": "MY"
                     },
                     "shipment_items": [
@@ -630,8 +740,19 @@ For failed requests, the response includes error details:
                             "length": 40,
                             "width": 20,
                             "currency_code": "MYR",
-                            "value": 500,
+                            "value": 50,
                             "quantity": 1,
+                            "insurance_purchase": null
+                        },
+                        {
+                            "content": "Electronics 2",
+                            "weight": 0.5,
+                            "height": 10,
+                            "length": 20,
+                            "width": 20,
+                            "currency_code": "MYR",
+                            "value": 50,
+                            "quantity": 2,
                             "insurance_purchase": null
                         }
                     ],
@@ -642,11 +763,7 @@ For failed requests, the response includes error details:
                         "shipment_tracking_email": false
                     },
                     "errors": [
-                        "The service id field is required ",
-                        "The collection date field is required ",
-                        "The receiver phone number country code field is required ",
-                        "The receiver phone number field is required ",
-                        "The receiver address 1 field is required "
+                        "The receiver postcode field is required "
                     ]
                 }
             ]
