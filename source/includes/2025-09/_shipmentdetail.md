@@ -31,48 +31,48 @@ This endpoint allows users to retrieve detailed information about a specific shi
     "message": "success",
     "data": [
         {
-            "shipment_number": "ES-2504-3WYYP",
-            "order_number": "EI-2504-AK8CK",
+            "shipment_number": "ES-2505-8WZ3Z",
+            "order_number": "EI-2505-5YU6Z",
             "shipment_details": {
                 "weight": 2.5,
-                "height": 30,
-                "length": 40,
-                "width": 20,
+                "height": 5,
+                "length": 5,
+                "width": 5,
                 "shipment_status_code": 7,
                 "shipment_status": "Schedule In Arrangement",
-                "parcels_value": "550",
+                "parcels_value": "50",
                 "insurance_label": null,
-                "awb_number": null,
-                "tracking_url": "https://app.easyparcel.com/my/en/track/details/?courier=Celcius Express&awb=null",
-                "awb_url": "https://connect.easyparcel.my/?ac=AWBLabel&id=null",
-                "coll_date": "2025-05-02 00:00:00"
+                "awb_number": 7127058313446465,
+                "awb_url": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/courier/consignment_note/451e436b-8885-4106-9f14-e92364ad206a.pdf",
+                "tracking_url": "http://localhost/tools/easytrack/summary?awb=7127058313446465",
+                "coll_date": "2025-05-19 00:00:00"
             },
             "parcel_content": [
                 {
                     "content": "Electronics",
-                    "weight": "0.50000",
-                    "height": 30,
-                    "length": 40,
-                    "width": 20,
-                    "value": 500,
+                    "weight": "0.5",
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
+                    "value": 50,
                     "currency_code": "MYR"
                 },
                 {
                     "content": "Electronics 2",
-                    "weight": "0.50000",
-                    "height": 10,
-                    "length": 20,
-                    "width": 20,
+                    "weight": "0.5",
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
                     "value": 50,
                     "currency_code": "MYR"
                 }
             ],
             "courier": {
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "service_id": "EP-CS0DP",
-                "courier_id": "EP-CR0DP",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/",
-                "service_types": "Celcius Express"
+                "courier_name": "Aramex",
+                "service_id": "EP-CS096",
+                "courier_id": "EP-CR0AP",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
+                "service_types": "Aramex (Pick-up)"
             },
             "sender": {
                 "name": "John Doe",
