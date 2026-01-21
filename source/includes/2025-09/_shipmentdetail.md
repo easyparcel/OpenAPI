@@ -16,7 +16,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 
 ```json
 {
-  "shipment_number": "ES-2505-8WZ3Z"
+  "shipment_number": "ES-2601-U2W24"
 }
 ```
 
@@ -28,11 +28,12 @@ This endpoint allows users to retrieve detailed information about a specific shi
 ```json
 {
     "status_code": 200,
+    "request_id": "1768969948728.9dd33a47-8ec6-4712-897b-41c3c29ac042",
     "message": "success",
     "data": [
         {
-            "shipment_number": "ES-2505-8WZ3Z",
-            "order_number": "EI-2505-5YU6Z",
+            "shipment_number": "ES-2601-U2W24",
+            "order_number": "EI-2601-CS99V",
             "shipment_details": {
                 "weight": 2.5,
                 "height": 5,
@@ -40,17 +41,17 @@ This endpoint allows users to retrieve detailed information about a specific shi
                 "width": 5,
                 "shipment_status_code": 7,
                 "shipment_status": "Schedule In Arrangement",
-                "parcels_value": "50",
-                "insurance_label": null,
-                "awb_number": 7127058313446465,
-                "awb_url": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/courier/consignment_note/451e436b-8885-4106-9f14-e92364ad206a.pdf",
-                "tracking_url": "http://localhost/tools/easytrack/summary?awb=7127058313446465",
+                "parcels_value": "100",
+                "insurance_label": "basic",
+                "awb_number": null,
+                "awb_url": null,
+                "tracking_url": null,
                 "coll_date": "2025-05-19 00:00:00"
             },
             "parcel_content": [
                 {
                     "content": "Electronics",
-                    "weight": "0.5",
+                    "weight": "0.50000",
                     "height": 5,
                     "length": 5,
                     "width": 5,
@@ -59,7 +60,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
                 },
                 {
                     "content": "Electronics 2",
-                    "weight": "0.5",
+                    "weight": "0.50000",
                     "height": 5,
                     "length": 5,
                     "width": 5,
@@ -69,18 +70,18 @@ This endpoint allows users to retrieve detailed information about a specific shi
             ],
             "courier": {
                 "courier_name": "Aramex",
-                "service_id": "EP-CS096",
+                "service_id": "EP-CS0AP",
                 "courier_id": "EP-CR0AP",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
-                "service_types": "Aramex (Pick-up)"
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/aramex.jpg",
+                "service_types": "Aramex (Pick Up)"
             },
             "sender": {
                 "name": "John Doe",
                 "company_name": "ABC Corp",
                 "email": "test@easyparcel.com",
-                "contact": "+601163642281",
+                "contact": "+601126760658",
                 "alternative_contact": null,
-                "subdivision_code": null,
+                "subdivision_code": "MY-07",
                 "postal_code": "10150",
                 "country": "MY",
                 "address1": "123 Main St",
@@ -90,10 +91,10 @@ This endpoint allows users to retrieve detailed information about a specific shi
             "receiver": {
                 "name": "Jane Smith",
                 "company_name": "XYZ Inc",
-                "email": "smith@easyparcel.com",
-                "contact": "+601163642281",
+                "email": "test@easyparcel.com",
+                "contact": "+601163042981",
                 "alternative_contact": null,
-                "subdivision_code": null,
+                "subdivision_code": "MY-07",
                 "postal_code": "11950",
                 "country": "MY",
                 "address1": "456 High St",
@@ -102,12 +103,12 @@ This endpoint allows users to retrieve detailed information about a specific shi
             },
             "pricing": {
                 "currency_code": "MYR",
-                "total_price": "27.24",
-                "shipment_price": "25.70",
-                "tax_price": "1.54",
-                "sms_notification": "0.24",
-                "email_notification": "0.06",
-                "whatsapp_notification": "0.29",
+                "total_price": "0.00",
+                "shipment_price": "12.10",
+                "tax_price": "0.00",
+                "sms_notification": "0.00",
+                "email_notification": "0.00",
+                "whatsapp_notification": "0.00",
                 "awb_branding": null,
                 "insurance": null,
                 "ddp": null
