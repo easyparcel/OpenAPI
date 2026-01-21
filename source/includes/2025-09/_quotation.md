@@ -119,9 +119,9 @@ The request uses nested objects for sender and receiver information.
                     "country": "MY"
                 },
                 "receiver": {
-                    "postcode": "018916",
-                    "subdivison_code": "SG-04",
-                    "country": "SG"
+                    "postcode": "11950",
+                    "subdivison_code": "SG-07",
+                    "country": "MY"
                 },
                 "parcel_value": 50,
                 "weight": 0.5,
