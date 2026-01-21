@@ -12,7 +12,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 ```json
 {
     "coupon_codes": [
-        "5f710742-c649-45b7-83d6-af733651f892"
+        "77f39c22-427a-44f1-8bff-e4f3752ba165"
     ],
     "shipment": [
         {
