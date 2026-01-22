@@ -15,6 +15,10 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
         {
             "shipment_number": "ES-2601-QTG7S",
             "remark": "test"
+        },
+        {
+            "shipment_number": "ES-2601-A7ZTF",
+            "remark": "test"
         }
     ]
 }
@@ -44,12 +48,12 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
         {
             "status": "success",
             "message": "Order Cancelled",
-            "shipment_number": "ES-2504-WZ9VY"
+            "shipment_number": "ES-2601-QTG7S"
         },
         {
             "status": "success",
             "message": "Order Cancelled",
-            "shipment_number": "ES-2504-K94KU"
+            "shipment_number": "ES-2601-A7ZTF"
         }
     ]
 }
