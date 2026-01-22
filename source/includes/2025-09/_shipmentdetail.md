@@ -28,12 +28,12 @@ This endpoint allows users to retrieve detailed information about a specific shi
 ```json
 {
     "status_code": 200,
-    "request_id": "1768969948728.9dd33a47-8ec6-4712-897b-41c3c29ac042",
+    "request_id": "1769073993333.28014cc0-997d-4605-a5b2-3d23f8238185",
     "message": "success",
     "data": [
         {
-            "shipment_number": "ES-2601-U2W24",
-            "order_number": "EI-2601-CS99V",
+            "shipment_number": "ES-2601-QTG7S",
+            "order_number": "EI-2601-9MXFR",
             "shipment_details": {
                 "weight": 2.5,
                 "height": 5,
