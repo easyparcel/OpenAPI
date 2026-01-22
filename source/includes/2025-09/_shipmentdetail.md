@@ -16,7 +16,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 
 ```json
 {
-  "shipment_number": "ES-2601-U2W24"
+  "shipment_number": "ES-2601-QTG7S"
 }
 ```
 
