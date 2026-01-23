@@ -61,7 +61,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
         "country": "MY"
       },
       "parcel_value":50,
-      "weight": 0.5,
+      "weight": 1.5,
       "width": 5,
       "length": 5,
       "height": 5
@@ -124,7 +124,7 @@ The request uses nested objects for sender and receiver information.
                     "country": "MY"
                 },
                 "parcel_value": 50,
-                "weight": 0.5,
+                "weight": 1.5,
                 "width": 5,
                 "length": 5,
                 "height": 5
@@ -313,7 +313,7 @@ async function getShippingQuotes(senderPostcode, receiverPostcode) {
         subdivison_code: "MY-04", 
         country: "MY"
       },
-      weight: 0.5,
+      weight: 1.5,
       width: 5,
       length: 5,
       height: 5,
@@ -368,7 +368,7 @@ function getShippingQuotes($senderPostcode, $receiverPostcode) {
                 'subdivison_code' => 'MY-07',
                 'country' => 'MY'
             ],
-            'weight' => 0.5,
+            'weight' => 1.5,
             'width' => 5,
             'length' => 5,
             'height' => 5,
@@ -431,7 +431,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
                 "subdivison_code": "MY-07",
                 "country": "MY"
             },
-            "weight": 0.5,
+            "weight": 1.5,
             "width": 5,
             "length": 5,
             "height": 5,
@@ -490,7 +490,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
                     "country": "MY"
                 },
                 "parcel_value": 50,
-                "weight": 0.5,
+                "weight": 1.5,
                 "width": 5,
                 "length": 5,
                 "height": 5
