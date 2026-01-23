@@ -108,7 +108,7 @@ The request uses nested objects for sender and receiver information.
 ```json
 {
     "status_code": 200,
-    "message": "1 requests success, 0 request error.",
+    "message": "1 request success, 0 request error.",
     "data": [
         {
             "status": "success",
