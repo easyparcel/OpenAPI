@@ -310,8 +310,8 @@ async function getShippingQuotes(senderPostcode, receiverPostcode) {
       },
       receiver: {
         postcode: receiverPostcode,
-        subdivison_code: "SG-04", 
-        country: "SG"
+        subdivison_code: "MY-04", 
+        country: "MY"
       },
       weight: 0.5,
       width: 5,
@@ -365,8 +365,8 @@ function getShippingQuotes($senderPostcode, $receiverPostcode) {
             ],
             'receiver' => [
                 'postcode' => $receiverPostcode,
-                'subdivison_code' => 'SG-04',
-                'country' => 'SG'
+                'subdivison_code' => 'MY-07',
+                'country' => 'MY'
             ],
             'weight' => 0.5,
             'width' => 5,
@@ -428,8 +428,8 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
             },
             "receiver": {
                 "postcode": receiver_postcode,
-                "subdivison_code": "SG-04",
-                "country": "SG"
+                "subdivison_code": "MY-07",
+                "country": "MY"
             },
             "weight": 0.5,
             "width": 5,
