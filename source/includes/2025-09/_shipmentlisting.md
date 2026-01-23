@@ -30,7 +30,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 ```json
 {
   "limit": 3,
-  "before_shipment_number": "ES-2601-QTG7S",
+  "before_shipment_number": "ES-2601-K8S32",
   "shipment_status_code": "7",
   "date_from": "2025-04-01",
   "date_to": "2025-04-23"
