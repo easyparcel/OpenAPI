@@ -110,7 +110,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             {
                 "coupon_code": "10101f8b-1dc5-49e0-b4d3-09c5deb76513",
                 "title": "Test Coupon",
-                "description": Test",
+                "description": Test ",
                 "discounted_amount": "2.34",
                 "discount_rate": "10.00%",
                 "valid_from_date": "2025-05-12 09:43:43",
@@ -119,7 +119,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             {
                 "coupon_code": "dfa5109a-2f35-427e-8482-9b0ab65c323f",
                 "title": "Test Coupon",
-                "description": "Test",
+                "description": "Test ",
                 "discounted_amount": "2.10",
                 "discount_rate": "10.00%",
                 "valid_from_date": "2025-05-12 09:43:43",
@@ -128,7 +128,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             {
                 "coupon_code": "ad205174-d93d-4d6a-a5cc-1e989b0292eb",
                 "title": "Test Coupon",
-                "description": "Test",
+                "description": "Test ",
                 "discounted_amount": "1.89",
                 "discount_rate": "10.00%",
                 "valid_from_date": "2025-05-12 09:43:43",
