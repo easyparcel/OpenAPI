@@ -110,7 +110,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             {
                 "coupon_code": "10101f8b-1dc5-49e0-b4d3-09c5deb76513",
                 "title": "Test Coupon",
-                "description": Test ",
+                "description": "Test ",
                 "discounted_amount": "2.34",
                 "discount_rate": "10.00%",
                 "valid_from_date": "2025-05-12 09:43:43",
