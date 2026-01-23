@@ -28,14 +28,13 @@ This endpoint allows users to retrieve detailed information about a specific shi
 ```json
 {
     "status_code": 200,
-    "request_id": "1769073993333.28014cc0-997d-4605-a5b2-3d23f8238185",
     "message": "success",
     "data": [
         {
-            "shipment_number": "ES-2601-QTG7S",
-            "order_number": "EI-2601-9MXFR",
+            "shipment_number": "ES-2601-K8S32",
+            "order_number": "EI-2601-U8FZW",
             "shipment_details": {
-                "weight": 2.5,
+                "weight": 1.5,
                 "height": 5,
                 "length": 5,
                 "width": 5,
@@ -104,7 +103,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
             "pricing": {
                 "currency_code": "MYR",
                 "total_price": "0.00",
-                "shipment_price": "12.10",
+                "shipment_price": "9.80",
                 "tax_price": "0.00",
                 "sms_notification": "0.00",
                 "email_notification": "0.00",
