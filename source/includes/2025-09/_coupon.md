@@ -67,7 +67,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                 "company": "XYZ Inc",
                 "phone_number_country_code": "+60",
                 "phone_number": "1163042981",
-                "email": "amanda@easyparcel.com",
+                "email": "test@easyparcel.com",
                 "address_1": "456 High St",
                 "address_2": "Floor 2",
                 "postcode": "11950",
