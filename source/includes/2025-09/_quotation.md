@@ -120,7 +120,7 @@ The request uses nested objects for sender and receiver information.
                 },
                 "receiver": {
                     "postcode": "11950",
-                    "subdivison_code": "SG-07",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "parcel_value": 50,
