@@ -18,7 +18,7 @@ This feature enables users to submit shipment orders. Users are required to fill
         {
             "service_id": "EP-CS096",
             "collection_date": "2025-05-19",
-            "weight": 2.5,
+            "weight": 1.5,
             "height": 5,
             "length": 5,
             "width": 5,
@@ -80,14 +80,14 @@ This feature enables users to submit shipment orders. Users are required to fill
         {
             "service_id": "EP-CS09C",
             "collection_date": "2025-05-19",
-            "weight": 2.5,
+            "weight": 1.5,
             "height": 30,
             "length": 40,
             "width": 20,
             "item": [
                 {
                     "content": "Electronics",
-                    "weight": 0.5,
+                    "weight": 1,
                     "height": 30,
                     "length": 40,
                     "width": 20,
@@ -103,7 +103,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "width": 20,
                     "currency_code": "MYR",
                     "value": 50,
-                    "quantity": 2
+                    "quantity": 1
                 }
             ],
             "sender": {
@@ -133,7 +133,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "country_code": "MY"
             },
             "feature": {
-                "sms_tracking": true,
+                "sms_tracking": false,
                 "email_tracking": true,
                 "whatsapp_tracking": true,
                 "awb_branding": false
