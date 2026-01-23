@@ -249,34 +249,34 @@ This feature enables users to submit shipment orders. Users are required to fill
     "data": [
         {
             "order_details": {
-                "order_number": "EI-2601-9MXFR",
+                "order_number": "EI-2601-U8FZW",
                 "account_id": 8583757
             },
             "pricing_breakdown": {
                 "currency_code": "MYR",
-                "total_order_amount": "26.02",
-                "total_paid_amount": "26.02",
+                "total_order_amount": "23.52",
+                "total_paid_amount": "23.52",
                 "total_tax_amount": "0.00",
                 "coupon_redeemed": "0.00"
             },
             "shipments": [
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-QTG7S",
+                    "shipment_number": "ES-2601-K8S32",
                     "courier_service": null,
                     "courier": "Aramex",
                     "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
                     "awb_number": null,
                     "awb_url": null,
                     "tracking_url": null,
-                    "weight": 2.5,
+                    "weight": 1.5,
                     "height": 5,
                     "length": 5,
                     "width": 5,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "12.55",
-                        "shipment_price": "12.10",
+                        "total_paid_amount": "10.25",
+                        "shipment_price": "9.80",
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.45",
                         "total_features_tax_amount": "0.00",
@@ -386,23 +386,23 @@ This feature enables users to submit shipment orders. Users are required to fill
                 },
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-A7ZTF",
+                    "shipment_number": "ES-2601-XV7UN",
                     "courier_service": null,
                     "courier": "DHL eCommerce",
                     "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/DHLeC.jpg",
-                    "awb_number": "7228016924446116",
-                    "awb_url": "https://app.easyparcel.com/portal/v2/public/label/ES-2601-A7ZTF/3938156?format=A4",
-                    "tracking_url": "https://app.easyparcel.com/tools/easytrack/details?courier=DHLeC&awb=7228016924446116",
+                    "awb_number": "7227014253232636",
+                    "awb_url": "https://app.easyparcel.com/portal/v2/public/label/ES-2601-XV7UN/3941082?format=A4",
+                    "tracking_url": "https://app.easyparcel.com/tools/easytrack/details?courier=DHLeC&awb=7227014253232636",
                     "weight": 4,
                     "height": 30,
                     "length": 40,
                     "width": 20,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "13.47",
+                        "total_paid_amount": "13.27",
                         "shipment_price": "13.02",
                         "shipment_tax_amount": "0.00",
-                        "total_features_price": "0.45",
+                        "total_features_price": "0.25",
                         "total_features_tax_amount": "0.00",
                         "coupon_redeemed": "0.00"
                     },
@@ -410,7 +410,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "point_code": null,
                         "name": "John Doe",
                         "phone_number_country_code": "+60",
-                        "phone_number": "1163642281",
+                        "phone_number": "1126760658",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "test@easyparcel.com",
@@ -425,7 +425,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "receiver": {
                         "point_code": null,
                         "name": "Jane Smith",
-                        "phone_number": "1163642281",
+                        "phone_number": "1163042981",
                         "phone_number_country_code": "+60",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
@@ -441,7 +441,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "shipment_items": [
                         {
                             "content": "Electronics",
-                            "weight": 0.5,
+                            "weight": 1,
                             "height": 30,
                             "length": 40,
                             "width": 20,
@@ -457,7 +457,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "width": 20,
                             "currency_code": "MYR",
                             "value": 50,
-                            "quantity": 2
+                            "quantity": 1
                         }
                     ],
                     "features": {
@@ -483,21 +483,13 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "shipment_tracking_whatsapp": {
                             "message": "Hey there! Your order from [Sender's Name] is ready to be collected for delivery soon!\n\nTracking no: [Tracking No.]",
                             "phone_country_code": "+60",
-                            "phone_number": "1163642281",
+                            "phone_number": "1163042981",
                             "currency_code": "MYR",
                             "total_amount": "0.00",
                             "price": "0.20",
                             "tax_amount": "0.00"
                         },
-                        "shipment_tracking_sms": {
-                            "message": "Your order from John Doe is ready & trackable once courier scans in. Track at EasyParcel with [Placeholder Trackin..] -Powered by EasyParcel",
-                            "phone_country_code": "+60",
-                            "phone_number": "1163642281",
-                            "currency_code": "MYR",
-                            "total_amount": "0.00",
-                            "price": "0.20",
-                            "tax_amount": "0.00"
-                        },
+                        "shipment_tracking_sms": null,
                         "shipment_tracking_email": {
                             "email": "test@easyparcel.com",
                             "currency_code": "MYR",
