@@ -47,13 +47,13 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
     "data": [
         {
             "status": "success",
-            "message": "Order Cancelled",
-            "shipment_number": "ES-2601-QTG7S"
+            "message": "Shipment Cancelled",
+            "shipment_number": "ES-2601-K8S32"
         },
         {
             "status": "success",
-            "message": "Order Cancelled",
-            "shipment_number": "ES-2601-A7ZTF"
+            "message": "Shipment Cancelled",
+            "shipment_number": "ES-2601-XV7UN"
         }
     ]
 }
