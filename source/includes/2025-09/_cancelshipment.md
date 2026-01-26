@@ -13,11 +13,11 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 {
     "cancel_list": [
         {
-            "shipment_number": "ES-2601-QTG7S",
+            "shipment_number": "ES-2601-K8S32",
             "remark": "test"
         },
         {
-            "shipment_number": "ES-2601-A7ZTF",
+            "shipment_number": "ES-2601-XV7UN",
             "remark": "test"
         }
     ]
