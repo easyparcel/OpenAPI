@@ -80,16 +80,21 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 ```json
 {
     "status_code": 200,
-    "message": "0 requests success, 2 request error.",
+    "message": "0 requests success, 3 request error.",
     "data": [
         {
             "status": "error",
-            "message": "Shipment Already Cancelled",
-            "shipment_number": "ES-2504-JUB4T"
+            "message": "Shipment Already Cancelled, Cannot Cancel Again",
+            "shipment_number": "ES-2601-D5G67"
         },
         {
             "status": "error",
-            "message": "Shipment Already Cancelled",
+            "message": "The shipment cancellation period is over (7 days from collection date: 2025-05-19)",
+            "shipment_number": "ES-2601-QTG7S"
+        },
+        {
+            "status": "error",
+            "message": "Shipment Not Found",
             "shipment_number": "ES-2504-GPC39"
         }
     ]
