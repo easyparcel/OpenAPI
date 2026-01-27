@@ -51,7 +51,6 @@ You can query drop-off points by providing courier and location information to f
 ```json
 {
     "status_code": 200,
-    "request_id": "1762740567664.ba412296-e538-49ad-99f0-78e694bde618",
     "message": "Success",
     "data": [
         {
@@ -182,7 +181,7 @@ end_time: "13:00:00" → Closes at 1:00 PM
 
 ```json
 {
-    "courier_id": "EP-CR0A",
+    "courier_id": "EP-CR0AP",
     "country_code": "MY",
     "postcode": "50000",
     "city": "Kuala Lumpur",
@@ -190,11 +189,19 @@ end_time: "13:00:00" → Closes at 1:00 PM
 }
 ```
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 ### Finding Drop-off Points in Penang
 
 ```json
 {
-    "courier_id": "EP-CR0A",
+    "courier_id": "EP-CR0AP",
     "country_code": "MY",
     "postcode": "10000",
     "city": "George Town",
@@ -202,11 +209,19 @@ end_time: "13:00:00" → Closes at 1:00 PM
 }
 ```
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 ### Different Courier Service
 
 ```json
 {
-    "courier_id": "EP-CR0B",
+    "courier_id": "EP-CR0AW",
     "country_code": "MY",
     "postcode": "80000",
     "city": "Johor Bahru",
@@ -248,7 +263,7 @@ Once a customer selects a drop-off point, you can include the `point_id` in your
 {
   "shipment": [
     {
-      "service_id": "EP-CS05M",
+      "service_id": "EP-CS096",
       "dropoff_point_id": "EP-CB0FF",
       "collection_method": "dropoff",
       // ... other shipment details
@@ -269,11 +284,14 @@ If no drop-off points are found for the specified location:
 ```json
 {
     "status_code": 200,
-    "request_id": "1762740567664.xyz-123-abc",
     "message": "No drop-off points found",
     "data": []
 }
 ```
+
+&nbsp;
+
+&nbsp;
 
 ### Invalid Courier or Location
 
@@ -282,12 +300,10 @@ If the courier ID is invalid or doesn't service the specified location:
 ```json
 {
     "status_code": 400,
-    "request_id": "1762740567664.xyz-123-abc",
     "message": "Invalid courier ID or location not serviced",
     "data": null
 }
 ```
-
 
 ## State Codes Reference (Malaysia)
 
