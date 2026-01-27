@@ -28,17 +28,17 @@ You can submit multiple shipment scenarios in a single request to retrieve insur
 {
   "list": [
     {
-      "courier_id": "EP-CR0AW",
+      "courier_id": "EP-CR0AP",
       "currency_code": "MYR",
-      "from_postcode": "11900",
+      "from_postcode": "10150",
       "from_country": "MY",
       "to_postcode": "11900",
       "to_country": "MY",
-      "shipment_weight": 2,
+      "shipment_weight": 1.5,
       "shipment_item": [
         {
-          "value": 300,
-          "quantity": 1,
+          "value": 50,
+          "quantity": 3,
           "currency_code": "MYR"
         }
       ]
@@ -46,15 +46,15 @@ You can submit multiple shipment scenarios in a single request to retrieve insur
     {
       "courier_id": "EP-CR0AW",
       "currency_code": "MYR",
-      "from_postcode": "11900",
+      "from_postcode": "10150",
       "from_country": "MY",
       "to_postcode": "11900",
       "to_country": "MY",
-      "shipment_weight": 2,
+      "shipment_weight": 1.5,
       "shipment_item": [
         {
-          "value": 3000,
-          "quantity": 1,
+          "value": 50,
+          "quantity": 3,
           "currency_code": "MYR"
         }
       ]
