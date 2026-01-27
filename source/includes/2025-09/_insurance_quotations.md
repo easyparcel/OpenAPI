@@ -14,8 +14,6 @@ Customers can retrieve insurance pricing for one or multiple shipments using the
 
 This endpoint returns detailed insurance pricing based on shipment details including courier, origin, destination, weight, and item values.
 
-
-
 ## Insurance Quotation Request
 
 ### Submitting Shipment Details to Get Insurance Pricing
@@ -100,23 +98,22 @@ You can submit multiple shipment scenarios in a single request to retrieve insur
 ```json
 {
     "status_code": 200,
-    "request_id": "1762497146698.88a5ed0d-e91e-425b-af7e-ef3297d09297",
     "message": "2 requests success, 0 request error.",
     "data": [
         {
             "status": "success",
             "input": {
-                "courier_id": "EP-CR0AW",
+                "courier_id": "EP-CR0AP",
                 "currency_code": "MYR",
-                "from_postcode": "11900",
+                "from_postcode": "10150",
                 "from_country": "MY",
                 "to_postcode": "11900",
                 "to_country": "MY",
-                "shipment_weight": 2,
+                "shipment_weight": 1.5,
                 "shipment_item": [
                     {
-                        "value": 300,
-                        "quantity": 1,
+                        "value": 50,
+                        "quantity": 3,
                         "currency_code": "MYR"
                     }
                 ]
@@ -145,15 +142,15 @@ You can submit multiple shipment scenarios in a single request to retrieve insur
             "input": {
                 "courier_id": "EP-CR0AW",
                 "currency_code": "MYR",
-                "from_postcode": "11900",
+                "from_postcode": "10150",
                 "from_country": "MY",
                 "to_postcode": "11900",
                 "to_country": "MY",
-                "shipment_weight": 2,
+                "shipment_weight": 1.5,
                 "shipment_item": [
                     {
-                        "value": 3000,
-                        "quantity": 1,
+                        "value": 50,
+                        "quantity": 3,
                         "currency_code": "MYR"
                     }
                 ]
@@ -238,8 +235,6 @@ For an item valued at MYR 3,000:
 - Percentage Rate: 2.5% (0.025)
 - Calculation: (3,000 × 0.025) + 0 = **MYR 75**
 
-
-
 <h2 id="insurance-usage-note">Usage Notes (Insurance Quotation)</h2>
 
 - **Batch Quotations**: You can request insurance quotes for multiple shipments in a single API call for efficiency.
@@ -247,8 +242,6 @@ For an item valued at MYR 3,000:
 - **Coverage Limits**: Note the `max_item_value_coverage` to understand the maximum insured amount available.
 - **Minimum Values**: Items below the `min_item_value` threshold may not be eligible for insurance or may use different pricing.
 - **Multiple Options**: Some shipments may have multiple insurance service options available with different pricing structures.
-
-
 
 <h2 id="insurance-example-use-cases">Example Use Cases</h2>
 
@@ -258,7 +251,7 @@ For an item valued at MYR 3,000:
 {
   "list": [
     {
-      "courier_id": "EP-CR0AW",
+      "courier_id": "EP-CR0AP",
       "currency_code": "MYR",
       "from_postcode": "50000",
       "from_country": "MY",
@@ -276,6 +269,14 @@ For an item valued at MYR 3,000:
   ]
 }
 ```
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 ### Multiple Items in One Shipment
 
@@ -313,7 +314,7 @@ For an item valued at MYR 3,000:
 {
   "list": [
     {
-      "courier_id": "EP-CR0AW",
+      "courier_id": "EP-CR0D9",
       "currency_code": "MYR",
       "from_postcode": "11900",
       "from_country": "MY",
@@ -331,7 +332,6 @@ For an item valued at MYR 3,000:
   ]
 }
 ```
-
 
 ## Applying Insurance to Shipments
 
