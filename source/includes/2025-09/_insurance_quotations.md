@@ -343,7 +343,7 @@ Once you receive an insurance quotation, you can apply the insurance to your shi
 {
   "shipment": [
     {
-      "service_id": "EP-CS05M",
+      "service_id": "EP-CS096",
       "insurance_service_id": "EP-IR0D",
       // ... other shipment details
     }
