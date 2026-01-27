@@ -200,9 +200,7 @@ Below are common shipment status codes you may encounter:
 }
 ```
 
-
-
-
+&nbsp;
 
 ### Multiple Shipment Tracking
 
@@ -217,12 +215,7 @@ Below are common shipment status codes you may encounter:
 }
 ```
 
-
-
-
-
-
-
+&nbsp;
 
 ### Error Response Example
 
