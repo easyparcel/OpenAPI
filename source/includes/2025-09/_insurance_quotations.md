@@ -2,8 +2,6 @@
 
 The insurance quotation feature allows customers to retrieve pricing information for shipment insurance coverage. This helps users understand the cost of insuring their valuable parcels and make informed decisions about protecting their shipments against loss or damage.
 
-
-
 ## Retrieving Insurance Quotations
 
 Customers can retrieve insurance pricing for one or multiple shipments using the following endpoint:
@@ -278,6 +276,12 @@ For an item valued at MYR 3,000:
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
 ### Multiple Items in One Shipment
 
 ```json
@@ -307,6 +311,28 @@ For an item valued at MYR 3,000:
   ]
 }
 ```
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 ### International Shipment
 
