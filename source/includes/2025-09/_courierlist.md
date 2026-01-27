@@ -21,9 +21,6 @@ This endpoint allows users to retrieve a list of available courier services for 
 |--------------|---------|----------|-----------------------------|-------------------------|
 | country_code | string  | Yes      | Country code to filter by   | Example: "MY" for Malaysia |
 
-
-
-
 ## Courier List Response
 ### Response Sample
 
@@ -33,27 +30,27 @@ This endpoint allows users to retrieve a list of available courier services for 
     "message": "success",
     "data": [
         {
-            "courier_id": "EP-CR0I",
-            "uuid": "c473d2c4-ab06-456a-9886-54a5c3d25c91",
-            "courier_name": "SF Global Express",
-            "short_name": "SF Express",
-            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/SF_Express.jpg",
+            "courier_id": "EP-CR0AW",
+            "uuid": "db129869-d2cd-474a-b3bf-9995a436ef85",
+            "courier_name": "DHL eCommerce",
+            "short_name": "DHLeC",
+            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/DHLeC.jpg",
             "country": "Malaysia"
         },
         {
-            "courier_id": "EP-CR0G",
+            "courier_id": "EP-CR0AP",
             "uuid": "01e1cad9-d20a-411f-8c71-a1b3ed722b3f",
             "courier_name": "Aramex",
             "short_name": "Aramex",
-            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/Aramex.jpg",
+            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
             "country": "Malaysia"
         },
         {
-            "courier_id": "EP-CR0AO",
-            "uuid": "5e6a0ee2-5d6d-499d-8994-bd71a82730b9",
-            "courier_name": "Teleport Commerce Malaysia Sdn Bhd",
-            "short_name": "Teleport",
-            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/Teleport.jpg",
+            "courier_id": "EP-CR0AM",
+            "uuid": "17bd49e0-f356-41d0-805e-2b6ee8e3d6cc",
+            "courier_name": "Poslaju National Courier",
+            "short_name": "Pos Laju",
+            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Pos_Laju.jpg",
             "country": "Malaysia"
         }
     ]
