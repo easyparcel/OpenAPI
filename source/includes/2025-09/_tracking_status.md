@@ -21,7 +21,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 
 ```json
 {
-  "awb_numbers": ["631888951038", "631884685186", "631883534779"]
+  "awb_numbers": ["7227014253232636", "960301021838937", "960301021837659"]
 }
 ```
 
@@ -38,21 +38,32 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 ```json
 {
     "status_code": 200,
-    "request_id": "1762483800565.37b3a079-d925-4c17-8c16-5e39aa7694ad",
     "message": "3 requests success, 0 request error.",
     "data": {
         "results": [
             {
                 "status": "success",
-                "awb_number": "631888951038",
-                "shipment_number": "ES-2511-97KPC",
-                "order_number": "EI-2511-3D2BJ",
+                "awb_number": "7227014253232636",
+                "shipment_number": "ES-2601-XV7UN",
+                "order_number": "EI-2601-U8FZW",
                 "latest_shipment_status_code": 7,
                 "latest_tracking_status": "Schedule In Arrangement",
-                "latest_event_date": "2025-11-04 12:20:10",
+                "latest_event_date": "2026-01-23T04:28:52.494Z",
                 "status_log": [
                     {
-                        "event_date": "2025-11-04 12:20:10",
+                        "event_date": "2026-01-23 12:29:47",
+                        "shipment_status_code": 7,
+                        "tracking_status": "Shipment data received - Awaiting Parcel Handover to DHL",
+                        "location": "Kuala Lumpur Hub, Kuala Lumpur, MY"
+                    },
+                    {
+                        "event_date": "2026-01-23 12:28:52",
+                        "shipment_status_code": 7,
+                        "tracking_status": "Data Submitted - Awaiting Parcel Handover to DHL",
+                        "location": "BAYAN BARU, PENANG,, PIN, MY"
+                    },
+                    {
+                        "event_date": "2026-01-23T04:28:52.494Z",
                         "shipment_status_code": 7,
                         "tracking_status": "Schedule In Arrangement",
                         "location": null
@@ -61,15 +72,21 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
             },
             {
                 "status": "success",
-                "awb_number": "631884685186",
-                "shipment_number": "ES-2511-EFRNN",
-                "order_number": "EI-2511-UJUVQ",
+                "awb_number": "960301021838937",
+                "shipment_number": "ES-2504-X2KV5",
+                "order_number": "EI-2504-SKMTH",
                 "latest_shipment_status_code": 7,
                 "latest_tracking_status": "Schedule In Arrangement",
-                "latest_event_date": "2025-11-04 12:14:40",
+                "latest_event_date": "2025-04-23 08:13:12",
                 "status_log": [
                     {
-                        "event_date": "2025-11-04 12:14:40",
+                        "event_date": "2025-04-23 16:13:00",
+                        "shipment_status_code": 7,
+                        "tracking_status": "Shipment information sent to City-Link",
+                        "location": null
+                    },
+                    {
+                        "event_date": "2025-04-23 08:13:12",
                         "shipment_status_code": 7,
                         "tracking_status": "Schedule In Arrangement",
                         "location": null
@@ -78,17 +95,23 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
             },
             {
                 "status": "success",
-                "awb_number": "631883534779",
-                "shipment_number": "ES-2510-S2XXR",
-                "order_number": "EI-2510-YK93B",
+                "awb_number": "960301021837659",
+                "shipment_number": "ES-2504-2AE3R",
+                "order_number": "EI-2504-WUHYR",
                 "latest_shipment_status_code": 7,
-                "latest_tracking_status": "Schedule In Arrangement",
-                "latest_event_date": "2025-10-31 09:31:27",
+                "latest_tracking_status": "Shipment information sent to City-Link",
+                "latest_event_date": "2025-04-23 10:46:00",
                 "status_log": [
                     {
-                        "event_date": "2025-10-31 09:31:27",
+                        "event_date": "2025-04-23 02:46:36",
                         "shipment_status_code": 7,
                         "tracking_status": "Schedule In Arrangement",
+                        "location": null
+                    },
+                    {
+                        "event_date": "2025-04-23 10:46:00",
+                        "shipment_status_code": 7,
+                        "tracking_status": "Shipment information sent to City-Link",
                         "location": null
                     }
                 ]
