@@ -359,22 +359,47 @@ If a quotation request fails, the response will include an error status:
 ```json
 {
     "status_code": 200,
-    "request_id": "1762497146698.xyz-abc-123",
-    "message": "1 request success, 1 request error.",
+    "message": "0 requests success, 2 request error.",
     "data": [
         {
-            "status": "success",
+            "status": "error",
             "input": {
-                // ... input parameters
+                "courier_id": "EP-CR0AP",
+                "currency_code": "MYR",
+                "from_postcode": "10150",
+                "from_country": "MY",
+                "to_postcode": "11900",
+                "to_country": "MY",
+                "shipment_weight": 1.5,
+                "shipment_item": [
+                    {
+                        "value": 50,
+                        "quantity": 3,
+                        "currency_code": "MYR"
+                    }
+                ]
             },
-            "insurance_quotations": [
-                // ... quotation details
+            "errors": [
+                "Insurance service not available for this request"
             ]
         },
         {
             "status": "error",
             "input": {
-                // ... input parameters
+                "courier_id": "",
+                "currency_code": "MYR",
+                "from_postcode": "10150",
+                "from_country": "MY",
+                "to_postcode": "11900",
+                "to_country": "MY",
+                "shipment_weight": 1.5,
+                "shipment_item": [
+                    {
+                        "value": 50,
+                        "quantity": 3,
+                        "currency_code": "MYR"
+                    }
+                ]
             },
             "errors": [
                 "The courier id field is required "
