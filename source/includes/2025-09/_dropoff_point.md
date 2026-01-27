@@ -24,11 +24,11 @@ You can query drop-off points by providing courier and location information to f
 
 ```json
 {
-    "courier_id": "EP-CR0A",
+    "courier_id": "EP-CR0AP",
     "country_code": "MY",
-    "postcode": "09600",
+    "postcode": "10150",
     "city": "Lunas",
-    "state_code": "MY-02"
+    "state_code": "MY-07"
 }
 ```
 
@@ -41,7 +41,6 @@ You can query drop-off points by providing courier and location information to f
 | postcode     | string | Yes      | Postcode/ZIP code of the search location                       |
 | city         | string | Yes      | City name for the search location                              |
 | state_code   | string | Yes      | State/subdivision code (ISO 3166-2 format, e.g., "MY-02")     |
-
 
 ## Drop-off Points Response
 
