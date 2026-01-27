@@ -196,7 +196,7 @@ Below are common shipment status codes you may encounter:
 
 ```json
 {
-  "awb_numbers": ["631888951038"]
+  "awb_numbers": ["631882123456"]
 }
 ```
 
@@ -211,7 +211,7 @@ Below are common shipment status codes you may encounter:
   "awb_numbers": [
     "631888951038",
     "631884685186",
-    "631883534779",
+    "631883534770",
     "631882123456"
   ]
 }
@@ -231,8 +231,8 @@ If one or more AWB numbers are invalid:
 ```json
 {
     "status_code": 200,
-    "request_id": "1762484144652.acff66b7-9994-44cb-8821-e09666765c3d",
-    "message": "2 requests success, 1 request error.",
+    "request_id": "1769498807285.68b8ca89-cf25-4792-bcbf-d2e5a107efaa",
+    "message": "2 requests success, 2 request error.",
     "data": {
         "results": [
             {
@@ -270,7 +270,12 @@ If one or more AWB numbers are invalid:
                 ]
             },
             {
-                "awb_number": "683534779",
+                "awb_number": "631883534770",
+                "status": "not_found",
+                "message": "AWB number not found"
+            },
+            {
+                "awb_number": "631882123456",
                 "status": "not_found",
                 "message": "AWB number not found"
             }
