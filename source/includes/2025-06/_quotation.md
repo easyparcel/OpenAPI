@@ -54,12 +54,12 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
     {
       "sender": {
         "postcode": "10150",
-        "subdivison_code": "MY-02",
+        "subdivison_code": "MY-07",
         "country": "MY"
       },
       "receiver": {
         "postcode": "11950",
-        "subdivison_code": "MY-02",
+        "subdivison_code": "MY-07",
         "country": "MY"
       },
       "parcel_value":50,
@@ -71,12 +71,12 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
      {
       "sender": {
         "postcode": "10150",
-        "subdivison_code": "MY-02",
+        "subdivison_code": "MY-07",
         "country": "MY"
       },
       "receiver": {
         "postcode": "14000",
-        "subdivison_code": "MY-02",
+        "subdivison_code": "MY-07",
         "country": "MY"
       },
       "weight": 0.5,
@@ -87,7 +87,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
     {
       "sender": {
         "postcode": "10150",
-        "subdivison_code": "MY-02",
+        "subdivison_code": "MY-07",
         "country": "MY"
       },
       "receiver": {
@@ -100,7 +100,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
       "length": 5,
       "height": 5
     }
-    
+
   ]
 }
 ```
@@ -141,6 +141,7 @@ The request uses nested objects for sender and receiver information.
 
 ```json
 {
+    {
     "status_code": 200,
     "message": "3 requests success, 0 request error.",
     "data": [
@@ -149,12 +150,12 @@ The request uses nested objects for sender and receiver information.
             "input": {
                 "sender": {
                     "postcode": "10150",
-                    "subdivison_code": "MY-02",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "receiver": {
                     "postcode": "11950",
-                    "subdivison_code": "MY-02",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "parcel_value": 50,
