@@ -16,7 +16,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 
 ```json
 {
-  "shipment_number": "ES-2504-3WYYP"
+  "shipment_number": "ES-2601-3MMYQ"
 }
 ```
 
@@ -31,57 +31,57 @@ This endpoint allows users to retrieve detailed information about a specific shi
     "message": "success",
     "data": [
         {
-            "shipment_number": "ES-2504-3WYYP",
-            "order_number": "EI-2504-AK8CK",
+            "shipment_number": "ES-2601-3MMYQ",
+            "order_number": "EI-2601-PRNN4",
             "shipment_details": {
                 "weight": 2.5,
-                "height": 30,
-                "length": 40,
-                "width": 20,
+                "height": 5,
+                "length": 6,
+                "width": 7,
                 "shipment_status_code": 7,
                 "shipment_status": "Schedule In Arrangement",
-                "parcels_value": "550",
+                "parcels_value": "40",
                 "insurance_label": null,
                 "awb_number": null,
-                "tracking_url": "https://app.easyparcel.com/my/en/track/details/?courier=Celcius Express&awb=null",
-                "awb_url": "https://connect.easyparcel.my/?ac=AWBLabel&id=null",
-                "coll_date": "2025-05-02 00:00:00"
+                "awb_url": null,
+                "tracking_url": null,
+                "coll_date": "2025-04-20 00:00:00"
             },
             "parcel_content": [
                 {
-                    "content": "Electronics",
-                    "weight": "0.50000",
-                    "height": 30,
-                    "length": 40,
-                    "width": 20,
-                    "value": 500,
+                    "content": "Electronics 2",
+                    "weight": "1.00000",
+                    "height": 5,
+                    "length": 6,
+                    "width": 7,
+                    "value": 20,
                     "currency_code": "MYR"
                 },
                 {
-                    "content": "Electronics 2",
+                    "content": "Electronics 1",
                     "weight": "0.50000",
-                    "height": 10,
-                    "length": 20,
-                    "width": 20,
-                    "value": 50,
+                    "height": 5,
+                    "length": 6,
+                    "width": 7,
+                    "value": 20,
                     "currency_code": "MYR"
                 }
             ],
             "courier": {
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "service_id": "EP-CS0DP",
-                "courier_id": "EP-CR0DP",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/",
-                "service_types": "Celcius Express"
+                "courier_name": "Best Global Logistics Technology (Malaysia) Sdn. Bhd.",
+                "service_id": "EP-CS0DF",
+                "courier_id": "EP-CR0DF",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/",
+                "service_types": "Best Express (Pick Up)"
             },
             "sender": {
                 "name": "John Doe",
                 "company_name": "ABC Corp",
                 "email": "test@easyparcel.com",
-                "contact": "+601163242283",
+                "contact": "+601163642281",
                 "alternative_contact": null,
-                "subdivision_code": null,
-                "postal_code": "10150",
+                "subdivision_code": "MY-07",
+                "postal_code": "11900",
                 "country": "MY",
                 "address1": "123 Main St",
                 "address2": "Apt 4B",
@@ -90,11 +90,11 @@ This endpoint allows users to retrieve detailed information about a specific shi
             "receiver": {
                 "name": "Jane Smith",
                 "company_name": "XYZ Inc",
-                "email": "smith@easyparcel.com",
-                "contact": "+601163743291",
+                "email": "test@easyparcel.com",
+                "contact": "+601163642281",
                 "alternative_contact": null,
-                "subdivision_code": null,
-                "postal_code": "11950",
+                "subdivision_code": "MY-07",
+                "postal_code": "14000",
                 "country": "MY",
                 "address1": "456 High St",
                 "address2": "Floor 2",
@@ -102,12 +102,12 @@ This endpoint allows users to retrieve detailed information about a specific shi
             },
             "pricing": {
                 "currency_code": "MYR",
-                "total_price": "27.24",
-                "shipment_price": "25.70",
-                "tax_price": "1.54",
-                "sms_notification": "0.24",
-                "email_notification": "0.06",
-                "whatsapp_notification": "0.29",
+                "total_price": "0.00",
+                "shipment_price": "5.99",
+                "tax_price": "0.00",
+                "sms_notification": "0.00",
+                "email_notification": "0.00",
+                "whatsapp_notification": "0.00",
                 "awb_branding": null,
                 "insurance": null,
                 "ddp": null
