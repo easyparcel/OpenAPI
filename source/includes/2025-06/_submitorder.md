@@ -14,11 +14,11 @@ This feature enables users to submit shipment orders. Users are required to fill
 ```json
 {
     "coupon_codes": [
-        "4b8b0be9-8a02-4966-879d-b3aeeec38597"
+        "d1a1764b-9dcd-4d04-9b5d-8fff28c58db4"
     ],
     "shipment": [
         {
-            "service_id": "EP-CS05R",
+            "service_id": "EP-CS05M",
             "collection_date": "2025-04-20",
             "weight": 2.5,
             "height": 5,
@@ -32,7 +32,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "length": 6,
                     "width": 7,
                     "currency_code": "MYR",
-                    "value": 50,
+                    "value": 20,
                     "quantity": 2
                 },
                 {
@@ -42,7 +42,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "length": 6,
                     "width": 7,
                     "currency_code": "MYR",
-                    "value": 50,
+                    "value": 20,
                     "quantity": 1
                 }
             ],
@@ -192,23 +192,23 @@ This feature enables users to submit shipment orders. Users are required to fill
     "data": [
         {
             "order_details": {
-                "order_number": "EI-2601-457T6",
+                "order_number": "EI-2601-FFG7Z",
                 "account_id": 8583757
             },
             "pricing_breakdown": {
                 "currency_code": "MYR",
-                "total_order_amount": "6.29",
-                "total_paid_amount": "4.29",
+                "total_order_amount": "6.44",
+                "total_paid_amount": "4.44",
                 "total_tax_amount": "0.00",
                 "coupon_redeemed": "2.00"
             },
             "shipments": [
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-QQZJP",
+                    "shipment_number": "ES-2601-SW3EK",
                     "courier_service": null,
-                    "courier": "City-Link Express (M) Sdn. Bhd.",
-                    "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/citylink.jpg",
+                    "courier": "Best Global Logistics Technology (Malaysia) Sdn. Bhd.",
+                    "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Best_Express.jpg",
                     "awb_number": null,
                     "awb_url": null,
                     "tracking_url": null,
@@ -218,8 +218,8 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "width": 7,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "4.29",
-                        "shipment_price": "5.84",
+                        "total_paid_amount": "4.44",
+                        "shipment_price": "5.99",
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.45",
                         "total_features_tax_amount": "0.00",
@@ -265,7 +265,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "length": 6,
                             "width": 7,
                             "currency_code": "MYR",
-                            "value": 50,
+                            "value": 20,
                             "quantity": 2
                         },
                         {
@@ -275,7 +275,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "length": 6,
                             "width": 7,
                             "currency_code": "MYR",
-                            "value": 50,
+                            "value": 20,
                             "quantity": 1
                         }
                     ],
