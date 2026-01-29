@@ -20,7 +20,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 ```json
 {
-    "booking_id": "EOD-330"
+    "booking_id": "EOD-150"
 }
 ```
 
@@ -37,7 +37,7 @@ This guide explains how to cancel an on-demand shipment order.
     "data": [
         {
             "message": "Shipment cancelled successfully",
-            "booking_id": "EOD-318"
+            "booking_id": "EOD-150"
         }
     ]
 }
