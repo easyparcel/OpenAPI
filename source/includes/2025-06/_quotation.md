@@ -515,12 +515,12 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
             "input": {
                 "sender": {
                     "postcode": "10150",
-                    "subdivison_code": "MY-02",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "receiver": {
                     "postcode": "",
-                    "subdivison_code": "MY-02",
+                    "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "parcel_value": 50,
