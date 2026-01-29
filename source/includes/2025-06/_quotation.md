@@ -142,20 +142,20 @@ The request uses nested objects for sender and receiver information.
 
 ```json
 {
-    {
     "status_code": 200,
+    "request_id": "1769670648021.1a62c224-696a-4b1f-aa74-37f571ec4f28",
     "message": "3 requests success, 0 request error.",
     "data": [
         {
             "status": "success",
             "input": {
                 "sender": {
-                    "postcode": "10150",
+                    "postcode": "11900",
                     "subdivison_code": "MY-07",
                     "country": "MY"
                 },
                 "receiver": {
-                    "postcode": "11950",
+                    "postcode": "14000",
                     "subdivison_code": "MY-07",
                     "country": "MY"
                 },
@@ -168,11 +168,11 @@ The request uses nested objects for sender and receiver information.
             "quotations": [
                 {
                     "courier": {
-                        "service_id": "EP-CS096",
-                        "service_name": "Aramex (Pick Up)",
-                        "courier_id": "EP-CR0AP",
-                        "courier_name": "Aramex",
-                        "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
+                        "service_id": "EP-CS09Q",
+                        "service_name": "Celsius Express - Chilled",
+                        "courier_id": "EP-CR0DP",
+                        "courier_name": "Celsius Express Sdn. Bhd.",
+                        "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Celsius.png",
                         "delivery_duration": null,
                         "service_tag": [
                             {
@@ -181,39 +181,43 @@ The request uses nested objects for sender and receiver information.
                             },
                             {
                                 "name": "Service Methods",
-                                "value": "Pick Up from Door"
-                            },
-                            {
-                                "name": "Service Methods",
-                                "value": "Deliver to Door"
+                                "value": "Sender Drop Off to Point"
                             },
                             {
                                 "name": "Tracking Quality",
-                                "value": "Regular"
+                                "value": "Limited"
                             },
                             {
                                 "name": "Supported AWB",
-                                "value": "Supported AWB size: A6"
+                                "value": "Supported AWB size: A4, A6"
                             }
                         ]
                     },
                     "pricing": {
                         "currency": "MYR",
-                        "total_amount": "10.84",
-                        "shipment_price": "9.80",
-                        "shipment_tax": "0.59",
-                        "total_features_price": "0.45",
+                        "total_amount": "43.53",
+                        "shipment_price": "40.50",
+                        "shipment_tax": "2.43",
+                        "total_features_price": "0.60",
                         "total_features_tax": "0.00"
                     },
                     "features": [
                         {
                             "cod": {
-                                "available": true,
-                                "min_cod_amount": "MYR10.00",
-                                "max_cod_amount": "MYR1000.00",
-                                "min_cod_charges": "MYR10.00",
-                                "cod_charging_rate": "4.00%",
-                                "charges_description": "4.00% of the parcel value or MYR10.00, whichever is higher"
+                                "available": false,
+                                "min_cod_amount": "",
+                                "max_cod_amount": "",
+                                "min_cod_charges": "",
+                                "cod_charging_rate": "",
+                                "charges_description": ""
+                            }
+                        },
+                        {
+                            "awb_branding": {
+                                "banner_price": "0.15",
+                                "text_price": "0.10",
+                                "banner_tax": "0.00",
+                                "text_tax": "0.00"
                             }
                         },
                         {
