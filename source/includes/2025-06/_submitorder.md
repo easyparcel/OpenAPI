@@ -18,8 +18,8 @@ This feature enables users to submit shipment orders. Users are required to fill
     ],
     "shipment": [
         {
-            "service_id": "EP-CS09C",
-            "collection_date": "2025-05-19",
+            "service_id": "EP-CS05R",
+            "collection_date": "2025-04-19",
             "weight": 2.5,
             "height": 30,
             "length": 40,
@@ -27,74 +27,12 @@ This feature enables users to submit shipment orders. Users are required to fill
             "item": [
                 {
                     "content": "Electronics",
-                    "weight": 0.5,
+                    "weight": 1.5,
                     "height": 30,
                     "length": 40,
-                    "width": 20,
-                    "currency_code": "MYR",
-                    "value": 500,
-                    "quantity": 1
-                },
-                {
-                    "content": "Electronics 2",
-                    "weight": 0.5,
-                    "height": 10,
-                    "length": 20,
                     "width": 20,
                     "currency_code": "MYR",
                     "value": 50,
-                    "quantity": 2
-                }
-            ],
-            "sender": {
-                "name": "John Doe",
-                "company": "ABC Corp",
-                "phone_number_country_code": "+60",
-                "phone_number": "1163642281",
-                "email": "test@easyparcel.com",
-                "address_1": "123 Main St",
-                "address_2": "Apt 4B",
-                "postcode": "10150",
-                "city": "Lunas",
-                "subdivison_code": "MY-07",
-                "country_code": "MY"
-            },
-            "receiver": {
-                "name": "Jane Smith",
-                "company": "XYZ Inc",
-                "phone_number_country_code": "+60",
-                "phone_number": "1163642281",
-                "email": "test@easyparcel.com",
-                "address_1": "456 High St",
-                "address_2": "Floor 2",
-                "postcode": "11950",
-                "city": "Bayan Lepas",
-                "subdivison_code": "MY-07",
-                "country_code": "MY"
-            },
-            "feature": {
-                "sms_tracking": true,
-                "email_tracking": true,
-                "whatsapp_tracking": true,
-                "awb_branding": false
-            }
-        },
-        {
-            "service_id": "EP-CS09C",
-            "collection_date": "2025-05-19",
-            "weight": 2.5,
-            "height": 30,
-            "length": 40,
-            "width": 20,
-            "item": [
-                {
-                    "content": "Electronics",
-                    "weight": 0.5,
-                    "height": 30,
-                    "length": 40,
-                    "width": 20,
-                    "currency_code": "MYR",
-                    "value": 500,
                     "quantity": 1
                 },
                 {
@@ -250,42 +188,42 @@ This feature enables users to submit shipment orders. Users are required to fill
 ```json
 {
     "status_code": 200,
-    "message": "2 requests success, 0 request error.",
+    "message": "1 request success, 0 request error.",
     "data": [
         {
             "order_details": {
-                "order_number": "EI-2505-5YU6Z",
-                "account_id": 438368
+                "order_number": "EI-2601-EVEYQ",
+                "account_id": 8583757
             },
             "pricing_breakdown": {
                 "currency_code": "MYR",
-                "total_order_amount": "28.40",
-                "total_paid_amount": "23.40",
-                "total_tax_amount": "1.36",
-                "coupon_redeemed": "5.00"
+                "total_order_amount": "12.04",
+                "total_paid_amount": "12.04",
+                "total_tax_amount": "0.00",
+                "coupon_redeemed": "0.00"
             },
             "shipments": [
                 {
                     "status": "success",
-                    "shipment_number": "ES-2505-8WZ3Z",
+                    "shipment_number": "ES-2601-ZE5QP",
                     "courier_service": null,
-                    "courier": "DHL eCommerce",
-                    "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/DHLeC.jpg",
-                    "awb_url": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/courier/consignment_note/451e436b-8885-4106-9f14-e92364ad206a.pdf",
-                    "awb_number": "7127058313446465",
-                    "tracking_url": "http://localhost/tools/easytrack/summary?awb=7127058313446465",
-                    "weight": 2.5,
+                    "courier": "City-Link Express (M) Sdn. Bhd.",
+                    "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/citylink.jpg",
+                    "awb_number": null,
+                    "awb_url": null,
+                    "tracking_url": null,
+                    "weight": 4.8,
                     "height": 30,
                     "length": 40,
                     "width": 20,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "11.70",
-                        "shipment_price": "13.02",
-                        "shipment_tax_amount": "0.63",
-                        "total_features_price": "0.50",
-                        "total_features_tax_amount": "0.05",
-                        "coupon_redeemed": "2.50"
+                        "total_paid_amount": "12.04",
+                        "shipment_price": "11.59",
+                        "shipment_tax_amount": "0.00",
+                        "total_features_price": "0.45",
+                        "total_features_tax_amount": "0.00",
+                        "coupon_redeemed": "0.00"
                     },
                     "sender": {
                         "point_code": null,
@@ -299,114 +237,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "address1": "123 Main St",
                         "address2": "Apt 4B",
                         "city": "Lunas",
-                        "subdivison_code": "MY-07",
-                        "postcode": "10150",
-                        "country_code": "MY"
-                    },
-                    "receiver": {
-                        "point_code": null,
-                        "name": "Jane Smith",
-                        "phone_number": "1163642281",
-                        "phone_number_country_code": "+60",
-                        "alternate_phone_number": null,
-                        "alternate_phone_number_country_code": null,
-                        "email": "smith@easyparcel.com",
-                        "company_name": "XYZ Inc",
-                        "address1": "456 High St",
-                        "address2": "Apt 4B",
-                        "city": "Bayan Lepas",
-                        "subdivison_code": "",
-                        "postcode": "11950",
-                        "country_code": "MY"
-                    },
-                    "shipment_items": [
-                        {
-                            "content": "Electronics",
-                            "weight": 0.5,
-                            "height": 30,
-                            "length": 40,
-                            "width": 20,
-                            "currency_code": "MYR",
-                            "value": 500,
-                            "quantity": 1,
-                            "insurance_purchase": null
-                        },
-                        {
-                            "content": "Electronics 2",
-                            "weight": 0.5,
-                            "height": 10,
-                            "length": 20,
-                            "width": 20,
-                            "currency_code": "MYR",
-                            "value": 50,
-                            "quantity": 2,
-                            "insurance_purchase": null
-                        }
-                    ],
-                    "features": {
-                        "cod": null,
-                        "shipment_tracking_whatsapp": {
-                            "message": "Hey there! Your order from John Doe is ready to be collected for delivery soon!\n\nTracking no: 7127058313446465",
-                            "phone_country_code": "+60",
-                            "phone_number": "1163642281",
-                            "currency_code": "MYR",
-                            "total_amount": "0.29",
-                            "price": "0.25",
-                            "tax_amount": "0.04"
-                        },
-                        "shipment_tracking_sms": {
-                            "message": "Your order from John Doe is ready & trackable once courier scans in. Track at EasyParcel with [Placeholder Trackin..] -Powered by EasyParcel",
-                            "phone_country_code": "+60",
-                            "phone_number": "1163642281",
-                            "currency_code": "MYR",
-                            "total_amount": "0.20",
-                            "price": "0.20",
-                            "tax_amount": "0.00"
-                        },
-                        "shipment_tracking_email": {
-                            "email": "test@easyparcel.com",
-                            "currency_code": "MYR",
-                            "total_amount": "0.06",
-                            "price": "0.05",
-                            "tax_amount": "0.01"
-                        }
-                    }
-                },
-                {
-                    "status": "success",
-                    "shipment_number": "ES-2505-4R63D",
-                    "courier_service": null,
-                    "courier": "DHL eCommerce",
-                    "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/DHLeC.jpg",
-                    "awb_url": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/courier/consignment_note/91e771a6-f8c4-423a-b171-89ab5262651a.pdf",
-                    "awb_number": "7127058313485265",
-                    "tracking_url": "http://localhost/tools/easytrack/summary?awb=7127058313485265",
-                    "weight": 2.5,
-                    "height": 30,
-                    "length": 40,
-                    "width": 20,
-                    "pricing_breakdown": {
-                        "currency_code": "MYR",
-                        "total_paid_amount": "11.70",
-                        "shipment_price": "13.02",
-                        "shipment_tax_amount": "0.63",
-                        "total_features_price": "0.50",
-                        "total_features_tax_amount": "0.05",
-                        "coupon_redeemed": "2.50"
-                    },
-                    "sender": {
-                        "point_code": null,
-                        "name": "John Doe",
-                        "phone_number_country_code": "+60",
-                        "phone_number": "1163642281",
-                        "alternate_phone_number": null,
-                        "alternate_phone_number_country_code": null,
-                        "email": "test@easyparcel.com",
-                        "company_name": "ABC Corp",
-                        "address1": "123 Main St",
-                        "address2": "Apt 4B",
-                        "city": "Lunas",
-                        "subdivison_code": "MY-07",
+                        "subdivision_code": "MY-07",
                         "postcode": "10150",
                         "country_code": "MY"
                     },
@@ -420,23 +251,22 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "email": "test@easyparcel.com",
                         "company_name": "XYZ Inc",
                         "address1": "456 High St",
-                        "address2": "Apt 4B",
+                        "address2": "Floor 2",
                         "city": "Bayan Lepas",
-                        "subdivison_code": "",
+                        "subdivision_code": "MY-07",
                         "postcode": "11950",
                         "country_code": "MY"
                     },
                     "shipment_items": [
                         {
                             "content": "Electronics",
-                            "weight": 0.5,
+                            "weight": 1.5,
                             "height": 30,
                             "length": 40,
                             "width": 20,
                             "currency_code": "MYR",
-                            "value": 500,
-                            "quantity": 1,
-                            "insurance_purchase": null
+                            "value": 50,
+                            "quantity": 1
                         },
                         {
                             "content": "Electronics 2",
@@ -446,37 +276,55 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "width": 20,
                             "currency_code": "MYR",
                             "value": 50,
-                            "quantity": 2,
-                            "insurance_purchase": null
+                            "quantity": 2
                         }
                     ],
                     "features": {
                         "cod": null,
+                        "insurance_purchase": [
+                            {
+                                "service_name": "Insure Plus",
+                                "insurance_cover_notice": "for lost or damage",
+                                "currency_code": "MYR",
+                                "charge_amount": "0.00",
+                                "total_amount": "0.00",
+                                "tax_amount": "0.00"
+                            },
+                            {
+                                "service_name": "Basic Coverage",
+                                "insurance_cover_notice": "for lost or damage",
+                                "currency_code": "MYR",
+                                "charge_amount": "0.00",
+                                "total_amount": "0.00",
+                                "tax_amount": "0.00"
+                            }
+                        ],
                         "shipment_tracking_whatsapp": {
-                            "message": "Hey there! Your order from [Sender's Name] is ready to be collected for delivery soon!\n\nTracking no: [Tracking No.]",
+                            "message": "Hey there! Your order from John Doe is ready to be collected for delivery soon!\n\nTracking no: null",
                             "phone_country_code": "+60",
                             "phone_number": "1163642281",
                             "currency_code": "MYR",
-                            "total_amount": "0.29",
-                            "price": "0.25",
-                            "tax_amount": "0.04"
+                            "total_amount": "0.00",
+                            "price": "0.20",
+                            "tax_amount": "0.00"
                         },
                         "shipment_tracking_sms": {
                             "message": "Your order from John Doe is ready & trackable once courier scans in. Track at EasyParcel with [Placeholder Trackin..] -Powered by EasyParcel",
                             "phone_country_code": "+60",
                             "phone_number": "1163642281",
                             "currency_code": "MYR",
-                            "total_amount": "0.20",
+                            "total_amount": "0.00",
                             "price": "0.20",
                             "tax_amount": "0.00"
                         },
                         "shipment_tracking_email": {
                             "email": "test@easyparcel.com",
                             "currency_code": "MYR",
-                            "total_amount": "0.06",
+                            "total_amount": "0.00",
                             "price": "0.05",
-                            "tax_amount": "0.01"
-                        }
+                            "tax_amount": "0.00"
+                        },
+                        "shipment_awb_branding": null
                     }
                 }
             ]
