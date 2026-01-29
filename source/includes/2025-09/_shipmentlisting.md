@@ -46,7 +46,6 @@ Since results are sorted newest first, each subsequent request returns the next 
 ```json
 {
     "status_code": 200,
-    "request_id": "1768969756510.4eb9cd16-4502-4ac2-901f-f3f76a1cfbc6",
     "message": "success",
     "data": [
         {
