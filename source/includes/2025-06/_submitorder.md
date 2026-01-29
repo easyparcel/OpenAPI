@@ -54,7 +54,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "email": "test@easyparcel.com",
                 "address_1": "123 Main St",
                 "address_2": "Apt 4B",
-                "postcode": "10150",
+                "postcode": "11900",
                 "city": "Lunas",
                 "subdivison_code": "MY-07",
                 "country_code": "MY"
@@ -67,7 +67,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "email": "test@easyparcel.com",
                 "address_1": "456 High St",
                 "address_2": "Floor 2",
-                "postcode": "11950",
+                "postcode": "14000",
                 "city": "Bayan Lepas",
                 "subdivison_code": "MY-07",
                 "country_code": "MY"
@@ -192,20 +192,20 @@ This feature enables users to submit shipment orders. Users are required to fill
     "data": [
         {
             "order_details": {
-                "order_number": "EI-2601-FFG7Z",
+                "order_number": "EI-2601-PRNN4",
                 "account_id": 8583757
             },
             "pricing_breakdown": {
                 "currency_code": "MYR",
                 "total_order_amount": "6.44",
-                "total_paid_amount": "4.44",
+                "total_paid_amount": "6.44",
                 "total_tax_amount": "0.00",
-                "coupon_redeemed": "2.00"
+                "coupon_redeemed": "0.00"
             },
             "shipments": [
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-SW3EK",
+                    "shipment_number": "ES-2601-3MMYQ",
                     "courier_service": null,
                     "courier": "Best Global Logistics Technology (Malaysia) Sdn. Bhd.",
                     "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Best_Express.jpg",
@@ -218,12 +218,12 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "width": 7,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "4.44",
+                        "total_paid_amount": "6.44",
                         "shipment_price": "5.99",
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.45",
                         "total_features_tax_amount": "0.00",
-                        "coupon_redeemed": "2.00"
+                        "coupon_redeemed": "0.00"
                     },
                     "sender": {
                         "point_code": null,
@@ -238,7 +238,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "address2": "Apt 4B",
                         "city": "Lunas",
                         "subdivision_code": "MY-07",
-                        "postcode": "10150",
+                        "postcode": "11900",
                         "country_code": "MY"
                     },
                     "receiver": {
@@ -254,7 +254,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "address2": "Floor 2",
                         "city": "Bayan Lepas",
                         "subdivision_code": "MY-07",
-                        "postcode": "11950",
+                        "postcode": "14000",
                         "country_code": "MY"
                     },
                     "shipment_items": [
@@ -429,7 +429,7 @@ For failed requests, the response includes error details:
     "data": [
         {
             "order_details": {
-                "account_id": "438671"
+                "account_id": "8583757"
             },
             "pricing": {
                 "currency_code": "MYR",
@@ -456,35 +456,46 @@ For failed requests, the response includes error details:
                         "address1": "123 Main St",
                         "address2": "Apt 4B",
                         "city": "",
-                        "subdivison_code": "",
-                        "postcode": "10150",
+                        "subdivision_code": "",
+                        "postcode": "",
                         "country_code": "MY"
                     },
                     "receiver": {
                         "point_code": null,
                         "name": "Jane Smith",
-                        "phone_number": "",
-                        "phone_number_country_code": "",
+                        "phone_number": "1163642281",
+                        "phone_number_country_code": "+60",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
-                        "email": null,
+                        "email": "test@easyparcel.com",
                         "company_name": "XYZ Inc",
-                        "address1": "",
+                        "address1": "456 High St",
                         "address2": "Floor 2",
                         "city": "",
-                        "subdivison_code": "",
-                        "postcode": "11950",
+                        "subdivision_code": "",
+                        "postcode": "14000",
                         "country_code": "MY"
                     },
                     "shipment_items": [
                         {
-                            "content": "Electronics",
-                            "weight": 0.5,
-                            "height": 30,
-                            "length": 40,
-                            "width": 20,
+                            "content": "Electronics 2",
+                            "weight": 1,
+                            "height": 5,
+                            "length": 6,
+                            "width": 7,
                             "currency_code": "MYR",
-                            "value": 500,
+                            "value": 20,
+                            "quantity": 2,
+                            "insurance_purchase": null
+                        },
+                        {
+                            "content": "Electronics 1",
+                            "weight": 0.5,
+                            "height": 5,
+                            "length": 6,
+                            "width": 7,
+                            "currency_code": "MYR",
+                            "value": 20,
                             "quantity": 1,
                             "insurance_purchase": null
                         }
@@ -496,11 +507,7 @@ For failed requests, the response includes error details:
                         "shipment_tracking_email": false
                     },
                     "errors": [
-                        "The service id field is required ",
-                        "The collection date field is required ",
-                        "The receiver phone number country code field is required ",
-                        "The receiver phone number field is required ",
-                        "The receiver address 1 field is required "
+                        "The sender postcode field is required "
                     ]
                 }
             ]
