@@ -231,8 +231,8 @@ If the shipment is not found or the request is invalid, the API will return an e
 
 ```json
 {
-    "status_code": 404,
-    "message": "No Order with shipment_number ES-2504-3WYYP found from this account",
+    "status_code": 400,
+    "message": "No Order with shipment_number ES-2601-3MMY found from this account",
     "data": []
 }
 ```
