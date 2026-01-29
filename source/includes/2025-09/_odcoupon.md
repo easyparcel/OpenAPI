@@ -20,12 +20,12 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
 ```json
 {
     "origin_country": "MY",
-    "ondemand_service_id": "EP-CS09",
-    "schedule_pickup_date": "2024-12-10",
-    "schedule_pickup_time": "17:35:15",
+    "ondemand_service_id": "EP-CS0I",
+    "schedule_pickup_date": "2025-05-19",
+    "schedule_pickup_time": "11:48:35",
     "time_zone": "Asia/Kuala_Lumpur",
     "metadata": {
-        "quotationId": "3114850556997669249"
+        "quotationId": "3418806898785481699"
     },
     "waypoint": [
         {
@@ -49,17 +49,17 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                 }
             ],
             "shipment_info": {
-                "phone_number_country_code": "MY",
-                "phone_number": "1278491622",
-                "address": "L1 Lobby, Suntec City Tower 1 & 2, 7 Temasek Boulevard, Singapore, 038987",
-                "name": "111",
-                "email": "as@as.as"
+                "phone_number_country_code": "+60",
+                "phone_number": "127849162",
+                "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
+                "name": "asa",
+                "email": "as@gmail.com"
             }
         },
         {
             "point": 1,
             "type": "dropoff",
-            "remark": "222",
+            "remark": "2",
             "coordinates": {
                 "latitude": 5.325513957,
                 "longitude": 100.2862732
@@ -77,11 +77,11 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                 }
             ],
             "shipment_info": {
-                "name": "222",
-                "email": "as@as.as",
-                "phone_number_country_code": "MY",
+                "name": "Oreo",
+                "email": "oreo@gmail.com",
+                "phone_number_country_code": "+60",
                 "phone_number": "127491622",
-                "address": "Terminal 1 Departure - Changi Airport, 80 Airport Boulevard, Singapore, 819642"
+                "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
             }
         }
     ]
@@ -112,7 +112,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             {
                 "coupon_code": "10101f8b-1dc5-49e0-b4d3-09c5deb76513",
                 "title": "Test Coupon",
-                "description": "vvffg",
+                "description": "Test",
                 "discounted_amount": "2.34",
                 "discount_rate": "10.00%",
                 "valid_from_date": "2025-05-12 09:43:43",
@@ -121,7 +121,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             {
                 "coupon_code": "dfa5109a-2f35-427e-8482-9b0ab65c323f",
                 "title": "Test Coupon",
-                "description": "vvffg",
+                "description": "Test",
                 "discounted_amount": "2.10",
                 "discount_rate": "10.00%",
                 "valid_from_date": "2025-05-12 09:43:43",
@@ -130,7 +130,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             {
                 "coupon_code": "ad205174-d93d-4d6a-a5cc-1e989b0292eb",
                 "title": "Test Coupon",
-                "description": "vvffg",
+                "description": "Test",
                 "discounted_amount": "1.89",
                 "discount_rate": "10.00%",
                 "valid_from_date": "2025-05-12 09:43:43",
