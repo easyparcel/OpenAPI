@@ -37,7 +37,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                     "length": 6,
                     "width": 7,
                     "currency_code": "MYR",
-                    "value": 50,
+                    "value": 20,
                     "quantity": 2
                 },
                 {
@@ -47,7 +47,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                     "length": 6,
                     "width": 7,
                     "currency_code": "MYR",
-                    "value": 50,
+                    "value": 20,
                     "quantity": 1
                 }
             ],
@@ -103,7 +103,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
         "currency_code": "MYR",
         "coupons": [
             {
-                "coupon_code": "4b8b0be9-8a02-4966-879d-b3aeeec38597",
+                "coupon_code": "d1a1764b-9dcd-4d04-9b5d-8fff28c58db4",
                 "title": "RM2 OFF For New Users Only",
                 "description": "- Enjoy RM2 OFF on your domestic/international delivery by using this exclusive coupon on EasyParcel. \n- Applicable for all shipment booking on EasyParcel, exclude those orders booked via integrations/API. \n- Valid for one year. \n- Each coupon application will be given a one-off RM2 discount with no minimum spend. \n- This coupon will not be returned when there’s any shipment cancellation. \n- This coupon is strictly not refundable or exchangeable for cash. \n- This coupon will be invalid and will not be replaced once expired. \n- EasyParcel reserves the right to vary and amend any of the above terms and conditions from time to time without prior notice.",
                 "discounted_amount": "2.00",
@@ -158,7 +158,7 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
 ```json
 {
     
-   "coupon_codes" :["4b8b0be9-8a02-4966-879d-b3aeeec38597"],
+   "coupon_codes" :["d1a1764b-9dcd-4d04-9b5d-8fff28c58db4"],
    "shipment": [
         {
             // as per the shipment details
