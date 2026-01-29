@@ -507,7 +507,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
 ```json
 {
     "status_code": 200,
-    "message": "0 requests success, 1 request error.",
+    "message": "2 requests success, 1 request error.",
     "data": [
         {
             "status": "error",
@@ -518,12 +518,18 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
                     "country": "MY"
                 },
                 "receiver": {
-                    "country": "SG"
+                    "postcode": "",
+                    "subdivison_code": "MY-02",
+                    "country": "MY"
                 },
-                "weight": 0.5
+                "parcel_value": 50,
+                "weight": 0.5,
+                "width": 5,
+                "length": 5,
+                "height": 5
             },
             "errors": [
-                "The receiver postcode field is required"
+                "The receiver postcode field is required "
             ]
         }
     ]
