@@ -16,16 +16,16 @@ This will return a list of valid promo codes available to use for the shipment f
 
 <h2 id="coupon-request-2025-06">Coupon Request</h2>
 
-### Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
+Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
 
 ### Sample Coupon Listing Request:
 ```json
 {
     "shipment": [
         {
-            "service_id": "EP-CS05M",
+            "service_id": "EP-CS096",
             "collection_date": "2025-05-19",
-            "weight": 2.5,
+            "weight": 0.5,
             "height": 30,
             "length": 40,
             "width": 20,
@@ -37,7 +37,7 @@ This will return a list of valid promo codes available to use for the shipment f
                     "length": 40,
                     "width": 20,
                     "currency_code": "MYR",
-                    "value": 500,
+                    "value": 50,
                     "quantity": 1
                 },
                 {
@@ -88,56 +88,28 @@ This will return a list of valid promo codes available to use for the shipment f
 }
 ```
 
-
 <h2 id="coupon-respond-2025-06"> Coupon Respond</h2>
 
-### 🧾 Coupon Listing API - Response Parameters
+### Coupon Listing API - Response Parameters
 
 ### Sample Respone for the courier listing
 
 ```json
 {
     "status_code": 200,
-    "message": "4 coupon(s) available",
+    "message": "1 coupon(s) available",
     "data": {
-        "account_id": 438368,
+        "account_id": 8583757,
         "currency_code": "MYR",
         "coupons": [
             {
-                "coupon_code": "77f39c22-427a-44f1-8bff-e4f3752ba165",
-                "title": "Test Coupon 1",
-                "description": "Test ",
-                "discounted_amount": "5.01",
-                "discount_rate": "20.00%",
-                "valid_from_date": "2025-05-12 18:04:33",
-                "valid_to_date": "2025-09-14 18:04:33"
-            },
-            {
-                "coupon_code": "10101f8b-1dc5-49e0-b4d3-09c5deb76513",
-                "title": "Test Coupon",
-                "description": "vvffg",
-                "discounted_amount": "2.34",
-                "discount_rate": "10.00%",
-                "valid_from_date": "2025-05-12 09:43:43",
-                "valid_to_date": "2025-07-13 09:43:43"
-            },
-            {
-                "coupon_code": "dfa5109a-2f35-427e-8482-9b0ab65c323f",
-                "title": "Test Coupon",
-                "description": "vvffg",
-                "discounted_amount": "2.10",
-                "discount_rate": "10.00%",
-                "valid_from_date": "2025-05-12 09:43:43",
-                "valid_to_date": "2025-07-13 09:43:43"
-            },
-            {
-                "coupon_code": "ad205174-d93d-4d6a-a5cc-1e989b0292eb",
-                "title": "Test Coupon",
-                "description": "vvffg",
-                "discounted_amount": "1.89",
-                "discount_rate": "10.00%",
-                "valid_from_date": "2025-05-12 09:43:43",
-                "valid_to_date": "2025-07-13 09:43:43"
+                "coupon_code": "4b8b0be9-8a02-4966-879d-b3aeeec38597",
+                "title": "RM2 OFF For New Users Only",
+                "description": "- Enjoy RM2 OFF on your domestic/international delivery by using this exclusive coupon on EasyParcel. \n- Applicable for all shipment booking on EasyParcel, exclude those orders booked via integrations/API. \n- Valid for one year. \n- Each coupon application will be given a one-off RM2 discount with no minimum spend. \n- This coupon will not be returned when there’s any shipment cancellation. \n- This coupon is strictly not refundable or exchangeable for cash. \n- This coupon will be invalid and will not be replaced once expired. \n- EasyParcel reserves the right to vary and amend any of the above terms and conditions from time to time without prior notice.",
+                "discounted_amount": "2.00",
+                "discount_rate": "100.00%",
+                "valid_from_date": "2026-01-28 13:56:27",
+                "valid_to_date": "2027-01-28 13:56:27"
             }
         ]
     }
@@ -175,7 +147,7 @@ This will return a list of valid promo codes available to use for the shipment f
 ---
 
 
-### 🧾 Applying Coupons
+### Applying Coupons
 
 During the order submission process (e.g., `/shipment/submit` or `/ondemand/shipment/submit`), customers can apply a valid coupon code by including it in the request body.
 
@@ -186,7 +158,7 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
 ```json
 {
     
-   "coupon_codes" :["5f710742-c649-45b7-83d6-af733651f892"],
+   "coupon_codes" :["4b8b0be9-8a02-4966-879d-b3aeeec38597"],
    "shipment": [
         {
             // as per the shipment details
