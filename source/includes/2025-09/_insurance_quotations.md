@@ -410,7 +410,7 @@ If a quotation request fails, the response will include an error status:
                 "currency_code": "MYR",
                 "from_postcode": "10150",
                 "from_country": "MY",
-                "to_postcode": "11900",
+                "to_postcode": "11950",
                 "to_country": "MY",
                 "shipment_weight": 1.5,
                 "shipment_item": [
@@ -432,7 +432,7 @@ If a quotation request fails, the response will include an error status:
                 "currency_code": "MYR",
                 "from_postcode": "10150",
                 "from_country": "MY",
-                "to_postcode": "11900",
+                "to_postcode": "11950",
                 "to_country": "MY",
                 "shipment_weight": 1.5,
                 "shipment_item": [
