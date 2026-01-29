@@ -53,12 +53,12 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
   "shipment": [
     {
       "sender": {
-        "postcode": "10150",
+        "postcode": "11900",
         "subdivison_code": "MY-07",
         "country": "MY"
       },
       "receiver": {
-        "postcode": "11950",
+        "postcode": "14000",
         "subdivison_code": "MY-07",
         "country": "MY"
       },
