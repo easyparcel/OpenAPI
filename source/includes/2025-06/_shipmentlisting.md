@@ -34,10 +34,10 @@ Since results are sorted newest first, each subsequent request returns the next 
 ```json
 {
   "limit": 3,
-  "before_shipment_number": "ES-2504-B944M",
+  "before_shipment_number": "ES-2601-3MMYQ",
   "shipment_status_code": "7",
   "date_from": "2025-04-01",
-  "date_to": "2025-04-23"
+  "date_to": "2025-04-20"
 }
 ```
 
@@ -67,120 +67,138 @@ Since results are sorted newest first, each subsequent request returns the next 
     "message": "success",
     "data": [
         {
-            "shipment_number": "ES-2504-XZ325",
-            "awb": null,
+            "shipment_number": "ES-2504-XYQUA",
+            "awb_number": null,
+            "awb_url": null,
+            "tracking_url": null,
             "shipment_status_code": 7,
             "shipment_status": "Schedule In Arrangement",
-            "coll_date": "2025-05-02 00:00:00",
+            "coll_date": "2025-04-22 16:00:00",
             "courier": {
-                "service_type": "Celcius Express",
-                "courier_id": "EP-CR0DP",
-                "service_id": "EP-CS0DP",
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "courier_short_name": "Celcius Express",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/"
+                "service_type": "Mystery Saver",
+                "courier_id": "EP-CR0AT",
+                "service_id": "EP-CS0AT",
+                "courier_name": "TracX Logis Pte. Ltd",
+                "courier_short_name": "TRACX LOGIS",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/"
             },
             "sender_details": {
-                "name": "John Doe",
-                "email": "test@easyparcel.com",
-                "contact": "+601264644281",
+                "name": "testSG",
+                "email": "ep@easyparcel.com",
+                "contact": "SG88888888",
                 "alternative_contact": 0,
-                "address1": "123 Main St",
-                "subdivision_code": "MY-07",
-                "postal_code": "10150",
-                "country": "MY"
+                "address1": "test sg",
+                "subdivision_code": "SG-04",
+                "postal_code": "409015",
+                "country": "SG"
             },
             "receiver_details": {
-                "name": "Jane Smith",
-                "email": "smith@easyparcel.com",
-                "contact": "+601163542291",
+                "name": "testSG",
+                "email": "ep@easyparcel.com",
+                "contact": "SG88888888",
                 "alternative_contact": 0,
-                "subdivision_code": null,
-                "postal_code": "11950",
-                "country": "MY"
+                "subdivision_code": "SG-04",
+                "postal_code": "409015",
+                "country": "SG"
             },
             "pricing": {
                 "currency_code": "MYR",
-                "price": 25.7
+                "price": 16.99
             }
         },
         {
-            "shipment_number": "ES-2504-MFTV2",
-            "awb": null,
+            "shipment_number": "ES-2504-B4H35",
+            "awb_number": null,
+            "awb_url": null,
+            "tracking_url": null,
             "shipment_status_code": 7,
             "shipment_status": "Schedule In Arrangement",
-            "coll_date": "2025-05-02 00:00:00",
+            "coll_date": "2025-04-22 16:00:00",
             "courier": {
-                "service_type": "Celcius Express",
-                "courier_id": "EP-CR0DP",
-                "service_id": "EP-CS0DP",
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "courier_short_name": "Celcius Express",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/"
+                "service_type": "Mystery Saver",
+                "courier_id": "EP-CR0AT",
+                "service_id": "EP-CS0AT",
+                "courier_name": "TracX Logis Pte. Ltd",
+                "courier_short_name": "TRACX LOGIS",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/"
             },
             "sender_details": {
-                "name": "John Doe",
-                "email": "test@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "testSG",
+                "email": "ep@easyparcel.com",
+                "contact": "SG88888888",
                 "alternative_contact": 0,
-                "address1": "123 Main St",
-                "subdivision_code": null,
-                "postal_code": "10150",
-                "country": "MY"
+                "address1": "test sg",
+                "subdivision_code": "SG-04",
+                "postal_code": "409015",
+                "country": "SG"
             },
             "receiver_details": {
-                "name": "Jane Smith",
-                "email": "smith@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "testSG",
+                "email": "ep@easyparcel.com",
+                "contact": "SG88888888",
                 "alternative_contact": 0,
-                "subdivision_code": null,
-                "postal_code": "11950",
-                "country": "MY"
+                "subdivision_code": "SG-04",
+                "postal_code": "409015",
+                "country": "SG"
             },
             "pricing": {
                 "currency_code": "MYR",
-                "price": 25.7
+                "price": 16.99
             }
         },
         {
-            "shipment_number": "ES-2504-3WYYP",
-            "awb": null,
+            "shipment_number": "ES-2504-4XMAY",
+            "awb_number": null,
+            "awb_url": null,
+            "tracking_url": null,
             "shipment_status_code": 7,
             "shipment_status": "Schedule In Arrangement",
-            "coll_date": "2025-05-02 00:00:00",
+            "coll_date": "2025-04-22 16:00:00",
             "courier": {
-                "service_type": "Celcius Express",
-                "courier_id": "EP-CR0DP",
-                "service_id": "EP-CS0DP",
-                "courier_name": "Celcius Express Sdn. Bhd.",
-                "courier_short_name": "Celcius Express",
-                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/"
+                "service_type": "Mystery Saver",
+                "courier_id": "EP-CR0AT",
+                "service_id": "EP-CS0AT",
+                "courier_name": "TracX Logis Pte. Ltd",
+                "courier_short_name": "TRACX LOGIS",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/"
             },
             "sender_details": {
-                "name": "John Doe",
-                "email": "test@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "testSG",
+                "email": "ep@easyparcel.com",
+                "contact": "SG88888888",
                 "alternative_contact": 0,
-                "address1": "123 Main St",
-                "subdivision_code": null,
-                "postal_code": "10150",
-                "country": "MY"
+                "address1": "test sg",
+                "subdivision_code": "SG-04",
+                "postal_code": "409015",
+                "country": "SG"
             },
             "receiver_details": {
-                "name": "Jane Smith",
-                "email": "smith@easyparcel.com",
-                "contact": "+601163642281",
+                "name": "testSG",
+                "email": "ep@easyparcel.com",
+                "contact": "SG88888888",
                 "alternative_contact": 0,
-                "subdivision_code": null,
-                "postal_code": "11950",
-                "country": "MY"
+                "subdivision_code": "SG-04",
+                "postal_code": "409015",
+                "country": "SG"
             },
             "pricing": {
                 "currency_code": "MYR",
-                "price": 25.7
+                "price": 16.99
             }
         }
-    ]
+    ],
+    "pagination": {
+        "next_page_token": "eyJsYXN0X2lkIjoyNTg2OSwiZmlsdGVycyI6eyJ0cmFja2luZ19zdGF0dXMiOiI3IiwiZGF0ZV9mcm9tIjoiMjAyNS0wNC0wMSAwMDowMDowMCIsImRhdGVfdG8iOiIyMDI1LTA0LTIwIDIzOjU5OjU5In19",
+        "next_shipment_number": "ES-2504-4XMAY",
+        "has_more": true,
+        "limit": 3,
+        "filter_applied": {
+            "tracking_status": "7",
+            "date_from": "2025-04-01 00:00:00",
+            "date_to": "2025-04-20 23:59:59",
+            "tracking_status_code": "7"
+        }
+    }
 }
 ```
 
