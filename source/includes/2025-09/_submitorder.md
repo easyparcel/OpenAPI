@@ -597,7 +597,6 @@ For failed requests, the response includes error details:
 ```json
 {
     "status_code": 200,
-    "request_id": "1768969675035.277ba186-6dd1-48a3-99ce-8734a5172c7e",
     "message": "1 request success, 1 request error.",
     "data": [
         {
