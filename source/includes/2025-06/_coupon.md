@@ -23,32 +23,32 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
 {
     "shipment": [
         {
-            "service_id": "EP-CS05R",
+            "service_id": "EP-CS05M",
             "collection_date": "2025-04-20",
             "weight": 2.5,
-            "height": 10,
-            "length": 20,
-            "width": 20,
+            "height": 5,
+            "length": 6,
+            "width": 7,
             "item": [
                 {
-                    "content": "Electronics",
-                    "weight": 1.5,
-                    "height": 5,
-                    "length": 5,
-                    "width": 5,
-                    "currency_code": "MYR",
-                    "value": 50,
-                    "quantity": 1
-                },
-                {
                     "content": "Electronics 2",
-                    "weight": 0.5,
-                    "height": 10,
-                    "length": 20,
-                    "width": 20,
+                    "weight": 1.0,
+                    "height": 5,
+                    "length": 6,
+                    "width": 7,
                     "currency_code": "MYR",
                     "value": 50,
                     "quantity": 2
+                },
+                {
+                    "content": "Electronics 1",
+                    "weight": 0.5,
+                    "height": 5,
+                    "length": 6,
+                    "width": 7,
+                    "currency_code": "MYR",
+                    "value": 50,
+                    "quantity": 1
                 }
             ],
             "sender": {
