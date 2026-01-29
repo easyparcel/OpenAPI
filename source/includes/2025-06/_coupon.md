@@ -59,7 +59,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                 "email": "john@easyparcel.com",
                 "address_1": "123 Main St",
                 "address_2": "Apt 4B",
-                "postcode": "10150",
+                "postcode": "11900",
                 "city": "Lunas",
                 "subdivison_code": "MY-07",
                 "country_code": "MY"
@@ -72,7 +72,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
                 "email": "smith@easyparcel.com",
                 "address_1": "456 High St",
                 "address_2": "Floor 2",
-                "postcode": "11950",
+                "postcode": "14000",
                 "city": "Bayan Lepas",
                 "subdivison_code": "MY-07",
                 "country_code": "MY"
