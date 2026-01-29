@@ -158,7 +158,7 @@ The request uses nested objects for sender and receiver information.
                     "subdivison_code": "MY-07",
                     "country": "MY"
                 },
-                "parcel_value": 50,
+                "parcel_value": 20,
                 "weight": 2.5,
                 "width": 5,
                 "length": 6,
