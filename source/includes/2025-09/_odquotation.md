@@ -15,7 +15,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 
 ```json
 {
-  "schedule_pickup_date": "2024-11-30",
+  "schedule_pickup_date": "2025-05-19",
   "schedule_pickup_time": "11:48:35",
   "timezone": "Asia/Kuala_Lumpur",
   "waypoint": [
@@ -68,7 +68,7 @@ Refer to the full JSON response you provided in your message for all details on 
         {
             "status": "success",
             "input": {
-                "schedule_pickup_date": "2024-11-30",
+                "schedule_pickup_date": "2025-05-19",
                 "schedule_pickup_time": "11:48:35",
                 "timezone": "Asia/Kuala_Lumpur",
                 "waypoint": [
@@ -93,7 +93,7 @@ Refer to the full JSON response you provided in your message for all details on 
             "quotations": [
                 {
                     "metadata": {
-                        "quotationId": "3418806898785481699"
+                        "quotationId": "3418817446335963964"
                     },
                     "courier": {
                         "service_id": "EP-CS0I",
@@ -116,7 +116,7 @@ Refer to the full JSON response you provided in your message for all details on 
                 },
                 {
                     "metadata": {
-                        "quotationId": "3418807056323531498"
+                        "quotationId": "3418817446755394383"
                     },
                     "courier": {
                         "service_id": "EP-CS0F",
@@ -139,7 +139,7 @@ Refer to the full JSON response you provided in your message for all details on 
                 },
                 {
                     "metadata": {
-                        "quotationId": "3418808230577664304"
+                        "quotationId": "3418817660128027070"
                     },
                     "courier": {
                         "service_id": "EP-CS09",
@@ -162,7 +162,7 @@ Refer to the full JSON response you provided in your message for all details on 
                 },
                 {
                     "metadata": {
-                        "quotationId": "3418806717952254346"
+                        "quotationId": "3418817248574529909"
                     },
                     "courier": {
                         "service_id": "EP-CS05",
@@ -185,7 +185,7 @@ Refer to the full JSON response you provided in your message for all details on 
                 },
                 {
                     "metadata": {
-                        "quotationId": "3418807589713175076"
+                        "quotationId": "3418817941557441277"
                     },
                     "courier": {
                         "service_id": "EP-CS0G",
@@ -208,7 +208,7 @@ Refer to the full JSON response you provided in your message for all details on 
                 },
                 {
                     "metadata": {
-                        "quotationId": "3418807942152155988"
+                        "quotationId": "3418817672006300006"
                     },
                     "courier": {
                         "service_id": "EP-CS0M",
@@ -231,7 +231,7 @@ Refer to the full JSON response you provided in your message for all details on 
                 },
                 {
                     "metadata": {
-                        "quotationId": "3418807136820617756"
+                        "quotationId": "3418817660128027086"
                     },
                     "courier": {
                         "service_id": "EP-CS0Y",
@@ -334,7 +334,7 @@ Refer to the full JSON response you provided in your message for all details on 
 
 ```javascript
 const requestData = {
-  schedule_pickup_date: "2024-11-30",
+  schedule_pickup_date: "2025-05-19",
   schedule_pickup_time: "11:48:35",
   timezone: "Asia/Kuala_Lumpur",
   waypoint: [
@@ -360,7 +360,7 @@ fetch('https://api.easyparcel.com/open_api/2025-09/ondemand/quotations', {
 ```php
 <?php
 $data = [
-    "schedule_pickup_date" => "2024-11-30",
+    "schedule_pickup_date" => "2025-05-19",
     "schedule_pickup_time" => "11:48:35",
     "timezone" => "Asia/Kuala_Lumpur",
     "waypoint" => [
@@ -393,7 +393,7 @@ headers = {
     'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
 }
 data = {
-    "schedule_pickup_date": "2024-11-30",
+    "schedule_pickup_date": "2025-05-19",
     "schedule_pickup_time": "11:48:35",
     "timezone": "Asia/Kuala_Lumpur",
     "waypoint": [
