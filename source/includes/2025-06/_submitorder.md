@@ -19,18 +19,18 @@ This feature enables users to submit shipment orders. Users are required to fill
     "shipment": [
         {
             "service_id": "EP-CS05R",
-            "collection_date": "2025-04-19",
+            "collection_date": "2025-04-20",
             "weight": 2.5,
-            "height": 30,
-            "length": 40,
+            "height": 10,
+            "length": 20,
             "width": 20,
             "item": [
                 {
                     "content": "Electronics",
                     "weight": 1.5,
-                    "height": 30,
-                    "length": 40,
-                    "width": 20,
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
                     "currency_code": "MYR",
                     "value": 50,
                     "quantity": 1
@@ -192,34 +192,34 @@ This feature enables users to submit shipment orders. Users are required to fill
     "data": [
         {
             "order_details": {
-                "order_number": "EI-2601-EVEYQ",
+                "order_number": "EI-2601-H8BWK",
                 "account_id": 8583757
             },
             "pricing_breakdown": {
                 "currency_code": "MYR",
-                "total_order_amount": "12.04",
-                "total_paid_amount": "12.04",
+                "total_order_amount": "6.29",
+                "total_paid_amount": "6.29",
                 "total_tax_amount": "0.00",
                 "coupon_redeemed": "0.00"
             },
             "shipments": [
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-ZE5QP",
+                    "shipment_number": "ES-2601-QU6Y6",
                     "courier_service": null,
                     "courier": "City-Link Express (M) Sdn. Bhd.",
                     "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/citylink.jpg",
                     "awb_number": null,
                     "awb_url": null,
                     "tracking_url": null,
-                    "weight": 4.8,
-                    "height": 30,
-                    "length": 40,
+                    "weight": 2.5,
+                    "height": 10,
+                    "length": 20,
                     "width": 20,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "12.04",
-                        "shipment_price": "11.59",
+                        "total_paid_amount": "6.29",
+                        "shipment_price": "5.84",
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.45",
                         "total_features_tax_amount": "0.00",
@@ -261,9 +261,9 @@ This feature enables users to submit shipment orders. Users are required to fill
                         {
                             "content": "Electronics",
                             "weight": 1.5,
-                            "height": 30,
-                            "length": 40,
-                            "width": 20,
+                            "height": 5,
+                            "length": 5,
+                            "width": 5,
                             "currency_code": "MYR",
                             "value": 50,
                             "quantity": 1
