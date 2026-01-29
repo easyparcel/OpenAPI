@@ -17,15 +17,6 @@ This API uses cursor-based pagination with the `before_shipment_number` paramete
 2. Note the `shipment_number` of the last shipment in the response
 3. Use that shipment number as `before_shipment_number` in your next request to get older shipments
 
-**Example:**
-```json
-// First request
-{ "limit": 10 }
-
-// Next page request (using last shipment_number from previous response)
-{ "limit": 10, "before_shipment_number": "ES-2504-3WYYP" }
-```
-
 Since results are sorted newest first, each subsequent request returns the next set of older shipments.
 
 
