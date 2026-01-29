@@ -621,7 +621,7 @@ For failed requests, the response includes error details:
                     "awb_number": null,
                     "awb_url": null,
                     "tracking_url": null,
-                    "weight": 2.5,
+                    "weight": 1.5,
                     "height": 5,
                     "length": 5,
                     "width": 5,
