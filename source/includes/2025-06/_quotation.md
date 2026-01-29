@@ -531,11 +531,11 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
                     "subdivison_code": "MY-07",
                     "country": "MY"
                 },
-                "parcel_value": 50,
-                "weight": 0.5,
+                "parcel_value": 20,
+                "weight": 2.5,
                 "width": 5,
-                "length": 5,
-                "height": 5
+                "length": 6,
+                "height": 7
             },
             "errors": [
                 "The receiver postcode field is required "
