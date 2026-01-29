@@ -23,8 +23,8 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
 {
     "shipment": [
         {
-            "service_id": "EP-CS09Q",
-            "collection_date": "2025-05-19",
+            "service_id": "EP-CS05R",
+            "collection_date": "2025-04-20",
             "weight": 2.5,
             "height": 10,
             "length": 20,
