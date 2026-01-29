@@ -182,7 +182,7 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
 
 ```json
 { 
-    "coupon_codes":["a186f575-8481-4cf0-80e6-909871eb7e97"],
+    "coupon_codes":["ad205174-d93d-4d6a-a5cc-1e989b0292eb"],
     "origin_country": "MY",
     "ondemand_service_id": "EP-CS09",
     "schedule_pickup_date": "2024-12-10",
