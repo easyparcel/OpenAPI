@@ -30,19 +30,19 @@ This endpoint allows users to retrieve a list of available courier services for 
     "message": "success",
     "data": [
         {
-            "courier_id": "EP-CR0AW",
-            "uuid": "db129869-d2cd-474a-b3bf-9995a436ef85",
-            "courier_name": "DHL eCommerce",
-            "short_name": "DHLeC",
-            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/DHLeC.jpg",
-            "country": "Malaysia"
-        },
-        {
             "courier_id": "EP-CR0AP",
             "uuid": "01e1cad9-d20a-411f-8c71-a1b3ed722b3f",
             "courier_name": "Aramex",
             "short_name": "Aramex",
             "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
+            "country": "Malaysia"
+        },
+        {
+            "courier_id": "EP-CR0AW",
+            "uuid": "db129869-d2cd-474a-b3bf-9995a436ef85",
+            "courier_name": "DHL eCommerce",
+            "short_name": "DHLeC",
+            "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/DHLeC.jpg",
             "country": "Malaysia"
         },
         {
