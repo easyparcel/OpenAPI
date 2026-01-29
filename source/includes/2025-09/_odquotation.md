@@ -93,148 +93,185 @@ Refer to the full JSON response you provided in your message for all details on 
             "quotations": [
                 {
                     "metadata": {
-                        "quotationId": "3214761490129490315"
+                        "quotationId": "3418806898785481699"
                     },
                     "courier": {
                         "service_id": "EP-CS0I",
                         "courier_name": "Lalamove",
-                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/lalamove.svg"
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/lalamove.svg"
                     },
                     "transport": {
                         "transportation_type": "Car",
-                        "durations": "3mins",
+                        "durations": "5mins",
                         "parcel_type_support": "Parcel",
                         "weight_limit": "40kg",
                         "dimension": "50cmx50cmx50cm"
                     },
                     "pricing": {
-                        "total_amount": "5.65",
+                        "total_amount": 7.06,
+                        "shipping_price": "7.06",
+                        "tax_amount": 0,
                         "currency": "MYR"
                     }
                 },
                 {
                     "metadata": {
-                        "quotationId": "3214762583542600039"
+                        "quotationId": "3418807056323531498"
                     },
                     "courier": {
                         "service_id": "EP-CS0F",
                         "courier_name": "Lalamove",
-                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/lalamove.svg"
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/lalamove.svg"
                     },
                     "transport": {
                         "transportation_type": "Bike",
-                        "durations": "3mins",
+                        "durations": "5mins",
                         "parcel_type_support": "Parcel",
                         "weight_limit": "10kg",
                         "dimension": "30cmx30cmx30cm"
                     },
                     "pricing": {
-                        "total_amount": "4.71",
+                        "total_amount": 5.88,
+                        "shipping_price": "5.88",
+                        "tax_amount": 0,
                         "currency": "MYR"
                     }
                 },
                 {
                     "metadata": {
-                        "quotationId": "3214762583542600040"
+                        "quotationId": "3418808230577664304"
                     },
                     "courier": {
                         "service_id": "EP-CS09",
                         "courier_name": "Lalamove",
-                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/lalamove.svg"
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/lalamove.svg"
                     },
                     "transport": {
                         "transportation_type": "4X4",
-                        "durations": "3mins",
+                        "durations": "5mins",
                         "parcel_type_support": "Ideal for small fridge, washing machine, bike, 1-seater sofa",
                         "weight_limit": "250kg",
                         "dimension": "120cmx90cmx90cm"
                     },
                     "pricing": {
-                        "total_amount": "18.82",
+                        "total_amount": 27.06,
+                        "shipping_price": "27.06",
+                        "tax_amount": 0,
                         "currency": "MYR"
                     }
                 },
                 {
                     "metadata": {
-                        "quotationId": "3214761490129490316"
+                        "quotationId": "3418806717952254346"
                     },
                     "courier": {
                         "service_id": "EP-CS05",
                         "courier_name": "Lalamove",
-                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/lalamove.svg"
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/lalamove.svg"
                     },
                     "transport": {
                         "transportation_type": "Large Van",
-                        "durations": "3mins",
+                        "durations": "5mins",
                         "parcel_type_support": "Ideal for washing machine, sofa, treadmill , large parcels",
                         "weight_limit": "800kg",
                         "dimension": "270cmx130cmx120cm"
                     },
                     "pricing": {
-                        "total_amount": "45.18",
+                        "total_amount": 57.65,
+                        "shipping_price": "57.65",
+                        "tax_amount": 0,
                         "currency": "MYR"
                     }
                 },
                 {
                     "metadata": {
-                        "quotationId": "3214761490129490317"
+                        "quotationId": "3418807589713175076"
                     },
                     "courier": {
                         "service_id": "EP-CS0G",
                         "courier_name": "Lalamove",
-                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/lalamove.svg"
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/lalamove.svg"
                     },
                     "transport": {
                         "transportation_type": "Lorry 10-ft",
-                        "durations": "3mins",
+                        "durations": "5mins",
                         "parcel_type_support": "Ideal for queen size bed, fridge, 3-seater sofa, wardrobe",
                         "weight_limit": "1000kg",
                         "dimension": "290cmx150cmx150cm"
                     },
                     "pricing": {
-                        "total_amount": "64.00",
+                        "total_amount": 78.82,
+                        "shipping_price": "78.82",
+                        "tax_amount": 0,
                         "currency": "MYR"
                     }
                 },
                 {
                     "metadata": {
-                        "quotationId": "3214762583542600041"
+                        "quotationId": "3418807942152155988"
                     },
                     "courier": {
                         "service_id": "EP-CS0M",
                         "courier_name": "Lalamove",
-                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/lalamove.svg"
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/lalamove.svg"
                     },
                     "transport": {
                         "transportation_type": "Lorry 14-ft",
-                        "durations": "3mins",
+                        "durations": "5mins",
                         "parcel_type_support": "Ideal for king size bed, large fridge, 3-seater sofa, wardro",
                         "weight_limit": "2500kg",
                         "dimension": "420cmx200cmx200cm"
                     },
                     "pricing": {
-                        "total_amount": "128.00",
+                        "total_amount": 125.29,
+                        "shipping_price": "125.29",
+                        "tax_amount": 0,
                         "currency": "MYR"
                     }
                 },
                 {
                     "metadata": {
-                        "quotationId": "3214761490129490318"
+                        "quotationId": "3418807136820617756"
                     },
                     "courier": {
                         "service_id": "EP-CS0Y",
                         "courier_name": "Lalamove",
-                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel/Public/source/general/img/couriers/lalamove.svg"
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/lalamove.svg"
                     },
                     "transport": {
                         "transportation_type": "Van",
-                        "durations": "3mins",
+                        "durations": "5mins",
                         "parcel_type_support": "Ideal for small fridge, washing machine, bike, 1-seater sofa",
                         "weight_limit": "500kg",
                         "dimension": "170cmx100cmx120cm"
                     },
                     "pricing": {
-                        "total_amount": "16.00",
+                        "total_amount": 45.88,
+                        "shipping_price": "45.88",
+                        "tax_amount": 0,
+                        "currency": "MYR"
+                    }
+                },
+                {
+                    "metadata": {
+                        "quotationId": null
+                    },
+                    "courier": {
+                        "service_id": "EP-CS0R",
+                        "courier_name": "PandaGo",
+                        "img_courier": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/pandaGo_pink.png"
+                    },
+                    "transport": {
+                        "transportation_type": "Bike",
+                        "durations": "5mins",
+                        "parcel_type_support": "Parcel",
+                        "weight_limit": "15kg",
+                        "dimension": "43cmx39cmx42cm"
+                    },
+                    "pricing": {
+                        "total_amount": 7.06,
+                        "shipping_price": "7.06",
+                        "tax_amount": 0,
                         "currency": "MYR"
                     }
                 }
@@ -278,21 +315,50 @@ Refer to the full JSON response you provided in your message for all details on 
 
 ---
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+
 ### Sample Error Response
 
 ```json
 {
-  "status_code": 200,
-  "message": "0 requests success, 3 request error.",
-  "data": [
-    {
-      "status": "error",
-      "input": { ... },
-      "errors": [
-        "The receiver postcode field is required"
-      ]
-    },
-  ]
+    "status_code": 400,
+    "message": "Invalid input Error",
+    "data": [
+        "The waypoint 0 type field is required "
+    ]
 }
 ```
 
