@@ -315,42 +315,7 @@ Refer to the full JSON response you provided in your message for all details on 
 
 ---
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-
-### Sample Error Response
+## Sample Error Response
 
 ```json
 {
