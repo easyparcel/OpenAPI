@@ -62,7 +62,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
         "subdivison_code": "MY-07",
         "country": "MY"
       },
-      "parcel_value":50,
+      "parcel_value":20,
       "weight": 2.5,
       "width": 5,
       "length": 6,
