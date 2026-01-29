@@ -12,7 +12,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 ```json
 { 
-    "coupon_codes":["a186f575-8481-4cf0-80e6-909871eb7e97"],
+    "coupon_codes":["ad205174-d93d-4d6a-a5cc-1e989b0292eb"],
     "origin_country": "MY",
     "ondemand_service_id": "EP-CS0I",
     "schedule_pickup_date": "2025-05-19",
@@ -120,7 +120,6 @@ This guide explains how to submit an on-demand shipment order with and without a
 ```json
 {
     "status_code": 200,
-    "request_id": "1769651908505.afb9cd41-8970-41a7-896c-2c6d84f23f23",
     "message": "Success",
     "data": {
         "booking_id": "EOD-150",
