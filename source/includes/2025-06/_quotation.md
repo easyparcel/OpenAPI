@@ -63,10 +63,10 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
         "country": "MY"
       },
       "parcel_value":50,
-      "weight": 0.5,
+      "weight": 2.5,
       "width": 5,
-      "length": 5,
-      "height": 5
+      "length": 6,
+      "height": 7
     },
      {
       "sender": {
@@ -160,19 +160,19 @@ The request uses nested objects for sender and receiver information.
                     "country": "MY"
                 },
                 "parcel_value": 50,
-                "weight": 0.5,
+                "weight": 2.5,
                 "width": 5,
-                "length": 5,
-                "height": 5
+                "length": 6,
+                "height": 7
             },
             "quotations": [
                 {
                     "courier": {
-                        "service_id": "EP-CS09Q",
-                        "service_name": "Celsius Express - Chilled",
-                        "courier_id": "EP-CR0DP",
-                        "courier_name": "Celsius Express Sdn. Bhd.",
-                        "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Celsius.png",
+                        "service_id": "EP-CS05M",
+                        "service_name": "Best Express (Pick Up)",
+                        "courier_id": "EP-CR0DF",
+                        "courier_name": "Best Global Logistics Technology (Malaysia) Sdn. Bhd.",
+                        "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Best_Express.jpg",
                         "delivery_duration": null,
                         "service_tag": [
                             {
@@ -181,11 +181,15 @@ The request uses nested objects for sender and receiver information.
                             },
                             {
                                 "name": "Service Methods",
-                                "value": "Sender Drop Off to Point"
+                                "value": "Pick Up from Door"
+                            },
+                            {
+                                "name": "Service Methods",
+                                "value": "Deliver to Door"
                             },
                             {
                                 "name": "Tracking Quality",
-                                "value": "Limited"
+                                "value": "Excellent"
                             },
                             {
                                 "name": "Supported AWB",
@@ -195,9 +199,9 @@ The request uses nested objects for sender and receiver information.
                     },
                     "pricing": {
                         "currency": "MYR",
-                        "total_amount": "43.53",
-                        "shipment_price": "40.50",
-                        "shipment_tax": "2.43",
+                        "total_amount": "6.95",
+                        "shipment_price": "5.99",
+                        "shipment_tax": "0.36",
                         "total_features_price": "0.60",
                         "total_features_tax": "0.00"
                     },
