@@ -21,29 +21,29 @@ This feature enables users to submit shipment orders. Users are required to fill
             "service_id": "EP-CS05R",
             "collection_date": "2025-04-20",
             "weight": 2.5,
-            "height": 10,
-            "length": 20,
-            "width": 20,
+            "height": 5,
+            "length": 6,
+            "width": 7,
             "item": [
                 {
-                    "content": "Electronics",
-                    "weight": 1.5,
-                    "height": 5,
-                    "length": 5,
-                    "width": 5,
-                    "currency_code": "MYR",
-                    "value": 50,
-                    "quantity": 1
-                },
-                {
                     "content": "Electronics 2",
-                    "weight": 0.5,
-                    "height": 10,
-                    "length": 20,
-                    "width": 20,
+                    "weight": 1.0,
+                    "height": 5,
+                    "length": 6,
+                    "width": 7,
                     "currency_code": "MYR",
                     "value": 50,
                     "quantity": 2
+                },
+                {
+                    "content": "Electronics 1",
+                    "weight": 0.5,
+                    "height": 5,
+                    "length": 6,
+                    "width": 7,
+                    "currency_code": "MYR",
+                    "value": 50,
+                    "quantity": 1
                 }
             ],
             "sender": {
@@ -192,20 +192,20 @@ This feature enables users to submit shipment orders. Users are required to fill
     "data": [
         {
             "order_details": {
-                "order_number": "EI-2601-H8BWK",
+                "order_number": "EI-2601-457T6",
                 "account_id": 8583757
             },
             "pricing_breakdown": {
                 "currency_code": "MYR",
                 "total_order_amount": "6.29",
-                "total_paid_amount": "6.29",
+                "total_paid_amount": "4.29",
                 "total_tax_amount": "0.00",
-                "coupon_redeemed": "0.00"
+                "coupon_redeemed": "2.00"
             },
             "shipments": [
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-QU6Y6",
+                    "shipment_number": "ES-2601-QQZJP",
                     "courier_service": null,
                     "courier": "City-Link Express (M) Sdn. Bhd.",
                     "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/citylink.jpg",
@@ -213,17 +213,17 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "awb_url": null,
                     "tracking_url": null,
                     "weight": 2.5,
-                    "height": 10,
-                    "length": 20,
-                    "width": 20,
+                    "height": 5,
+                    "length": 6,
+                    "width": 7,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "6.29",
+                        "total_paid_amount": "4.29",
                         "shipment_price": "5.84",
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.45",
                         "total_features_tax_amount": "0.00",
-                        "coupon_redeemed": "0.00"
+                        "coupon_redeemed": "2.00"
                     },
                     "sender": {
                         "point_code": null,
@@ -259,24 +259,24 @@ This feature enables users to submit shipment orders. Users are required to fill
                     },
                     "shipment_items": [
                         {
-                            "content": "Electronics",
-                            "weight": 1.5,
-                            "height": 5,
-                            "length": 5,
-                            "width": 5,
-                            "currency_code": "MYR",
-                            "value": 50,
-                            "quantity": 1
-                        },
-                        {
                             "content": "Electronics 2",
-                            "weight": 0.5,
-                            "height": 10,
-                            "length": 20,
-                            "width": 20,
+                            "weight": 1,
+                            "height": 5,
+                            "length": 6,
+                            "width": 7,
                             "currency_code": "MYR",
                             "value": 50,
                             "quantity": 2
+                        },
+                        {
+                            "content": "Electronics 1",
+                            "weight": 0.5,
+                            "height": 5,
+                            "length": 6,
+                            "width": 7,
+                            "currency_code": "MYR",
+                            "value": 50,
+                            "quantity": 1
                         }
                     ],
                     "features": {
