@@ -522,7 +522,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
             "status": "error",
             "input": {
                 "sender": {
-                    "postcode": "10150",
+                    "postcode": "11900",
                     "subdivison_code": "MY-07",
                     "country": "MY"
                 },
