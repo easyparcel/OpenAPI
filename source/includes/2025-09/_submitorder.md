@@ -711,7 +711,7 @@ For failed requests, the response includes error details:
                         "shipment_tracking_whatsapp": {
                             "message": "Hey there! Your order from John Doe is ready to be collected for delivery soon!\n\nTracking no: null",
                             "phone_country_code": "+60",
-                            "phone_number": "1163042981",
+                            "phone_number": "1126760658",
                             "currency_code": "MYR",
                             "total_amount": "0.00",
                             "price": "0.20",
