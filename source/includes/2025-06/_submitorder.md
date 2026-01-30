@@ -302,7 +302,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "shipment_tracking_whatsapp": {
                             "message": "Hey there! Your order from John Doe is ready to be collected for delivery soon!\n\nTracking no: null",
                             "phone_country_code": "+60",
-                            "phone_number": "1163642281",
+                            "phone_number": "1169641281",
                             "currency_code": "MYR",
                             "total_amount": "0.00",
                             "price": "0.20",
@@ -311,7 +311,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "shipment_tracking_sms": {
                             "message": "Your order from John Doe is ready & trackable once courier scans in. Track at EasyParcel with [Placeholder Trackin..] -Powered by EasyParcel",
                             "phone_country_code": "+60",
-                            "phone_number": "1163642281",
+                            "phone_number": "1169641281",
                             "currency_code": "MYR",
                             "total_amount": "0.00",
                             "price": "0.20",
