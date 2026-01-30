@@ -310,7 +310,7 @@ async function getShippingQuotes(senderPostcode, receiverPostcode) {
       },
       receiver: {
         postcode: receiverPostcode,
-        subdivison_code: "MY-04", 
+        subdivison_code: "MY-07", 
         country: "MY"
       },
       weight: 1.5,
