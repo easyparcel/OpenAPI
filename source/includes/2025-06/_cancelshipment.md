@@ -14,11 +14,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 {
     "cancel_list": [
         {
-            "shipment_number": "ES-2504-WZ9VY",
-            "remark": "test"
-        },
-        {
-            "shipment_number": "ES-2504-K94KU",
+            "shipment_number": "ES-2601-3MMYQ",
             "remark": "test"
         }
     ]
@@ -47,17 +43,12 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 ```json
 {
     "status_code": 200,
-    "message": "2 requests success, 0 request error.",
+    "message": "1 requests success, 0 request error.",
     "data": [
         {
             "status": "success",
             "message": "Order Cancelled",
-            "shipment_number": "ES-2504-WZ9VY"
-        },
-        {
-            "status": "success",
-            "message": "Order Cancelled",
-            "shipment_number": "ES-2504-K94KU"
+            "shipment_number": "ES-2601-3MMYQ"
         }
     ]
 }
@@ -91,12 +82,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
         {
             "status": "error",
             "message": "Shipment Already Cancelled",
-            "shipment_number": "ES-2504-JUB4T"
-        },
-        {
-            "status": "error",
-            "message": "Shipment Already Cancelled",
-            "shipment_number": "ES-2504-GPC39"
+            "shipment_number": "ES-2601-3MMYQ"
         }
     ]
 }
