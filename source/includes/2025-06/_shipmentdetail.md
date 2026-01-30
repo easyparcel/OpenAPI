@@ -69,7 +69,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
             ],
             "courier": {
                 "courier_name": "Best Global Logistics Technology (Malaysia) Sdn. Bhd.",
-                "service_id": "EP-CS05M",
+                "service_id": "EP-CR0DF",
                 "courier_id": "EP-CR0DF",
                 "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/",
                 "service_types": "Best Express (Pick Up)"
