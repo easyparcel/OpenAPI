@@ -20,12 +20,12 @@ This will return a list of valid promo codes available to use for the shipment f
 ```json
 {
     "origin_country": "MY",
-    "ondemand_service_id": "EP-CS09",
-    "schedule_pickup_date": "2024-12-10",
-    "schedule_pickup_time": "17:35:15",
+    "ondemand_service_id": "EP-CS0F",
+    "schedule_pickup_date": "2024-11-30",
+    "schedule_pickup_time": "11:48:35",
     "time_zone": "Asia/Kuala_Lumpur",
     "metadata": {
-        "quotationId": "3114850556997669249"
+        "quotationId": "3419574389920977479"
     },
     "waypoint": [
         {
@@ -49,17 +49,17 @@ This will return a list of valid promo codes available to use for the shipment f
                 }
             ],
             "shipment_info": {
-                "phone_number_country_code": "MY",
+                "phone_number_country_code": "+60",
                 "phone_number": "1278491622",
-                "address": "L1 Lobby, Suntec City Tower 1 & 2, 7 Temasek Boulevard, Singapore, 038987",
-                "name": "111",
-                "email": "as@as.as"
+                "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
+                "name": "Assis",
+                "email": "as@gmail.com"
             }
         },
         {
             "point": 1,
             "type": "dropoff",
-            "remark": "222",
+            "remark": "2",
             "coordinates": {
                 "latitude": 5.325513957,
                 "longitude": 100.2862732
@@ -77,11 +77,11 @@ This will return a list of valid promo codes available to use for the shipment f
                 }
             ],
             "shipment_info": {
-                "name": "222",
-                "email": "as@as.as",
-                "phone_number_country_code": "MY",
+                "name": "Oren",
+                "email": "oren@gmail.com",
+                "phone_number_country_code": "+60",
                 "phone_number": "127491622",
-                "address": "Terminal 1 Departure - Changi Airport, 80 Airport Boulevard, Singapore, 819642"
+                "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
             }
         }
     ]
@@ -182,14 +182,14 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
 
 ```json
 { 
-    "coupon_codes":["a186f575-8481-4cf0-80e6-909871eb7e97"],
+    "coupon_codes":["dfa5109a-2f35-427e-8482-9b0ab65c323f"],
     "origin_country": "MY",
-    "ondemand_service_id": "EP-CS09",
-    "schedule_pickup_date": "2024-12-10",
-    "schedule_pickup_time": "17:35:15",
+    "ondemand_service_id": "EP-CS0F",
+    "schedule_pickup_date": "2024-11-30",
+    "schedule_pickup_time": "11:48:35",
     "time_zone": "Asia/Kuala_Lumpur",
     "metadata": {
-        "quotationId": "3114850556997669249"
+        "quotationId": "3419574389920977479"
     },
     "waypoint": [
         {
@@ -213,17 +213,17 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
                 }
             ],
             "shipment_info": {
-                "phone_number_country_code": "MY",
+                "phone_number_country_code": "+60",
                 "phone_number": "1278491622",
-                "address": "L1 Lobby, Suntec City Tower 1 & 2, 7 Temasek Boulevard, Singapore, 038987",
-                "name": "111",
-                "email": "as@as.as"
+                "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
+                "name": "Assis",
+                "email": "as@gmail.com"
             }
         },
         {
             "point": 1,
             "type": "dropoff",
-            "remark": "222",
+            "remark": "2",
             "coordinates": {
                 "latitude": 5.325513957,
                 "longitude": 100.2862732
@@ -241,11 +241,11 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
                 }
             ],
             "shipment_info": {
-                "name": "222",
-                "email": "as@as.as",
-                "phone_number_country_code": "MY",
+                "name": "Oren",
+                "email": "oren@gmail.com",
+                "phone_number_country_code": "+60",
                 "phone_number": "127491622",
-                "address": "Terminal 1 Departure - Changi Airport, 80 Airport Boulevard, Singapore, 819642"
+                "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
             }
         }
     ]
