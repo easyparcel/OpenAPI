@@ -77,7 +77,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 ```json
 {
     "status_code": 200,
-    "message": "0 requests success, 2 request error.",
+    "message": "0 requests success, 1 request error.",
     "data": [
         {
             "status": "error",
