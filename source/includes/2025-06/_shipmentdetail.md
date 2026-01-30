@@ -69,7 +69,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
             ],
             "courier": {
                 "courier_name": "Best Global Logistics Technology (Malaysia) Sdn. Bhd.",
-                "service_id": "EP-CS0DF",
+                "service_id": "EP-CS05M",
                 "courier_id": "EP-CR0DF",
                 "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/",
                 "service_types": "Best Express (Pick Up)"
@@ -77,7 +77,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
             "sender": {
                 "name": "John Doe",
                 "company_name": "ABC Corp",
-                "email": "test@easyparcel.com",
+                "email": "john@easyparcel.com",
                 "contact": "+601263042201",
                 "alternative_contact": null,
                 "subdivision_code": "MY-07",
@@ -90,7 +90,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
             "receiver": {
                 "name": "Jane Smith",
                 "company_name": "XYZ Inc",
-                "email": "test@easyparcel.com",
+                "email": "smith@easyparcel.com",
                 "contact": "+601163642281",
                 "alternative_contact": null,
                 "subdivision_code": "MY-07",
