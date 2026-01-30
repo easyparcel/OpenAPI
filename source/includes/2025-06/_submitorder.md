@@ -448,7 +448,7 @@ For failed requests, the response includes error details:
                         "point_code": null,
                         "name": "John Doe",
                         "phone_number_country_code": "+60",
-                        "phone_number": "1163642281",
+                        "phone_number": "1263042201",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "test@easyparcel.com",
