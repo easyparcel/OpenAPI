@@ -91,7 +91,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
                 "name": "Jane Smith",
                 "company_name": "XYZ Inc",
                 "email": "smith@easyparcel.com",
-                "contact": "+601163642281",
+                "contact": "+601169641281",
                 "alternative_contact": null,
                 "subdivision_code": "MY-07",
                 "postal_code": "14000",
