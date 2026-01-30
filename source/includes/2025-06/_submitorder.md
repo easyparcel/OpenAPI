@@ -463,7 +463,7 @@ For failed requests, the response includes error details:
                     "receiver": {
                         "point_code": null,
                         "name": "Jane Smith",
-                        "phone_number": "1163642281",
+                        "phone_number": "1169641281",
                         "phone_number_country_code": "+60",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
