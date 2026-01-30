@@ -20,7 +20,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 ```json
 {
-    "booking_id": "EOD-330"
+    "booking_id": "EOD-156"
 }
 ```
 
@@ -37,7 +37,7 @@ This guide explains how to cancel an on-demand shipment order.
     "data": [
         {
             "message": "Shipment cancelled successfully",
-            "booking_id": "EOD-318"
+            "booking_id": "EOD-156"
         }
     ]
 }
@@ -73,7 +73,7 @@ fetch("https://api.easyparcel.com/ondemand/cancel", {
         "Authorization": "Bearer YOUR_ACCESS_TOKEN"
     },
     body: JSON.stringify({
-        booking_id: "EOD-330"
+        booking_id: "EOD-156"
     })
 })
 .then(res => res.json())
@@ -85,7 +85,7 @@ fetch("https://api.easyparcel.com/ondemand/cancel", {
 <?php
 $ch = curl_init("https://api.easyparcel.com/ondemand/cancel");
 $data = [
-    "booking_id" => "EOD-330"
+    "booking_id" => "EOD-156"
 ];
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Content-Type: application/json',
@@ -108,7 +108,7 @@ headers = {
     "Authorization": "Bearer YOUR_ACCESS_TOKEN"
 }
 data = {
-    "booking_id": "EOD-330"
+    "booking_id": "EOD-156"
 }
 response = requests.post(url, json=data, headers=headers)
 print(response.json())
