@@ -44,7 +44,7 @@ You can query drop-off points by providing courier and location information to f
 
 ## Drop-off Points Response
 
-### 🏢 Drop-off Points API - Response Parameters
+### Drop-off Points API - Response Parameters
 
 ### Sample Response for Drop-off Points
 
