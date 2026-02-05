@@ -49,7 +49,7 @@ This will return a list of valid promo codes available to use for the shipment f
                 }
             ],
             "shipment_info": {
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1278491622",
                 "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
                 "name": "Assis",
@@ -79,7 +79,7 @@ This will return a list of valid promo codes available to use for the shipment f
             "shipment_info": {
                 "name": "Oren",
                 "email": "oren@gmail.com",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "127491622",
                 "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
             }
@@ -213,7 +213,7 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
                 }
             ],
             "shipment_info": {
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1278491622",
                 "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
                 "name": "Assis",
@@ -243,7 +243,7 @@ During the order submission process (e.g., `/shipment/submit` or `/ondemand/ship
             "shipment_info": {
                 "name": "Oren",
                 "email": "oren@gmail.com",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "127491622",
                 "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
             }
