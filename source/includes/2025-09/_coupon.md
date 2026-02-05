@@ -52,27 +52,27 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
             "sender": {
                 "name": "John Doe",
                 "company": "ABC Corp",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1126760658",
                 "email": "test@easyparcel.com",
                 "address_1": "123 Main St",
                 "address_2": "Apt 4B",
                 "postcode": "10150",
                 "city": "Lunas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "receiver": {
                 "name": "Jane Smith",
                 "company": "XYZ Inc",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1163042981",
                 "email": "test@easyparcel.com",
                 "address_1": "456 High St",
                 "address_2": "Floor 2",
                 "postcode": "11950",
                 "city": "Bayan Lepas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "feature": {
