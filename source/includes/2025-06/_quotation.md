@@ -143,6 +143,7 @@ The request uses nested objects for sender and receiver information.
 ```json
 {
     "status_code": 200,
+    "request_id": "1770282273531.932b8959-2d5e-4093-a149-86b7c5f8eaa5",
     "message": "3 requests success, 0 request error.",
     "data": [
         {
