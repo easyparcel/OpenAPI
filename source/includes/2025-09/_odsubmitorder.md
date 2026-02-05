@@ -43,7 +43,7 @@ This guide explains how to submit an on-demand shipment order with and without a
                 }
             ],
             "shipment_info": {
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "127849162",
                 "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
                 "name": "Asa",
@@ -73,7 +73,7 @@ This guide explains how to submit an on-demand shipment order with and without a
             "shipment_info": {
                 "name": "Oreo",
                 "email": "oreo@gmail.com",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "127491622",
                 "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
             }
@@ -170,7 +170,7 @@ This guide explains how to submit an on-demand shipment order with and without a
                         }
                     ],
                     "shipment_info": {
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "127849162",
                         "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
                         "name": "Asa",
@@ -200,7 +200,7 @@ This guide explains how to submit an on-demand shipment order with and without a
                     "shipment_info": {
                         "name": "Oreo",
                         "email": "oreo@gmail.com",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "127491622",
                         "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
                     }
