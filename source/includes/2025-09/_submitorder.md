@@ -47,7 +47,7 @@ This feature enables users to submit shipment orders. Users are required to fill
             "sender": {
                 "name": "John Doe",
                 "company": "ABC Corp",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1126760658",
                 "email": "test@easyparcel.com",
                 "address_1": "123 Main St",
@@ -60,7 +60,7 @@ This feature enables users to submit shipment orders. Users are required to fill
             "receiver": {
                 "name": "Jane Smith",
                 "company": "XYZ Inc",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1163042981",
                 "email": "test@easyparcel.com",
                 "address_1": "456 High St",
@@ -109,7 +109,7 @@ This feature enables users to submit shipment orders. Users are required to fill
             "sender": {
                 "name": "John Doe",
                 "company": "ABC Corp",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1126760658",
                 "email": "test@easyparcel.com",
                 "address_1": "123 Main St",
@@ -122,7 +122,7 @@ This feature enables users to submit shipment orders. Users are required to fill
             "receiver": {
                 "name": "Jane Smith",
                 "company": "XYZ Inc",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1163042981",
                 "email": "test@easyparcel.com",
                 "address_1": "456 High St",
@@ -172,9 +172,9 @@ This feature enables users to submit shipment orders. Users are required to fill
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
 | name                             | string    | Yes      | Sender's Name                            | -                                                         |
 | company                          | string    | No       | Sender's Company                         | -                                                         |
-| phone_number_country_code        | string    | Yes      | Country code of the Phone number         | Example: "+60"                                            |
+| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                                            |
 | phone_number                     | string    | Yes      | Sender's phone number                    | -                                                         |
-| alternate_phone_number_country_code | string | No       | Country code for alternate phone number  | -                                                         |
+| alternate_phone_number_country_code | string | No       | ISO Country code for alternate phone number  | -                                                         |
 | alternate_phone_number           | string    | No       | Sender's alternate phone number          | -                                                         |
 | email                            | string    | No       | Sender's email                           | -                                                         |
 | address_1                        | string    | Yes      | Sender's address                         | -                                                         |
@@ -191,7 +191,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
 | name                             | string    | Yes      | Receiver's Name                          | -                                                         |
 | company                          | string    | No       | Receiver's Company                       | -                                                         |
-| phone_number_country_code        | string    | Yes      | Country code of the Phone number         | Example: "+60"                                            |
+| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                                            |
 | phone_number                     | string    | Yes      | Receiver's phone number                  | -                                                         |
 | alternate_phone_number_country_code | string | No       | Country code for alternate phone number  | -                                                         |
 | alternate_phone_number           | string    | No       | Receiver's alternate phone number        | -                                                         |
@@ -285,7 +285,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "sender": {
                         "point_code": null,
                         "name": "John Doe",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "1126760658",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
@@ -302,7 +302,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "point_code": null,
                         "name": "Jane Smith",
                         "phone_number": "1163042981",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "test@easyparcel.com",
@@ -409,7 +409,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "sender": {
                         "point_code": null,
                         "name": "John Doe",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "1126760658",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
@@ -426,7 +426,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "point_code": null,
                         "name": "Jane Smith",
                         "phone_number": "1163042981",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "test@easyparcel.com",
@@ -637,7 +637,7 @@ For failed requests, the response includes error details:
                     "sender": {
                         "point_code": null,
                         "name": "John Doe",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "1126760658",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
@@ -654,7 +654,7 @@ For failed requests, the response includes error details:
                         "point_code": null,
                         "name": "Jane Smith",
                         "phone_number": "1163042981",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "test@easyparcel.com",
@@ -746,7 +746,7 @@ For failed requests, the response includes error details:
                     "sender": {
                         "point_code": null,
                         "name": "John Doe",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "1126760658",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
@@ -763,7 +763,7 @@ For failed requests, the response includes error details:
                         "point_code": null,
                         "name": "Jane Smith",
                         "phone_number": "1163642281",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "test@easyparcel.com",
