@@ -49,27 +49,27 @@ This feature enables users to submit shipment orders. Users are required to fill
             "sender": {
                 "name": "John Doe",
                 "company": "ABC Corp",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1263042201",
                 "email": "john@easyparcel.com",
                 "address_1": "123 Main St",
                 "address_2": "Apt 4B",
                 "postcode": "11900",
                 "city": "Lunas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "receiver": {
                 "name": "Jane Smith",
                 "company": "XYZ Inc",
-                "phone_number_country_code": "+60",
+                "phone_number_country_code": "MY",
                 "phone_number": "1169641281",
                 "email": "smith@easyparcel.com",
                 "address_1": "456 High St",
                 "address_2": "Floor 2",
                 "postcode": "14000",
                 "city": "Bayan Lepas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "feature": {
@@ -112,16 +112,16 @@ This feature enables users to submit shipment orders. Users are required to fill
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
 | name                             | string    | Yes      | Sender's Name                            | -                                                         |
 | company                          | string    | No       | Sender's Company                         | -                                                         |
-| phone_number_country_code        | string    | Yes      | Country code of the Phone number         | Example: "+60"                                            |
+| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                                            |
 | phone_number                     | string    | Yes      | Sender's phone number                    | -                                                         |
-| alternate_phone_number_country_code | string | No       | Country code for alternate phone number  | -                                                         |
+| alternate_phone_number_country_code | string | No       | ISO 3166-1 Alpha-2 Country code for alternate phone number  | -                                                         |
 | alternate_phone_number           | string    | No       | Sender's alternate phone number          | -                                                         |
 | email                            | string    | No       | Sender's email                           | -                                                         |
 | address_1                        | string    | Yes      | Sender's address                         | -                                                         |
 | address_2                        | string    | No       | Sender's address (continued)             | -                                                         |
 | postcode                         | string    | Yes      | Sender's postcode                        | -                                                         |
 | city                             | string    | Yes      | Sender's city/town                       | -                                                         |
-| subdivison_code                  | string    | No       | Sender's state/province code             | Example: "MY-07"                                          |
+| subdivision_code                  | string    | No       | Sender's state/province code             | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The origin country of the parcel         | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for sender location  | -                                                         |
 
@@ -131,16 +131,16 @@ This feature enables users to submit shipment orders. Users are required to fill
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
 | name                             | string    | Yes      | Receiver's Name                          | -                                                         |
 | company                          | string    | No       | Receiver's Company                       | -                                                         |
-| phone_number_country_code        | string    | Yes      | Country code of the Phone number         | Example: "+60"                                            |
+| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                                            |
 | phone_number                     | string    | Yes      | Receiver's phone number                  | -                                                         |
-| alternate_phone_number_country_code | string | No       | Country code for alternate phone number  | -                                                         |
+| alternate_phone_number_country_code | string | No       | ISO 3166-1 Alpha-2 Country code for alternate phone number  | -                                                         |
 | alternate_phone_number           | string    | No       | Receiver's alternate phone number        | -                                                         |
 | email                            | string    | No       | Receiver's email                         | -                                                         |
 | address_1                        | string    | Yes      | Receiver's address                       | -                                                         |
 | address_2                        | string    | No       | Receiver's address (continued)           | -                                                         |
 | postcode                         | string    | Yes      | Receiver's postcode                      | -                                                         |
 | city                             | string    | Yes      | Receiver's city/town                     | -                                                         |
-| subdivison_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
+| subdivision_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The destination country of the parcel    | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for receiver location| -                                                         |
 
@@ -228,7 +228,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                     "sender": {
                         "point_code": null,
                         "name": "John Doe",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "1263042201",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
@@ -245,7 +245,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "point_code": null,
                         "name": "Jane Smith",
                         "phone_number": "1169641281",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "smith@easyparcel.com",
@@ -447,7 +447,7 @@ For failed requests, the response includes error details:
                     "sender": {
                         "point_code": null,
                         "name": "John Doe",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "phone_number": "1263042201",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
@@ -464,7 +464,7 @@ For failed requests, the response includes error details:
                         "point_code": null,
                         "name": "Jane Smith",
                         "phone_number": "1169641281",
-                        "phone_number_country_code": "+60",
+                        "phone_number_country_code": "MY",
                         "alternate_phone_number": null,
                         "alternate_phone_number_country_code": null,
                         "email": "smith@easyparcel.com",
