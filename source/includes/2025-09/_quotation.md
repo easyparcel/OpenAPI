@@ -52,7 +52,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
     {
       "sender": {
         "postcode": "10150",
-        "subdivis_code": "MY-07",
+        "subdivision_code": "MY-07",
         "country": "MY"
       },
       "receiver": {
