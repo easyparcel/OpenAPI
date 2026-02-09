@@ -1,0 +1,246 @@
+<h1 id="shipment-details-2025-12">Shipment Details</h1>
+
+This endpoint allows users to retrieve detailed information about a specific shipment using its shipment number.
+
+<h2 id="http-request-detail-2025-12">HTTP Request (Detail)</h2>
+
+`POST https://api.easyparcel.com/open_api/2025-12/shipment/details`
+
+<h2 id="shipment-details-request-parameters-2025-12">Shipment Details Request</h2>
+
+| Parameter       | Type    | Required | Description                | Remarks                |
+|-----------------|---------|----------|----------------------------|------------------------|
+| shipment_number | string  | Yes      | Shipment number to query   | Format: ES-YYMM-XXXXX  |
+
+### Request Sample
+
+```json
+{
+  "shipment_number": "ES-2601-K8S32"
+}
+```
+
+
+<h2 id="shipment-details-return-parameters-2025-12">Shipment Details Response</h2>
+
+### Response Sample
+
+```json
+{
+    "status_code": 200,
+    "message": "success",
+    "data": [
+        {
+            "shipment_number": "ES-2601-K8S32",
+            "order_number": "EI-2601-U8FZW",
+            "shipment_details": {
+                "weight": 1.5,
+                "height": 5,
+                "length": 5,
+                "width": 5,
+                "shipment_status_code": 7,
+                "shipment_status": "Schedule In Arrangement",
+                "parcels_value": "100",
+                "insurance_label": "basic",
+                "awb_number": null,
+                "awb_url": null,
+                "tracking_url": null,
+                "coll_date": "2025-05-19 00:00:00"
+            },
+            "parcel_content": [
+                {
+                    "content": "Electronics",
+                    "weight": "0.50000",
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
+                    "value": 50,
+                    "currency_code": "MYR"
+                },
+                {
+                    "content": "Electronics 2",
+                    "weight": "0.50000",
+                    "height": 5,
+                    "length": 5,
+                    "width": 5,
+                    "value": 50,
+                    "currency_code": "MYR"
+                }
+            ],
+            "courier": {
+                "courier_name": "Aramex",
+                "service_id": "EP-CS0AP",
+                "courier_id": "EP-CR0AP",
+                "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/aramex.jpg",
+                "service_types": "Aramex (Pick Up)"
+            },
+            "sender": {
+                "name": "John Doe",
+                "company_name": "ABC Corp",
+                "email": "test@easyparcel.com",
+                "contact": "+601126760658",
+                "alternative_contact": null,
+                "subdivision_code": "MY-07",
+                "postal_code": "10150",
+                "country": "MY",
+                "address1": "123 Main St",
+                "address2": "Apt 4B",
+                "city": "Lunas"
+            },
+            "receiver": {
+                "name": "Jane Smith",
+                "company_name": "XYZ Inc",
+                "email": "test@easyparcel.com",
+                "contact": "+601163042981",
+                "alternative_contact": null,
+                "subdivision_code": "MY-07",
+                "postal_code": "11950",
+                "country": "MY",
+                "address1": "456 High St",
+                "address2": "Floor 2",
+                "city": "Bayan Lepas"
+            },
+            "pricing": {
+                "currency_code": "MYR",
+                "total_price": "0.00",
+                "shipment_price": "9.80",
+                "tax_price": "0.00",
+                "sms_notification": "0.00",
+                "email_notification": "0.00",
+                "whatsapp_notification": "0.00",
+                "awb_branding": null,
+                "insurance": null,
+                "ddp": null
+            }
+        }
+    ]
+}
+```
+
+### Main Response Structure
+
+| Parameter    | Type    | Description                           |
+|--------------|---------|---------------------------------------|
+| status_code  | int     | Status code of the response           |
+| message      | string  | Response message                      |
+| data         | array   | Array containing the shipment details |
+
+### Shipment Object
+
+| Parameter         | Type    | Description                            |
+|-------------------|---------|----------------------------------------|
+| shipment_number   | string  | Unique shipment identifier             |
+| order_number      | string  | Order number associated with shipment  |
+| shipment_details  | object  | Detailed shipment information          |
+| parcel_content    | array   | List of items in the shipment          |
+| courier           | object  | Courier service information            |
+| sender            | object  | Sender information                     |
+| receiver          | object  | Receiver information                   |
+| pricing           | object  | Detailed pricing breakdown             |
+
+### Shipment Details Object
+
+| Parameter           | Type      | Description                                 |
+|---------------------|-----------|---------------------------------------------|
+| weight              | double    | Total weight of the shipment                |
+| height              | double    | Height of the shipment                      |
+| length              | double    | Length of the shipment                      |
+| width               | double    | Width of the shipment                       |
+| shipment_status_code| int       | Status code of the shipment                 |
+| shipment_status     | string    | Human-readable shipment status              |
+| parcels_value       | string    | Total value of items in the shipment        |
+| insurance_label     | string    | Insurance information (null if not insured) |
+| awb_number          | string    | Airway bill number (null if not assigned)   |
+| tracking_url        | string    | URL to track the shipment                   |
+| awb_url             | string    | URL to access the airway bill               |
+| coll_date           | string    | Collection date and time                    |
+
+### Parcel Content Object
+
+| Parameter       | Type      | Description                       |
+|-----------------|-----------|-----------------------------------|
+| content         | string    | Description of the item           |
+| weight          | string    | Weight of the item                |
+| height          | int       | Height of the item                |
+| length          | int       | Length of the item                |
+| width           | int       | Width of the item                 |
+| value           | double    | Monetary value of the item        |
+| currency_code   | string    | Currency code for the item value  |
+
+### Courier Object
+
+| Parameter       | Type      | Description                            |
+|-----------------|-----------|----------------------------------------|
+| courier_name    | string    | Full name of the courier company       |
+| service_id      | string    | Unique identifier for the service      |
+| courier_id      | string    | Unique identifier for the courier      |
+| courier_logo    | string    | URL to the courier logo image          |
+| service_types   | string    | Type of courier service                |
+
+### Sender Object
+
+| Parameter           | Type      | Description                                |
+|---------------------|-----------|--------------------------------------------|
+| name                | string    | Name of the sender                         |
+| company_name        | string    | Company name of the sender                 |
+| email               | string    | Email address of the sender                |
+| contact             | string    | Contact number with country code           |
+| alternative_contact | string    | Alternative contact number (null if none)  |
+| subdivision_code    | string    | State/province code (null if not provided) |
+| postal_code         | string    | Postal/ZIP code                            |
+| country             | string    | Country code                               |
+| address1            | string    | First line of the sender's address         |
+| address2            | string    | Second line of the sender's address        |
+| city                | string    | City/town of the sender                    |
+
+### Receiver Object
+
+| Parameter           | Type      | Description                                 |
+|---------------------|-----------|---------------------------------------------|
+| name                | string    | Name of the receiver                        |
+| company_name        | string    | Company name of the receiver                |
+| email               | string    | Email address of the receiver               |
+| contact             | string    | Contact number with country code            |
+| alternative_contact | string    | Alternative contact number (null if none)   |
+| subdivision_code    | string    | State/province code (null if not provided)  |
+| postal_code         | string    | Postal/ZIP code                             |
+| country             | string    | Country code                                |
+| address1            | string    | First line of the receiver's address        |
+| address2            | string    | Second line of the receiver's address       |
+| city                | string    | City/town of the receiver                   |
+
+### Pricing Object
+
+| Parameter               | Type      | Description                                      |
+|-------------------------|-----------|--------------------------------------------------|
+| currency_code           | string    | Currency code for all pricing                    |
+| total_price             | string    | Total price of the shipment                      |
+| shipment_price          | string    | Base shipping cost                               |
+| tax_price               | string    | Tax amount                                       |
+| sms_notification        | string    | Price for SMS notification (null if not enabled) |
+| email_notification      | string    | Price for email notification (null if not enabled) |
+| whatsapp_notification   | string    | Price for WhatsApp notification (null if not enabled) |
+| awb_branding            | string    | Price for AWB branding (null if not enabled)     |
+| insurance               | string    | Price for insurance (null if not purchased)      |
+| ddp                     | string    | Delivered Duty Paid fee (null if not applicable) |
+
+
+### Error Response
+
+If the shipment is not found or the request is invalid, the API will return an error response:
+
+```json
+{
+    "status_code": 404,
+    "message": "No Order with shipment_number ES-2601-K8S3 found from this account",
+    "data": []
+}
+```
+
+<h2 id="usage-notes-detail-2025-12">Usage Notes (Detail)</h2>
+
+1. This endpoint retrieves comprehensive information about a single shipment.
+2. The shipment number must be in the format ES-YYMM-XXXXX (e.g., ES-2504-3WYYP).
+3. Values for various fields like awb_number, insurance_label, etc. may be null if they aren't applicable to the shipment's current status.
+4. Pricing details provide a complete breakdown of all charges associated with the shipment.
+5. The tracking_url can be used to provide tracking information to customers.

@@ -1,0 +1,258 @@
+<h1 id="od-coupon-2025-12">OnDemand Coupon</h1>
+
+The coupon feature allows customers to search for available promo codes and apply them during the shipment order submission. This helps users enjoy discounted rates or special benefits based on current promotional campaigns.
+
+
+<h2 id="http-request-od-coupon-list-2025-12">HTTP Request (OnDemand Coupon List)</h2>
+
+Customers can retrieve a list of available coupon codes using the following endpoint:
+
+`GET https://api.easyparcel.com/open_api/2025-12/ondemand/get_coupon_list`
+
+This will return a list of valid promo codes available to use for the shipment from the user’s account, based on factors such as delivery type, courier, or region.
+
+
+<h2 id="od-coupon-request-2025-12">OnDemand Coupon Request</h2>
+
+Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
+
+### Sample Coupon Listing Request:
+```json
+{
+    "origin_country": "MY",
+    "ondemand_service_id": "EP-CS0I",
+    "schedule_pickup_date": "2025-05-19",
+    "schedule_pickup_time": "11:48:35",
+    "time_zone": "Asia/Kuala_Lumpur",
+    "metadata": {
+        "quotationId": "3418817446335963964"
+    },
+    "waypoint": [
+        {
+            "point": 0,
+            "type": "pickup",
+            "remark": "1",
+            "coordinates": {
+                "latitude": 5.342720241204454,
+                "longitude": 100.28204988381822
+            },
+            "item": [
+                {
+                    "quantity": "1",
+                    "description": "1",
+                    "dimensions": {
+                        "height": "1",
+                        "width": "1",
+                        "length": "1",
+                        "weight": "1"
+                    }
+                }
+            ],
+            "shipment_info": {
+                "phone_number_country_code": "MY",
+                "phone_number": "127849162",
+                "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
+                "name": "asa",
+                "email": "as@gmail.com"
+            }
+        },
+        {
+            "point": 1,
+            "type": "dropoff",
+            "remark": "2",
+            "coordinates": {
+                "latitude": 5.325513957,
+                "longitude": 100.2862732
+            },
+            "item": [
+                {
+                    "quantity": "2",
+                    "description": "2",
+                    "dimensions": {
+                        "height": "2",
+                        "width": "2",
+                        "length": "2",
+                        "weight": "2"
+                    }
+                }
+            ],
+            "shipment_info": {
+                "name": "Oreo",
+                "email": "oreo@gmail.com",
+                "phone_number_country_code": "MY",
+                "phone_number": "127491622",
+                "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
+            }
+        }
+    ]
+}
+```
+
+<h2 id="od-coupon-list-response-2025-12">OnDemand Coupon Response</h2>
+
+### Sample Respone for the coupon listing
+
+```json
+{
+    "status_code": 200,
+    "message": "4 coupon(s) available",
+    "data": {
+        "account_id": 438368,
+        "currency_code": "MYR",
+        "coupons": [
+            {
+                "coupon_code": "77f39c22-427a-44f1-8bff-e4f3752ba165",
+                "title": "Test Coupon 1",
+                "description": "Test ",
+                "discounted_amount": "5.01",
+                "discount_rate": "20.00%",
+                "valid_from_date": "2025-05-12 18:04:33",
+                "valid_to_date": "2025-12-14 18:04:33"
+            },
+            {
+                "coupon_code": "10101f8b-1dc5-49e0-b4d3-09c5deb76513",
+                "title": "Test Coupon",
+                "description": "Test",
+                "discounted_amount": "2.34",
+                "discount_rate": "10.00%",
+                "valid_from_date": "2025-05-12 09:43:43",
+                "valid_to_date": "2025-07-13 09:43:43"
+            },
+            {
+                "coupon_code": "dfa5109a-2f35-427e-8482-9b0ab65c323f",
+                "title": "Test Coupon",
+                "description": "Test",
+                "discounted_amount": "2.10",
+                "discount_rate": "10.00%",
+                "valid_from_date": "2025-05-12 09:43:43",
+                "valid_to_date": "2025-07-13 09:43:43"
+            },
+            {
+                "coupon_code": "ad205174-d93d-4d6a-a5cc-1e989b0292eb",
+                "title": "Test Coupon",
+                "description": "Test",
+                "discounted_amount": "1.89",
+                "discount_rate": "10.00%",
+                "valid_from_date": "2025-05-12 09:43:43",
+                "valid_to_date": "2025-07-13 09:43:43"
+            }
+        ]
+    }
+}
+```
+
+### Coupon Listing API - Response Parameters
+
+#### Main Response
+
+| Parameter    | Type   | Description                                             |
+|--------------|--------|---------------------------------------------------------|
+| status_code  | int    | HTTP status code indicating success or failure          |
+| message      | string | Description of the response message                     |
+| data         | object | Container for coupon and account details                |
+
+#### `data` Object
+
+| Parameter       | Type    | Description                                           |
+|-----------------|---------|-------------------------------------------------------|
+| account_id      | int     | The EasyParcel account ID                             |
+| currency_code   | string  | Currency in which the discount is offered (e.g., MYR) |
+| coupons         | array   | List of coupon objects available for use              |
+
+#### `coupon` Object (Inside `coupons` array)
+
+| Parameter          | Type    | Description                                         |
+|--------------------|---------|-----------------------------------------------------|
+| coupon_code        | string  | Unique identifier for the coupon                    |
+| title              | string  | Title or name of the coupon campaign                |
+| description        | string  | Description or note about the coupon                |
+| discounted_amount  | string  | Discount value in currency terms                    |
+| discount_rate      | string  | Discount in percentage (e.g., "10.00%")             |
+| valid_from_date    | string  | Start datetime of coupon validity (UTC format)      |
+| valid_to_date      | string  | End datetime of coupon validity (UTC format)        |
+
+
+### Applying Coupons
+
+During the order submission process (e.g., `/shipment/submit` or `/ondemand/shipment/submit`), customers can apply a valid coupon code by including it in the request body.
+
+### To apply coupon just adding the coupon_codes parameters to the request
+
+<h2 id="sample-field-submit-orders-2025-12">Sample Field in Submit Orders: </h2>
+
+```json
+{ 
+    "coupon_codes":["ad205174-d93d-4d6a-a5cc-1e989b0292eb"],
+    "origin_country": "MY",
+    "ondemand_service_id": "EP-CS0I",
+    "schedule_pickup_date": "2025-05-19",
+    "schedule_pickup_time": "11:48:35",
+    "time_zone": "Asia/Kuala_Lumpur",
+    "metadata": {
+        "quotationId": "3418817446335963964"
+    },
+    "waypoint": [
+        {
+            "point": 0,
+            "type": "pickup",
+            "remark": "1",
+            "coordinates": {
+                "latitude": 5.342720241204454,
+                "longitude": 100.28204988381822
+            },
+            "item": [
+                {
+                    "quantity": "1",
+                    "description": "1",
+                    "dimensions": {
+                        "height": "1",
+                        "width": "1",
+                        "length": "1",
+                        "weight": "1"
+                    }
+                }
+            ],
+            "shipment_info": {
+                "phone_number_country_code": "MY",
+                "phone_number": "127849162",
+                "address": "Kawasan Mendaki Bukit Jambul, Lintang Bukit Jambul 1, Bukit Jambul Indah, Bayan Lepas, Mukim 13 Paya Terubong, 11900, Timur Laut, Pulau Pinang, Malaysia",
+                "name": "Asa",
+                "email": "as@gmail.com"
+            }
+        },
+        {
+            "point": 1,
+            "type": "dropoff",
+            "remark": "2",
+            "coordinates": {
+                "latitude": 5.325513957,
+                "longitude": 100.2862732
+            },
+            "item": [
+                {
+                    "quantity": "2",
+                    "description": "2",
+                    "dimensions": {
+                        "height": "2",
+                        "width": "2",
+                        "length": "2",
+                        "weight": "2"
+                    }
+                }
+            ],
+            "shipment_info": {
+                "name": "Oreo",
+                "email": "oreo@gmail.com",
+                "phone_number_country_code": "MY",
+                "phone_number": "127491622",
+                "address": "Suntech @ Penang Cybercity, 1, Lintang Mayang Pasir 3, Bandar Bayan Baru, Bayan Lepas, Mukim 12 Bayan Lepas, 11950, Barat Daya, Pulau Pinang, Malaysia"
+            }
+        }
+    ]
+}
+```
+
+If the coupon is valid and applicable, the discounted amount will be reflected in the final pricing.
+
+Please ensure the coupon is valid and not expired before applying. For additional validation feedback, refer to the response message from the submission endpoint.
+
