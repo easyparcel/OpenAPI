@@ -217,7 +217,7 @@ The request uses nested objects for sender and receiver information.
 }
 ```
 
-<h3 id="l3-quotation-response-2025-12">Quotation Response</h3>
+<h3 id="2-quotation-response-2025-12">Quotation Response</h3>
 
 Parameter | Type | Description
 --------- | ---- | -----------
