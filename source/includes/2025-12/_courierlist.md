@@ -77,7 +77,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 
 
-<h2 id="error-response-2025-12">Error Response</h2>
+<h2 id="error-response-courier-listing-2025-12">Error Response</h2>
 
 If an invalid country code is provided, the API will return an error response:
 
@@ -96,7 +96,7 @@ If an invalid country code is provided, the API will return an error response:
 | MY           | Malaysia       |
 | SG           | Singapore      |
 
-<h2 id="common-status-codes-2025-06">Common Status Codes</h2>
+<h2 id="common-status-codes-2025-12">Common Status Codes</h2>
 
 | Status Code | Description                                     |
 |-------------|-------------------------------------------------|
