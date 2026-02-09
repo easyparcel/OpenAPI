@@ -331,7 +331,7 @@ Batch format with `shipment` array containing multiple shipment objects:
 }
 ```
 
-### Quotation Request
+<h3 id="reference-quotation-request">Quotation Request</h3>
 
 Similar batch format with `shipment` array containing multiple quote requests:
 
@@ -341,12 +341,12 @@ Similar batch format with `shipment` array containing multiple quote requests:
     {
       "sender": {
         "postcode": "10150",
-        "subdivison_code": "MY-02",
+        "subdivision_code": "MY-02",
         "country": "MY"
       },
       "receiver": {
         "postcode": "018916",
-        "subdivison_code": "SG-04",
+        "subdivision_code": "SG-04",
         "country": "SG"
       },
       "parcel_value": 50,
