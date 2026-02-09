@@ -1,12 +1,13 @@
-# Cancel Shipments
+<h1 id="cancel-shipments-2025-12">Cancel Shipments</h1>
 
 This endpoint allows users to cancel one or more shipments. Users can provide a list of shipment numbers along with cancellation remarks.
 
-## HTTP Request (Cancel)
+<h2 id="http-request-cancel-2025-12">HTTP Request (Cancel)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-12/shipment/cancel`
 
-## Cancel Request Parameters
+<h2 id="cancel-request-parameter-2025-12">Cancel Request Parameters</h2>
+
 ### Request Sample
 
 ```json
@@ -37,7 +38,8 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 | shipment_number | string  | Yes      | Shipment number to cancel     | Format: ES-YYMM-XXXXX       |
 | remark          | string  | Yes      | Reason for cancellation       | -                           |
 
-## Cancel Return Parameters
+<h2 id="cancel-return-parameters-2025-12"> Cancel Return Parameters </h2>
+
 ### Successful Response Example
 
 ```json
@@ -48,12 +50,12 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
         {
             "status": "success",
             "message": "Shipment Cancelled",
-            "shipment_number": "ES-2601-K8S32"
+            "shipment_number": "ES-2602-4VW9E"
         },
         {
             "status": "success",
             "message": "Shipment Cancelled",
-            "shipment_number": "ES-2601-XV7UN"
+            "shipment_number": "ES-2602-VC4KV"
         }
     ]
 }
@@ -85,12 +87,12 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
         {
             "status": "error",
             "message": "Shipment Already Cancelled, Cannot Cancel Again",
-            "shipment_number": "ES-2601-K8S32"
+            "shipment_number": "ES-2602-4VW9E"
         },
         {
             "status": "error",
             "message": "The shipment cancellation period is over (7 days from collection date: 2025-05-19)",
-            "shipment_number": "ES-2601-QTG7S"
+            "shipment_number": "ES-2602-VC4KV"
         },
         {
             "status": "error",
@@ -100,8 +102,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
     ]
 }
 ```
-
-## Usage Notes (Cancellation)
+<h2 id="usage-notes-cancellation-2025-12"> Usage Notes (Cancellation)</h2>
 
 1. You can cancel multiple shipments in a single request by including them in the `cancel_list` array.
 2. Only shipments that have not yet been processed by the courier can be cancelled.

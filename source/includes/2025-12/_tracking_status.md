@@ -1,18 +1,19 @@
-# Tracking Status Feature
+<h1 id="tracking-status-feature-2025-12">Tracking Status Feature</h1>
 
 The tracking status feature allows customers to retrieve real-time tracking information for their shipments using AWB (Air Waybill) numbers. This helps users monitor the delivery progress and current status of their parcels.
 
-## Retrieving Tracking Status
+<h2 id="retrieving-tracking-status">Retrieving Tracking Status</h2>
 
 Customers can retrieve tracking information for one or multiple shipments using the following endpoint:
 
-## HTTP Request (Tracking Status)
+<h2 id="http-request-tracking-status-2025-12">HTTP Request (Tracking Status)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-12/shipment/tracking_status`
 
 This endpoint returns detailed tracking information including the current status, historical events, and location data for each requested shipment.
 
-## Tracking Status Request
+<h2 id="tracking-status-request-2025-12">Tracking Status Request</h2>
+
 ### Submitting AWB Numbers to Get Tracking Information
 
 You can submit multiple AWB numbers in a single request to retrieve tracking status for multiple shipments simultaneously.
@@ -21,7 +22,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 
 ```json
 {
-  "awb_numbers": ["7227014253232636", "960301021838937", "960301021837659"]
+  "awb_numbers": ["7028021894371796", "960301021838937", "960301021837659"]
 }
 ```
 
@@ -31,7 +32,8 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 |--------------|-------|----------|------------------------------------------------|
 | awb_numbers  | array | Yes      | List of AWB numbers to track (max 100 per request) |
 
-## Tracking Status Response
+<h2 id="tracking-status-response-2025-12">Tracking Status Response</h2>
+
 ### Tracking Status API - Response Parameters
 ### Sample Response for Tracking Status
 
@@ -43,9 +45,9 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
         "results": [
             {
                 "status": "success",
-                "awb_number": "7227014253232636",
-                "shipment_number": "ES-2601-XV7UN",
-                "order_number": "EI-2601-U8FZW",
+                "awb_number": "7028021894371796",
+                "shipment_number": "ES-2602-VC4KV",
+                "order_number": "EI-2602-4P2SK",
                 "latest_shipment_status_code": 7,
                 "latest_tracking_status": "Schedule In Arrangement",
                 "latest_event_date": "2026-01-23T04:28:52.494Z",
@@ -161,7 +163,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 
 ---
 
-## Shipment Status Codes
+<h2 id="shipment-status-codes-2025-12">Shipment Status Codes</h2>
 
 Below are common shipment status codes you may encounter:
 
@@ -182,7 +184,7 @@ Below are common shipment status codes you may encounter:
 *Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
 
 
-## Usage Notes (Tracking)
+<h2 id="usage-notes-tracking-2025-12">Usage Notes (Tracking)</h2>
 
 - **Batch Tracking**: You can track up to 100 AWB numbers in a single API request for efficiency.
 - **Real-time Updates**: Tracking information is updated in near real-time as events are recorded by the courier.
@@ -190,13 +192,13 @@ Below are common shipment status codes you may encounter:
 - **Error Handling**: If an AWB number is invalid or not found, the corresponding result object will have `status: "not_found"` with a descriptive message field.
 - **Date Format**: All dates and times are returned in `YYYY-MM-DD HH:MM:SS` format in UTC timezone.
 
-## Example Use Cases
+<h2 id="example-usa-cases-2025-12">Example Use Cases</h2>
 
 ### Single Shipment Tracking
 
 ```json
 {
-  "awb_numbers": ["7227014253232636"]
+  "awb_numbers": ["7028021894371796"]
 }
 ```
 
@@ -209,7 +211,7 @@ Below are common shipment status codes you may encounter:
 ```json
 {
   "awb_numbers": [
-  "7227014253232636",
+  "7028021894371796",
   "960301021838937",
   "960301021837659",
   "1234567890"]
@@ -237,7 +239,7 @@ If one or more AWB numbers are invalid:
         "results": [
             {
                 "status": "success",
-                "awb_number": "7227014253232636",
+                "awb_number": "7028021894371796",
                 "shipment_number": "ES-2601-XV7UN",
                 "order_number": "EI-2601-U8FZW",
                 "latest_shipment_status_code": 8,

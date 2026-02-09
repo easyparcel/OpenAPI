@@ -1,18 +1,18 @@
-# Insurance Quotation Feature
+<h1 id="insurance-quotation-feature-2025-12">Insurance Quotation Feature</h1>
 
 The insurance quotation feature allows customers to retrieve pricing information for shipment insurance coverage. This helps users understand the cost of insuring their valuable parcels and make informed decisions about protecting their shipments against loss or damage.
 
-## Retrieving Insurance Quotations
+<h2 id="retrieving-insurance-quotations-2025-12">Retrieving Insurance Quotations</h2>
 
 Customers can retrieve insurance pricing for one or multiple shipments using the following endpoint:
 
-## HTTP Request (Insurance Quotation)
+<h2 id="http-request-2025-12">HTTP Request (Insurance Quotation)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-12/insurance_quotations`
 
 This endpoint returns detailed insurance pricing based on shipment details including courier, origin, destination, weight, and item values.
 
-## Insurance Quotation Request
+<h2 id="insurance-quotation-request-2025-12">Insurance Quotation Request</h2>
 
 ### Submitting Shipment Details to Get Insurance Pricing
 
@@ -87,7 +87,7 @@ You can submit multiple shipment scenarios in a single request to retrieve insur
 | currency_code | string | Yes      | Currency code for the item value (e.g., "MYR") |
 
 
-## Insurance Quotation Response
+<h2 id="insurance-quotation-response-2025-12">Insurance Quotation Response</h2>
 
 ### Insurance Quotation API - Response Parameters
 
@@ -218,7 +218,7 @@ You can submit multiple shipment scenarios in a single request to retrieve insur
 
 
 
-## Understanding Insurance Pricing
+<h2 id="understanding-insurance-pricing-2025-12">Understanding Insurance Pricing</h2>
 
 Insurance charges are typically calculated based on:
 
@@ -233,7 +233,7 @@ For an item valued at MYR 3,000:
 - Percentage Rate: 2.5% (0.025)
 - Calculation: (3,000 × 0.025) + 0 = **MYR 75**
 
-<h2 id="insurance-usage-note">Usage Notes (Insurance Quotation)</h2>
+<h2 id="insurance-usage-note-2025-12">Usage Notes (Insurance Quotation)</h2>
 
 - **Batch Quotations**: You can request insurance quotes for multiple shipments in a single API call for efficiency.
 - **Currency Consistency**: Ensure the currency codes match across shipment items and quotation requests.
@@ -241,7 +241,7 @@ For an item valued at MYR 3,000:
 - **Minimum Values**: Items below the `min_item_value` threshold may not be eligible for insurance or may use different pricing.
 - **Multiple Options**: Some shipments may have multiple insurance service options available with different pricing structures.
 
-<h2 id="insurance-example-use-cases">Example Use Cases</h2>
+<h2 id="insurance-example-use-cases-2025-12">Example Use Cases</h2>
 
 ### Single Shipment Quotation
 
@@ -375,7 +375,7 @@ For an item valued at MYR 3,000:
 }
 ```
 
-## Applying Insurance to Shipments
+<h2 id="applying-insurance-to-shipments-2025-12">Applying Insurance to Shipments</h2>
 
 Once you receive an insurance quotation, you can apply the insurance to your shipment by including the `insurance_service_id` in your shipment submission request.
 
@@ -394,7 +394,7 @@ Once you receive an insurance quotation, you can apply the insurance to your shi
 ```
 
 
-<h2 id="insurance-error-handling">Error Handling</h2>
+<h2 id="insurance-error-handling-2025-12">Error Handling</h2>
 
 If a quotation request fails, the response will include an error status:
 

@@ -1,14 +1,14 @@
-# OnDemand Order Cancellation
+<h1 id="od-order-cancellation-2025-12">OnDemand Order Cancellation</h1>
 
 This guide explains how to cancel an on-demand shipment order.
 
-## Endpoint URL
+<h2 id="endpoint-url-2025-12">Endpoint URL</h2>
 
 `POST https://api.easyparcel.com/2025-12/ondemand/cancel`
 
 ---
 
-## OnDemand Cancel Request
+<h2 id="od-cancel-request-parameters-2025-12">OnDemand Cancel Request</h2>
 
 | Parameter                                                 | Type    | Required | Description                                    |
 | --------------------------------------------------------- | ------- | -------- | ---------------------------------------------- |
@@ -25,8 +25,7 @@ This guide explains how to cancel an on-demand shipment order.
 ```
 
 ---
-
-## OnDemand Cancel Response
+<h2 id="od-cancel-response-parameters-2025-12"> OnDemand Cancel Response</h2>
 
 ### Sample Response
 
@@ -61,7 +60,7 @@ This guide explains how to cancel an on-demand shipment order.
 ---
 
 
-<h2 id="odcancel-code-implementation-examples">Code Implementation Examples</h2>
+<h2 id="odcancel-code-implementation-examples-2025-12">Code Implementation Examples</h2>
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (Requests)
 
@@ -114,7 +113,7 @@ response = requests.post(url, json=data, headers=headers)
 print(response.json())
 ```
 
-## Best Practices for Ondemand Cancel Order
+<h2 id="od-cancel-order-best-practices-2025-12">Best Practices for OnDemand Cancel Order</h2>
 
 * **Always include a valid `booking_id`** when attempting to cancel an order.
 * **Ensure the order is eligible for cancellation** (i.e., not already picked up or completed).

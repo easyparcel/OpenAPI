@@ -1,12 +1,12 @@
-# Shipment Listing
+<h1 id="shipment-listing-2025-12">Shipment Listing</h1>
 
 This endpoint allows users to retrieve a list of shipments with optional filtering parameters. Results are sorted by the latest shipments first.
 
-## HTTP Request (Listing)
+<h2 id="http-request-listing-2025-12">HTTP Request (Listing)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-12/shipment/list`
 
-## Pagination
+<h2 id="pagination-2025-12">Pagination</h2>
 
 This API uses cursor-based pagination with the `before_shipment_number` parameter. To retrieve the next page of results:
 
@@ -40,7 +40,8 @@ Since results are sorted newest first, each subsequent request returns the next 
 | date_from               | date        | No       | Start date for filtering shipments         | Format: YYYY-MM-DD                          |
 | date_to                 | date        | No       | End date for filtering shipments           | Format: YYYY-MM-DD                          |
 
-## Returned Parameters
+<h2 id="shipment-listing-returned-parameters-2025-12">Returned Parameters</h2>
+
 ### Response Sample
 
 ```json
@@ -249,7 +250,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 | currency_code       | string    | Currency code for the price                |
 | price               | double    | Price of the shipment                      |
 
-## Common Status Codes
+<h2 id="common-status-codes-2025-12">Common Status Code</h2>
 
 | Status Code | Description                                          |
 |-------------|------------------------------------------------------|
@@ -259,7 +260,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 | 404         | Not found (no shipments matching the criteria)       |
 | 500         | Server error                                         |
 
-## Usage Notes (Listing)
+<h2 id="shipment-listing-usage-notes-2025-12">Usage Notes (Listing)</h2>
 
 1. For pagination, use the `before_shipment_number` parameter with the last shipment number from the previous request.
 2. Date filters (`date_from` and `date_to`) filter by shipment collection date.

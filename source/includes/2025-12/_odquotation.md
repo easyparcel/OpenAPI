@@ -1,15 +1,15 @@
-# OnDemand Quotation
+<h1 id="od-quotation-2025-12">OnDemand Quotation</h1>
 
-## OnDemand Quotation Overview
+<h2 id="od-quotation-overview-2025-12">OnDemand Quotation Overview</h2>
 
 This feature enables users to obtain on-demand shipment quotations from all courier companies available on the EasyParcel platform. Users need to provide sender and receiver addresses and waypoint information to retrieve shipment quotations. The response includes available courier services, transportation type, pricing details, and optional add-on features.
 
 
-## HTTP Request (OnDemand Quotation)
+<h2 id="http-request-od-quotation-2025-12">HTTP Request (OnDemand Quotation)</h2>
 
 `POST https://api.easyparcel.com/open_api/2025-12/ondemand/quotations`
 
-## OnDemand Quotation Request Parameters 
+<h2 id="od-quotation-request-parameters-2025-12">OnDemand Quotation Request Parameters</h2>
 
 ### Request Sample
 
@@ -52,8 +52,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 | waypoint\[\*].address               | string  | No       | Full address of the location       | -                  |
 | waypoint\[\*].type                  | string  | Yes      | Either `pickup` or `dropoff`       | -                  |
 
-
-## OnDemand Quotation Response Parameters
+<h2 id="response-parameters-od-quotation-2025-12">OnDemand Quotation Response Parameters</h2>
 
 
 ### Sample Response
@@ -315,7 +314,7 @@ Refer to the full JSON response you provided in your message for all details on 
 
 ---
 
-## Sample Error Response
+<h2 id="sample-error-response-2025-12">Sample Error Response</h2>
 
 ```json
 {
@@ -328,7 +327,7 @@ Refer to the full JSON response you provided in your message for all details on 
 ```
 
 
-## Code Implementation Examples
+<h2 id="code-implementation-od-quotation-2025-12">OnDemand Quotation Code Implementation Examples</h2>
 
 ### JavaScript (Fetch API) | PHP (cURL) | Python (requests)
 
@@ -407,7 +406,8 @@ print(response.json())
 ```
 
 
-## Best Practices for OnDemand Quotation
+
+<h2 id="best-practices-od-quotation-2025-12">Best Practices for OnDemand Quotation</h2>
 
 1. **Input Validation** – Validate all fields before API call.
 2. **Sorting Quotations** – Sort by total amount for better user experience.

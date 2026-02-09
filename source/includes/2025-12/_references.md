@@ -1,6 +1,6 @@
-# <span style="color: black;"> References </span>
+<h1 id="2025-12-reference"><span style="color: black;"> References</span></h1>
 
-## ISO 3166 
+#<h2 id="iso-3166-2025-12">ISO 3166</h2>
 <img width="234" height="215" alt="image" src="https://github.com/user-attachments/assets/e70e6c8d-1e1d-4987-9d7d-891f46586833" />
 
 At EasyParcel, we adhere to the ISO 3166 standard for the identification of states, provinces, and zones. For example, the code "MY-07" corresponds to the state of Penang in Malaysia.
@@ -8,7 +8,7 @@ At EasyParcel, we adhere to the ISO 3166 standard for the identification of stat
 ISO 3166 is a standard published by the International Organization for Standardization (ISO) that defines codes for the names of countries, dependent territories, special areas of geographical interest, and their principal subdivisions (e.g., provinces or states). The official name of the standard is Codes for the representation of names of countries and their subdivisions. make this sentences better
 </details>
 
-## Conutry Code
+<h2 id="country-code-2025-12">Country Code</h2>
 
 | Short Country Name | Full Country Name                     |
 |--------------------|----------------------------------------|
@@ -204,7 +204,7 @@ ISO 3166 is a standard published by the International Organization for Standardi
 | TC                 | TURKS AND CAICOS ISLANDS               |
 </details>
 
-## Add-On Feature: EasyParcel Tracking Notification
+<h2 id="2025-12-add-on-features">Add-On Feature: EasyParcel Tracking Notification</h2>
 
 Real-time parcel tracking has become essential in today’s fast-paced logistics environment. To improve user experience and enhance transparency, EasyParcel offers multiple tracking notification methods as add-on features for standard delivery services.
 
@@ -226,7 +226,7 @@ WhatsApp Tracking is a modern, interactive way to stay informed about parcel mov
 
 These tracking features are available for EasyParcel users across various supported countries. Please refer to your local EasyParcel platform for feature availability and pricing. You may also run the **Get Shipment Quotation** endpoint to retrieve pricing details for available tracking features. These tracking features can be activated through the **Submit Order** endpoint during order creation.
 
-## EasyParcel Coupon Feature
+<h2 id="easyparcel-coupon-feature-2025-12">EasyParcel Coupon Feature</h2>
 
 EasyParcel’s coupon feature offers customers a convenient way to enjoy special discounts, seasonal promotions, and loyalty rewards. These promo codes help users save on shipping costs and encourage engagement through exclusive campaign offers.
 
@@ -247,7 +247,7 @@ To enjoy a discount, users simply need to enter the valid coupon code during ord
 
 Please note that coupon availability and eligibility may vary by country, courier, and shipping method. Always check the terms associated with each coupon before use.
 
-## Cancel Order
+<h2 id="reference-calcel-order-2025-12">Cancel Order</h2>
 
 This section introduces the cancellation features available for both standard and ondemand shipments on the EasyParcel platform.
 
@@ -269,7 +269,7 @@ This section introduces the cancellation features available for both standard an
 * **`/ondemand/shipment/cancel`** – for ondemand shipment cancellations.
 
 
-## EasyParcel API Standards
+<h2 id="easyparcel-api-standards-2025-12">EasyParcel API Standards</h2>
 
 This document outlines the standard formats for requests and responses when working with the EasyParcel API.
 
@@ -373,8 +373,7 @@ Simple parameter format for filtering and pagination:
   "date_to": "2025-04-23"
 }
 ```
-
-## Response Format Standards
+<h2 id="reference-response-format-standards-2025-12">Response Format Standards</h2>
 
 ### General Guidelines
 
@@ -487,7 +486,7 @@ Simple parameter format for filtering and pagination:
 }
 ```
 
-## Common Field Types
+<h2 id="common-field-types-2025-12">Common Field Types</h2>
 
 | Field Type | Format | Example |
 |------------|--------|---------|
@@ -501,7 +500,7 @@ Simple parameter format for filtering and pagination:
 | Phone Code | With "+" prefix | +60 |
 | Boolean | true/false | true |
 
-## Best Practices
+<h2 id="reference-best-practice-2025-12">Best Practices</h2>
 
 1. **Validate Input**: Always validate request parameters against the API documentation before submission
 2. **Check Status Codes**: Always check the status_code in the response
@@ -510,23 +509,23 @@ Simple parameter format for filtering and pagination:
 5. **Pagination**: For list endpoints, use the provided pagination mechanisms with `limit` and `before_shipment_number`
 6. **Date Ranges**: When using date ranges, ensure `date_from` is earlier than `date_to`
 7. **Field Lengths**: Respect the maximum field lengths specified in the API documentation
-
-## Notes on API Versioning
+8. 
+<h2 id="reference-notes-api-versioning-2025-12">Notes on API Versioning</h2>
 
 The API version is included in the URL path: `/2025-12/`
 
 Always use the appropriate version for your implementation to ensure compatibility.
 
 
-## EasyParcel API Error Handling Guide
+<h2 id="reference-easyparcel-api-error-handling-guide-2025-12">EasyParcel API Error Handling Guide</h2>
 
 This document outlines the common error patterns and recommended handling strategies when working with the EasyParcel API.
 
-## Error Response Patterns
+<h2 id="reference-error-response-patterns-2025-12">Error Response Patterns</h2>
 
 The EasyParcel API returns specific error formats depending on the type of error encountered. Understanding these patterns will help you implement proper error handling in your integration.
 
-## Authentication Errors
+<h2 id="reference-authentication-errors-2025-12">Authentication Errors</h2>
 
 When authentication fails, you'll receive a response in this format:
 
@@ -550,7 +549,7 @@ When authentication fails, you'll receive a response in this format:
 | missing_token    | No Oauth 2.0 access token was provided in the request              | Ensure Oauth 2.0 access token is included in the request header    |
 | insufficient_scope| The Oauth 2.0 access token doesn't have permission for this action | Request appropriate permissions for your Oauth 2.0 access token    |
 
-## Validation Errors
+<h2 id="reference-validation-errors-2025-12">Validation Errors</h2>
 
 ### Single Resource Validation
 
@@ -644,7 +643,7 @@ For batch operations, the API may return a mix of successful and failed operatio
 }
 ```
 
-## Quotation Errors
+<h2 id="reference-quotation-errors-2025-12">Quotation Errors</h2>
 
 Quotation endpoints also follow the batch processing pattern, where some items may succeed while others fail:
 
@@ -676,7 +675,7 @@ Quotation endpoints also follow the batch processing pattern, where some items m
 }
 ```
 
-## Common Error Messages
+<h2 id="reference-error-messages-2025-12">Common Error Messages</h2>
 
 Here are some common error messages you may encounter and how to resolve them:
 
@@ -701,7 +700,7 @@ Here are some common error messages you may encounter and how to resolve them:
 | "Weight exceeds service limits"                | Parcel exceeds courier weight restrictions  | Choose a different service or reduce parcel weight    |
 | "Service not available for origin/destination" | Route not serviced by selected courier      | Choose a different courier service                    |
 
-## Error Handling Best Practices
+<h2 id="reference-error-handling-best-practice-2025-06">Error Handling Best Practices</h2>
 
 ### 1. Check Status Code and Message
 
@@ -766,7 +765,7 @@ function handleBatchResponse(response) {
 }
 ```
 
-## Authentication Error Recovery
+<h2 id="reference-authentication-error-recovery-2025-12">Authentication Error Recovery</h2>
 
 If you encounter authentication errors:
 
@@ -776,7 +775,7 @@ If you encounter authentication errors:
 4. Ensure your system securely stores the Oauth 2.0 access token
 5. Implement automatic token refresh if supported
 
-## Common HTTP Status Codes
+<h2 id="reference-common-http-status-codes-2025-12">Common HTTP Status Codes</h2>
 
 | Status Code | Description                 | Handling Strategy                                    |
 |-------------|-----------------------------|------------------------------------------------------|
@@ -788,7 +787,7 @@ If you encounter authentication errors:
 | 429         | Too Many Requests           | Implement rate limiting and backoff strategy         |
 | 500         | Server Error                | Retry with exponential backoff                       |
 
-## Troubleshooting Guide
+<h2 id="reference-troubleshooting-guide-2025-12">Troubleshooting Guide</h2>
 
 ### Oauth 2.0 access token Issues
 - Ensure Oauth 2.0 access token is not expired
@@ -810,7 +809,7 @@ If you encounter authentication errors:
 - Check if the shipment number exists and belongs to your account
 - Ensure operations are performed within allowed timeframes (e.g., cancellation window)
 
-## Contact Support
+<h2 id="reference-contact-support-2025-12">Contact Support</h2>
 
 If you encounter persistent errors that cannot be resolved through this guide, contact EasyParcel support with the following information:
 
@@ -821,7 +820,7 @@ If you encounter persistent errors that cannot be resolved through this guide, c
 5. Steps taken to troubleshoot the issue
 
 
-## Pagination Guide for EasyParcel API
+<h2 id="reference-pagination-guide-easypatcel-api-2025-12">Pagination Guide for EasyParcel API</h2>
 
 This document outlines the pagination mechanism used in the EasyParcel API for endpoints that return multiple records, such as shipment listings and on-demand service listings.
 
@@ -879,7 +878,7 @@ For the next batch of records, include the `before_shipment_number` from the las
 }
 ```
 
-## Implementation Guide
+<h2 id="reference-implementation-guide-2025-06">Implementation Guide</h2>
 
 ### Client-Side Pagination Logic
 
@@ -951,7 +950,7 @@ async function loadMoreShipments() {
 }
 ```
 
-## Pagination for On-Demand Listings
+<h2 id="reference-pagination-od-listing-2025-12">Pagination for On-demand Listings</h2>
 
 The on-demand listing endpoint (`/open_api/2025-12/ondemand/list`) follows the same pagination pattern as shipment listings, but uses `before_booking_number` instead of `before_shipment_number`:
 
@@ -965,7 +964,7 @@ The on-demand listing endpoint (`/open_api/2025-12/ondemand/list`) follows the s
 }
 ```
 
-## Best Practices
+<h2 id="reference-best-practices-2025-12">Best Practices</h2>
 
 1. **Default Limit**: If not specified, the API uses a default limit of 10 records per request
 2. **Maximum Limit**: The maximum limit is 250 records per request
@@ -974,7 +973,7 @@ The on-demand listing endpoint (`/open_api/2025-12/ondemand/list`) follows the s
 5. **Cursor Storage**: Always store the last cursor for error recovery
 6. **Empty Results**: If a request returns empty results, you've reached the end of the dataset
 
-## Common Issues and Solutions
+<h2 id="reference-common-issues-solutions-2025-12">Common Issues and Solutions</h2>
 
 | Issue                                   | Solution                                            |
 |-----------------------------------------|-----------------------------------------------------|
@@ -983,14 +982,14 @@ The on-demand listing endpoint (`/open_api/2025-12/ondemand/list`) follows the s
 | Need to restart pagination from beginning | Remove the before_shipment_number parameter       |
 | Results not matching expected criteria  | Review filter parameters for correct formatting     |
 
-## Notes on Resource Usage
+<h2 id="notes-resource-usage-2025-12">Notes on Resource Usage</h2>
 
 - Using appropriate limit values and filters helps reduce API calls
 - Retrieving all records in smaller batches is more reliable than requesting large batches
 - Consider implementing caching for frequently accessed records
 
 
-## Switching to Live
+<h2 id="reference-switching-live-2025-12">Switching to Live</h2>
 If you've completed testing in the DEMO/Sandbox environment and would like to switch to the live environment, please follow the steps below:
 
 1. Run the "Get New Access Token" flow.

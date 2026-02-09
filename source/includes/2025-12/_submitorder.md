@@ -1,12 +1,13 @@
-# Submit Orders
+<h1 id="submit-orders-2025-12">Submit Orders</h1>
 
 This feature enables users to submit shipment orders. Users are required to fill in the necessary fields to access the shipping service.
 
-## HTTP Request (Submit)
+<h2 id="http-request-submit-2025-12">HTTP Request (Submit)</h2>
 
 `POST https://api.easyparcel.com/shipment/submit_orders`
 
-## Submit Order Request
+<h2 id="submit-order-request-2025-12">Submit Order Request</h2>
+
 ### Request Sample
 
 ```json
@@ -16,6 +17,7 @@ This feature enables users to submit shipment orders. Users are required to fill
     ],
     "shipment": [
         {
+            "reference": "order 1190",
             "service_id": "EP-CS096",
             "collection_date": "2025-05-19",
             "weight": 1.5,
@@ -78,6 +80,7 @@ This feature enables users to submit shipment orders. Users are required to fill
             }
         },
         {
+            "reference": "order 1191",
             "service_id": "EP-CS09C",
             "collection_date": "2025-05-19",
             "weight": 1.5,
@@ -153,6 +156,8 @@ This feature enables users to submit shipment orders. Users are required to fill
 
 | Parameter           | Type        | Required | Description                          | Remarks                                |
 |---------------------|-------------|----------|--------------------------------------|----------------------------------------|
+| reference           | string      | No       | Reference of the parcel              |
+-                                      |     
 | service_id          | string(10)  | Yes      | Service Identification number        | -                                      |
 | collection_date     | date        | Yes      | Date to collect the parcel           | Format: YYYY-MM-DD                     |
 | customer_reference_no | string    | No       | Customer reference number            | -                                      |
@@ -240,7 +245,8 @@ This feature enables users to submit shipment orders. Users are required to fill
 | value           | double(8,2) | Yes      | Value of the item                        | -                             |
 | quantity        | int         | Yes      | The item quantity                        | -                             |
 
-## Sumbit Order Response
+<h2 id="submit-order-response-2025-12">Sumbit Order Response</h2>
+
 ### Successful Response Example
 ```json
 {
@@ -249,25 +255,30 @@ This feature enables users to submit shipment orders. Users are required to fill
     "data": [
         {
             "order_details": {
-                "order_number": "EI-2601-U8FZW",
+                "order_number": "EI-2602-4P2SK",
                 "account_id": 8583757
             },
             "pricing_breakdown": {
                 "currency_code": "MYR",
-                "total_order_amount": "23.52",
-                "total_paid_amount": "23.52",
+                "total_order_amount": "23.67",
+                "total_paid_amount": "23.67",
                 "total_tax_amount": "0.00",
                 "coupon_redeemed": "0.00"
             },
             "shipments": [
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-K8S32",
+                    "shipment_number": "ES-2602-4VW9E",
                     "courier_service": null,
                     "courier": "Aramex",
                     "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/Aramex.jpg",
                     "awb_number": null,
-                    "awb_url": null,
+                    "awb_url": "",
+                    "awb_urls_by_format": {
+                        "A4": "",
+                        "A5": "",
+                        "A6": ""
+                    },
                     "tracking_url": null,
                     "weight": 1.5,
                     "height": 5,
@@ -356,9 +367,10 @@ This feature enables users to submit shipment orders. Users are required to fill
                                 "tax_amount": "0.00"
                             }
                         ],
+                        "privacy_masking": null,
                         "shipment_tracking_whatsapp": {
                             "message": "Hey there! Your order from John Doe is ready to be collected for delivery soon!\n\nTracking no: null",
-                            "phone_country_code": "+60",
+                            "phone_country_code": "MY",
                             "phone_number": "1163042981",
                             "currency_code": "MYR",
                             "total_amount": "0.00",
@@ -367,7 +379,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                         },
                         "shipment_tracking_sms": {
                             "message": "Your order from John Doe is ready & trackable once courier scans in. Track at EasyParcel with [Placeholder Trackin..] -Powered by EasyParcel",
-                            "phone_country_code": "+60",
+                            "phone_country_code": "MY",
                             "phone_number": "1163042981",
                             "currency_code": "MYR",
                             "total_amount": "0.00",
@@ -382,27 +394,33 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "tax_amount": "0.00"
                         },
                         "shipment_awb_branding": null
-                    }
+                    },
+                    "reference": "order 1190"
                 },
                 {
                     "status": "success",
-                    "shipment_number": "ES-2601-XV7UN",
+                    "shipment_number": "ES-2602-VC4KV",
                     "courier_service": null,
                     "courier": "DHL eCommerce",
                     "courier_logo": "https://s3-ap-southeast-1.amazonaws.com/easyparcel-static/Public/source/general/img/couriers/DHLeC.jpg",
-                    "awb_number": "7227014253232636",
-                    "awb_url": "https://app.easyparcel.com/portal/v2/public/label/ES-2601-XV7UN/3941082?format=A4",
-                    "tracking_url": "https://app.easyparcel.com/tools/easytrack/details?courier=DHLeC&awb=7227014253232636",
+                    "awb_number": "7028021894371796",
+                    "awb_url": "https://app.easyparcel.com/portal/v2/public/label/ES-2602-VC4KV/3972206?format=A4",
+                    "awb_urls_by_format": {
+                        "A4": "https://app.easyparcel.com/portal/v2/public/label/ES-2602-VC4KV/3972206?format=A4",
+                        "A5": "",
+                        "A6": "https://app.easyparcel.com/portal/v2/public/label/ES-2602-VC4KV/3972206?format=A6"
+                    },
+                    "tracking_url": "https://app.easyparcel.com/tools/easytrack/details?courier=DHLeC&awb=7028021894371796",
                     "weight": 4,
                     "height": 30,
                     "length": 40,
                     "width": 20,
                     "pricing_breakdown": {
                         "currency_code": "MYR",
-                        "total_paid_amount": "13.27",
+                        "total_paid_amount": "13.42",
                         "shipment_price": "13.02",
                         "shipment_tax_amount": "0.00",
-                        "total_features_price": "0.25",
+                        "total_features_price": "0.40",
                         "total_features_tax_amount": "0.00",
                         "coupon_redeemed": "0.00"
                     },
@@ -480,9 +498,27 @@ This feature enables users to submit shipment orders. Users are required to fill
                                 "tax_amount": "0.00"
                             }
                         ],
+                        "privacy_masking": [
+                            {
+                                "masking_section": "Sender Details",
+                                "currency_code": "MYR",
+                                "charge_amount": "0.07",
+                                "bundle_discounted_amount": "0.03",
+                                "tax_amount": "0.00",
+                                "total_charge_amount": "0.00"
+                            },
+                            {
+                                "masking_section": "Parcel Details",
+                                "currency_code": "MYR",
+                                "charge_amount": "0.08",
+                                "bundle_discounted_amount": "0.02",
+                                "tax_amount": "0.00",
+                                "total_charge_amount": "0.00"
+                            }
+                        ],
                         "shipment_tracking_whatsapp": {
                             "message": "Hey there! Your order from [Sender's Name] is ready to be collected for delivery soon!\n\nTracking no: [Tracking No.]",
-                            "phone_country_code": "+60",
+                            "phone_country_code": "MY",
                             "phone_number": "1163042981",
                             "currency_code": "MYR",
                             "total_amount": "0.00",
@@ -498,7 +534,8 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "tax_amount": "0.00"
                         },
                         "shipment_awb_branding": null
-                    }
+                    },
+                    "reference": "order 1191"
                 }
             ]
         }
@@ -542,12 +579,14 @@ This feature enables users to submit shipment orders. Users are required to fill
 | Parameter           | Type      | Description                               |
 |---------------------|-----------|-------------------------------------------|
 | status              | string    | Status of the shipment request            |
+| referencce          | string    | Reference of ther parcel                  |
 | shipment_number     | string    | The unique number of the shipment         |
 | courier_service     | string    | Service type selected for shipment        |
 | courier             | string    | Name of the courier service               |
 | collection_date     | string    | Collection date of the parcel             |
 | awb_url             | string    | URL to access the airway bill             |
 | awb_number          | string    | The airway bill number                    |
+| awb_urls_by_format  | object    | AWB label URLs by format (A4, A5, A6)
 | tracking_url        | string    | URL to track the parcel                   |
 | weight              | double    | Weight of the shipment                    |
 | height              | double    | Height of the shipment                    |
@@ -579,7 +618,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | shipment_tracking_sms  | object    | SMS tracking details (if enabled)      |
 | shipment_tracking_email| object    | Email tracking details (if enabled)    |
 
-## Error Response
+<h2 id="error-response-2025-12">Error Response</h2>
 
 For failed requests, the response includes error details:
 

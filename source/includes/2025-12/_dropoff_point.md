@@ -1,9 +1,9 @@
-# Courier Drop-off Points Feature
+<h1 id="courier-drop-off-points-feature-2025-12">Courier Drop-off Points Feature</h1>
 
 The courier drop-off points feature allows customers to retrieve a list of available drop-off locations where they can physically bring their parcels for shipment. This helps users find convenient locations near them to drop off their packages instead of scheduling a pickup.
 
 
-## Retrieving Drop-off Points
+<h2 id="retrieving-drop-off-points-2025-12">Retrieving Drop-off Points</h2>
 
 Customers can retrieve a list of available drop-off locations for a specific courier using the following endpoint:
 
@@ -14,7 +14,7 @@ Customers can retrieve a list of available drop-off locations for a specific cou
 This endpoint returns detailed information about drop-off locations including addresses, operating hours, and contact information based on the specified courier and location parameters.
 
 
-## Drop-off Points Request
+<h2 id="drop-off-points-2025-12">Drop-off Points Request</h2>
 
 ### Submitting Location Details to Get Available Drop-off Points
 
@@ -42,7 +42,7 @@ You can query drop-off points by providing courier and location information to f
 | city         | string | Yes      | City name for the search location                              |
 | state_code   | string | Yes      | State/subdivision code (ISO 3166-2 format, e.g., "MY-02")     |
 
-## Drop-off Points Response
+<h2 id="drop-off-points-response-2025-12">Drop-off Points Response</h2>
 
 ### Drop-off Points API - Response Parameters
 
@@ -150,7 +150,7 @@ You can query drop-off points by providing courier and location information to f
 | end_time     | string | Closing time in HH:MM:SS format (24-hour)                        |
 
 
-## Understanding Operating Hours
+<h2 id="understanding-operating-hours-2025-12">Understanding Operating Hours</h2>
 
 Drop-off points have specific operating hours when customers can drop off their parcels:
 
@@ -166,7 +166,7 @@ end_time: "13:00:00" → Closes at 1:00 PM
 
 **Important**: Ensure customers arrive before the closing time to successfully drop off their parcels. Some locations may have limited operating hours (e.g., morning only).
 
-<h2 id="dropoffpoint-usage-notes">Usage Notes (Courier List)</h2>
+<h2 id="dropoffpoint-usage-notes-2025-12">Usage Notes (Courier List)</h2>
 
 - **Location-based Search**: Results are typically sorted by proximity to the specified postcode and city.
 - **Courier-specific**: Each courier may have different drop-off locations. Always query with the specific courier ID you're using.
@@ -175,7 +175,7 @@ end_time: "13:00:00" → Closes at 1:00 PM
 - **Phone Contact**: The `phone_number` can be used to verify operating hours or get additional information about the location.
 
 
-<h2 id="dropoffpoint-example-use-case">Example Use Cases</h2>
+<h2 id="dropoffpoint-example-use-case-2025-12">Example Use Cases</h2>
 
 ### Finding Drop-off Points in Kuala Lumpur
 
@@ -230,7 +230,7 @@ end_time: "13:00:00" → Closes at 1:00 PM
 ```
 
 
-## Displaying Drop-off Points to Customers
+<h2 id="displaying-drop-off-points-to-customers-2025-12">Displaying Drop-off Points to Customers</h2>
 
 When presenting drop-off points to your users, consider displaying:
 
@@ -253,7 +253,7 @@ When presenting drop-off points to your users, consider displaying:
 ```
 
 
-## Applying Drop-off Points to Shipments
+<h2 id="applying-drop-off-points-to-shipments-2025-12">Applying Drop-off Points to Shipments</h2>
 
 Once a customer selects a drop-off point, you can include the `point_id` in your shipment submission request to indicate the parcel will be dropped off at that location instead of being picked up.
 
@@ -275,7 +275,7 @@ Once a customer selects a drop-off point, you can include the `point_id` in your
 *Note: Specific implementation may vary based on the shipment submission endpoint requirements.*
 
 
-<h2 id="dropoffpoint-error-handling">Error Handling</h2>
+<h2 id="dropoffpoint-error-handling-2025-12">Error Handling</h2>
 
 ### No Drop-off Points Available
 
@@ -305,7 +305,7 @@ If the courier ID is invalid or doesn't service the specified location:
 }
 ```
 
-## State Codes Reference (Malaysia)
+<h2 id="state-codes-reference-malaysia-2025-12">State Codes Reference (Malaysia)</h2>
 
 Common Malaysian state codes (ISO 3166-2):
 
@@ -329,7 +329,7 @@ Common Malaysian state codes (ISO 3166-2):
 | MY-16      | Putrajaya               |
 
 
-## Best Practices for Courier List
+<h2 id="best-practices-for-courier-list-2025-12">Best Practices for Courier List</h2>
 
 1. **Cache Results**: Consider caching drop-off point data for a reasonable period (e.g., 24 hours) as locations rarely change frequently.
 2. **Sort by Distance**: If possible, calculate distance from user's location and sort results accordingly for better UX.

@@ -1,12 +1,12 @@
-# Couriers List 
+<h1 id="courier-list-2025-12">Couriers List</h1>
 
 This endpoint allows users to retrieve a list of available courier services for a specific country.
 
-## HTTP Request (Courier List)
+<h2 id="http-request-courier-list-2025-12">HTTP Request (Courier List)</h2>
 
 `GET https://api.easyparcel.com/open_api/2025-12/courier/list`
 
-## Courier List Request
+<h2 id="courier-list-requested-parameters-2025-12">Courier List Request</h2>
 
 ### Request Sample
 
@@ -21,7 +21,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 |--------------|---------|----------|-----------------------------|-------------------------|
 | country_code | string  | Yes      | Country code to filter by   | Example: "MY" for Malaysia |
 
-## Courier List Response
+<h2 id="returned-courier-liest-parameters-2025-06">Courier List Response</h2>
 ### Response Sample
 
 ```json
@@ -77,7 +77,7 @@ This endpoint allows users to retrieve a list of available courier services for 
 
 
 
-<h2 id="courierlist-error-response">Error Response</h2>
+<h2 id="error-response-2025-12">Error Response</h2>
 
 If an invalid country code is provided, the API will return an error response:
 
@@ -89,14 +89,14 @@ If an invalid country code is provided, the API will return an error response:
 }
 ```
 
-## Supported Country Codes
+<h2 id="supported-country-codes-2025-12">Supported Country Codes</h2>
 
 | Country Code | Country Name   |
 |--------------|----------------|
 | MY           | Malaysia       |
 | SG           | Singapore      |
 
-<h2 id="courierlist-common-status-code">Common Status Code</h2>
+<h2 id="common-status-codes-2025-06">Common Status Codes</h2>
 
 | Status Code | Description                                     |
 |-------------|-------------------------------------------------|
@@ -105,7 +105,7 @@ If an invalid country code is provided, the API will return an error response:
 | 401         | Unauthorized (invalid authentication)|
 | 500         | Server error                                    |
 
-<h2 id="courierlist-usage-notes">Usage Notes (Courier List)</h2>
+<h2 id="usage-notes-2025-06">Usage Notes (Courier List)</h2>
 
 1. The `courier_id` value returned by this endpoint is used in other API calls, such as when submitting a shipment order.
 2. Courier availability may vary by country. Use the appropriate country code to get relevant results.
