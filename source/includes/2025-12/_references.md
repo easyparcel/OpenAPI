@@ -1,6 +1,6 @@
 <h1 id="2025-12-reference"><span style="color: black;"> References</span></h1>
 
-#<h2 id="iso-3166-2025-12">ISO 3166</h2>
+<h2 id="iso-3166-2025-12">ISO 3166</h2>
 <img width="234" height="215" alt="image" src="https://github.com/user-attachments/assets/e70e6c8d-1e1d-4987-9d7d-891f46586833" />
 
 At EasyParcel, we adhere to the ISO 3166 standard for the identification of states, provinces, and zones. For example, the code "MY-07" corresponds to the state of Penang in Malaysia.
