@@ -56,7 +56,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "address_2": "Apt 4B",
                 "postcode": "10150",
                 "city": "Lunas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "receiver": {
@@ -69,7 +69,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "address_2": "Floor 2",
                 "postcode": "11950",
                 "city": "Bayan Lepas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "feature": {
@@ -119,7 +119,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "address_2": "Apt 4B",
                 "postcode": "10150",
                 "city": "Lunas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "receiver": {
@@ -132,7 +132,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "address_2": "Floor 2",
                 "postcode": "11950",
                 "city": "Bayan Lepas",
-                "subdivison_code": "MY-07",
+                "subdivision_code": "MY-07",
                 "country_code": "MY"
             },
             "feature": {
@@ -186,7 +186,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | address_2                        | string    | No       | Sender's address (continued)             | -                                                         |
 | postcode                         | string    | Yes      | Sender's postcode                        | -                                                         |
 | city                             | string    | Yes      | Sender's city/town                       | -                                                         |
-| subdivison_code                  | string    | No       | Sender's state/province code             | Example: "MY-07"                                          |
+| subdivision_code                  | string    | No       | Sender's state/province code             | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The origin country of the parcel         | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for sender location  | -                                                         |
 
@@ -205,7 +205,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | address_2                        | string    | No       | Receiver's address (continued)           | -                                                         |
 | postcode                         | string    | Yes      | Receiver's postcode                      | -                                                         |
 | city                             | string    | Yes      | Receiver's city/town                     | -                                                         |
-| subdivison_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
+| subdivision_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The destination country of the parcel    | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for receiver location| -                                                         |
 
