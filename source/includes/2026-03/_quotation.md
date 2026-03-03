@@ -1,13 +1,13 @@
-<h1 id="shipment-quotation-2025-12">Shipment Quotations</h1>
+<h1 id="shipment-quotation-2026-03">Shipment Quotations</h1>
 
 Get shipment quotations from all available courier companies on the EasyParcel platform. Provide sender and receiver addresses to receive pricing details, available services, and additional features.
 
-<h2 id="quotation-authentication-2025-12">Authentication (Standard Quotation)</h2>
+<h2 id="quotation-authentication-2026-03">Authentication (Standard Quotation)</h2>
 
 > To authorize, use this code:
 
 ```shell
-curl "https://api.easyparcel.com/open_api/2025-12/shipment/quotations" \
+curl "https://api.easyparcel.com/open_api/2026-03/shipment/quotations" \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
@@ -38,11 +38,11 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 
 `Authorization: Bearer YOUR_ACCESS_TOKEN`
 
-<h2 id="http-request-quotation-2025-12">HTTP Request (Quotation)</h2>
+<h2 id="http-request-quotation-2026-03">HTTP Request (Quotation)</h2>
 
-`POST https://api.easyparcel.com/open_api/2025-12/shipment/quotations`
+`POST https://api.easyparcel.com/open_api/2026-03/shipment/quotations`
 
-<h2 id="quotation-request-2025-12">Quotation Request</h2>
+<h2 id="quotation-request-2026-03">Quotation Request</h2>
 
 > Example Request:
 
@@ -101,7 +101,7 @@ parcel_value | double(8,2) | false | Parcel value in account currency
 The request uses nested objects for sender and receiver information.
 </aside>
 
-<h2 id="quotation-response-2025-12">Quotation Response </h2>
+<h2 id="quotation-response-2026-03">Quotation Response </h2>
 
 > Example Response:
 
@@ -217,7 +217,7 @@ The request uses nested objects for sender and receiver information.
 }
 ```
 
-<h3 id="2-quotation-response-2025-12">Quotation Response</h3>
+<h3 id="2-quotation-response-2026-03">Quotation Response</h3>
 
 Parameter | Type | Description
 --------- | ---- | -----------
@@ -300,7 +300,7 @@ The API returns various optional features that can be added to shipments:
 - `ddp_charges`: Delivered Duty Paid charges
 - Includes import taxes, duties, and handling fees
 
-<h2 id="quotation-code-examples-2025-12">Code Examples</h2>
+<h2 id="quotation-code-examples-2026-03">Code Examples</h2>
 
 Select a language from the options on the right to switch between PHP, JavaScript, and Python examples.
 
@@ -328,7 +328,7 @@ async function getShippingQuotes(senderPostcode, receiverPostcode) {
 
   try {
     const response = await fetch(
-      'https://api.easyparcel.com/open_api/2025-12/shipment/quotations',
+      'https://api.easyparcel.com/open_api/2026-03/shipment/quotations',
       {
         method: 'POST',
         headers: {
@@ -381,7 +381,7 @@ function getShippingQuotes($senderPostcode, $receiverPostcode) {
         ]]
     ];
 
-    $ch = curl_init('https://api.easyparcel.com/open_api/2025-12/shipment/quotations');
+    $ch = curl_init('https://api.easyparcel.com/open_api/2026-03/shipment/quotations');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($requestData));
@@ -451,7 +451,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
     
     try:
         response = requests.post(
-            'https://api.easyparcel.com/open_api/2025-12/shipment/quotations',
+            'https://api.easyparcel.com/open_api/2026-03/shipment/quotations',
             headers=headers,
             data=json.dumps(request_data)
         )
@@ -472,7 +472,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
         raise Exception(f"API request failed: {str(e)}")
 ```
 
-<h2 id="quotation-error-handling-2025-12">Error Handling</h2>
+<h2 id="quotation-error-handling-2026-03">Error Handling</h2>
 
 > Error Response Example:
 
@@ -533,7 +533,7 @@ errors | array | List of specific error messages
 Even with HTTP 200 status, individual requests in the batch may fail. Always check the <code>status</code> field in each data object.
 </aside>
 
-<h2 id="shipping-quotation-best-practices-2025-12">Best Practices for Shipping Quotation</h2>
+<h2 id="shipping-quotation-best-practices-">Best Practices for Shipping Quotation</h2>
 
 ### Input Validation
 
