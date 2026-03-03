@@ -1,18 +1,18 @@
-<h1 id="coupon-feature-2025-12">Coupon Feature</h1>
+<h1 id="coupon-feature-2026-03">Coupon Feature</h1>
 
 The coupon feature allows customers to search for available promo codes and apply them during the shipment order submission. This helps users enjoy discounted rates or special benefits based on current promotional campaigns.
 
-<h2 id="searching-for-coupons-2025-12">Searching for Coupons</h2>
+<h2 id="searching-for-coupons-2026-03">Searching for Coupons</h2>
 
 Customers can retrieve a list of available coupon codes using the following endpoint:
 
-<h2 id="http-request-coupon-2025-12"> HTTP Request (Coupon)</h2>
+<h2 id="http-request-coupon-2026-03"> HTTP Request (Coupon)</h2>
 
-`GET https://api.easyparcel.com/open_api/2025-12/shipment/get_coupon_list`
+`GET https://api.easyparcel.com/open_api/2026-03/shipment/get_coupon_list`
 
 This will return a list of valid promo codes available to use for the shipment from the user’s account, based on factors such as delivery type, courier, or region.
 
-<h2 id="coupon-request-2025-12">Coupon Request</h2>
+<h2 id="coupon-request-2026-03">Coupon Request</h2>
 
 Submitting to the Coupon Listing Endpoint based on the submit shipment order endpoint request to get the available coupon for the shipment
 
@@ -87,7 +87,7 @@ Submitting to the Coupon Listing Endpoint based on the submit shipment order end
 }
 ```
 
-<h2 id="coupon-respond-2025-12"> Coupon Respond</h2>
+<h2 id="coupon-respond-2026-03"> Coupon Respond</h2>
 
 ### Coupon Listing API - Response Parameters
 
