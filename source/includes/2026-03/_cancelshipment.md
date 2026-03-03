@@ -1,12 +1,12 @@
-<h1 id="cancel-shipments-2025-12">Cancel Shipments</h1>
+<h1 id="cancel-shipments-2026-03">Cancel Shipments</h1>
 
 This endpoint allows users to cancel one or more shipments. Users can provide a list of shipment numbers along with cancellation remarks.
 
-<h2 id="http-request-cancel-2025-12">HTTP Request (Cancel)</h2>
+<h2 id="http-request-cancel-2026-03">HTTP Request (Cancel)</h2>
 
-`POST https://api.easyparcel.com/open_api/2025-12/shipment/cancel`
+`POST https://api.easyparcel.com/open_api/2026-03/shipment/cancel`
 
-<h2 id="cancel-request-parameter-2025-12">Cancel Request Parameters</h2>
+<h2 id="cancel-request-parameter-2026-03">Cancel Request Parameters</h2>
 
 ### Request Sample
 
@@ -38,7 +38,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 | shipment_number | string  | Yes      | Shipment number to cancel     | Format: ES-YYMM-XXXXX       |
 | remark          | string  | Yes      | Reason for cancellation       | -                           |
 
-<h2 id="cancel-return-parameters-2025-12"> Cancel Return Parameters </h2>
+<h2 id="cancel-return-parameters-2026-03"> Cancel Return Parameters </h2>
 
 ### Successful Response Example
 
@@ -102,7 +102,7 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
     ]
 }
 ```
-<h2 id="usage-notes-cancellation-2025-12"> Usage Notes (Cancellation)</h2>
+<h2 id="usage-notes-cancellation-2026-03"> Usage Notes (Cancellation)</h2>
 
 1. You can cancel multiple shipments in a single request by including them in the `cancel_list` array.
 2. Only shipments that have not yet been processed by the courier can be cancelled.
