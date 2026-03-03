@@ -157,9 +157,11 @@ If the account is not found or the request is invalid, the API will return an er
 ```
 
 <h2 id="usage-notes-detail-2026-03">Usage Note</h2>
-1. This endpoint retrieves the user account information for the EasyParcel account.
+1. This endpoint retrieves the user account information for the EasyParcel account.    
+
 2. It returns details such as the user’s name, email, contact numbers, company name, and default addresses (pickup, billing, delivery).
-3. This endpoint is useful for displaying or pre-filling user information when creating shipments or managing account settings.
+
+3. This endpoint is useful for displaying or pre-filling user information when creating shipments or managing account settings.  
 
 
 
