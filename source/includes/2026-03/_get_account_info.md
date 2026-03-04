@@ -10,8 +10,8 @@ This feature is allow the customer to get the account detail.(E.g. default pick-
 
 <h2 id="account-info-return-parameters-2026-03">Account Info Response</h2>
 
-###Response Sample
-```json
+### Response Sample
+``` json
 {
     "status_code": 200,
     "request_id": "1772528684225.efb30684-02e6-4f75-b61b-3f2aec7c5a52",
@@ -147,7 +147,8 @@ This feature is allow the customer to get the account detail.(E.g. default pick-
 
 ### Error Response
 If the account is not found or the request is invalid, the API will return an error response:
-```json
+
+``` json
 {
     "status_code": 401,
     "request_id": "1772531409520.3e431a5a-087f-4303-b7b9-f9a1e2368397",
