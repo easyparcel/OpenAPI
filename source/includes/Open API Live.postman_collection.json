@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "fa8ee02e-3943-4702-ac08-6d193729e84c",
-    "name": "Open API Live Copy",
+    "name": "Open API Live",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "51426860",
     "_collection_link": "https://go.postman.co/collection/51426860-fa8ee02e-3943-4702-ac08-6d193729e84c?source=collection_link"
@@ -2315,7 +2315,22 @@
       "name": "Get Account Information",
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": {
+          "raw": "https://api.easyparcel.com/open_api/{{apiVersion}}/account/get_account_information",
+          "protocol": "https",
+          "host": [
+            "api",
+            "easyparcel",
+            "com"
+          ],
+          "path": [
+            "open_api",
+            "{{apiVersion}}",
+            "account",
+            "get_account_information"
+          ]
+        }
       },
       "response": []
     }
