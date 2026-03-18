@@ -3,7 +3,7 @@
 
 EasyParcel’s e-Invoice feature is an integrated solution with Lembaga Hasil Dalam Negeri Malaysia (LHDN) MyInvois that allows you to generate, validate, and store your e-Invoices directly within the EasyParcel platform. 
 
-<h2 id="Malaysia-E-invoice-2026-03"><span style="color: black;">Setup MyInvois in EasyParcel</span></h2>
+<h2 id="Malaysia-E-invoice-2026-03">Setup MyInvois in EasyParcel</h2>
 
 Before starting development, please ensure the e-Invoice feature is enabled in your account via the Dev Hub.
 
@@ -20,10 +20,10 @@ Second, Find the **Malaysia E-Invois** and click the status become **Enable**
 Third, follow the steps provided in the diagram or on your side to complete the setup.   
 <img width="1051" height="500" alt="Screenshot 2026-03-17 at 5 49 18 PM" src="https://github.com/user-attachments/assets/67165885-a283-4aba-9d5c-baaaa58d7aa7" />
 
-<h2 id="Malaysia-E-invoice-2026-03"><span style="color: black;">Submit Malaysia E-Invoice</span></h2>
+<h2 id="Malaysia-E-invoice-2026-03">Submit Malaysia E-Invoice</h2>
 This API endpoint allows you to submit Malaysia e-invoices in bulk to the LHDN (Lembaga Hasil Dalam Negeri) e-invoice system. The endpoint processes multiple invoices in a single request, with individual validation for each invoice item.
 
-<h2 id="Malaysia-E-invoice-2026-03"><span style="color: black;">HTTP Request(Malaysia MyInvois)</span></h2>
+<h2 id="Malaysia-E-invoice-2026-03">HTTP Request(Malaysia MyInvois)</h2>
 
 ### Endpoint
 'POST https://api.easyparcel.com/open_api/2026-03/einvoice/malaysia/submit'
@@ -35,7 +35,7 @@ Authorization: Bearer {access_token}
 Content-Type: application/json
 ```
 
-<h2 id="Malaysia-E-invoice-2026-03"><span style="color: black;">Malaysia Invois Request</span></h2>
+<h2 id="Malaysia-E-invoice-2026-03">Malaysia Invois Request</h2>
 
 ### Example Request 
 
@@ -154,7 +154,7 @@ Content-Type: application/json
 ```
 On validation error, data is an array of error strings and status_code is 400.
 
-<h3 id="Malaysia-E-invoice-2026-03"><span style="color: black;">Important Notes</span></h3>
+<h3 id="Malaysia-E-invoice-2026-03">Important Notes</h3>
 
 1. UTC timezone required: Both invoice_issue_date and invoice_issue_time must be in UTC timezone.
   - invoice_issue_time is provided as HH:mm:ss; the system appends Z automatically (e.g. "06:30:00" → "06:30:00Z").
@@ -163,7 +163,7 @@ On validation error, data is an array of error strings and status_code is 400.
 3. Multiple line items: Each bulk invoice supports multiple line items via items[]. Invoice totals are automatically summed from all line items.
 4. SST number: sst_no is optional; 
 
-<h3 id="Malaysia-E-invoice-2026-03"><span style="color: black;">State Codes Reference (Malaysia)</span></h3>
+<h3 id="Malaysia-E-invoice-2026-03">State Codes Reference (Malaysia)</h3>
 
 | Code | State                               |
 |------|-------------------------------------|
@@ -242,7 +242,7 @@ curl -X POST https: //api.example.com/2026-03/einvoice/malaysia/submit \
 }'
 ```
 
-<h2 id="Malaysia-E-invoice-2026-03"><span style="color: black;">Verify Malaysia E-Invoice Access</span></h2>
+<h2 id="Malaysia-E-invoice-2026-03">Verify Malaysia E-Invoice Access</h2>
 Checks that the given TIN  can obtain an e-invoice access token (e.g. intermediary configured on MyInvoice). Use this before submitting e-invoices for the same entity.
 
 ### Endpoint
