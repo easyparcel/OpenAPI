@@ -29,6 +29,7 @@ This API endpoint allows you to submit Malaysia e-invoices in bulk to the LHDN (
 'POST https://api.easyparcel.com/open_api/2026-03/einvoice/malaysia/submit'
 
 ### Header
+
 ```json 
 Authorization: Bearer {access_token}
 Content-Type: application/json
@@ -37,6 +38,7 @@ Content-Type: application/json
 <h2 id="Malaysia-E-invoice-2026-03"><span style="color: black;">Malaysia Invois Request</span></h2>
 
 ### Example Request 
+
 ```json
 {
     "tin_no": "IG12345678901",
@@ -92,6 +94,7 @@ Content-Type: application/json
 ```
 
 ### Request Body Fields
+
 | Field            | Type   | Required | Description |
 |------------------|--------|----------|-------------|
 | tin_no           | string | Yes      | Tax Identification Number. |
@@ -111,6 +114,7 @@ Content-Type: application/json
 
 
 ### Bulk array item (each invoice)
+
 | Field                 | Type   | Required | Description |
 |-----------------------|--------|----------|-------------|
 | invoice_no            | string | Yes      | Invoice number. |
@@ -122,6 +126,7 @@ Content-Type: application/json
 
 
 ### items[] — line item fields
+
 | Field        | Type   | Required | Description |
 |--------------|--------|----------|-------------|
 | description  | string | Yes      | Line item description. |
@@ -130,6 +135,7 @@ Content-Type: application/json
 | tax_amount   | number | Yes      | Line tax amount (must be ≥ 0). |
 
 ### Respond Example
+
 ```json
 {
     "status_code": 200,
@@ -149,6 +155,7 @@ Content-Type: application/json
 On validation error, data is an array of error strings and status_code is 400.
 
 <h3 id="Malaysia-E-invoice-2026-03"><span style="color: black;">Important Notes</span></h3>
+
 1. UTC timezone required: Both invoice_issue_date and invoice_issue_time must be in UTC timezone.
   - invoice_issue_time is provided as HH:mm:ss; the system appends Z automatically (e.g. "06:30:00" → "06:30:00Z").
   - For Malaysia (UTC+8), convert local time to UTC before submitting (e.g. 2:30 PM MYT = "06:30:00" UTC).
@@ -157,6 +164,7 @@ On validation error, data is an array of error strings and status_code is 400.
 4. SST number: sst_no is optional; 
 
 <h3 id="Malaysia-E-invoice-2026-03"><span style="color: black;">State Codes Reference (Malaysia)</span></h3>
+
 | Code | State                               |
 |------|-------------------------------------|
 | 1    | Johor                               |
@@ -177,6 +185,7 @@ On validation error, data is an array of error strings and status_code is 400.
 | 16   | Wilayah Persekutuan Putrajaya       |
 
 ### Example cURL Request
+
 ```json
 curl -X POST https: //api.example.com/2026-03/einvoice/malaysia/submit \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
@@ -237,9 +246,11 @@ curl -X POST https: //api.example.com/2026-03/einvoice/malaysia/submit \
 Checks that the given TIN  can obtain an e-invoice access token (e.g. intermediary configured on MyInvoice). Use this before submitting e-invoices for the same entity.
 
 ### Endpoint
+
 'POST https://api.easyparcel.com/open_api/2026-03/einvoice/malaysia/verify_access'
 
 ### Example request
+
 ```json
 {
     "tin_no": "IG900000000",
@@ -249,6 +260,7 @@ Checks that the given TIN  can obtain an e-invoice access token (e.g. intermedia
 ```
 
 ### Request Body
+
 | Field   | Type   | Required | Description |
 |---------|--------|----------|-------------|
 | tin_no  | string | Yes      | Tax Identification Number. |
@@ -256,7 +268,9 @@ Checks that the given TIN  can obtain an e-invoice access token (e.g. intermedia
 | id_type | string | Yes      | Identity document type. Must be one of: `NRIC`, `PASSPORT`, `BRN`, `ARMY`. |
 
 ### Response 
+
 ### Open API – success (200)
+
 ```json
 {
     "status_code": 200,
@@ -269,6 +283,7 @@ Checks that the given TIN  can obtain an e-invoice access token (e.g. intermedia
 ```
 
 ### Open API – failure (400)
+
 ```json
 {
     "status_code": 400,
