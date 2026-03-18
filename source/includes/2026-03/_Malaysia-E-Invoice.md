@@ -27,14 +27,14 @@ This API endpoint allows you to submit Malaysia e-invoices in bulk to the LHDN (
 
 ### Endpoint
 
-'POST https://api.easyparcel.com/open_api/2026-03/einvoice/malaysia/submit'
+`POST https://api.easyparcel.com/open_api/2026-03/einvoice/malaysia/submit`
 
 ### Header
 
-'
+`
 Authorization: Bearer {access_token}
 Content-Type: application/json
-'
+`
 
 <h2 id="Malaysia-E-invoice-2026-03">Malaysia Invois Request</h2>
 
