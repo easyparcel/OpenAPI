@@ -5,8 +5,8 @@ EasyParcel’s e-Invoice feature is an integrated solution with Lembaga Hasil Da
 
 <h2 id="Setup-Malaysia-E-invoice-2026-03">Setup MyInvois in EasyParcel</h2>
 
-Before starting development, please ensure the e-Invoice feature is enabled in your account via the Developer Hub.
-[Developer Hub](https://developer.easyparcel.com/#nav_Individual_EPRateCheckingBulk)
+Before starting development, please ensure the e-Invoice feature is enabled in your account via the 
+[Developer Hub](https://developer.easyparcel.com/#nav_Individual_EPRateCheckingBulk).
 
 Next, follow the official guidelines provided by Lembaga Hasil Dalam Negeri Malaysia (LHDN) to configure your MyInvois portal and add EasyParcel as an intermediary.
 
