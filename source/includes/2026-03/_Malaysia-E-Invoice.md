@@ -27,7 +27,7 @@ To verify your MyInvois account access status: if the endpoint returns Invalid, 
 
 ### Endpoint
 
-'POST https://api.easyparcel.com/open_api/2026-03/einvoice/malaysia/verify_access'
+`POST https://api.easyparcel.com/open_api/2026-03/einvoice/malaysia/verify_access`
 
 ### Example request
 
