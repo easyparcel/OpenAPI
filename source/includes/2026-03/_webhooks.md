@@ -56,24 +56,23 @@ Follow these steps to subscribe to webhooks:
 
 | Topic ID | Webhook Topic Name | Description |
 |----------|-------------------|-------------|
-| 1 | Ondemand Order Status Update | Triggered when an on-demand order status changes |
-| 2 | Shipment Status Update | Triggered when a shipment status changes |
-| 3 | Shipment AWB Update | Triggered when a shipment AWB (Air Waybill) is updated |
-| 4 | Tracking Status Update | Triggered when package tracking status is updated |
-| 5 | Shipment Created | Triggered when a new shipment is created |
+| 1 | Shipment Status Update | Triggered when a shipment status changes |
+| 2 | Shipment AWB Update | Triggered when a shipment AWB (Air Waybill) is updated |
+| 3 | Tracking Status Update | Triggered when package tracking status is updated |
+| 4 | Shipment Created | Triggered when a new shipment is created |
+| 5 | Ondemand Order Status Update | Triggered when an on-demand order status changes |
 
 <h2 id="webhook-sample-payload-2026-03">Webhook Sample Payload: </h2>
 
 ```json
 //Shipment Status Update Sample:
         {
-            "topic": "shipment.awb.update",
+            "topic": "shipment.status.update", 
+            "awb_number": "238725129086", 
+            "event_date": "2017-10-28 11:40:00", 
             "shipment_number": "ES-2504-G7FDF",
-            "uuid": "webhook-test-uuid-123",
-            "timestamp":"2017-10-28 11:40:00",
-            "awb_number": "238725129086",
-            "awb_url":"http:\/\/demo.connect.easyparcel.my\/?ac=AWBLabel&id=QmIxTE43eHQjMTYzMDQwMTI%3D",
-            "tracking_url":"https:\/\/easyparcel.com\/my\/en\/track\/details\/?courier=Skynet&awb=23877001523"
+            "shipment_status": "Cancelled", 
+            "shipment_status_code": 0
         }
 ```
 
@@ -91,7 +90,7 @@ Follow these steps to subscribe to webhooks:
 ```
 
 ```json
-//Shipment AWB Update Sample:
+//Tracking Status Update Sample:
     {
 
         "topic": "shipment.tracking.update",
