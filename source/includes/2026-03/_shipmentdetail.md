@@ -155,7 +155,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 | tracking_url        | string    | URL to track the shipment                   |
 | awb_url             | string    | URL to access the airway bill               |
 | coll_date           | string    | Collection date and time                    |
-| referencce          | string    | Reference of ther parcel                    |
+| reference          | string    | Reference of ther parcel                    |
 
 ### Parcel Content Object
 
