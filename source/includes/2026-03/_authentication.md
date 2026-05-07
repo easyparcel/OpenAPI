@@ -107,7 +107,8 @@ Use encoded value and pass back into Basic<br>
 
 | Requested Parameters | Type   | Required                                   | Details                                                                                                                                 | Remarks                      |
 | -------------------- | ------ | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| grant_type           | string | Yes                                        | The authorization_code to generate the access token.                                                                                    | default = authorization_code |
+| grant_type           | string | Yes                                        | The authorization_code to generate the access token.                                                                                    | default = authorization_code 
+														refresh token = refresh token|
 | redirect_uri         | string | Yes                                        | The URI to which the client was redirected from the authorization server. The URL of your app to redirect to.                           | -                            |
 | code                 | string | Yes                                        | The authorization code received from the OAuth flow that needs to be exchanged for an access token.                                     | -                            |
 | refresh_token        | string | Optional (Required for refresh)            | The token that requests to generate a new access token once the current token expires.                                                  | -                            |
