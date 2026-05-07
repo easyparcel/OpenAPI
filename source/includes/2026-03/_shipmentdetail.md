@@ -45,7 +45,8 @@ This endpoint allows users to retrieve detailed information about a specific shi
                 "awb_number": null,
                 "awb_url": null,
                 "tracking_url": null,
-                "coll_date": "2025-05-19 00:00:00"
+                "coll_date": "2025-05-19 00:00:00",
+                "reference": null
             },
             "parcel_content": [
                 {
@@ -154,6 +155,7 @@ This endpoint allows users to retrieve detailed information about a specific shi
 | tracking_url        | string    | URL to track the shipment                   |
 | awb_url             | string    | URL to access the airway bill               |
 | coll_date           | string    | Collection date and time                    |
+| referencce          | string    | Reference of ther parcel                    |
 
 ### Parcel Content Object
 
