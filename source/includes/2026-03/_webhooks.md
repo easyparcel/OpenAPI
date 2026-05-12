@@ -164,7 +164,7 @@ Follow these steps to subscribe to webhooks:
             ],
     }
 ```
-<h2 id="shipment-status-codes-2026-03">Shipment Status Codes</h2>
+<h2 id="webhook-status-codes-2026-03">Shipment Status Codes</h2>
 
 Below are common shipment status codes you may encounter:
 
