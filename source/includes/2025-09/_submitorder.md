@@ -225,7 +225,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | Parameter        | Type        | Required | Description                        | Remarks           |
 |------------------|-------------|----------|------------------------------------|-------------------|
 | cod_amount       | double      | Yes      | Cash on Delivery amount            | -                 |
-| cod_currency_code| string      | Yes      | Currency code for COD transaction  | Example: "MYR"    |
+| cod_currency     | string      | Yes      | Currency code for COD transaction  | Example: "MYR"    |
 
 ### Items
 
