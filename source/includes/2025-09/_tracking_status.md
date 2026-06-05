@@ -167,17 +167,15 @@ Below are common shipment status codes you may encounter:
 
 | Status Code | Description                    |
 |-------------|--------------------------------|
-| 1           | Order Created                  |
-| 2           | Payment Confirmed              |
-| 3           | Ready for Collection           |
-| 4           | Item Collected                 |
-| 5           | In Transit to Hub              |
-| 6           | Processing at Hub              |
-| 7           | Schedule In Arrangement        |
-| 8           | Out for Delivery               |
-| 9           | Delivered                      |
-| 10          | Delivery Failed                |
-| 11          | Return to Sender               |
+| 0          | Cancel                                |
+| 2          | To Be Collected                        |
+| 3          | Collected / Parcel been collected at ABC |
+| 4          | Delivery In Transit                    |
+| 5          | Delivered / Parcel collected by recipient |
+| 6          | Returned                               |
+| 7          | Schedule In Arrangement                |
+| 8          | On Hold                                |
+| 11         | Drop Off                               |
 
 *Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
 
