@@ -4,8 +4,7 @@ EasyParcel's API uses the OAuth 2.0 authorization framework to ensure secure acc
 
 ## OAuth 2.0
 
-- **Grant Types Supported**: Authorization Code, Client Credentials
-
+- **Grant Types Supported**: Authorization Code
 OAuth (Open Authorization) is an open standard protocol that allows secure authorization in a simple and standardized way from web, mobile, and desktop applications. EasyParcel uses OAuth to enable applications to securely access resources on behalf of the user without exposing the user's credentials.
 
 **OAuth involves three main components:**
