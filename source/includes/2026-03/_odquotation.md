@@ -7,7 +7,7 @@ This feature enables users to obtain on-demand shipment quotations from all cour
 
 <h2 id="http-request-od-quotation-2026-03">HTTP Request (OnDemand Quotation)</h2>
 
-`POST https://api.easyparcel.com/open_api/2026-03/ondemand/quotations`
+`POST https://api.easyparcel.com/open_api/2026-03/ondemand/quotation`
 
 <h2 id="od-quotation-request-parameters-2026-03">OnDemand Quotation Request Parameters</h2>
 
