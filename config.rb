@@ -20,6 +20,17 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 
+# Tell Middleman to pass through JSON files without processing
+ignore '/*.json'
+
+after_build do |builder|
+  Dir.glob('source/*.json').each do |file|
+    destination = "build/#{File.basename(file)}"
+    FileUtils.cp(file, destination)
+    builder.trigger :created, destination
+  end
+end
+
 # Activate the syntax highlighter
 activate :syntax
 ready do
