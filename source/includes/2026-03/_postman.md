@@ -7,8 +7,8 @@ This guide helps you get started with the EasyParcel API using Postman, providin
 
 ## Importing the Collection
 1. Download the collection JSON file  
-   - Postman v11 or below: <a href="/includes/Open API Live.postman_collection.json" download="Open API Live.postman_collection.json">Here</a>  
-   - Postman v12 or above: <a href="/includes/Open API Live.postman_collection_v3.json" download="Open API Live.postman_collection_v3.json">Here</a>
+   - Postman v11 or below: <a href="/Open API Live.postman_collection.json" download="Open API Live.postman_collection.json">Here</a>  
+   - Postman v12 or above: <a href="/Open API Live.postman_collection_v3.json" download="Open API Live.postman_collection_v3.json">Here</a>
 2. Open Postman 
 3. Click **Import** in the top-left corner
 4. Choose the **File** tab and select the downloaded JSON file
