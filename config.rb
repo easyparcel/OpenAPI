@@ -20,6 +20,14 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
 
+after_build do |builder|
+  Dir.glob('source/includes/*.json').each do |file|
+    destination = "build/includes/#{File.basename(file)}"
+    FileUtils.cp(file, destination)
+    builder.trigger :created, destination
+  end
+end
+
 # Activate the syntax highlighter
 activate :syntax
 ready do
