@@ -12,7 +12,7 @@ This guide helps you get started with the EasyParcel API using Postman, providin
 2. Open Postman
 3. Click **Import** in the top-left corner
 4. Choose the **File** tab and select the downloaded JSON file
-5. Click **Import**
+5. Click **Import** 
 
 ## Configuration
 
