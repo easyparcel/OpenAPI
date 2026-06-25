@@ -166,6 +166,39 @@ Follow these steps to subscribe to webhooks:
     }
 ```
 
+<h2 id="webhook-status-codes-2026-03">Shipment Status Codes</h2>
+
+Below are common shipment status codes you may encounter:
+
+| Status Code | Description                    |
+|-------------|--------------------------------|
+| 0          | Cancel                                |
+| 2          | To Be Collected                        |
+| 3          | Collected / Parcel been collected at ABC |
+| 4          | Delivery In Transit                    |
+| 5          | Delivered / Parcel collected by recipient |
+| 6          | Returned                               |
+| 7          | Schedule In Arrangement                |
+| 8          | On Hold                                |
+| 11         | Drop Off                               |
+
+<h2 id="ondemand-status-codes-2026-06">Ondemand Status Codes</h2>
+
+Below are the status codes you may encounter in the `ondemand.status.update` webhook:
+
+| Status Code | Description                    |
+|-------------|--------------------------------|
+| 0           | Cancelled by Customer          |
+| 1           | Pending                        |
+| 2           | Accepted / Driver On The Way   |
+| 3           | In Transit                     |
+| 4           | Cancelled by Admin             |
+| 5           | Cancelled by Driver            |
+| 6           | Fulfilled                      |
+| 7           | Unable to Find Driver          |
+
+*Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
+
 <h2 id="usage-notes-webhook-2025-12">Usage Notes for Webhooks </h2>
 
 - **Multiple Subscriptions**: You can subscribe to multiple topics for the same endpoint
