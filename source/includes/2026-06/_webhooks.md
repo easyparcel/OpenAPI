@@ -1,0 +1,228 @@
+<h1 id="webhook-2026-06"><span style="color: black;"> Webhooks</span></h1>
+<h2 id="how-to-subscribe-webhook-2026-06">How to Subscribe to Webhooks</h2>
+
+### Prerequisites
+
+Before setting up webhooks, ensure you have:
+- An active EasyParcel developer account
+- A configured app in the Developer Hub
+- A valid endpoint URL that can receive POST requests
+- Your endpoint configured to handle webhook payloads
+
+<h2 id="subscription-steps-2026-06">Subscription Steps</h2>
+
+Follow these steps to subscribe to webhooks:
+
+### 1. 🎯 Navigate to App Settings
+- Go to **Developer Hub Dashboard**
+- Click on **Apps**
+- Select **Settings** on the app you wish to configure webhooks for
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/922ca5f6-4589-4d0f-88ac-c5da550a132e"
+       width="80%" 
+       style="border: 1px solid #ddd; border-radius: 8px;">
+</p>
+
+### 2. 📡 Access Webhook Configuration
+- In the left sidebar, click **Webhook**
+- Click the **Add Endpoint** button
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a0134580-5361-4f86-863d-4137751e7e14" 
+       width="80%" 
+       style="border: 1px solid #ccc; border-radius: 8px;">
+</p>
+
+### 3. ⚙️ Configure Webhook Details
+- **Enter Endpoint URL**: Input the URL that will receive the webhook payload
+- **Select Webhook Topic**: Choose the event(s) you want to subscribe to from the available options
+- **Verify Configuration**: Double-check your URL and selected topics
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cf0b0576-96f1-4474-8d06-d8f74d998086"
+       width="70%"
+       style="border: 1px solid #ccc; border-radius: 8px;">
+</p>
+
+
+### 4. 💾 Save Configuration
+- Press **Save** to confirm your webhook settings
+- Your webhook endpoint will be validated
+
+### 5. ✅ Confirmation
+- **Done!** Your webhook is now active and will be triggered according to your selected topics
+- Test your endpoint to ensure it's receiving webhook data correctly
+
+
+<h2 id="webhook-topics-2026-06">Webhook Topics</h2>
+
+| Topic ID | Webhook Topic Name | Description |
+|----------|-------------------|-------------|
+| 1 | Shipment Status Update | Triggered when a shipment status changes |
+| 2 | Shipment AWB Update | Triggered when a shipment AWB (Air Waybill) is updated |
+| 3 | Tracking Status Update | Triggered when package tracking status is updated |
+| 4 | Shipment Created | Triggered when a new shipment is created |
+| 5 | Ondemand Order Status Update | Triggered when an on-demand order status changes |
+
+<h2 id="webhook-sample-payload-2026-06">Webhook Sample Payload: </h2>
+
+```json
+//Shipment Status Update Sample:
+        {
+            "topic": "shipment.status.update", 
+            "awb_number": "238725129086", 
+            "event_date": "2017-10-28 11:40:00", 
+            "shipment_number": "ES-2504-G7FDF",
+            "shipment_status": "Cancelled", 
+            "shipment_status_code": 0
+        }
+```
+
+```json
+//Shipment AWB Update Sample:
+        {
+            "topic": "shipment.awb.update",
+            "shipment_number": "ES-2504-G7FDF",
+            "uuid": "webhook-test-uuid-123",
+            "timestamp":"2017-10-28 11:40:00",
+            "awb_number": "23872512999",
+            "awb_url":"http:\/\/demo.connect.easyparcel.my\/?ac=AWBLabel&id=QmIxTE43eHQjMTYzMDQwAAA%3D",
+            "tracking_url":"https:\/\/easyparcel.com\/my\/en\/track\/details\/?courier=Skynet&awb=23877001999"
+        }
+```
+
+```json
+//Tracking Status Update Sample:
+    {
+
+        "topic": "shipment.tracking.update",
+        "shipment_number": "ES-2504-G7FDF",
+        "uuid": "webhook-test-uuid-123",
+        "timestamp":"2017-10-28 11:40:00",
+        "awb_number": "238725129086",
+        "latest_shipment_status_code":5,
+        "latest_tracking_status": "Deliverd To Suntech",
+        "timestamp":"2017-10-28 11:40:00",
+        "status_log":[
+            "0":{
+            "timestamp":"2017-10-28 11:40:00",
+            "shipment_status_code":5,
+            "tracking_status" : "Deliverd To Suntech"
+            },
+            "1":{
+            "timestamp":"2017-06-28 12:00:00",
+            "shipment_status_code":3,
+            "tracking_status":"Parcel has been collected at Penang"
+            }
+        ]
+    }
+```
+
+```json
+//Shipment Create Sample:
+        {
+            "shipment_number": "WEBHOOK-TEST-001",
+            "uuid": "webhook-test-uuid-123",
+            "timestamp":"2017-10-28 11:40:00",
+            "sender_name": "Test Sender",
+            "receiver_name": "Test Receiver",
+            "sender_phone_number": "0123456789",
+            "receiver_phone_number": "0987654321",
+            "sender_email": "sender@test.com",
+            "receiver_email": "receiver@test.com",
+            "sender_address1": "Test Address 1",
+            "receiver_address1": "Test Address 1",
+            "sender_postcode": "12345",
+            "receiver_postcode": "54321",
+            "sender_city": "Test City",
+            "receiver_city": "Test City",
+            "sender_country_code": "MY",
+            "receiver_country_code": "MY",
+            "weight": 1.0,
+            "length": 10,
+            "width": 10,
+            "height": 10,
+            "service_id": 1,
+            "courier_id": 1,
+            "status": 1
+        }
+```
+
+```json
+//Ondemand Order Status Update Sample:
+    {
+        "topic": "ondemand.status.update",
+        "order_number": "EODWEBHOOK-TEST-001",
+        "tracking_url": "https:\/\/easyparcel.com\/my\/en\/track\/details\/?courier=Skynet&awb=23877001523",
+        "status": 0,
+        "timeline": ,
+        "driver": { 
+            "id": "81994", "name": "TestDriver 09090", "phone": "+6090909090",   "photo": "", "rating": "", "vehicle": {"model": "", "licensePlate": "VP5734736", "physicalVehicleType": "Bike"}, "coordinates": {"latitude": 0, "longitudelatitude": 0 }
+        },
+        "event_date": "2025-06-06 04:21:07",
+        "waypoint": [
+            {"pod": null, "coordinate": {"latitude": 5.325513957, "longitude": 100.2862732}}, 
+            {"pod": "http://sg-oimg-pre.lalamove.com/appdriver/pre/appdriver/2021/07/05/1625479646347738192598.png", "coordinate": {"latitude": 5.325513957, "longitude": 100.2862732}}
+            ],
+    }
+```
+<h2 id="webhook-status-codes-2026-06">Shipment Status Codes</h2>
+
+Below are common shipment status codes you may encounter:
+
+| Status Code | Description                    |
+|-------------|--------------------------------|
+| 0          | Cancel                                |
+| 2          | To Be Collected                        |
+| 3          | Collected / Parcel been collected at ABC |
+| 4          | Delivery In Transit                    |
+| 5          | Delivered / Parcel collected by recipient |
+| 6          | Returned                               |
+| 7          | Schedule In Arrangement                |
+| 8          | On Hold                                |
+| 11         | Drop Off                               |
+
+<h2 id="ondemand-status-codes-2026-06">Ondemand Status Codes</h2>
+
+Below are the status codes you may encounter in the `ondemand.status.update` webhook:
+
+| Status Code | Description                    |
+|-------------|--------------------------------|
+| 0           | Cancelled by Customer          |
+| 1           | Pending                        |
+| 2           | Accepted / Driver On The Way   |
+| 3           | In Transit                     |
+| 4           | Cancelled by Admin             |
+| 5           | Cancelled by Driver            |
+| 6           | Fulfilled                      |
+| 7           | Unable to Find Driver          |
+
+*Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
+
+<h2 id="usage-notes-webhook-2026-06">Usage Notes for Webhooks </h2>
+
+- **Multiple Subscriptions**: You can subscribe to multiple topics for the same endpoint
+- **Event Filtering**: Choose only the topics relevant to your application to reduce unnecessary webhook calls
+
+
+<h2 id="important-notes-webhook-2026-06">Important Notes for Webhooks</h2>
+
+- **Endpoint Requirements**: Your URL must be publicly accessible and able to handle POST requests
+- **Multiple Topics**: You can subscribe to multiple webhook topics for the same endpoint
+- **Payload Format**: All webhooks send JSON payloads with event-specific data
+- **Response Expected**: Your endpoint should return a 200 status code to acknowledge receipt
+- **Retry Logic**: Failed webhook deliveries may be retried automatically
+
+### Testing Your Webhook
+
+After setup, verify your webhook is working:
+1. Trigger a test event in your app
+2. Check your endpoint logs for incoming requests
+3. Verify the payload structure matches your expectations
+4. Ensure your endpoint responds with HTTP 200
+
+### 🛠️ Troubleshooting for webhooks
+
+**Common Issues:**
+- **Endpoint not receiving data**: Verify URL is publicly accessible
+- **SSL/HTTPS required**: Ensure your endpoint uses HTTPS
+- **Timeout errors**: Your endpoint should respond quickly (within 30 seconds)
+- **Invalid responses**: Return proper HTTP status codes
