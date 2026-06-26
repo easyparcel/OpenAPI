@@ -219,7 +219,7 @@ On validation error, data is an array of error strings and status_code is 400.
 3. Multiple line items: Each bulk invoice supports multiple line items via items[]. Invoice totals are automatically summed from all line items.
 4. SST number: sst_no is optional; 
 
-<h3 id="Reference-Malaysia-E-invoice-2026-03">State Codes Reference (Malaysia)</h3>
+<h3 id="Reference-Malaysia-E-invoice-2026-06">State Codes Reference (Malaysia)</h3>
 
 | Code | State                               |
 |------|-------------------------------------|
@@ -243,7 +243,7 @@ On validation error, data is an array of error strings and status_code is 400.
 ### Example cURL Request
 
 ```json
-curl -X POST https: //api.example.com/2026-03/einvoice/malaysia/submit \
+curl -X POST https: //api.example.com/2026-06/einvoice/malaysia/submit \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
