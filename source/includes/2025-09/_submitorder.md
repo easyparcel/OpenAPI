@@ -4,7 +4,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 
 ## HTTP Request (Submit)
 
-`POST https://api.easyparcel.com/shipment/submit_orders`
+`POST https://api.easyparcel.com/open_api/2025-09/shipment/submit_orders`
 
 ## Submit Order Request
 ### Request Sample
