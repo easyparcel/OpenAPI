@@ -248,7 +248,7 @@ Since results are sorted newest first, each subsequent request returns the next 
 | Parameter           | Type      | Description                                |
 |---------------------|-----------|--------------------------------------------|
 | currency_code       | string    | Currency code for the price                |
-| price               | double    | Price of the shipment                      |
+| price               | double    | Price of the shipment. For a BYOC shipment this is the courier's own shipping cost (billed to the account's own courier account, not to EasyParcel). |
 
 <h2 id="common-status-codes-2026-06">Common Status Code</h2>
 
