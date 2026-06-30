@@ -291,6 +291,8 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.45",
                         "total_features_tax_amount": "0.00",
+                        "byoc_charges": "0.00",
+                        "byoc_charges_tax": "0.00",
                         "coupon_redeemed": "0.00"
                     },
                     "sender": {
@@ -422,6 +424,8 @@ This feature enables users to submit shipment orders. Users are required to fill
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.40",
                         "total_features_tax_amount": "0.00",
+                        "byoc_charges": "0.00",
+                        "byoc_charges_tax": "0.00",
                         "coupon_redeemed": "0.00"
                     },
                     "sender": {
@@ -604,10 +608,16 @@ This feature enables users to submit shipment orders. Users are required to fill
 |---------------------|-----------|-------------------------------------------|
 | currency_code       | string    | Currency used for the shipment            |
 | total_order_amount        | string    | Total cost of the shipment                |
-| shipment_price      | string    | Base price of the shipment                |
+| shipment_price      | string    | Base price of the shipment. For a BYOC shipment this is the courier's own shipping cost, which is billed directly to the account's own courier account (not to EasyParcel). |
 | total_tax_amount          | string    | Tax amount                                |
 | total_features_price| string    | Total price for additional features       |
+| byoc_charges        | string    | EasyParcel's BYOC platform charge for this shipment. `"0.00"` for a normal (non-BYOC) shipment. |
+| byoc_charges_tax    | string    | Tax on the BYOC platform charge. `"0.00"` for a normal (non-BYOC) shipment. |
 | coupon_redeemed| string    | Total amonut deducted using coupon_redeemed       |
+
+<aside class="notice">
+For a BYOC shipment, the courier shipping cost is billed to the account's own courier account, so <code>shipment_price</code> reflects that courier cost. The amount payable to EasyParcel for the shipment is <code>byoc_charges</code> + <code>byoc_charges_tax</code> (plus any add-ons). These two fields are always present and are <code>"0.00"</code> for normal shipments.
+</aside>
 
 ### Features
 
@@ -671,6 +681,8 @@ For failed requests, the response includes error details:
                         "shipment_tax_amount": "0.00",
                         "total_features_price": "0.45",
                         "total_features_tax_amount": "0.00",
+                        "byoc_charges": "0.00",
+                        "byoc_charges_tax": "0.00",
                         "coupon_redeemed": "0.00"
                     },
                     "sender": {
