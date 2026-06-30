@@ -334,7 +334,7 @@ html, body {
     clear: both;
   }
 
-  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
+  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl, &>details {
     margin-right: $examples-width;
     padding: 0 $main-padding;
     box-sizing: border-box;
@@ -345,6 +345,53 @@ html, body {
 
   &>ul, &>ol {
     padding-left: $main-padding + 15px;
+  }
+
+  // Collapsible disclosure (e.g. inline glossary notes). Kept inside the left content column by the
+  // rule above; here we make the toggle obvious and tidy the expanded content.
+  &>details {
+    margin-bottom: 2em;
+
+    > summary {
+      cursor: pointer;
+      list-style: none;            // hide the default marker so our own arrow is the only one
+      font-weight: bold;
+      padding: 0.6em 0.8em;
+      background-color: #f7f7f7;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      color: #333;
+
+      &::-webkit-details-marker { display: none; }   // Safari/Chrome default marker
+      &::before {
+        content: "\25B8";          // ▸ collapsed
+        display: inline-block;
+        margin-right: 0.5em;
+        color: #999;
+      }
+    }
+
+    &[open] > summary {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &::before { content: "\25BE"; }   // ▾ expanded
+    }
+
+    > p {
+      margin: 0;
+      padding: 0.7em 0.8em;
+      background-color: #fbfbfb;
+      border-left: 1px solid #e0e0e0;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    > p:last-of-type {
+      border-bottom: 1px solid #e0e0e0;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      padding-bottom: 0.8em;
+    }
   }
 
   // the div is the tocify hidden div for placeholding stuff
