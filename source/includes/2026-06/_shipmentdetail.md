@@ -111,7 +111,9 @@ This endpoint allows users to retrieve detailed information about a specific shi
                 "whatsapp_notification": "0.00",
                 "awb_branding": null,
                 "insurance": null,
-                "ddp": null
+                "ddp": null,
+                "byoc_charges": null,
+                "byoc_charges_tax": null
             }
         }
     ]
@@ -216,15 +218,17 @@ This endpoint allows users to retrieve detailed information about a specific shi
 | Parameter               | Type      | Description                                      |
 |-------------------------|-----------|--------------------------------------------------|
 | currency_code           | string    | Currency code for all pricing                    |
-| total_price             | string    | Total price of the shipment                      |
-| shipment_price          | string    | Base shipping cost                               |
-| tax_price               | string    | Tax amount                                       |
+| total_price             | string    | Total amount paid to EasyParcel for this shipment, including any enabled add-ons. For a BYOC shipment the base is the BYOC platform charge + its tax (the courier cost goes to the account's own courier account); otherwise it is the shipment charge. |
+| shipment_price          | string    | Base shipping cost. For a BYOC shipment this is the courier's own shipping cost, billed to the account's own courier account (not to EasyParcel). |
+| tax_price               | string    | Tax amount, including any enabled add-on tax. For a BYOC shipment the base is the tax on the BYOC platform charge. |
 | sms_notification        | string    | Price for SMS notification (null if not enabled) |
 | email_notification      | string    | Price for email notification (null if not enabled) |
 | whatsapp_notification   | string    | Price for WhatsApp notification (null if not enabled) |
 | awb_branding            | string    | Price for AWB branding (null if not enabled)     |
 | insurance               | string    | Price for insurance (null if not purchased)      |
 | ddp                     | string    | Delivered Duty Paid fee (null if not applicable) |
+| byoc_charges            | string    | EasyParcel's BYOC platform charge for this shipment (null for a non-BYOC shipment). |
+| byoc_charges_tax        | string    | Tax on the BYOC platform charge (null for a non-BYOC shipment). |
 
 
 ### Error Response
