@@ -101,6 +101,18 @@ parcel_value | double(8,2) | false | Parcel value in account currency
 The request uses nested objects for sender and receiver information.
 </aside>
 
+### BYOC Request Option
+
+<details>
+<summary>What is <strong>BYOC (Bring Your Own Courier)</strong>?</summary>
+<p>BYOC (Bring Your Own Courier) lets an account use its own linked courier accounts (for example FedEx or GDEX) through EasyParcel. When an account has linked a courier, rates from that courier are returned automatically within the same <code>quotations</code> array, using the same structure as the other rates — no request change is required, and accounts without a linked courier are unaffected.</p>
+<p>With BYOC, the courier shipping cost is billed directly to the account's own courier account; EasyParcel charges only a platform fee plus tax (<code>byoc_charges</code> + <code>byoc_charges_tax</code>). Tracking add-ons (SMS, email, WhatsApp) are available for these rates. Linking a courier is done on the EasyParcel portal.</p>
+</details>
+
+Parameter | Type | Required | Description
+--------- | ---- | -------- | -----------
+byoc_no_timeout | boolean | false | Top-level request flag (sibling of `shipment`). By default the live BYOC rate lookup is bounded to 5 seconds so it can never delay the normal rates; if it does not respond within 5 seconds, BYOC rates are simply omitted. Set to `true` to wait for the full BYOC courier response (no 5-second limit) — recommended only when every BYOC rate is required and a slower response is acceptable.
+
 <h2 id="quotation-response-2026-06">Quotation Response </h2>
 
 > Example Response:
@@ -256,9 +268,14 @@ is_dropoff | boolean | True if dropoff service is provided
 Parameter | Type | Description
 --------- | ---- | -----------
 currency | string | Currency code (e.g., MYR, USD)
-total_amount | string | Final total including all fees
-shipment_price | string | Base shipping price
+total_amount | string | Final total including all fees. For a BYOC rate this is the sum of every pricing component: the courier's own shipping cost (`shipment_price`), the EasyParcel BYOC platform charge (`byoc_charges`) and its tax (`byoc_charges_tax`), and the add-ons with their tax (`total_features_price` + `total_features_tax`).
+shipment_price | string | Base shipping price. For a BYOC rate this is the courier's own shipping cost, which is billed directly to the account's own courier account (not to EasyParcel).
+shipment_tax | string | Tax on the shipment price.
 total_features_price | string | Additional features cost
+total_features_tax | string | Tax on the additional features
+seller_payable_amount | string | The portion of `total_amount` that is actually payable to EasyParcel. For a normal courier this equals the full price (`total_amount`). For a BYOC courier it is the BYOC platform charge plus its tax (`byoc_charges` + `byoc_charges_tax`); the courier's own shipping cost (`shipment_price`) is excluded because it is billed directly to the account's own courier account.
+byoc_charges | string | BYOC rates only. EasyParcel's BYOC platform charge for this shipment.
+byoc_charges_tax | string | BYOC rates only. Tax on the BYOC platform charge.
 
 ### Service Tags
 
@@ -302,12 +319,31 @@ The API returns various optional features that can be added to shipments:
 
 <h2 id="quotation-code-examples-2026-06">Code Examples</h2>
 
-Select a language from the options on the right to switch between PHP, JavaScript, and Python examples.
+Select a language from the options on the right to switch between cURL, PHP, JavaScript, and Python examples.
+
+```shell
+curl -X POST "https://api.easyparcel.com/open_api/2026-06/shipment/quotations" \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "shipment": [
+      {
+        "sender": { "postcode": "10150", "subdivision_code": "MY-07", "country": "MY" },
+        "receiver": { "postcode": "11950", "subdivision_code": "MY-07", "country": "MY" },
+        "weight": 1.5,
+        "width": 5,
+        "length": 5,
+        "height": 5,
+        "parcel_value": 50
+      }
+    ]
+  }'
+```
 
 ```javascript
 async function getShippingQuotes(senderPostcode, receiverPostcode) {
   const requestData = {
-    list: [{
+    shipment: [{
       sender: {
         postcode: senderPostcode,
         subdivision_code: "MY-07",
@@ -362,7 +398,7 @@ async function getShippingQuotes(senderPostcode, receiverPostcode) {
 <?php
 function getShippingQuotes($senderPostcode, $receiverPostcode) {
     $requestData = [
-        'list' => [[
+        'shipment' => [[
             'sender' => [
                 'postcode' => $senderPostcode,
                 'subdivision_code' => 'MY-07',
@@ -425,7 +461,7 @@ def get_shipping_quotes(sender_postcode, receiver_postcode):
     """Get shipping quotations for a parcel."""
     
     request_data = {
-        "list": [{
+        "shipment": [{
             "sender": {
                 "postcode": sender_postcode,
                 "subdivision_code": "MY-07",
