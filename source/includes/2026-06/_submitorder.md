@@ -244,6 +244,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | currency_code   | string(3)   | Yes      | The currency code of the item value      | Example: "MYR"                |
 | value           | double(8,2) | Yes      | Value of the item                        | -                             |
 | quantity        | int         | Yes      | The item quantity                        | -                             |
+| hs_code         | string      | No       | Standardized numerical method of classifying traded products, used by customs authorities worldwide to identify goods, apply correct taxes, and ensure legal compliance for cross-border shipments                        | Example: "0101.21.00"                     |
 
 <h2 id="submit-order-response-2026-03">Sumbit Order Response</h2>
 
