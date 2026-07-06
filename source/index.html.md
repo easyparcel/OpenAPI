@@ -38,6 +38,8 @@ includes:
   - 2026-06/_accountservice.md
   - 2026-06/_get_account_info.md
   - 2026-06/_wallet.md
+  - 2026-06/_hscode_list.md
+  - 2026-06/_category_list.md
   - 2026-06/_Malaysia-E-Invoice.md
   - 2026-06/_webhooks.md
   - 2026-06/_references.md
