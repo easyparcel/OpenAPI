@@ -55,7 +55,7 @@ This endpoint allows users to retrieve a list of available HS codes.
 | 401         | Unauthorized (invalid authentication)           |
 | 500         | Server error                                    |
 
-<h2 id="usage-notes-2026-06">Usage Notes (HS Code List)</h2>
+<h2 id="usage-notes-hscode-2026-06">Usage Notes (HS Code List)</h2>
 
 1. This endpoint does not require request parameters.
 2. HS codes are used for customs declaration in international shipments.
