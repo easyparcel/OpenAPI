@@ -126,7 +126,7 @@ This endpoint allows users to retrieve a list of available parcel categories.
 | 401          | Unauthorized      | 
 | 500          | Server error      | 
 
-<h2 id="usage-notes-2026-06">Usage Notes (Category List)</h2>
+<h2 id="usage-notes-category-2026-06">Usage Notes (Category List)</h2>
 
 1. This endpoint does not require any request parameters.
 2. The id returned is used in shipment quotation.
