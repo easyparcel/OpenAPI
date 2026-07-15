@@ -1,4 +1,4 @@
-<h1 id="cancel-shipments-2026-03">Cancel Shipments</h1>
+<h1 id="cancel-shipments-2026-06">Cancel Shipments</h1>
 
 This endpoint allows users to cancel one or more shipments. Users can provide a list of shipment numbers along with cancellation remarks.
 
