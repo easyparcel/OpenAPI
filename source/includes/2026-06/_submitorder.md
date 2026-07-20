@@ -76,7 +76,8 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "sms_tracking": true,
                 "email_tracking": true,
                 "whatsapp_tracking": true,
-                "awb_branding": false
+                "awb_branding": false,
+                "add_on_easy_cover": true
             }
         },
         {
@@ -156,8 +157,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 
 | Parameter           | Type        | Required | Description                          | Remarks                                |
 |---------------------|-------------|----------|--------------------------------------|----------------------------------------|
-| reference           | string      | No       | Reference of the parcel              |
--                                      |     
+| reference           | string      | No       | Reference of the parcel              |                                        |     
 | service_id          | string(10)  | Yes      | Service Identification number        | -                                      |
 | collection_date     | date        | Yes      | Date to collect the parcel           | Format: YYYY-MM-DD                     |
 | customer_reference_no | string    | No       | Customer reference number            | -                                      |
@@ -177,16 +177,16 @@ This feature enables users to submit shipment orders. Users are required to fill
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
 | name                             | string    | Yes      | Sender's Name                            | -                                                         |
 | company                          | string    | No       | Sender's Company                         | -                                                         |
-| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                                            |
+| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                          |
 | phone_number                     | string    | Yes      | Sender's phone number                    | -                                                         |
-| alternate_phone_number_country_code | string | No       | ISO Country code for alternate phone number  | -                                                         |
+| alternate_phone_number_country_code | string | No       | ISO Country code for alternate phone number  | -                                                     |
 | alternate_phone_number           | string    | No       | Sender's alternate phone number          | -                                                         |
 | email                            | string    | No       | Sender's email                           | -                                                         |
 | address_1                        | string    | Yes      | Sender's address                         | -                                                         |
 | address_2                        | string    | No       | Sender's address (continued)             | -                                                         |
 | postcode                         | string    | Yes      | Sender's postcode                        | -                                                         |
 | city                             | string    | Yes      | Sender's city/town                       | -                                                         |
-| subdivision_code                  | string    | No       | Sender's state/province code             | Example: "MY-07"                                          |
+| subdivision_code                 | string    | No       | Sender's state/province code             | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The origin country of the parcel         | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for sender location  | -                                                         |
 
@@ -196,7 +196,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
 | name                             | string    | Yes      | Receiver's Name                          | -                                                         |
 | company                          | string    | No       | Receiver's Company                       | -                                                         |
-| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                                            |
+| phone_number_country_code        | string    | Yes      | ISO 3166-1 Alpha-2 Country code of the Phone number         | Example: "MY"                          |
 | phone_number                     | string    | Yes      | Receiver's phone number                  | -                                                         |
 | alternate_phone_number_country_code | string | No       | Country code for alternate phone number  | -                                                         |
 | alternate_phone_number           | string    | No       | Receiver's alternate phone number        | -                                                         |
@@ -205,7 +205,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | address_2                        | string    | No       | Receiver's address (continued)           | -                                                         |
 | postcode                         | string    | Yes      | Receiver's postcode                      | -                                                         |
 | city                             | string    | Yes      | Receiver's city/town                     | -                                                         |
-| subdivision_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
+| subdivision_code                 | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The destination country of the parcel    | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for receiver location| -                                                         |
 
@@ -218,6 +218,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | whatsapp_tracking  | boolean | No       | Enable WhatsApp tracking notifications       | Default: false                              |
 | awb_branding       | object  | No       | Airway bill branding                         | refer to [awb_branding](#awb_branding)      |
 | cod                | object  | No       | Cash on Delivery                             | refer to [cod](#cod)                        |
+| add_on_easy_cover  | object  | No       | Enable EasyCover insurance protection        | Default: false                              |
 
 ### awb_branding
 
@@ -397,6 +398,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "tax_amount": "0.00"
                         },
                         "shipment_awb_branding": null
+                        "add_on_easy_cover": true
                     },
                     "reference": "order 1190"
                 },
@@ -539,6 +541,7 @@ This feature enables users to submit shipment orders. Users are required to fill
                             "tax_amount": "0.00"
                         },
                         "shipment_awb_branding": null
+                        " add_on_easy_cover " : null
                     },
                     "reference": "order 1191"
                 }
@@ -608,13 +611,13 @@ This feature enables users to submit shipment orders. Users are required to fill
 | Parameter           | Type      | Description                               |
 |---------------------|-----------|-------------------------------------------|
 | currency_code       | string    | Currency used for the shipment            |
-| total_order_amount        | string    | Total cost of the shipment                |
+| total_order_amount  | string    | Total cost of the shipment                |
 | shipment_price      | string    | Base price of the shipment. For a BYOC shipment this is the courier's own shipping cost, which is billed directly to the account's own courier account (not to EasyParcel). |
-| total_tax_amount          | string    | Tax amount                                |
+| total_tax_amount    | string    | Tax amount                                |
 | total_features_price| string    | Total price for additional features       |
 | byoc_charges        | string    | EasyParcel's BYOC platform charge for this shipment. `"0.00"` for a normal (non-BYOC) shipment. |
 | byoc_charges_tax    | string    | Tax on the BYOC platform charge. `"0.00"` for a normal (non-BYOC) shipment. |
-| coupon_redeemed| string    | Total amonut deducted using coupon_redeemed       |
+| coupon_redeemed     | string    | Total amonut deducted using coupon_redeemed       |
 
 <aside class="notice">
 For a BYOC shipment, the courier shipping cost is billed to the account's own courier account, so <code>shipment_price</code> reflects that courier cost. The amount payable to EasyParcel for the shipment is <code>byoc_charges</code> + <code>byoc_charges_tax</code> (plus any add-ons). These two fields are always present and are <code>"0.00"</code> for normal shipments.
@@ -628,6 +631,7 @@ For a BYOC shipment, the courier shipping cost is billed to the account's own co
 | shipment_tracking_whatsapp | object | WhatsApp tracking details (if enabled) |
 | shipment_tracking_sms  | object    | SMS tracking details (if enabled)      |
 | shipment_tracking_email| object    | Email tracking details (if enabled)    |
+| add_on_easy_cover      | object    | EasyCover insurance protection (if enabled) |     
 
 <h2 id="error-response-2026-03">Error Response</h2>
 
@@ -786,6 +790,7 @@ For failed requests, the response includes error details:
                             "tax_amount": "0.00"
                         },
                         "shipment_awb_branding": null
+                        "add_on_easy_cover": null
                     }
                 },
                 {
