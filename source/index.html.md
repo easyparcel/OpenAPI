@@ -13,6 +13,7 @@ toc_footers:
 includes:
   - introduction.md
   - 2026-06/_developerhub.md
+  - 2026-06/_environment_diff.md
   - 2026-06/_sandbox.md
   - 2026-06/_authentication.md
   - 2026-06/_postman.md
