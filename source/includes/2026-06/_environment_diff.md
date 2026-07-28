@@ -1,5 +1,4 @@
-
-# Sandbox and Live Environment
+# <span style="color: black;"> Sandbox and Live Environment </span>
 
 Unlike many APIs where the environment is selected by using different endpoints, API keys, or applications, the EasyParcel Open API determines the environment based on the **EasyParcel account** that the user authorizes during the OAuth flow.
 
