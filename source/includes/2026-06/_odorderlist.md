@@ -127,7 +127,7 @@ Pagination is **cursor based** (not offset based). Every response carries a `pag
 | Parameter    | Type   | Description                                          |
 | ------------ | ------ | ---------------------------------------------------- |
 | status\_code | int    | HTTP status code                                     |
-| request\_id  | string | Unique request identifier (`{timestamp}.{uuid}`)     |
+| request\_id  | string | Unique request identifier                            |
 | message      | string | Status message                                       |
 | data         | array  | List of on-demand shipments                          |
 | pagination   | object | Cursor pagination metadata                           |
