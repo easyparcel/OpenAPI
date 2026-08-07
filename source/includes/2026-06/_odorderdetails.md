@@ -152,14 +152,14 @@ The order is always resolved against the wallet of the account behind the access
 | —         | status\_text           | string           | Human readable status                                                              |
 | —         | pickup\_time\_from     | datetime         | Start of the scheduled pickup window                                               |
 | —         | pickup\_time\_to       | datetime         | End of the scheduled pickup window                                                 |
-| —         | driver                 | object \| null   | Assigned driver. `null` until a driver is assigned — see [Driver Object](#driver-object-od-order-details-2026-06) |
+| —         | driver                 | object or null   | Assigned driver. `null` until a driver is assigned — see [Driver Object](#driver-object-od-order-details-2026-06) |
 | courier   | courier\_name          | string           | Courier short name (e.g. `Lalamove`, `PandaGo`)                                    |
 |           | service\_id            | string           | EasyParcel service ID (e.g. `EP-CS0F`)                                             |
 |           | courier\_id            | string           | EasyParcel courier ID (e.g. `EP-CR03`)                                             |
 |           | courier\_logo          | string           | Courier logo URL                                                                   |
 | transport | tracking\_url          | string           | Public tracking URL for the shipment                                               |
 |           | transportation\_type   | string           | Transport type (e.g. `Bike`, `Car`, `Van`)                                         |
-|           | service\_types         | object \| string | Service metadata for the selected transport (weight/dimension limits, parcel support). Empty string when not configured |
+|           | service\_types         | object or string | Service metadata for the selected transport (weight/dimension limits, parcel support). Empty string when not configured |
 | waypoint  | waypoint\[]            | array            | Pickup and dropoff points — see [Waypoint Object](#waypoint-object-od-order-details-2026-06) |
 | pricing   | currency\_code         | string           | Currency of the charged amounts (e.g. `MYR`)                                       |
 |           | total\_price           | string           | Total credit deducted for this order                                               |
@@ -179,8 +179,8 @@ Populated on the order by the courier webhook / polling once a driver is assigne
 | vehicle.license\_plate  | string          | Vehicle registration number                        |
 | vehicle.model           | string          | Vehicle model                                      |
 | vehicle.type            | string          | Vehicle type as reported by the courier            |
-| coordinates.latitude    | numeric \| null | Latest known driver latitude. `null` when unknown  |
-| coordinates.longitude   | numeric \| null | Latest known driver longitude. `null` when unknown |
+| coordinates.latitude    | numeric or null | Latest known driver latitude. `null` when unknown  |
+| coordinates.longitude   | numeric or null | Latest known driver longitude. `null` when unknown |
 
 <h2 id="waypoint-object-od-order-details-2026-06">Waypoint Object</h2>
 
@@ -195,7 +195,7 @@ Populated on the order by the courier webhook / polling once a driver is assigne
 | phone\_number                | string         | Contact phone number without the country code                                     |
 | type                         | int            | `1` = pickup, `2` = dropoff                                                       |
 | note                         | string         | Instruction note for the driver at this waypoint                                  |
-| pod                          | string \| null | Proof of delivery. `null` until the waypoint is completed                         |
+| pod                          | string or null | Proof of delivery. `null` until the waypoint is completed                         |
 | coordinate                   | object         | `{ latitude, longitude }` of this waypoint                                        |
 | packages                     | array          | Parcel/item details for this waypoint — see below. Deleted items are excluded      |
 
