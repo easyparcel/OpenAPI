@@ -153,11 +153,11 @@ Pagination is **cursor based** (not offset based). Every response carries a `pag
 
 | Parameter               | Type            | Description                                                                                         |
 | ----------------------- | --------------- | --------------------------------------------------------------------------------------------------- |
-| next\_page\_token       | string \| null  | Cursor for the next page. `null` when there are no further pages                                     |
-| next\_shipment\_number  | string \| null  | `order_number` of the last record on this page — usable as `before_shipment_number`. `null` on the last page |
+| next\_page\_token       | string or null  | Cursor for the next page. `null` when there are no further pages                                     |
+| next\_shipment\_number  | string or null  | `order_number` of the last record on this page — usable as `before_shipment_number`. `null` on the last page |
 | has\_more               | boolean         | `true` when more records exist beyond this page                                                      |
 | limit                   | int             | Effective page size applied to this request                                                          |
-| filter\_applied         | object \| null  | Filters currently in effect. `null` when no filter was applied                                       |
+| filter\_applied         | object or null  | Filters currently in effect. `null` when no filter was applied                                       |
 
 ---
 
