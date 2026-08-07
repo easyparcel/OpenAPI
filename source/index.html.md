@@ -34,6 +34,8 @@ includes:
   - 2026-06/_ondemand.md
   - 2026-06/_odquotation.md
   - 2026-06/_odsubmitorder.md
+  - 2026-06/_odorderlist.md
+  - 2026-06/_odorderdetails.md
   - 2026-06/_odcoupon.md
   - 2026-06/_odcancel.md
   - 2026-06/_accountservice.md
