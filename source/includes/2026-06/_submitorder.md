@@ -76,7 +76,10 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "sms_tracking": true,
                 "email_tracking": true,
                 "whatsapp_tracking": true,
-                "awb_branding": false
+                "awb_branding": {
+                    "enable": true,
+                    "type": "text"
+                }
             }
         },
         {
@@ -139,7 +142,10 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "sms_tracking": false,
                 "email_tracking": true,
                 "whatsapp_tracking": true,
-                "awb_branding": false
+                "awb_branding":  {
+                    "enable": true,
+                    "type": "text"
+                }
             }
         }
     ]
@@ -224,6 +230,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | Parameter | Type    | Required | Description                                 | Remarks |
 |-----------|---------|----------|---------------------------------------------|---------|
 | enable    | boolean | Yes      | To enable or disable Airways Bills Branding | -       |
+| type      | string  | No       | To select type of awb branding. Supported value: 'text', 'banner' | If this field is omitted, system will auto choose one last updated template.       |
 
 ### cod
 
