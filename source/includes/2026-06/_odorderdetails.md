@@ -191,7 +191,7 @@ Populated on the order by the courier webhook / polling once a driver is assigne
 | email                        | string         | Contact email                                                                     |
 | address                      | string         | Full composed address. For SG this already includes the leading `#<unit>, `        |
 | unit\_number                 | string         | floor/unit as entered.                                                           |
-| phone\_number\_country\_code | string         | Phone country calling code (e.g. `60`)                                            |
+| phone\_number\_country\_code | string         | Phone country code (e.g. `MY`)                                            |
 | phone\_number                | string         | Contact phone number without the country code                                     |
 | type                         | int            | `1` = pickup, `2` = dropoff                                                       |
 | note                         | string         | Instruction note for the driver at this waypoint                                  |
