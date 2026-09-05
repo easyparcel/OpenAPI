@@ -210,7 +210,8 @@ Content-Type: application/json
 ```
 On validation error, data is an array of error strings and status_code is 400.
 
-<h3 id="Notes-Malaysia-E-invoice-2026-03">Important Notes</h3>
+<h3 id="Notes-Malaysia-E-invoice-2026-06
+        ">Important Notes</h3>
 
 1. UTC timezone required: Both invoice_issue_date and invoice_issue_time must be in UTC timezone.
   - invoice_issue_time is provided as HH:mm:ss; the system appends Z automatically (e.g. "06:30:00" → "06:30:00Z").
