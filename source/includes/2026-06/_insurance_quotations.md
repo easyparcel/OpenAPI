@@ -377,7 +377,7 @@ For an item valued at MYR 3,000:
 
 <h2 id="applying-insurance-to-shipments-2026-06">Applying Insurance to Shipments</h2>
 
-Once you receive an insurance quotation, you can apply the insurance to your shipment by including the `insurance_service_id` in your shipment submission request.
+Once you receive the insurance quotation, you can apply the insurance to your shipment by enabling the "add_on_easy_cover" in your shipment submission request.
 
 ### Example Insurance Application in Shipment Submission:
 
@@ -386,7 +386,7 @@ Once you receive an insurance quotation, you can apply the insurance to your shi
   "shipment": [
     {
       "service_id": "EP-CS096",
-      "insurance_service_id": "EP-IR0D",
+      "add_on_easy_cover": true
       // ... other shipment details
     }
   ]
