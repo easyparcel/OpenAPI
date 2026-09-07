@@ -249,6 +249,8 @@ This guide explains how to submit an on-demand shipment order with and without a
 | shipment\_amount     | string | Delivery cost without tax          |
 | tax\_amount          | string | Tax applied to the shipment        |
 | coupon\_redeemed     | string | Amount discounted using the coupon |
+| byoc\_charges        | string | BYOC rates only. EasyParcel's BYOC platform charge for this shipment. |
+| byoc\_charges_tax    | string | BYOC rates only. Tax on the BYOC platform charge. |
 
 ### Shipment Object
 
