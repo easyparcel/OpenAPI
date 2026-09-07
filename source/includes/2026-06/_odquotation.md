@@ -303,13 +303,20 @@ Refer to the full JSON response you provided in your message for all details on 
 | courier   | service\_id           | string | Service ID                       |
 |           | courier\_name         | string | Courier name                     |
 |           | img\_courier          | string | Courier logo URL                 |
+|           | is_byoc               | boolean | Whether the courier is BYOC courier |
+|           | byoc_connection_label | string | Label for the courier account connection |
 | transport | transportation\_type  | string | Transport type (e.g., Bike, Car) |
 |           | durations             | string | Estimated delivery time          |
 |           | parcel\_type\_support | string | Parcel suitability description   |
 |           | weight\_limit         | string | Weight limit                     |
 |           | dimension             | string | Max parcel dimension             |
 | pricing   | total\_amount         | string | Quotation price                  |
+|           | shipping\_price       | string | Base shipping price. For a BYOC rate this is the courier's own shipping cost, which is billed directly to the account's own courier account (not to EasyParcel). |
+|           | tax\_amount           | string | Total tax amount                 |
 |           | currency              | string | Currency (e.g., MYR)             |
+|           | byoc\_charges          | string | BYOC rates only. EasyParcel's BYOC platform charge for this shipment. |
+|           | byoc\_charges_tax      | string | BYOC rates only. Tax on the BYOC platform charge. |
+|           | seller\_payable_amount | string | The portion of `total_amount` that is actually payable to EasyParcel. For a normal courier this equals the full price (`total_amount`). For a BYOC courier it is the BYOC platform charge plus its tax (`byoc_charges` + `byoc_charges_tax`); the courier's own shipping cost (`shipping_price`) is excluded because it is billed directly to the account's own courier account. |
 
 
 ---
