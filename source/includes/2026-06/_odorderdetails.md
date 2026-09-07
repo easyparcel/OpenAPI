@@ -165,6 +165,10 @@ The order is always resolved against the wallet of the account behind the access
 |           | total\_price           | string           | Total credit deducted for this order                                               |
 |           | shipment\_price        | string           | Shipment price before tax                                                          |
 |           | tax\_amount            | string           | Tax charged                                                                        |
+|           | byoc\_charges          | string           | BYOC rates only. EasyParcel's BYOC platform charge for this shipment. |
+|           | byoc\_charges_tax      | string           | BYOC rates only. Tax on the BYOC platform charge. |
+|           | seller\_payable_amount | string           | The portion of `total_price` that is actually payable to EasyParcel. For a normal courier this equals the full price (`total_price`). For a BYOC courier it is the BYOC platform charge plus its tax (`byoc_charges` + `byoc_charges_tax`); the courier's own shipping cost (`shipment_price`) is excluded because it is billed directly to the account's own courier account. |
+
 
 <h2 id="driver-object-od-order-details-2026-06">Driver Object</h2>
 
