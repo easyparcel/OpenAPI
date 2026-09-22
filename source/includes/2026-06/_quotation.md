@@ -178,11 +178,43 @@ byoc_no_timeout | boolean | false | Top-level request flag (sibling of `shipment
                     },
                     "pricing": {
                         "currency": "MYR",
-                        "total_amount": "10.84",
-                        "shipment_price": "9.80",
-                        "shipment_tax": "0.59",
-                        "total_features_price": "0.45",
-                        "total_features_tax": "0.00"
+                        "total_amount": 12.31,
+                        "shipment_price": 10.2,
+                        "shipment_tax": 0.61,
+                        "seller_payable_amount": 12.31,
+                        "total_features_price": 0.69,
+                        "total_features_tax": 0.81,
+                        "auto_apply_coupon": true,
+                        "auto_apply_coupon_payment": false,
+                        "coupon_discount": 4,
+                        "before_coupon": {
+                            "shipment_price": 14.2,
+                            "shipment_tax": 0.85,
+                            "total_features_price": 0.69,
+                            "total_features_tax": 0.81,
+                            "total_amount": 16.55
+                        },
+                        "coupon_discount_breakdown": {
+                            "shipment": 4,
+                            "sms": 0,
+                            "email": 0,
+                            "whatsapp": 0
+                        },
+                        "coupon_codes": [
+                            "4a8db391-1134-4cd0-842b-05443a97dd96"
+                        ],
+                        "coupons": [
+                            {
+                                "coupon_codes": [
+                                    "4a8db391-1134-4cd0-842b-05443a97dd96"
+                                ],
+                                "title": "test coupon",
+                                "description": "description",
+                                "discount_rate": "30.00%",
+                                "valid_from_date": "2026-09-01 09:51:49",
+                                "valid_to_date": "2026-09-30 09:51:51"
+                            }
+                        ]
                     },
                     "features": [
                         {
@@ -276,6 +308,13 @@ total_features_tax | string | Tax on the additional features
 seller_payable_amount | string | The portion of `total_amount` that is actually payable to EasyParcel. For a normal courier this equals the full price (`total_amount`). For a BYOC courier it is the BYOC platform charge plus its tax (`byoc_charges` + `byoc_charges_tax`); the courier's own shipping cost (`shipment_price`) is excluded because it is billed directly to the account's own courier account.
 byoc_charges | string | BYOC rates only. EasyParcel's BYOC platform charge for this shipment.
 byoc_charges_tax | string | BYOC rates only. Tax on the BYOC platform charge.
+auto_apply_coupon | boolean | Whether auto apply coupon during quotation is on
+auto_apply_coupon_payment | boolean | Whether auto apply coupon during payment is on
+coupon_discount | string | Amount of discount if coupon auto apply is on
+before_coupon | object | Original pricing details before coupon applied
+coupon_discount_breakdown | object | breakdown of the coupon discounts
+coupon_codes | array | List of coupon codes used if coupon auto apply is on
+coupons | object | List of coupon used with the details if coupon auto apply is on
 
 ### Service Tags
 
