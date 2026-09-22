@@ -157,6 +157,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | Parameter | Type    | Required | Description              |
 |-----------|---------|----------|--------------------------|
 | shipment  | array   | Yes      | Array of shipment orders |
+| auto_apply_coupon | boolean | No | Controls whether eligible coupons are automatically applied for the shipment. If this parameter is not specified, the behavior will follow the auto-apply coupon settings configured in EasyParcel. |
 
 ### Shipment Object
 
@@ -214,6 +215,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | subdivision_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The destination country of the parcel    | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for receiver location| -                                                         |
+| eori_acknowledged                | boolean   | No       | Acknowledge the risk of submitting a shipment to a European country without a valid EORI number. | For EasyParcel Business accounts, shipments to Europe require a valid EORI number to be configured in the Business Profile. Set this to true to acknowledge the risk and proceed with order submission without an EORI number provided   |
 
 ### Feature
 
@@ -622,6 +624,8 @@ This feature enables users to submit shipment orders. Users are required to fill
 | byoc_charges        | string    | EasyParcel's BYOC platform charge for this shipment. `"0.00"` for a normal (non-BYOC) shipment. |
 | byoc_charges_tax    | string    | Tax on the BYOC platform charge. `"0.00"` for a normal (non-BYOC) shipment. |
 | coupon_redeemed| string    | Total amonut deducted using coupon_redeemed       |
+| coupon_codes | array | List or coupon codes applied |
+| coupon_auto_applied | boolean | Whether coupon auto applied | 
 
 <aside class="notice">
 For a BYOC shipment, the courier shipping cost is billed to the account's own courier account, so <code>shipment_price</code> reflects that courier cost. The amount payable to EasyParcel for the shipment is <code>byoc_charges</code> + <code>byoc_charges_tax</code> (plus any add-ons). These two fields are always present and are <code>"0.00"</code> for normal shipments.
