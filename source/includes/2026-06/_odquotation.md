@@ -319,8 +319,9 @@ Refer to the full JSON response you provided in your message for all details on 
 |           | seller\_payable_amount | string | The portion of `total_amount` that is actually payable to EasyParcel. For a normal courier this equals the full price (`total_amount`). For a BYOC courier it is the BYOC platform charge plus its tax (`byoc_charges` + `byoc_charges_tax`); the courier's own shipping cost (`shipping_price`) is excluded because it is billed directly to the account's own courier account. |
 
 ### Add-on Features
-The availability and pricing of the add-on features such as tracking email/sms/whatsapp will be returned in `features` array
+The availability and pricing of the add-on features such as tracking email/sms/whatsapp will be returned in `features` array (same hierarchy as the pricing, trasnport param above 
 ```json
+{
 "features": [
     {
         "sms_tracking": {
@@ -344,6 +345,7 @@ The availability and pricing of the add-on features such as tracking email/sms/w
         }
     }
 ]
+}
 ```
 
 
