@@ -110,6 +110,10 @@ This guide explains how to submit an on-demand shipment order with and without a
 | waypoint\[\*].shipment\_info.phone\_number                | string  | Yes      | Phone number                                   |
 | waypoint\[\*].shipment\_info.address                      | string  | Yes      | Full address                                   |
 | waypoint\[\*].remark                                      | string  | Optional | Any additional notes or instructions           |
+| feature.sms\_tracking                                     | boolean | Optional | Set to true to purchase tracking sms add-on    |
+| feature.email\_tracking                                   | boolean | Optional | Set to true to purchase tracking email add-on  |    
+| feature.whatsapp\_tracking                                | boolean | Optional | Set to true to purchase tracking whatsapp add-on  |    
+
 
 
 
@@ -249,6 +253,9 @@ This guide explains how to submit an on-demand shipment order with and without a
 | shipment\_amount     | string | Delivery cost without tax          |
 | tax\_amount          | string | Tax applied to the shipment        |
 | coupon\_redeemed     | string | Amount discounted using the coupon |
+| tracking\_sms\_amount | string | Tracking sms charges              |
+| tracking\_email\_amount | string | Tracking email charges              |
+| tracking\_whatsapp\_amount | string | Tracking whatsapp charges              |
 | byoc\_charges        | string | BYOC rates only. EasyParcel's BYOC platform charge for this shipment. |
 | byoc\_charges_tax    | string | BYOC rates only. Tax on the BYOC platform charge. |
 
