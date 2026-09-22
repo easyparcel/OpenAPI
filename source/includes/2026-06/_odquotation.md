@@ -111,7 +111,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "7.06",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 },
                 {
                     "metadata": {
@@ -134,7 +157,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "5.88",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 },
                 {
                     "metadata": {
@@ -157,7 +203,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "27.06",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 },
                 {
                     "metadata": {
@@ -180,7 +249,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "57.65",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 },
                 {
                     "metadata": {
@@ -203,7 +295,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "78.82",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 },
                 {
                     "metadata": {
@@ -226,7 +341,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "125.29",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 },
                 {
                     "metadata": {
@@ -249,7 +387,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "45.88",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 },
                 {
                     "metadata": {
@@ -272,7 +433,30 @@ Refer to the full JSON response you provided in your message for all details on 
                         "shipping_price": "7.06",
                         "tax_amount": 0,
                         "currency": "MYR"
-                    }
+                    },
+                    "features": [
+                        {
+                            "sms_tracking": {
+                                "available": true,
+                                "price": 0.3,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "email_tracking": {
+                                "available": true,
+                                "price": 0.05,
+                                "currency": "MYR"
+                            }
+                        },
+                        {
+                            "whatsapp_tracking": {
+                                "available": true,
+                                "price": 0.25,
+                                "currency": "MYR"
+                            }
+                        }
+                    ]
                 }
             ]
         }
@@ -320,35 +504,6 @@ Refer to the full JSON response you provided in your message for all details on 
 
 ### Add-on Features
 The availability and pricing of the add-on features such as tracking email/sms/whatsapp will be returned in `features` array (same hierarchy as the pricing, trasnport param above 
-
-
-```json
-{
-"features": [
-    {
-        "sms_tracking": {
-            "available": true,
-            "price": 0.3,
-            "currency": "MYR"
-        }
-    },
-    {
-        "email_tracking": {
-            "available": true,
-            "price": 0.05,
-            "currency": "MYR"
-        }
-    },
-    {
-        "whatsapp_tracking": {
-            "available": true,
-            "price": 0.25,
-            "currency": "MYR"
-        }
-    }
-]
-}
-```
 
 
 
