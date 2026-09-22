@@ -320,6 +320,8 @@ Refer to the full JSON response you provided in your message for all details on 
 
 ### Add-on Features
 The availability and pricing of the add-on features such as tracking email/sms/whatsapp will be returned in `features` array (same hierarchy as the pricing, trasnport param above 
+
+
 ```json
 {
 "features": [
