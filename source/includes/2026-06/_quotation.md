@@ -72,7 +72,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 ```
 ### API Rate Parameter
 
-`api_rate_on` is a **top-level field in the request body** — a sibling of `shipment` / `bulk`, not a
+`api_rate_on` is a **top-level field in the request body** — a sibling of `shipment`, not a
 per-item field and not a query-string parameter. One setting applies to the whole request.
 
 | Parameter | Type | Required | Description |
@@ -88,6 +88,13 @@ per-item field and not a query-string parameter. One setting applies to the whol
 Any value that is not recognisably false leaves the lane on with the 3-second default, so a typo
 cannot silently cost you couriers.
 
+### Auto Apply Coupon Parameter
+`auto_apply_coupon` is a **top-level field in the request body** — a sibling of `shipment`, not a
+per-item field and not a query-string parameter. One setting applies to the whole request.
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `auto_apply_coupon` | Boolean | No | Controls whether eligible coupons are automatically applied during quotation. When enabled, the quoted shipment prices will be displayed after the applicable coupon discount is applied. If this parameter is not specified, the behavior will follow the auto-apply coupon settings configured in EasyParcel. |
 
 ### Sender Parameters
 
