@@ -48,6 +48,7 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
 
 ```json
 {
+  "api_rate_on": true,
   "shipment": [
     {
       "sender": {
@@ -60,16 +61,33 @@ The API expects the Oauth 2.0 to be included in all API requests to the server i
         "subdivision_code": "MY-07",
         "country": "MY"
       },
-      "parcel_value":50,
+      "parcel_value": 50,
       "weight": 1.5,
       "width": 5,
       "length": 5,
       "height": 5
     }
-    
   ]
 }
 ```
+### API Rate Parameter
+
+`api_rate_on` is a **top-level field in the request body** — a sibling of `shipment` / `bulk`, not a
+per-item field and not a query-string parameter. One setting applies to the whole request.
+
+| Parameter | Type | Required | Description |
+|---|---|---|---|
+| `api_rate_on` | Boolean | No | Whether to include couriers priced from the carrier's Rate API, and how long to wait for them. Accepts `true` / `false`, `1` / `0`, or the strings `"true"` / `"false"`. Case-insensitive; surrounding whitespace is ignored. |
+
+| Value | Behaviour | Wait |
+|---|---|---|
+| *omitted* | API couriers included | up to **3 seconds** |
+| `true` | API couriers included | up to **60 seconds** |
+| `false` | API couriers skipped entirely | — |
+
+Any value that is not recognisably false leaves the lane on with the 3-second default, so a typo
+cannot silently cost you couriers.
+
 
 ### Sender Parameters
 
