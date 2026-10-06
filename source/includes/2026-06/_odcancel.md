@@ -4,7 +4,7 @@ This guide explains how to cancel an on-demand shipment order.
 
 <h2 id="endpoint-url-2026-06">Endpoint URL</h2>
 
-`POST https://api.easyparcel.com/2026-06/ondemand/cancel`
+`POST https://api.easyparcel.com/open_api/2026-06/ondemand/cancel`
 
 ---
 
@@ -65,7 +65,7 @@ This guide explains how to cancel an on-demand shipment order.
 ### JavaScript (Fetch API) | PHP (cURL) | Python (Requests)
 
 ```javascript
-fetch("https://api.easyparcel.com/ondemand/cancel", {
+fetch("https://api.easyparcel.com/open_api/2026-06/ondemand/cancel", {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
@@ -82,7 +82,7 @@ fetch("https://api.easyparcel.com/ondemand/cancel", {
 
 ```php
 <?php
-$ch = curl_init("https://api.easyparcel.com/ondemand/cancel");
+$ch = curl_init("https://api.easyparcel.com/open_api/2026-06/ondemand/cancel");
 $data = [
     "booking_id" => "EOD-330"
 ];
@@ -101,7 +101,7 @@ echo $response;
 ```python
 import requests
 
-url = "https://api.easyparcel.com/ondemand/cancel"
+url = "https://api.easyparcel.com/open_api/2026-06/ondemand/cancel"
 headers = {
     "Content-Type": "application/json",
     "Authorization": "Bearer YOUR_ACCESS_TOKEN"

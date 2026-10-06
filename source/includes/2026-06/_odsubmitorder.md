@@ -4,7 +4,7 @@ This guide explains how to submit an on-demand shipment order with and without a
 
 <h2 id="http-request-od-submit-order-2026-06">HTTP Request (OnDemand Submit Order)</h2>
 
-`POST https://api.easyparcel.com/ondemand/order`
+`POST https://api.easyparcel.com/open_api/2026-06/ondemand/order`
 
 <h2 id="request-parameter-od-order-submission-2026-06">OnDemand Submit Order Request</h2>
 
@@ -306,7 +306,7 @@ fetch("https://api.easyparcel.com/ondemand/order", {
 
 ```php
 <?php
-$ch = curl_init("https://api.easyparcel.com/ondemand/order");
+$ch = curl_init("https://api.easyparcel.com/open_api/2026-06/ondemand/order");
 $data = [ ... ];
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Content-Type: application/json',
@@ -324,7 +324,7 @@ echo $response;
 ```python
 import requests
 
-url = "https://api.easyparcel.com/ondemand/order"
+url = "https://api.easyparcel.com/open_api/2026-06/ondemand/order"
 headers = {
     "Content-Type": "application/json",
     "Authorization": "Bearer YOUR_ACCESS_TOKEN"
