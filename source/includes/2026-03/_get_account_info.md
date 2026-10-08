@@ -3,7 +3,7 @@ This feature is allow the customer to get the account detail.(E.g. default pick-
 
 <h2 id="http-request-2026-03">HTTP Request</h2>
 
-`POST https://api.easyparcel.com/open_api/2026-03/account/get_account_information`
+`GET https://api.easyparcel.com/open_api/2026-03/account/get_account_information`
 
 <h2 id="account-info-request-parameters-2026-03">Account Info Request</h2>
 **None**
