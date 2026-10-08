@@ -79,6 +79,10 @@ This feature enables users to submit shipment orders. Users are required to fill
                 "awb_branding": {
                     "enable": true,
                     "type": "text"
+                },
+                "courier_ddp": {
+                    "enable": true,
+                    "parcel_category_id": 1
                 }
             }
         },
@@ -173,12 +177,12 @@ This feature enables users to submit shipment orders. Users are required to fill
 | height              | double(8,2) | Yes      | Height of the parcel                 | in CM                                  |
 | length              | double(8,2) | Yes      | Length of the parcel                 | in CM                                  |
 | width               | double(8,2) | Yes      | Width of the parcel                  | in CM                                  |
-| item                | array       | Yes      | Items in the parcel                  | refer to [item](#items)                |
-| sender              | object      | Yes      | Origin of the parcel                 | refer to [sender](#sender)             |
-| receiver            | object      | Yes      | Destination of the parcel            | refer to [receiver](#receiver)         |
-| feature             | object      | Yes      | Additional service features          | refer to [feature](#feature)           |
+| item                | array       | Yes      | Items in the parcel                  | refer to [item](#submit-order-items-2026-09)                |
+| sender              | object      | Yes      | Origin of the parcel                 | refer to [sender](#submit-order-sender-2026-09)             |
+| receiver            | object      | Yes      | Destination of the parcel            | refer to [receiver](#submit-order-receiver-2026-09)         |
+| feature             | object      | Yes      | Additional service features          | refer to [feature](#submit-order-feature-2026-09)           |
 
-### Sender
+<h3 id="submit-order-sender-2026-09">Sender</h3>
 
 | Parameter                        | Type      | Required | Description                              | Remarks                                                   |
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
@@ -197,7 +201,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | country_code                     | string(2) | Yes      | The origin country of the parcel         | Example: "MY"                                             |
 | point_code                       | string    | No       | A unique identifier for sender location  | -                                                         |
 
-### Receiver
+<h3 id="submit-order-receiver-2026-09">Receiver</h3>
 
 | Parameter                        | Type      | Required | Description                              | Remarks                                                   |
 |----------------------------------|-----------|----------|------------------------------------------|-----------------------------------------------------------|
@@ -217,31 +221,40 @@ This feature enables users to submit shipment orders. Users are required to fill
 | point_code                       | string    | No       | A unique identifier for receiver location| -                                                         |
 | eori_acknowledged                | boolean   | No       | Acknowledge the risk of submitting a shipment to a European country without a valid EORI number. | For EasyParcel Business accounts, shipments to Europe require a valid EORI number to be configured in the Business Profile. Set this to true to acknowledge the risk and proceed with order submission without an EORI number provided   |
 
-### Feature
+<h3 id="submit-order-feature-2026-09">Feature</h3>
 
 | Parameter          | Type    | Required | Description                                  | Remarks                                     |
 |--------------------|---------|----------|----------------------------------------------|---------------------------------------------|
 | sms_tracking       | boolean | No       | Enable SMS tracking notifications            | Default: false                              |
 | email_tracking     | boolean | No       | Enable email tracking notifications          | Default: false                              |
 | whatsapp_tracking  | boolean | No       | Enable WhatsApp tracking notifications       | Default: false                              |
-| awb_branding       | object  | No       | Airway bill branding                         | refer to [awb_branding](#awb_branding)      |
-| cod                | object  | No       | Cash on Delivery                             | refer to [cod](#cod)                        |
+| awb_branding       | object  | No       | Airway bill branding                         | refer to [awb_branding](#submit-order-awb-branding-2026-09)      |
+| cod                | object  | No       | Cash on Delivery                             | refer to [cod](#submit-order-cod-2026-09)                        |
+| courier_ddp        | object  | No       | Courier Delivered Duty Paid (DDP)            | refer to [courier_ddp](#submit-order-courier-ddp-2026-09)        |
 
-### awb_branding
+<h3 id="submit-order-awb-branding-2026-09">awb_branding</h3>
 
 | Parameter | Type    | Required | Description                                 | Remarks |
 |-----------|---------|----------|---------------------------------------------|---------|
 | enable    | boolean | Yes      | To enable or disable Airways Bills Branding | -       |
 | type      | string  | No       | To select type of awb branding. Supported value: 'text', 'banner' | If this field is omitted, system will auto choose one last updated template.       |
 
-### cod
+<h3 id="submit-order-cod-2026-09">cod</h3>
 
 | Parameter        | Type        | Required | Description                        | Remarks           |
 |------------------|-------------|----------|------------------------------------|-------------------|
 | cod_amount       | double      | Yes      | Cash on Delivery amount            | -                 |
 | cod_currency     | string      | Yes      | Currency code for COD transaction  | Example: "MYR"    |
 
-### Items
+<h3 id="submit-order-courier-ddp-2026-09">courier_ddp</h3>
+
+| Parameter          | Type    | Required | Description                                  | Remarks                                                                                                   |
+|--------------------|---------|----------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| enable             | boolean | No       | To request courier DDP for the shipment      | If omitted or false, DDP is not requested.                                                                |
+| parcel_category_id | numeric | No       | Parcel category of the shipment contents     | Use an `id` from [Parcel Category List](#category-list-2026-09). Send it whenever `enable` is true: if it is omitted, DDP is skipped without an error and the shipment is submitted without DDP. |
+
+
+<h3 id="submit-order-items-2026-09">Items</h3>
 
 | Parameter       | Type        | Required | Description                              | Remarks                       |
 |-----------------|-------------|----------|------------------------------------------|------------------------------ |
