@@ -18,6 +18,7 @@ includes:
   - 2026-09/_authentication.md
   - 2026-09/_postman.md
   - 2026-09/_features.md
+  - rate_limits.md
     
   - 2026-09/_version.md
   - 2026-09/_standard.md

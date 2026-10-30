@@ -29,6 +29,7 @@ To begin using the EasyParcel API, follow the steps below to set up your environ
 - [Postman_collections](#postman-collection)
 - [API Endpoint](#api-functions-amp-features)
 - [Webhook](#webhooks)
+- [Rate limits](#rate-limits)
 
 Once set up, you can use the provided **Sandbox** environment to test the API without impacting live data.
 

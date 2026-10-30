@@ -545,11 +545,7 @@ Always validate input parameters before making API requests:
 
 ### Rate Limiting
 
-The API implements rate limiting to ensure fair usage:
-
-- Batch multiple shipment quotes in a single request when possible
-- Implement exponential backoff for 429 responses
-- Cache responses when appropriate to reduce API calls
+See [Rate limits](#rate-limits) for each endpoint's limits, the response headers, and how to handle HTTP 429.
 
 ### User Experience
 
