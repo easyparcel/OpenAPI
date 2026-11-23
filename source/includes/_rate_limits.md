@@ -48,7 +48,7 @@ Every other endpoint uses 1 per request, however many items the request carries.
 | You send | It uses |
 |---|---|
 | 1 Submit orders request with 200 shipments | 1 |
-| 1 Bulk AWBs request with 100 AWBs | 1 |
+| 1 Shipment cancel request with 50 shipments | 1 |
 | 1 Insurance quotation request with 50 items | 1 |
 | 1 Tracking status request | 1 |
 
@@ -123,8 +123,6 @@ For example, an agency login works on 5 live accounts. Each account can quote 12
 
 Paths are shown without the `/open_api/<version>` prefix. Every version of an endpoint (`/open_api/2025-12/shipment/quotations`, `/open_api/2026-09/shipment/quotations` and so on) shares one allowance.
 
-These tables list every endpoint that has a limit, including some used by EasyParcel's own apps and tools. An endpoint that has no reference page in this documentation (for example Bulk AWBs, Shipment coupon discount, On-demand priority fee, Free credit, Switch token, Organisation list, Address search and Geocoding) is not yet part of the public API. Its request and response can change without notice, so don't build on it.
-
 <h3 id="rate-limits-quotation-endpoints">Quotation endpoints</h3>
 
 These limits depend on which limits your account uses.
@@ -134,7 +132,6 @@ These limits depend on which limits your account uses.
 | Shipment quotations | `/shipment/quotations` | 120 **shipments** / min | 10 **shipments** / min (50 at once)<br>100 **shipments** / day | 60 **shipments** / min | 240 **shipments** / min | 50 shipments |
 | On-demand quotation | `/ondemand/quotation` | 20 requests / min | 10 requests / min<br>100 requests / day | 20 requests / min | 40 requests / min | — |
 | Insurance quotation | `/insurance_quotations`<br>`/shipment/insurance_quotations` | 60 requests / min | 10 requests / min<br>100 requests / day | 60 requests / min | 120 requests / min | 50 items |
-| Shipment coupon discount | `/shipment/get_coupon_discount` | 60 requests / min | 10 requests / min<br>100 requests / day | 60 requests / min | 120 requests / min | — |
 | Shipment coupon list | `/shipment/get_coupon_list` | 60 requests / min | 10 requests / min<br>100 requests / day | 60 requests / min | 120 requests / min | — |
 | On-demand coupon list | `/ondemand/get_coupon_list` | 30 requests / min | 10 requests / min<br>100 requests / day | 30 requests / min | 60 requests / min | — |
 
@@ -148,8 +145,6 @@ These are counted by request and are the same for Live, Not topped up and Sandbo
 | On-demand order | `/ondemand/order` | 100 | — |
 | Shipment cancel | `/shipment/cancel` | 60 | 50 shipments |
 | On-demand cancel | `/ondemand/cancel` | 60 | — |
-| On-demand priority fee | `/ondemand/priority_fee` | 10 | — |
-| Bulk AWBs | `/shipment/bulk_awbs` | 120 | 100 AWBs |
 | Tracking status | `/shipment/tracking_status` | 120 | 50 AWBs |
 | Shipment list | `/shipment/list` | 60 | — |
 | Shipment details | `/shipment/details` | 300 | — |
@@ -159,19 +154,10 @@ These are counted by request and are the same for Live, Not topped up and Sandbo
 | Drop-off points | `/courier/get_courier_dropoff_points`<br>`/shipment/get_courier_dropoff_points` | 120 | — |
 | Parcel categories | `/parcel_category/list` | 120 | — |
 | HS codes | `/hscode/list` | 120 | — |
-| Address search | `/address/search` | 120 | — |
-| Geocoding — search | `/geocoding/search` | 120 | — |
-| Geocoding — reverse | `/geocoding/reverse` | 120 | — |
 | Wallet | `/wallet` | 120 | — |
-| Free credit | `/wallet/free_credit` | 120 | — |
 | Account information | `/account/get_account_information` | 120 | — |
-| List accounts | `/account/list_accounts` | 30 | — |
-| Switch token | `/account/switch_token` | 10 | — |
-| Organisation list | `/organization/list` | 30 | — |
 | Malaysia e-invoice submit | `/einvoice/malaysia/submit` | 120 | 100 invoices |
 | Malaysia e-invoice verify access | `/einvoice/malaysia/verify_access` | 120 | — |
-
-List accounts and Organisation list, called with an "all my accounts" sign-in that isn't tied to one shipping account, are counted per login instead of per account.
 
 **Need more?** If your integration genuinely needs a higher limit, contact EasyParcel support with your account ID and the endpoint. Limits can be raised for a single account.
 
@@ -265,7 +251,7 @@ The message says which limit was reached:
 | *Shipment quotations is blocked for this account. Contact EasyParcel support.* | `ENDPOINT_BLOCKED`. Retrying won't help: contact support. `Retry-After` is 3600. |
 | *Shipment quotations is blocked for this login on all its accounts. Contact EasyParcel support.* | `ENDPOINT_BLOCKED`. Retrying won't help: contact support. `Retry-After` is 3600. |
 
-On a Not topped up account, the message ends with *Top up your wallet to raise this limit.* whenever topping up would raise the limit that was reached. A request counted per login says *on this login* instead of *on this account*.
+On a Not topped up account, the message ends with *Top up your wallet to raise this limit.* whenever topping up would raise the limit that was reached.
 
 A blocked request carries only the `Retry-After` header, not the other rate-limit headers.
 
