@@ -221,27 +221,19 @@ One webhook is sent for each shipment in the order.
 
 <h2 id="webhook-status-codes-2026-09">Shipment Status Codes</h2>
 
-These codes are used in `shipment.status.update` and `shipment.tracking.update`:
+Below are common shipment status codes you may encounter:
 
-| Status Code | Description             |
-|-------------|-------------------------|
-| 0           | Cancelled               |
-| 1           | Pending                 |
-| 2           | To Be Collected         |
-| 3           | Collected               |
-| 4           | Delivery In Transit     |
-| 5           | Delivered               |
-| 6           | Returned                |
-| 7           | Schedule In Arrangement |
-| 8           | Delivery On Hold        |
-| 9           | Expired                 |
-| 10          | Cancelled by Admin      |
-| 11          | Pending Drop Off        |
-| 12          | Parcel Dropped Off      |
-| 13          | Parcel Arrived          |
-| 14          | On Hold                 |
-
-The status code is EasyParcel's own code, the same for every courier. The status text is the courier's own wording, so base your logic on the code.
+| Status Code | Description                    |
+|-------------|--------------------------------|
+| 0          | Cancel                                |
+| 2          | To Be Collected                        |
+| 3          | Collected / Parcel been collected at ABC |
+| 4          | Delivery In Transit                    |
+| 5          | Delivered / Parcel collected by recipient |
+| 6          | Returned                               |
+| 7          | Schedule In Arrangement                |
+| 8          | On Hold                                |
+| 11         | Drop Off                               |
 
 <h2 id="ondemand-status-codes-2026-09">Ondemand Status Codes</h2>
 
@@ -257,6 +249,8 @@ Below are the status codes you may encounter in the `ondemand.status.update` web
 | 5           | Cancelled by Driver            |
 | 6           | Fulfilled                      |
 | 7           | Unable to Find Driver          |
+
+*Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
 
 <h2 id="webhook-verify-2026-09">Verifying That a Webhook Came From EasyParcel</h2>
 

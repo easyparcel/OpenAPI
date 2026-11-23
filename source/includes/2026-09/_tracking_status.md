@@ -167,26 +167,19 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 
 Below are common shipment status codes you may encounter:
 
-| Status Code | Description             |
-|-------------|-------------------------|
-| 0           | Cancelled               |
-| 1           | Pending                 |
-| 2           | To Be Collected         |
-| 3           | Collected               |
-| 4           | Delivery In Transit     |
-| 5           | Delivered               |
-| 6           | Returned                |
-| 7           | Schedule In Arrangement |
-| 8           | Delivery On Hold        |
-| 9           | Expired                 |
-| 10          | Cancelled by Admin      |
-| 11          | Pending Drop Off        |
-| 12          | Parcel Dropped Off      |
-| 13          | Parcel Arrived          |
-| 14          | On Hold                 |
+| Status Code | Description                    |
+|-------------|--------------------------------|
+| 0          | Cancel                                |
+| 2          | To Be Collected                        |
+| 3          | Collected / Parcel been collected at ABC |
+| 4          | Delivery In Transit                    |
+| 5          | Delivered / Parcel collected by recipient |
+| 6          | Returned                               |
+| 7          | Schedule In Arrangement                |
+| 8          | On Hold                                |
+| 11         | Drop Off                               |
 
-The status code is EasyParcel's own code, the same for every courier. The status text (`tracking_status`, `latest_tracking_status`) is the courier's own wording for the event, so the same code can come with different text. Base your logic on the code, not the text. Cancelled shipments use code `0` (or `10` when EasyParcel cancelled it).
-
+*Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
 
 
 
