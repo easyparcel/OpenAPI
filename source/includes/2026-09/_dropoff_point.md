@@ -255,7 +255,7 @@ When presenting drop-off points to your users, consider displaying:
 
 <h2 id="applying-drop-off-points-to-shipments-2026-09">Applying Drop-off Points to Shipments</h2>
 
-Once a customer selects a drop-off point, you can include the `point_id` in your shipment submission request to indicate the parcel will be dropped off at that location instead of being picked up.
+Once a customer selects a drop-off point, send its `point_id` as `sender.point_code` in [Submit Orders](#submit-orders-2026-09). Use a drop-off service (`service_id`): the service decides that the parcel is dropped off rather than collected.
 
 ### Example Drop-off Point Application in Shipment Submission:
 
@@ -264,15 +264,16 @@ Once a customer selects a drop-off point, you can include the `point_id` in your
   "shipment": [
     {
       "service_id": "EP-CS096",
-      "dropoff_point_id": "EP-CB0FF",
-      "collection_method": "dropoff",
-      // ... other shipment details
+      "sender": {
+        "name": "John Doe",
+        "point_code": "EP-CB0FF"
+      }
     }
   ]
 }
 ```
 
-*Note: Specific implementation may vary based on the shipment submission endpoint requirements.*
+A drop-off service submitted without `sender.point_code` fails with "Drop-off point is required for this drop-off service." There is no `dropoff_point_id` or `collection_method` field.
 
 
 <h2 id="dropoffpoint-error-handling-2026-09">Error Handling</h2>

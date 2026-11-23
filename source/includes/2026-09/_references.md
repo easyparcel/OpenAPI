@@ -243,7 +243,7 @@ This section introduces the cancellation features available for both standard an
 
 * **7-Day Limit:** Cancellation requests must be submitted within **7 days from the scheduled collection date**.
 * **No Cancellation After Pickup:** Once the courier **driver has picked up** the parcel, cancellation is **no longer permitted**.
-* **Refunds:** If the cancellation is successful, the shipment cost will be **refunded to the user's credit wallet**.
+* **Refunds:** If the cancellation is successful, the shipment cost will be **refunded to the user's credit wallet** (free credit goes back to free credit). See [Cancel Shipments](#cancel-shipments-2026-09) for details.
 
 ### 📡 Relevant Endpoints
 
@@ -254,7 +254,7 @@ This section introduces the cancellation features available for both standard an
 
 * **`/shipment/cancel`** – for standard shipment cancellations.
 
-* **`/ondemand/shipment/cancel`** – for ondemand shipment cancellations.
+* **`/ondemand/cancel`** – for ondemand shipment cancellations.
 
 
 <h2 id="easyparcel-api-standards-2026-09">EasyParcel API Standards</h2>

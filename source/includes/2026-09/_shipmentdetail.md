@@ -230,6 +230,15 @@ This endpoint allows users to retrieve detailed information about a specific shi
 | byoc_charges            | string    | EasyParcel's BYOC platform charge for this shipment (null for a non-BYOC shipment). |
 | byoc_charges_tax        | string    | Tax on the BYOC platform charge (null for a non-BYOC shipment). |
 
+<h3 id="shipment-detail-amount-final-2026-09">Can the amount change after booking?</h3>
+
+`total_price` is the amount charged when the shipment was booked. It does not change afterwards, not after delivery and not after cancellation.
+
+Charges that come up later are kept separately:
+
+- **Courier adjustments.** If the courier finds the parcel's actual weight or size differs from what was declared, EasyParcel raises a separate *shipment adjustment* for the difference. It is charged from your wallet, and you can view it and request a review in your EasyParcel account. This version of the API does not return adjustments, so there is no "final amount" flag: an adjustment can arrive after delivery.
+- **Cancellation refunds.** See [Cancel Shipments](#cancel-shipments-2026-09).
+
 
 ### Error Response
 

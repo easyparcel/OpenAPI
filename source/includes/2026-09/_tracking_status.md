@@ -30,7 +30,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 
 | Parameter    | Type  | Required | Description                                    |
 |--------------|-------|----------|------------------------------------------------|
-| awb_numbers  | array | Yes      | List of AWB numbers to track (max 100 per request) |
+| awb_numbers  | array | Yes      | List of AWB numbers to track (max 50 per request). A request with more than 50 is rejected as a whole. |
 
 <h2 id="tracking-status-response-2026-09">Tracking Status Response</h2>
 
@@ -142,7 +142,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 
 | Parameter                    | Type   | Description                                                      |
 |------------------------------|--------|------------------------------------------------------------------|
-| status                       | string | Status of the tracking request ("success" or "not_found")        |
+| status                       | string | Result for this AWB: `success`; `not_found` (no shipment with this AWB); `shipment_not_found` (the AWB exists but its shipment record could not be loaded); or `error` (the tracking lookup failed, so retry later) |
 | awb_number                   | string | Air Waybill number for the shipment                              |
 | shipment_number              | string | EasyParcel shipment reference number (only for successful requests) |
 | order_number                 | string | EasyParcel order reference number (only for successful requests) |
@@ -186,10 +186,10 @@ Below are common shipment status codes you may encounter:
 
 <h2 id="usage-notes-tracking-2026-09">Usage Notes (Tracking)</h2>
 
-- **Batch Tracking**: You can track up to 100 AWB numbers in a single API request for efficiency.
+- **Batch Tracking**: You can track up to 50 AWB numbers in a single API request. A request with more than 50 is rejected with HTTP 400, and none of its AWBs are tracked.
 - **Real-time Updates**: Tracking information is updated in near real-time as events are recorded by the courier.
 - **Status Log**: The `status_log` array provides a complete history of all tracking events in chronological order.
-- **Error Handling**: If an AWB number is invalid or not found, the corresponding result object will have `status: "not_found"` with a descriptive message field.
+- **Error Handling**: Each AWB gets its own result. When an AWB can't be tracked, its result has a `status` other than `success` (see the `result` object above) and a `message` field. The other AWBs in the request are not affected.
 - **Date Format**: All dates and times are returned in `YYYY-MM-DD HH:MM:SS` format in UTC timezone.
 
 <h2 id="example-usa-cases-2026-09">Example Use Cases</h2>
@@ -242,7 +242,7 @@ If one or more AWB numbers are invalid:
                 "awb_number": "7028021894371796",
                 "shipment_number": "ES-2601-XV7UN",
                 "order_number": "EI-2601-U8FZW",
-                "latest_shipment_status_code": 8,
+                "latest_shipment_status_code": 0,
                 "latest_tracking_status": "Cancelled",
                 "latest_event_date": "2026-01-30 10:04:18",
                 "status_log": [
@@ -266,7 +266,7 @@ If one or more AWB numbers are invalid:
                     },
                     {
                         "event_date": "2026-01-30 10:04:18",
-                        "shipment_status_code": 8,
+                        "shipment_status_code": 0,
                         "tracking_status": "Cancelled",
                         "location": "Kuala Lumpur Hub, Kuala Lumpur, MY"
                     }

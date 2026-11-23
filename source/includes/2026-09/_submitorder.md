@@ -199,7 +199,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | city                             | string    | Yes      | Sender's city/town                       | -                                                         |
 | subdivision_code                  | string    | No       | Sender's state/province code             | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The origin country of the parcel         | Example: "MY"                                             |
-| point_code                       | string    | No       | A unique identifier for sender location  | -                                                         |
+| point_code                       | string    | No       | Drop-off point where you will hand over the parcel | Required for drop-off services. Use a `point_id` from [Drop-off Points](#courier-drop-off-points-feature-2026-09). If it is missing for a drop-off service, the shipment fails with "Drop-off point is required for this drop-off service." |
 
 <h3 id="submit-order-receiver-2026-09">Receiver</h3>
 
@@ -218,7 +218,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | city                             | string    | Yes      | Receiver's city/town                     | -                                                         |
 | subdivision_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The destination country of the parcel    | Example: "MY"                                             |
-| point_code                       | string    | No       | A unique identifier for receiver location| -                                                         |
+| point_code                       | string    | No       | Pickup point where the receiver will collect the parcel | Required for deliver-to-point services. If it is missing for such a service, the shipment fails with "Pickup point is required for this deliver-to-point service." |
 | eori_acknowledged                | boolean   | No       | Acknowledge the risk of submitting a shipment to a European country without a valid EORI number. | For EasyParcel Business accounts, shipments to Europe require a valid EORI number to be configured in the Business Profile. Set this to true to acknowledge the risk and proceed with order submission without an EORI number provided   |
 
 <h3 id="submit-order-feature-2026-09">Feature</h3>
@@ -231,6 +231,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | awb_branding       | object  | No       | Airway bill branding                         | refer to [awb_branding](#submit-order-awb-branding-2026-09)      |
 | cod                | object  | No       | Cash on Delivery                             | refer to [cod](#submit-order-cod-2026-09)                        |
 | courier_ddp        | object  | No       | Courier Delivered Duty Paid (DDP)            | refer to [courier_ddp](#submit-order-courier-ddp-2026-09)        |
+| add_on_easy_cover  | boolean | No       | Buy EasyCover insurance for the shipment     | Default: false. See [EasyCover insurance](#submit-order-easycover-2026-09) |
 
 <h3 id="submit-order-awb-branding-2026-09">awb_branding</h3>
 
@@ -253,6 +254,35 @@ This feature enables users to submit shipment orders. Users are required to fill
 | enable             | boolean | No       | To request courier DDP for the shipment      | If omitted or false, DDP is not requested.                                                                |
 | parcel_category_id | numeric | No       | Parcel category of the shipment contents     | Use an `id` from [Parcel Category List](#category-list-2026-09). Send it whenever `enable` is true: if it is omitted, DDP is skipped without an error and the shipment is submitted without DDP. |
 
+
+<h3 id="submit-order-easycover-2026-09">EasyCover insurance</h3>
+
+To insure a shipment with EasyCover, set `feature.add_on_easy_cover` to `true`:
+
+```json
+"feature": {
+    "add_on_easy_cover": true
+}
+```
+
+- The EasyCover charge is worked out from the item values at submission and is deducted together with the shipment. Use [Insurance Quotation](#insurance-quotation-feature-2026-09) to show the price beforehand.
+- If EasyCover is not offered for the shipment, that shipment usually fails with "EasyCover insurance service is not available for this shipment", and the other shipments in the request are not affected. If no insurance can be quoted for the route at all, the shipment is submitted without cover.
+- Some courier services come with mandatory insurance. It is added automatically, whether or not you set `add_on_easy_cover`.
+- The cover actually bought is returned in each shipment's `insurance_purchase` in the response. Check it to confirm EasyCover was added.
+- There is no `insurance_service_id` or `insurance` field in the submit request. Sending one has no effect.
+
+<h3 id="submit-order-dropoff-2026-09">Drop-off shipments</h3>
+
+Whether a shipment is collected or dropped off depends on the service you choose (`service_id`), not on a field in the request. For a drop-off service, pick a point from [Drop-off Points](#courier-drop-off-points-feature-2026-09) and send its `point_id` as `sender.point_code`:
+
+```json
+"sender": {
+    "name": "John Doe",
+    "point_code": "EP-CB0FF"
+}
+```
+
+There is no `dropoff_point_id` or `collection_method` field in the submit request.
 
 <h3 id="submit-order-items-2026-09">Items</h3>
 

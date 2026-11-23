@@ -101,7 +101,7 @@ per-item field and not a query-string parameter. One setting applies to the whol
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
 postcode | string(10) | true | Sender's postcode
-subdivision_code | string(35) | true | Sender's subdivision code (ISO 3166)
+subdivision_code | string(35) | false | Sender's subdivision (state) code, ISO 3166-2, e.g. `MY-07`. Optional, but send it when you have it: some rates depend on the state
 country | string(2) | true | Sender's country code
 
 ### Receiver Parameters
@@ -109,7 +109,7 @@ country | string(2) | true | Sender's country code
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
 postcode | string(10) | true | Receiver's postcode  
-subdivision_code | string(35) | true | Receiver's subdivision code (ISO 3166)
+subdivision_code | string(35) | false | Receiver's subdivision (state) code, ISO 3166-2, e.g. `MY-07`. Optional, but send it when you have it: some rates depend on the state
 country | string(2) | true | Receiver's country code
 
 ### Parcel Parameters
