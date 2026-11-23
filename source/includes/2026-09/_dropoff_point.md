@@ -276,6 +276,48 @@ Once a customer selects a drop-off point, send its `point_id` as `sender.point_c
 A drop-off service submitted without `sender.point_code` fails with "Drop-off point is required for this drop-off service." There is no `dropoff_point_id` or `collection_method` field.
 
 
+<h2 id="pickup-points-2026-09">Pickup Points (Deliver to Point)</h2>
+
+Some services deliver the parcel to a point, such as a post office or locker, and the receiver collects it there. In quotations, these services have `is_deliver_to_point: true`. When you book one, you must say which pickup point the receiver will collect from.
+
+Pickup points work the same way as drop-off points, but on the receiver's side.
+
+### HTTP Request (Pickup Points)
+
+`POST https://api.easyparcel.com/open_api/2026-09/courier/get_courier_pickup_points`
+
+The request parameters and the response format are the same as for [Drop-off Points](#drop-off-points-2026-09). Send the **receiver's** location. Only `courier_id` and `country_code` are required; `postcode`, `city` and `state_code` narrow the results.
+
+### Sample Pickup Points Request:
+
+```json
+{
+    "courier_id": "EP-CR0AP",
+    "country_code": "SG",
+    "postcode": "529508"
+}
+```
+
+<h3 id="applying-pickup-points-to-shipments-2026-09">Applying Pickup Points to Shipments</h3>
+
+Send the chosen point's `point_id` as `receiver.point_code` in [Submit Orders](#submit-orders-2026-09):
+
+```json
+{
+  "shipment": [
+    {
+      "service_id": "EP-CS0XX",
+      "receiver": {
+        "name": "Jane Smith",
+        "point_code": "EP-CB0A1B2"
+      }
+    }
+  ]
+}
+```
+
+A deliver-to-point service submitted without `receiver.point_code` fails with "Pickup point is required for this deliver-to-point service." A service can need both points: a point-to-point service needs `sender.point_code` (drop-off) and `receiver.point_code` (pickup).
+
 <h2 id="dropoffpoint-error-handling-2026-09">Error Handling</h2>
 
 ### No Drop-off Points Available
