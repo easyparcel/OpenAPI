@@ -123,6 +123,8 @@ For example, an agency login works on 5 live accounts. Each account can quote 12
 
 Paths are shown without the `/open_api/<version>` prefix. Every version of an endpoint (`/open_api/2025-12/shipment/quotations`, `/open_api/2026-09/shipment/quotations` and so on) shares one allowance.
 
+These tables list every endpoint that has a limit, including some used by EasyParcel's own apps and tools. An endpoint that has no reference page in this documentation (for example Bulk AWBs, Shipment coupon discount, On-demand priority fee, Free credit, Switch token, Organisation list, Address search and Geocoding) is not yet part of the public API. Its request and response can change without notice, so don't build on it.
+
 <h3 id="rate-limits-quotation-endpoints">Quotation endpoints</h3>
 
 These limits depend on which limits your account uses.
@@ -148,7 +150,7 @@ These are counted by request and are the same for Live, Not topped up and Sandbo
 | On-demand cancel | `/ondemand/cancel` | 60 | — |
 | On-demand priority fee | `/ondemand/priority_fee` | 10 | — |
 | Bulk AWBs | `/shipment/bulk_awbs` | 120 | 100 AWBs |
-| Tracking status | `/shipment/tracking_status` | 120 | — |
+| Tracking status | `/shipment/tracking_status` | 120 | 50 AWBs |
 | Shipment list | `/shipment/list` | 60 | — |
 | Shipment details | `/shipment/details` | 300 | — |
 | On-demand list | `/ondemand/list` | 60 | — |

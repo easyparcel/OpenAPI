@@ -110,3 +110,4 @@ This endpoint allows users to cancel one or more shipments. Users can provide a 
 4. A successful response (`status_code: 200`) does not guarantee all shipments were cancelled. Always check individual status values in the data array.
 5. Cancellation remarks are mandatory and should provide a reason for the cancellation.
 6. The API returns a 200 status code even when all cancellations fail, so always check the message and data fields.
+7. **Refunds.** A shipment reported as `Shipment Cancelled` is refunded straight away, as part of the same request. What you paid from your credit wallet for the shipment and its add-ons (tax included) goes back to the credit wallet. What was paid with free credit goes back to free credit. Coupon discounts are not paid out as credit. The cancel response does not include the refund amount, and the shipment's `total_price` in [Shipment Details](#shipment-details-2026-09) is not reduced.

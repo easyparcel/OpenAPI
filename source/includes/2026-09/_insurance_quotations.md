@@ -377,7 +377,7 @@ For an item valued at MYR 3,000:
 
 <h2 id="applying-insurance-to-shipments-2026-09">Applying Insurance to Shipments</h2>
 
-Once you receive an insurance quotation, you can apply the insurance to your shipment by including the `insurance_service_id` in your shipment submission request.
+The quotation tells you whether EasyCover is available for a shipment and what it costs. To buy it, set `feature.add_on_easy_cover` to `true` on that shipment in [Submit Orders](#submit-orders-2026-09). `insurance_service_id` is for display only, and the submit request does not read it.
 
 ### Example Insurance Application in Shipment Submission:
 
@@ -386,12 +386,15 @@ Once you receive an insurance quotation, you can apply the insurance to your shi
   "shipment": [
     {
       "service_id": "EP-CS096",
-      "insurance_service_id": "EP-IR0D",
-      // ... other shipment details
+      "feature": {
+        "add_on_easy_cover": true
+      }
     }
   ]
 }
 ```
+
+See [EasyCover insurance](#submit-order-easycover-2026-09) for what happens when EasyCover isn't available, and for mandatory insurance.
 
 
 <h2 id="insurance-error-handling-2026-09">Error Handling</h2>
