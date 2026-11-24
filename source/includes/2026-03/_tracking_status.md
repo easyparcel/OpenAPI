@@ -49,8 +49,8 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
                 "shipment_number": "ES-2602-VC4KV",
                 "order_number": "EI-2602-4P2SK",
                 "latest_shipment_status_code": 7,
-                "latest_tracking_status": "Schedule In Arrangement",
-                "latest_event_date": "2026-01-23T04:28:52.494Z",
+                "latest_tracking_status": "Shipment data received - Awaiting Parcel Handover to DHL",
+                "latest_event_date": "2026-01-23 12:29:47",
                 "status_log": [
                     {
                         "event_date": "2026-01-23 12:29:47",
@@ -78,8 +78,8 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
                 "shipment_number": "ES-2504-X2KV5",
                 "order_number": "EI-2504-SKMTH",
                 "latest_shipment_status_code": 7,
-                "latest_tracking_status": "Schedule In Arrangement",
-                "latest_event_date": "2025-04-23 08:13:12",
+                "latest_tracking_status": "Shipment information sent to City-Link",
+                "latest_event_date": "2025-04-23 16:13:00",
                 "status_log": [
                     {
                         "event_date": "2025-04-23 16:13:00",
@@ -105,15 +105,15 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
                 "latest_event_date": "2025-04-23 10:46:00",
                 "status_log": [
                     {
-                        "event_date": "2025-04-23 02:46:36",
-                        "shipment_status_code": 7,
-                        "tracking_status": "Schedule In Arrangement",
-                        "location": null
-                    },
-                    {
                         "event_date": "2025-04-23 10:46:00",
                         "shipment_status_code": 7,
                         "tracking_status": "Shipment information sent to City-Link",
+                        "location": null
+                    },
+                    {
+                        "event_date": "2025-04-23 02:46:36",
+                        "shipment_status_code": 7,
+                        "tracking_status": "Schedule In Arrangement",
                         "location": null
                     }
                 ]
@@ -149,7 +149,7 @@ You can submit multiple AWB numbers in a single request to retrieve tracking sta
 | latest_shipment_status_code  | int    | Numeric code representing the current shipment status (only for successful requests) |
 | latest_tracking_status       | string | Human-readable description of the current status (only for successful requests) |
 | latest_event_date            | string | Date and time of the most recent tracking event (YYYY-MM-DD HH:MM:SS) (only for successful requests) |
-| status_log                   | array  | Chronological list of all tracking events for this shipment (only for successful requests) |
+| status_log                   | array  | All tracking events for this shipment, newest first. The first entry is the event in the `latest_*` fields (only for successful requests) |
 | message                      | string | Error message explaining why the request failed (only for failed requests) |
 
 ### `status_log` Object (Inside `status_log` array)
@@ -188,7 +188,7 @@ Below are common shipment status codes you may encounter:
 
 - **Batch Tracking**: You can track up to 100 AWB numbers in a single API request for efficiency.
 - **Real-time Updates**: Tracking information is updated in near real-time as events are recorded by the courier.
-- **Status Log**: The `status_log` array provides a complete history of all tracking events in chronological order.
+- **Status Log**: The `status_log` array is the complete history of tracking events, newest first. Use the `latest_*` fields for the current status.
 - **Error Handling**: If an AWB number is invalid or not found, the corresponding result object will have `status: "not_found"` with a descriptive message field.
 - **Date Format**: All dates and times are returned in `YYYY-MM-DD HH:MM:SS` format in UTC timezone.
 
@@ -247,6 +247,12 @@ If one or more AWB numbers are invalid:
                 "latest_event_date": "2026-01-30 10:04:18",
                 "status_log": [
                     {
+                        "event_date": "2026-01-30 10:04:18",
+                        "shipment_status_code": 8,
+                        "tracking_status": "Cancelled",
+                        "location": "Kuala Lumpur Hub, Kuala Lumpur, MY"
+                    },
+                    {
                         "event_date": "2026-01-23 12:29:47",
                         "shipment_status_code": 7,
                         "tracking_status": "Shipment data received - Awaiting Parcel Handover to DHL",
@@ -263,12 +269,6 @@ If one or more AWB numbers are invalid:
                         "shipment_status_code": 7,
                         "tracking_status": "Schedule In Arrangement",
                         "location": null
-                    },
-                    {
-                        "event_date": "2026-01-30 10:04:18",
-                        "shipment_status_code": 8,
-                        "tracking_status": "Cancelled",
-                        "location": "Kuala Lumpur Hub, Kuala Lumpur, MY"
                     }
                 ]
             },
@@ -278,8 +278,8 @@ If one or more AWB numbers are invalid:
                 "shipment_number": "ES-2504-X2KV5",
                 "order_number": "EI-2504-SKMTH",
                 "latest_shipment_status_code": 7,
-                "latest_tracking_status": "Schedule In Arrangement",
-                "latest_event_date": "2025-04-23 08:13:12",
+                "latest_tracking_status": "Shipment information sent to City-Link",
+                "latest_event_date": "2025-04-23 16:13:00",
                 "status_log": [
                     {
                         "event_date": "2025-04-23 16:13:00",
@@ -301,8 +301,8 @@ If one or more AWB numbers are invalid:
                 "shipment_number": "ES-2504-2AE3R",
                 "order_number": "EI-2504-WUHYR",
                 "latest_shipment_status_code": 7,
-                "latest_tracking_status": "Schedule In Arrangement",
-                "latest_event_date": "2025-04-23 02:46:36",
+                "latest_tracking_status": "Shipment information sent to City-Link",
+                "latest_event_date": "2025-04-23 10:46:00",
                 "status_log": [
                     {
                         "event_date": "2025-04-23 10:46:00",

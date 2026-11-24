@@ -124,14 +124,14 @@ Every payload carries a `topic` field with the code below, so one endpoint can r
     "event_date": "2025-04-28 11:40:00",
     "status_log": {
         "0": {
-            "event_date": "2025-04-26 12:00:00",
-            "shipment_status_code": 3,
-            "tracking_status": "Parcel has been collected at Penang"
-        },
-        "1": {
             "event_date": "2025-04-28 11:40:00",
             "shipment_status_code": 5,
             "tracking_status": "Delivered to recipient"
+        },
+        "1": {
+            "event_date": "2025-04-26 12:00:00",
+            "shipment_status_code": 3,
+            "tracking_status": "Parcel has been collected at Penang"
         }
     },
     "order_info": {
@@ -150,7 +150,7 @@ Every payload carries a `topic` field with the code below, so one endpoint can r
 | latest_shipment_status_code | int | Status code of the latest event. See [Shipment Status Codes](#webhook-status-codes-2026-09) |
 | latest_tracking_status | string | The courier's text for the latest event |
 | event_date | string | Time of the latest event, as reported by the courier |
-| status_log | object | Every tracking event so far, keyed `"0"`, `"1"`, … from oldest to newest. Each has `event_date`, `shipment_status_code` and `tracking_status` |
+| status_log | object | Every tracking event so far, keyed `"0"`, `"1"`, … newest first, so `"0"` is the latest event. Each has `event_date`, `shipment_status_code` and `tracking_status` |
 | order_info | object | The order the shipment belongs to: `order_id`, `order_number`, `account_id` |
 
 ### Shipment Created
