@@ -252,46 +252,6 @@ Below are the status codes you may encounter in the `ondemand.status.update` web
 
 *Note: Status codes may vary by courier and region. Refer to the API response for the most accurate status description.*
 
-<h2 id="webhook-verify-2026-09">Verifying That a Webhook Came From EasyParcel</h2>
-
-Every webhook request carries this header:
-
-| Header | Value |
-|--------|-------|
-| `Easyparcel-Hmac-SHA256` | The SHA-256 hash of your app's **Client Secret** (shown in Developer Hub → Apps → Settings), as lowercase hex |
-
-To check it, compute the SHA-256 of your Client Secret once, then compare it with the header on each request using a constant-time comparison. Reject requests where it doesn't match.
-
-```javascript
-const crypto = require('crypto');
-
-const expected = crypto.createHash('sha256').update(process.env.EP_CLIENT_SECRET).digest('hex');
-
-function isFromEasyParcel(req) {
-  const received = req.get('Easyparcel-Hmac-SHA256') || '';
-  return received.length === expected.length &&
-    crypto.timingSafeEqual(Buffer.from(received), Buffer.from(expected));
-}
-```
-
-```php
-<?php
-$expected = hash('sha256', getenv('EP_CLIENT_SECRET'));
-$received = $_SERVER['HTTP_EASYPARCEL_HMAC_SHA256'] ?? '';
-if (!hash_equals($expected, $received)) {
-    http_response_code(401);
-    exit;
-}
-```
-
-<aside class="warning">
-The header value is the same on every request: it is derived from your Client Secret only and does not sign the request body. It shows that the sender knows your secret. It does not prove the payload is unchanged. For actions that matter (fulfilling an order, releasing goods, refunds), also:
-<ul>
-<li>use an HTTPS endpoint, and keep its URL private;</li>
-<li>treat the webhook as a signal, and fetch the current state from the API (for example <code>POST /shipment/details</code> or <code>POST /shipment/tracking_status</code>) before acting on it.</li>
-</ul>
-</aside>
-
 <h2 id="webhook-delivery-retries-2026-09">Delivery and Retries</h2>
 
 - **Timeout**: EasyParcel waits **3 seconds** for your endpoint to respond. Reply quickly, and do any slow work after you have responded.
