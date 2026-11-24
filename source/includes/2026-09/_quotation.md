@@ -199,7 +199,8 @@ byoc_no_timeout | boolean | false | Top-level request flag (sibling of `shipment
                             }
                         ],
                         "is_pickup": true,
-                        "is_dropoff": false
+                        "is_dropoff": false,
+                        "is_deliver_to_point": false
                     },
                     "pricing": {
                         "currency": "MYR",
@@ -319,6 +320,7 @@ delivery_duration | string/null | Expected delivery time
 service_tag | array | Service categorization tags
 is_pickup | boolean | True if pickup service is provided
 is_dropoff | boolean | True if dropoff service is provided
+is_deliver_to_point | boolean | True if the service delivers to a pickup point where the receiver collects the parcel. The booking then needs `receiver.point_code` (see [Pickup Points](#pickup-points-2026-09))
 
 ### Pricing Information
 

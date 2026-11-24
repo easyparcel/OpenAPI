@@ -218,7 +218,7 @@ This feature enables users to submit shipment orders. Users are required to fill
 | city                             | string    | Yes      | Receiver's city/town                     | -                                                         |
 | subdivision_code                  | string    | No       | Receiver's state/province code           | Example: "MY-07"                                          |
 | country_code                     | string(2) | Yes      | The destination country of the parcel    | Example: "MY"                                             |
-| point_code                       | string    | No       | Pickup point where the receiver will collect the parcel | Required for deliver-to-point services. If it is missing for such a service, the shipment fails with "Pickup point is required for this deliver-to-point service." |
+| point_code                       | string    | No       | Pickup point where the receiver will collect the parcel | Required for deliver-to-point services (`is_deliver_to_point: true` in quotations). Use a `point_id` from [Pickup Points](#pickup-points-2026-09). If it is missing for such a service, the shipment fails with "Pickup point is required for this deliver-to-point service." |
 | eori_acknowledged                | boolean   | No       | Acknowledge the risk of submitting a shipment to a European country without a valid EORI number. | For EasyParcel Business accounts, shipments to Europe require a valid EORI number to be configured in the Business Profile. Set this to true to acknowledge the risk and proceed with order submission without an EORI number provided   |
 
 <h3 id="submit-order-feature-2026-09">Feature</h3>
@@ -283,6 +283,17 @@ Whether a shipment is collected or dropped off depends on the service you choose
 ```
 
 There is no `dropoff_point_id` or `collection_method` field in the submit request.
+
+<h3 id="submit-order-pickup-point-2026-09">Deliver-to-point shipments</h3>
+
+For a service that delivers to a pickup point (`is_deliver_to_point: true` in quotations), pick a point from [Pickup Points](#pickup-points-2026-09) and send its `point_id` as `receiver.point_code`:
+
+```json
+"receiver": {
+    "name": "Jane Smith",
+    "point_code": "EP-CB0A1B2"
+}
+```
 
 <h3 id="submit-order-items-2026-09">Items</h3>
 

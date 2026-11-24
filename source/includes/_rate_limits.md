@@ -152,6 +152,7 @@ These are counted by request and are the same for Live, Not topped up and Sandbo
 | On-demand details | `/ondemand/details` | 300 | — |
 | Courier list | `/courier/list` | 120 | — |
 | Drop-off points | `/courier/get_courier_dropoff_points`<br>`/shipment/get_courier_dropoff_points` | 120 | — |
+| Pickup points | `/courier/get_courier_pickup_points` | 120 | — |
 | Parcel categories | `/parcel_category/list` | 120 | — |
 | HS codes | `/hscode/list` | 120 | — |
 | Wallet | `/wallet` | 120 | — |
