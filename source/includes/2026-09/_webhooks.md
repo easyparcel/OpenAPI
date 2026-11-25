@@ -257,7 +257,131 @@ Below are the status codes you may encounter in the `ondemand.status.update` web
 - **Timeout**: EasyParcel waits **3 seconds** for your endpoint to respond. Reply quickly, and do any slow work after you have responded.
 - **Success**: only an HTTP **200** response counts as delivered. Any other status code (including `201`, `202` and `204`), a timeout or a connection error counts as a failure.
 - **Retries**: a failed delivery is retried up to **3 times**, about 5, 10 and 20 minutes after the first attempt. After that the event is not sent again automatically.
-- **Duplicates and order**: the same event can arrive more than once, and events can arrive out of order. Use `shipment_number` / `order_number` with `topic` and `event_date` to ignore duplicates and older updates.
+- **Duplicates and order**: the same event can arrive more than once, and events can arrive out of order. Use the `Easyparcel-Webhook-Id` header to ignore an event you have already processed, and compare `event_date` for the same `shipment_number` / `order_number` to ignore older updates.
+
+<h2 id="webhook-signature-2026-09">Verifying Webhook Signatures</h2>
+
+Every webhook is signed with your app's **Client Secret** (shown in Developer Hub → Apps → Settings), so you can check that it was sent by EasyParcel and that the body was not changed on the way. Each request carries these headers:
+
+| Header | Description |
+|--------|-------------|
+| `Easyparcel-Signature` | `t=<timestamp>,v1=<signature>`. `t` is the Unix time in seconds when the request was signed. `v1` is the HMAC-SHA256 of `<t>.<raw body>`, keyed with your app's client secret and hex-encoded |
+| `Easyparcel-Webhook-Id` | ID of the event. It stays the same when the event is retried or resent, so you can use it to ignore an event you have already processed |
+| `Easyparcel-Client-Id` | Client ID of the app the webhook belongs to. If one endpoint serves several apps, use it to choose which client secret to verify with |
+
+To verify a webhook:
+
+1. Read the raw request body exactly as received, before parsing the JSON. Parsing and re-encoding the JSON can change the bytes, and the signature will no longer match.
+2. Split `Easyparcel-Signature` on `,` to get `t` and `v1`.
+3. Compute the HMAC-SHA256 of `t`, a `.` and the raw body, using your client secret as the key, and hex-encode it.
+4. Compare the result with `v1` using a constant-time comparison. If they differ, reject the request.
+5. Reject the request if `t` is more than 5 minutes from your current time, so an old request cannot be sent to you again. Every retry is signed again with a new `t`.
+
+> Verify a webhook signature:
+
+```shell
+# The raw request body is saved in body.json
+t="1764208800"                # t from Easyparcel-Signature
+v1="paste-the-v1-value-here"  # v1 from Easyparcel-Signature
+
+expected=$( { printf '%s.' "$t"; cat body.json; } | openssl dgst -sha256 -hmac "$EASYPARCEL_CLIENT_SECRET" | sed 's/^.*= //')
+[ "$expected" = "$v1" ] && echo "valid" || echo "invalid"
+```
+
+```javascript
+const crypto = require('crypto');
+const express = require('express');
+
+const app = express();
+const CLIENT_SECRET = process.env.EASYPARCEL_CLIENT_SECRET;
+
+// express.raw keeps the body as bytes: the signature covers the body exactly as sent.
+app.post('/webhook', express.raw({ type: 'application/json' }), (req, res) => {
+  const rawBody = req.body.toString('utf8');
+  const parts = Object.fromEntries(
+    (req.get('Easyparcel-Signature') || '').split(',').map((part) => part.split('='))
+  );
+
+  const expected = crypto
+    .createHmac('sha256', CLIENT_SECRET)
+    .update(`${parts.t}.${rawBody}`)
+    .digest('hex');
+  const valid = typeof parts.v1 === 'string' && parts.v1.length === expected.length
+    && crypto.timingSafeEqual(Buffer.from(parts.v1), Buffer.from(expected));
+  const fresh = Math.abs(Date.now() / 1000 - Number(parts.t)) <= 300;
+
+  if (!valid || !fresh) {
+    return res.sendStatus(401);
+  }
+
+  const event = JSON.parse(rawBody);
+  // Handle event.topic here
+  res.sendStatus(200);
+});
+
+app.listen(3000);
+```
+
+```php
+<?php
+$clientSecret = getenv('EASYPARCEL_CLIENT_SECRET');
+$rawBody = file_get_contents('php://input');
+
+$parts = [];
+foreach (explode(',', $_SERVER['HTTP_EASYPARCEL_SIGNATURE'] ?? '') as $part) {
+    [$key, $value] = array_pad(explode('=', $part, 2), 2, '');
+    $parts[$key] = $value;
+}
+$t = $parts['t'] ?? '';
+
+$expected = hash_hmac('sha256', $t . '.' . $rawBody, $clientSecret);
+$valid = hash_equals($expected, $parts['v1'] ?? '');
+$fresh = ctype_digit($t) && abs(time() - (int) $t) <= 300;
+
+if (!$valid || !$fresh) {
+    http_response_code(401);
+    exit;
+}
+
+$event = json_decode($rawBody, true);
+// Handle $event['topic'] here
+http_response_code(200);
+```
+
+```python
+import hashlib
+import hmac
+import os
+import time
+
+from flask import Flask, abort, request
+
+app = Flask(__name__)
+CLIENT_SECRET = os.environ["EASYPARCEL_CLIENT_SECRET"].encode()
+
+
+@app.post("/webhook")
+def webhook():
+    raw_body = request.get_data()  # the body exactly as sent, before JSON parsing
+    header = request.headers.get("Easyparcel-Signature", "")
+    parts = dict(part.split("=", 1) for part in header.split(",") if "=" in part)
+    t = parts.get("t", "")
+
+    expected = hmac.new(CLIENT_SECRET, t.encode() + b"." + raw_body, hashlib.sha256).hexdigest()
+    valid = hmac.compare_digest(expected, parts.get("v1", ""))
+    fresh = t.isdigit() and abs(time.time() - int(t)) <= 300
+
+    if not valid or not fresh:
+        abort(401)
+
+    event = request.get_json()
+    # Handle event["topic"] here
+    return "", 200
+```
+
+<aside class="notice">
+Requests also carry an older <code>Easyparcel-Hmac-SHA256</code> header. It is deprecated and will be removed. Its value is the same on every request and does not depend on the body, so it cannot prove a request is genuine. Use <code>Easyparcel-Signature</code> instead.
+</aside>
 
 <h2 id="usage-notes-webhook-2026-09">Usage Notes for Webhooks </h2>
 
@@ -270,6 +394,7 @@ Below are the status codes you may encounter in the `ondemand.status.update` web
 - **Endpoint Requirements**: Your URL must be publicly accessible and able to handle POST requests
 - **Multiple Topics**: You can subscribe to multiple webhook topics for the same endpoint
 - **Payload Format**: All webhooks send a JSON body (`Content-Type: application/json`) with a `topic` field
+- **Signature**: Every webhook is signed. Verify the `Easyparcel-Signature` header before you trust the payload (see [Verifying Webhook Signatures](#webhook-signature-2026-09))
 - **Response Expected**: Your endpoint must return HTTP 200 within 3 seconds to acknowledge receipt (see [Delivery and Retries](#webhook-delivery-retries-2026-09))
 
 ### Testing Your Webhook
@@ -287,3 +412,4 @@ After setup, verify your webhook is working:
 - **SSL/HTTPS required**: Ensure your endpoint uses HTTPS
 - **Timeout errors**: Your endpoint must respond within 3 seconds
 - **Repeated deliveries**: Your endpoint returned something other than HTTP 200, so the event was retried
+- **Signature does not match**: Compute it over the raw request body, not over JSON you have parsed and re-encoded, and use the client secret of the app in `Easyparcel-Client-Id`
